@@ -1,0 +1,77 @@
+---
+title: "从币安接收资金"
+---
+
+如果您已将资金从您的币安交易所账户发送到 MetaMask，但在您的钱包中看不到，我们建议您按照以下步骤操作：
+
+## **第一步：在区块链浏览器上查看该交易**
+
+首先，您需要检查币安使用哪个网络完成交易。 为此，您可以在币安上查看取款详情：\
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Binance_network.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+然后您需要进入该网络的浏览器。以下是几个例子：
+
+- [Etherscan](https://etherscan.io/) 是以太坊主网的区块链浏览器
+- [Bscscan](https://bscscan.com/) 是币安智能链的区块链浏览器
+- [Polygonscan](https://polygonscan.com/) 是 Polygon 的区块链浏览器
+- [Snowtrace](https://snowtrace.io/) 是 Avalanche 的区块链浏览器
+
+在区块链浏览器上，搜索您的 MetaMask 地址或[交易 ID](/transactions-and-gas/transactions/how-to-find-a-transaction-id)，以调取交易详情，并确认交易已经完成。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Bscscan_address_overview.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+在区块浏览器中您账户页面的概述部分，您将能够看到您的代币余额。 如果代币是原生代币（BNB、ETH、MATIC、AVAX），则将出现在余额部分（如上图所示）。
+
+如果不是原生代币，代币余额将会出现在“代币”部分的下拉菜单中。
+
+## **第二步：将网络添加到 MetaMask，如有需要，显示代币**
+
+要添加网络，请查看使用[链表](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist)添加网络的指南，或关于添加自定义网络的[文章](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)。
+
+添加网络后，如果您的代币不是该网络的原生代币，必须将其[显示为自定义代币](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)。
+
+在区块浏览器中，转到代币部分，单击您收到的代币：
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Etherscan_BNB_contract_address.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+要将自定义代币添加到 MetaMask，您需要：
+
+1. 复制代币的合约地址。请参阅[此处](/managing-my-tokens/custom-tokens/what-is-a-token-contract-address)以获取更多指导；实质上，您需要在区块浏览器上找到代币，并从中获取其地址。
+2. 转至 MetaMask，在“资产”选项卡下找到“导入代币”。您可能需要滚动鼠标才能找到代币，依所添加代币数量而定。单击此按钮添加代币，输入其地址。
+
+如果您在错误的网络上发送了代币，您可以随时使用网桥在所需的网络上获取该代币。
+
+您可以使用 [Multichain](https://multichain.org/)（以前称为 AnySwap）在最常见的网络之间桥接代币。
+
+**请注意，为了桥接代币，您需要拥有以该网络原生代币为单位的资金，以便支付 Gas 费。**凡交易都需要这些。例如，在币安智能链上您需要币安币，在 Polygon 上您需要 MATIC 币，在 Avalanche 上您需要 AVAX 币。

@@ -1,0 +1,326 @@
+---
+title: "Como adicionar uma rede de RPC personalizada"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### Conteúdo:
+
+- [Adicionando via Chainlist](#adicionando-via-chainlist)
+- [Adicionar redes populares rapidamente](#adicionando-redes-populares)
+- [Adicionando redes manualmente](#adicionando-uma-rede-manualmente)
+
+A MetaMask pode acessar mais redes além da rede principal do Ethereum: é possível adicionar qualquer rede compatível com EVM. O acrônimo RPC, do inglês “Remote Procedure Call”, quer dizer “Chamada de procedimento remoto”, um conjunto de protocolos que permitem que um cliente (como a MetaMask) interaja com uma blockchain. Sem precisar apresentar uma parte mais técnica sobre o assunto, adicionar detalhes de rede usando o processo abaixo permite que a MetaMask use um RPC para que você interaja com essa rede.
+
+#### Adicionando via Chainlist
+
+Para uma forma fácil de adicionar redes à MetaMask, acesse [chainlist.wtf](https://chainlist.wtf/), onde é possível conectar a MetaMask e adicionar redes com apenas alguns cliques. Consulte nosso [guia](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) para obter mais informações.
+
+Além disso, atenção: **adicionar uma rede em um dispositivo não significa que ela será exibida em outro dispositivo** ao acessar a mesma conta. Se você adicioná-la na extensão, ela não será adicionada automaticamente ao aplicativo para dispositivos móveis da MetaMask e vice-versa.
+
+As redes personalizadas também precisarão ser adicionadas novamente se você desinstalar a extensão do navegador ou o aplicativo para dispositivos móveis (depois disso será preciso [restaurar sua carteira](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) usando a frase de recuperação secreta) ou redefinir a carteira.
+
+:::info
+
+#### Por que estou vendo um ponto de interrogação ao lado do nome da rede depois de adicioná-la?
+
+Quando você adiciona uma rede personalizada à MetaMask, que pode ser qualquer rede além da principal do Ethereum, um ícone de ponto de interrogação será mostrado ao lado do seletor de rede. Veja como ele aparece:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/question_mark.png").default
+      }
+      alt="question_mark.png"
+    />
+  </div>
+</div>
+
+Não se preocupe! Isso não significa que a rede não seja legítima ou insegura para o uso. Isso é normal e trata-se do modo como qualquer rede adicionada aparecerá na MetaMask.
+
+:::
+
+## Adicionando redes populares
+
+Tanto na versão móvel como na extensão, é possível adicionar várias redes conhecidas com apenas um toque. Estas incluem:
+
+- [BNB Chain/BSC](/network-profiles/network-profile-bnb-smart-chain-bnb)
+- [Polygon](/network-profiles/network-profile-polygon-matic)
+- [Avalanche](/network-profiles/network-profile-avalanche-avax)
+- [Arbitrum](/network-profiles/network-profile-arbitrum)
+- [Optimism](/network-profiles/network-profile-optimism-op-mainnet)
+- [Palm](/network-profiles/network-profile-palm)
+- [Fantom](/network-profiles/network-profile-fantom-ftm)
+- [Harmony](/network-profiles/network-profile-harmony-one)
+- [Aurora](/network-profiles/network-profile-aurora-)
+- [Celo](https://celo.org/).
+
+Encontre esse menu usando os seguintes passos:
+
+<Tabs>
+
+<TabItem value="Extensão" label="Extensão">
+
+Na página inicial da sua carteira, clique no seletor de rede na parte superior da tela e então em "Adicionar rede":
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={require("../../../../../../img/i18n/legacy/add_network.png").default}
+      alt="add_network.png"
+    />
+  </div>
+</div>
+
+A partir daqui, você verá uma lista de redes populares prontas para adicionar (a menos já tenha feito isso). Toque em "Adicionar" para iniciar o processo e siga as instruções.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/popular_networkis.png")
+          .default
+      }
+      alt="popular_networkis.png"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Aplicativo para dispositivos móveis" label="Aplicativo para dispositivos móveis">
+
+1. Toque no ícone de hambúrguer na parte superior esquerda da tela.
+
+2. Acesse "Configurações" e depois "Redes".
+
+3. Aqui você verá uma lista de redes já adicionadas. Toque no botão "Adicionar rede" na parte inferior da tela.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/settings___network.PNG.png")
+             .default
+         }
+         alt="settings___network.PNG"
+       />
+     </div>
+   </div>
+
+4. Você verá agora uma lista de redes que pode adicionar na guia "Popular", conforme mostrado abaixo.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/select_a_network.jpg.png")
+             .default
+         }
+         alt="select_a_network.jpg"
+       />
+     </div>
+   </div>
+
+5. Quando escolher uma delas, será necessário confirmar:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network_.PNG.png")
+             .default
+         }
+         alt="add_network_. PNG"
+       />
+     </div>
+   </div>
+
+   Então você terá a opção de mudar imediatamente para essa rede. Tudo pronto!
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/switch_to_network.jpg.png")
+             .default
+         }
+         alt="switch_to_network.jpg"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+## Adicionando uma rede manualmente
+
+Confira abaixo as instruções para estabelecer essas conexões manualmente:
+
+<Tabs>
+
+<TabItem value="Extensão" label="Extensão">
+
+1. Clique no **botão seletor de rede**. Isso exibirá uma lista de redes às quais você já está conectado**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/networks_button.png")
+             .default
+         }
+         alt="networks_button.png"
+       />
+     </div>
+   </div>
+
+2. Clique em “Add network” (Adicionar rede):
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network.png").default
+         }
+         alt="add_network.png"
+       />
+     </div>
+   </div>
+
+3. Uma nova guia do navegador será aberta, exibindo vários campos para preenchimento**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/Screenshot_2022-02-10_at_10.08.31.png")
+             .default
+         }
+         alt="Screenshot_2022-02-10_at_10.08.31.png"
+       />
+     </div>
+   </div>
+
+   Preencha os campos e clique em salvar para adicionar a rede.
+
+   Os detalhes dos campos acima podem ser encontrados em nossos [perfis de rede](/network-profiles/network-profiles-hub) ou, alternativamente, nos documentos (ou seja, documentação do desenvolvedor) ou guias de instruções para cada rede. Por exemplo:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Depois de realizar as etapas acima, a rede personalizada será exibida na próxima vez que acessar o seletor de rede.
+
+</TabItem>
+
+<TabItem value="Aplicativo para dispositivos móveis" label="Aplicativo para dispositivos móveis">
+
+1. Toque no ícone de hambúrguer, no canto superior esquerdo:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_C8C734D64DE3-1.jpeg.png")
+             .default
+         }
+         alt="IMG_C8C734D64DE3-1.jpeg"
+       />
+     </div>
+   </div>
+
+2. Selecione **Settings** (Configurações):
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_129413D61F95-1.jpeg.png")
+             .default
+         }
+         alt="IMG_129413D61F95-1.jpeg"
+       />
+     </div>
+   </div>
+
+3. Selecione **Networks** (Redes):
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_62D0A5FE63AE-1.jpeg.png")
+             .default
+         }
+         alt="IMG_62D0A5FE63AE-1.jpeg"
+       />
+     </div>
+   </div>
+
+4. Toque em “**Add Network**” (Adicionar rede):
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_65A194E3EC35-1.jpeg.png")
+             .default
+         }
+         alt="IMG_65A194E3EC35-1.jpeg"
+       />
+     </div>
+   </div>
+
+5. Preencha os detalhes da **Custom RPC Network** (Rede de RPC personalizada):
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_E8F132CD40A6-1.jpeg.png")
+             .default
+         }
+         alt="IMG_E8F132CD40A6-1.jpeg"
+       />
+     </div>
+   </div>
+
+   Os detalhes dos campos acima podem ser encontrados em nossos [perfis de rede](/network-profiles/network-profiles-hub) ou, alternativamente, nos documentos (ou seja, documentação do desenvolvedor) ou guias de instruções para cada rede. Por exemplo:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://docs.polygon.technology/docs/develop/network-details/network/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Depois de realizar as etapas acima, a rede personalizada será exibida no seletor de redes.
+
+</TabItem>
+
+</Tabs>

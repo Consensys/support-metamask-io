@@ -1,0 +1,66 @@
+---
+title: "Token'larımın bakiyesi hatalı ise ne yapmalıyım"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Tokenlar hiç görünmüyorsa ne yapacağım?
+
+Bu sorunu gidermek için [buradaki](/managing-my-tokens/custom-tokens/a-token-is-missing-from-my-wallet) kılavuzumuza bakın.
+
+:::
+
+Öncelikle, blok gezgininde gösterilen token bakiyelerini doğrulayın ve MetaMask ile karşılaştırın. Bunu yapmak için cüzdan adresinizi kopyalayıp bulunduğunuz ağa karşılık gelen blok gezginine (Ethereum mainnet için Etherscan, Arbitrum için Arbiscan vb) yapıştırmanız gerekecektir. Ayrıntılı talimatlar için [buraya](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer) bakın.
+
+<Tabs>
+
+<TabItem value="Uzantı" label="Uzantı">
+
+MetaMask Uzantınız, ETH veya diğer token'lar için hatalı veya eksik bakiye gösteriyorsa, bakiyenizi doğru görene kadar aşağıdaki adımları tek tek deneyin.
+
+**Devam etmeden önce, [Gizli Kurtarma Kodunuzu](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys) güvenli bir yere kaydettiğinizden emin olun.**
+
+1. İnternet bağlantınızın güçlü ve stabil olup olmadığını kontrol edin. Değilse, MetaMask doğru bakiyeleri yükleyemeyebilir.
+2. MetaMask uzantısının yüklü olduğu tarayıcınızı kapatın ve tekrar açın.
+3. Yüklediğiniz reklam engelleyicileri kapatmayı deneyin veya bir VPN kullanıyorsanız, VPN kapalıyken MetaMask'ı kullanmayı deneyin.
+4. Farklı bir ağa geçiş yapın ve tekrar geri dönün. Bunu yapmak için uygulamanın en üstündeki mevcut ağınıza tıklayın. Farklı bir ağ seçin ve ardından ilk ağınıza geri dönün.
+5. [Tarayıcı izinleri sorunu](/troubleshooting/metamask-states-balance-may-be-outdated-displays-in-orange-or-eth-not-added-to-balance) yaşamadığınızdan emin olun.
+6. Kullandığınız ağ için birden fazla kullanılabilir RPC URL'si varsa, farklı bir RPC URL'si deneyin. RPC URL'sini düzenlemek için Ayarlar > Ağ'a gidin ve ardından söz konusu ağa tıklayın. Daha fazla bilgi için [ağ ekleme hakkındaki makalemize](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc) bakın.
+7. Yaşadığınız sorunun sadece şu anda kullandığınız tarayıcı kaynaklı olması ihtimaline karşı, resmi web sitemizden ([https://metamask.io](https://metamask.io/)) başka bir desteklenen tarayıcı (Firefox, Chrome, Brave, Edge) kullanarak MetaMask'i kurun ve ardından 12 kelimelik Gizli Kurtarma Kodunu kullanarak cüzdanı geri yüklemeyi deneyin.
+
+</TabItem>
+
+<TabItem value="Mobil" label="Mobil">
+
+MetaMask Mobile'da görüntülenen token'ların sayısının hatalı olduğunu Etherscan üzerinde doğruladıktan sonra, şu adımları izleyin:
+
+1. İnternet bağlantınızın güçlü ve stabil olduğundan emin olun. Değilse, token değerleri güncel olmayabilir.
+2. Farklı bir ağa geçiş yapın ve ardından tekrar geri dönün.
+3. Mümkünse bağlı olduğunuz ağın RPC URL'sini bir alternatifiyle değiştirin. Daha fazla bilgi için [ağ ekleme hakkındaki makalemize](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc) bakın.
+4. [Buradaki](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask) talimatları izleyerek token'ı gizleyin ve ardından [buradaki](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask) talimatları izleyerek token'ı tekrar ekleyin.
+
+**Söz konusu token, Ethereum dışındaki bir ağ için ağ yerel token'ı ise** (BNB, AVAX, MATIC vb) [ağı silip](/networks-and-sidechains/managing-networks/how-to-remove-networks) [tekrar eklemeyi](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc) deneyin.
+
+**Söz konusu token ETH ise, [Gizli Kurtarma Kodunuzu](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys) güvenli bir yere kaydettiğinizden (yedeklediğinizden) emin olun** ve uygulamayı yeniden kurun.
+
+</TabItem>
+
+</Tabs>
+
+Bu adımları denedikten sonra hala sorun yaşıyorsanız, lütfen [destek sayfamızdaki](https://support.metamask.io/hc/en-us) "Bir Konuşma Başlat" düğmesi aracılığıyla bizimle iletişime geçin.
+
+:::warning
+
+#### Bu token, arzı veya değeri etkileyen yerleşik mekanizmalara sahip mi?
+
+Ethereum ve EVM uyumlu zincirlerde, farklı faydalara (utility) sahip çok çeşitli token'lar bulunur. Bazı token'lar, çeşitli koşullara göre arz veya değeri dinamik olarak değiştirmek için tasarlanmıştır:
+
+- Token arzının ayarlandığı [elastik arz (rebase) token](/managing-my-tokens/user-guide-tokens)'ları
+- Farklı türde işlemlere (ör. basit transfer, takas, satma vb) uygulanan "vergili" tokenlar. Bunlara "transferi ücretli" token'lar da denir.
+
+Bakiyenizin hatalı olduğu sonucuna varmadan önce, token'larınız için buna benzer durumların geçerli olup olmadığını kontrol edin. Bu bilgileri genellikle projenin teknik dokümanında (white paper) veya dokümantasyonda bulabilirsiniz.
+
+:::

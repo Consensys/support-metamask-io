@@ -1,0 +1,335 @@
+---
+title: "Cum să afișezi tokeni în MetaMask"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+**Linkuri rapide:**
+
+- [Detectare automată a tokenilor](#detectare-îmbunătățită-a-tokenilor)
+- [Adăugarea unui token utilizând bara de căutare](#adăugarea-manuală-a-unui-token-prin-funcția-de-căutare)
+- [Adăugarea unui token personalizat](#cum-să-adaugi-un-token-personalizat)
+- [Eliminarea/ascunderea tokenilor](#cum-să-ascunzi-tokeni)
+- [Găsirea adresei de contract a tokenului](#ce-se-întâmplă-dacă-nu-știu-adresa-tokenului)
+- [Adăugarea unui token utilizând exploratorul blockchain](#cum-să-adaugi-un-token-folosind-un-explorator-blockchain)
+- [Adăugarea unui token folosind un site de listare a monedelor](#cum-să-adaugi-un-token-folosind-un-site-de-listare-a-monedelor)
+- [Utilizarea Portfolio Dapp](#utilizarea-portfolio-dapp)
+
+În mod normal, MetaMask afișează tokenii standard ERC-20 (sau [tokenii standard](https://ethereum.org/ro/developers/docs/standards/tokens/erc-20/)) pe care îi deții pe pagina contului tău. Cu toate acestea, odată cu proliferarea tokenilor pe Ethereum și alte rețele, MetaMask nu deține o listă oficială a acestora, dar îți permite să adaugi orice token compatibil ERC-20 pe care îl deții.
+
+Există două moduri diferite de a adăuga tokeni nelistați în portofelul MetaMask:
+
+În primul rând, poți activa o funcție avansată care detectează automat tokenii aflați în contul tău și îi adaugă în portofel. Aceasta va folosi liste de tokeni agregați din diverse liste ale comunităților; **MetaMask nu deține o listă proprie de tokeni „acceptați” sau „valizi”**. Dacă alegi această opțiune, reține că ar trebui să fii întotdeauna precaut în ceea ce privește tokenii necunoscuți.
+
+1. Nu interacționa și nu îți conecta portofelul la niciun site web cu care nu ești familiarizat, pe care nu l-ai verificat și care nu îți dă motive să crezi că ar fi de încredere.
+2. Întotdeauna verifică de două ori un token primit prin airdrop sau orice token necunoscut și asigură-te că este legitim înainte de a interacționa cu el. Vezi mai multe despre cele mai bune practici pentru siguranța tokenilor, [aici.](/managing-my-tokens/token-safety-practices)
+3. Dacă încerci să faci o tranzacție folosind un token și tranzacția eșuează, iar exploratorul blockchain afișează o eroare scrisă de hacker care te direcționează către un site web, acesta este probabil un site de phishing, așa că NU apăsa pe acest link.
+4. Fii informat despre modalitățile prin care hackerii încearcă să-ți fure fondurile. Fii conștient că nu există întotdeauna măsuri de protecție adecvate pentru ca informațiile pe care le vezi pe web să merite încredere.
+
+#### Detectare îmbunătățită a tokenilor
+
+:::info
+
+#### Este disponibilă doar pe anumite rețele!
+
+Detectarea îmbunătățită a tokenilor este disponibilă numai pe:
+
+- Rețeaua principală Ethereum
+
+- Avalanche
+
+- BNB Smart Chain
+
+- Polygon
+
+:::
+
+<Tabs>
+<TabItem value="Extensie" label="Extensie">
+
+Apasă pe simbolul din colțul din dreapta sus, navighează la „Setări”, apoi „Securitate și confidențialitate” și asigură-te că e activat comutatorul.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Enhanced_automatic_token_detection_MetaMask2.png")
+          .default
+      }
+      alt="Enhanced automatic token detection MetaMask"
+    />
+  </div>
+</div>
+
+Poți activa opțiunea și mai târziu dacă ai nevoie. /"TabItem" "TabItem" value="Mobil" label="Mobil"
+
+Apasă pe cele trei dungi orizontale din stânga sus a paginii de pornire, apoi du-te la „Setări”. De aici, accesează „Avansate” și derulează până găsești comutatorul de detectare a tokenului.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Enhanced_automatic_token_detection_MetaMask_Mobile.png")
+          .default
+      }
+      alt="Enhanced automatic token detection MetaMask Mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**După ce ai activat detectarea tokenilor, revino la lista de fonduri și reîncarcă pagina dacă este necesar - să sperăm că toți tokenii pe care nu îi vedeai înainte sunt acum acolo.**
+
+_Reține că detectarea tokenilor are loc pe rețeaua principală Ethereum indiferent dacă această setare este activată sau dezactivată; detectarea îmbunătățită a tokenilor doar extinde această funcție pentru a acoperi rețelele suplimentare enumerate mai sus._
+
+## Adăugarea manuală a unui token prin funcția de căutare
+
+<Tabs>
+<TabItem value="Extensie" label="Extensie">
+
+Pentru a-ți vedea tokenii, apasă pe secțiunea **Fonduri**. Tokenii tăi ar trebui să fie vizibili în această secțiune. Dacă nu sunt, iar detectarea automată a tokenului nu îi preia, atunci apasă pe „Importă token” în partea de jos.
+
+Apăsând aici, vei ajunge la o bară de căutare:
+
+1. Introdu litere conținute în tokenul pe care dorești să-l cauți. De exemplu, dacă aș dori să caut Chainlink (Simbol: LINK), scriu doar „LI” în bară, iar bara de căutare va returna toate sugestiile.
+2. Selectează tokenul de care ești interesat și apasă **Next** pentru a continua. (De îndată ce selectezi un token, chenarul butonului va fi evidențiat în albastru)
+3. Apasă pe **Adaugă token** pentru a continua. Apoi vei fi redirecționat către pagina contului tău. Tokenul pe care tocmai l-ai adăugat va fi afișat.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_token_MetaMask_Extension.gif")
+          .default
+      }
+      alt="Import token MetaMask Extension"
+    />
+  </div>
+</div>
+
+</TabItem> 
+<TabItem value="Mobil" label="Mobil">
+
+1. Pe pagina portofelului tău, apasă pe „Importă tokeni” în partea de jos a ecranului.
+
+2\. Aceasta va afișa bara de căutare. Introdu numele tokenului pe care dorești să-l adaugi.
+
+3\. Când găsești tokenul, apasă pe el pentru a-l selecta și apoi derulează în jos, astfel încât să vezi butonul „Importă”.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_token_MetaMask_Mobile.gif")
+          .default
+      }
+      alt="Import token MetaMask Mobile"
+    />
+  </div>
+</div>
+
+Tokenul va fi afișat acum în fondurile tale.
+
+</TabItem>
+
+</Tabs>
+
+## Cum să ascunzi tokeni
+
+Odată adăugat, poți elimina tokenul din lista ta de fonduri.
+
+<Tabs>
+<TabItem value="Extensie" label="Extensie">
+
+Pe pagina portofelului tău, găsește secțiunea „Fonduri” și apasă pe tokenul pe care dorești să-l elimini.
+
+De aici, apasă pe cele trei puncte din colțul din dreapta sus, apoi pe „Ascunde”.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Hide_token_extension.gif")
+          .default
+      }
+      alt="Hide token extension"
+    />
+  </div>
+</div>
+
+</TabItem> 
+<TabItem value="Mobil" label="Mobil">
+
+Atât pentru iOS, cât și pentru Android, apasă lung pe token. Aceasta va afișa opțiunea de eliminare:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Hide_token_mobile.png")
+          .default
+      }
+      alt="Hide token mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+Dacă tokenul pe care îl cauți nu se numără printre tokenii cei mai populari, bara de căutare poate să nu returneze tokenul dorit. În acest caz, poți să-l adaugi ca token personalizat (manual).
+
+## Cum să adaugi un token personalizat
+
+<Tabs>
+<TabItem value="Extensie" label="Extensie">
+
+1. Apasă pe „Importă tokeni”, aflat în partea de jos a secțiunii „Fonduri” de pe pagina de pornire a portofelului.
+2. Apasă pe „Token personalizat”, în partea de sus, apoi introdu adresa tokenului în primul câmp. Vezi [mai jos](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask) dacă nu știi unde să găsești asta.
+3. În cele mai multe cazuri, simbolul tokenului și zecimala se vor completa automat. Dacă nu, du-te la exploratorul blockchain al rețelei și găsește tokenul. Cel mai probabil, acolo vor fi afișate simbolul și zecimalele.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details.png")
+          .default
+      }
+      alt="Find custom token details"
+    />
+  </div>
+</div>
+
+Dacă tot nu poți găsi detaliile tokenului, încearcă să găsești documentația token-ului printr-o căutare pe web.
+
+4. Apasă pe „Adaugă token personalizat” pentru a continua.
+
+5. Acum vei vedea o pagină care îți cere să confirmi că dorești să adăugi tokenul. Când apeși pe „Importă tokeni”, token-ul va fi adăugat în portofel.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_custom_token_MetaMask_Extension.gif")
+          .default
+      }
+      alt="Import custom token MetaMask Extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+<TabItem value="Mobil" label="Mobil">
+
+1. Găsește secțiunea „Importă tokeni” de pe pagina de pornire a portofelului. Apasă pentru a afișa meniul pentru adăugarea de tokeni.
+2. Treceți la secțiunea „Token personalizat”. Acum vei vedea trei câmpuri care solicită adresa contractului, simbolul acestuia și „Token of Precision” (adică la câte zecimale poate ajunge).
+3. Găsește adresa tokenului și insereaz-o în primul câmp. Simbolul și zecimalele ar trebui să se completeze automat. Dacă nu, du-te la exploratorul blockchain al rețelei și caută tokenul. Pe pagina sa, poți găsi cu ușurință simbolul și zecimalele.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details_mobile.png")
+          .default
+      }
+      alt="Find custom token details mobile"
+    />
+  </div>
+</div>
+
+4\. Apasă „Importă” pentru a-l adăuga în portofel. Vei fi redirecționat înapoi la pagina de pornire a portofelului și îl vei putea vedea în secțiunea „tokeni”.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_custom_token_MetaMask_mobile.gif")
+          .default
+      }
+      alt="Import_custom_token_MetaMask_mobile.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+## Ce se întâmplă dacă nu știu adresa tokenului?
+
+Aruncă o privire la [acest articol](/managing-my-tokens/custom-tokens/how-to-find-a-token-contract-address) pentru a vedea câteva modalități de a-l găsi.
+
+De asemenea, poți cere adresa de contract a tokenului persoanei care îți trimite fonduri.
+
+**Te rog reține: dacă cineva susține că ți-a trimis tokeni, dar nu îți poate furniza adresa tokenului sau ID-ul tranzacției (Hash), este posibil să nu fi făcut acest lucru.**
+
+## Cum să adaugi un token folosind un explorator blockchain
+
+> _Notă: Pe lângă Etherscan, acest lucru va funcționa cu majoritatea exploratorilor blockchain, inclusiv _[BscScan](https://bscscan.com/)_, _[Polygonscan](https://polygonscan.com/)_, _[Snowtrace](https://snowtrace.io/)_ etc., deoarece au, în general, un design similar._
+
+1. Accesează exploratorul blockchain.
+2. Caută tokenul dorit. De asemenea, poți accesa linkul „Tokens” din bara de meniu.
+3. Apasă pe butonul „More” din partea dreaptă sus a sumarului profilului de token.
+4. Apasă pe „Add token to MetaMask (Web3)”
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={require("../../../../../../img/i18n/legacy/blobid0.png").default}
+      alt=""
+    />
+  </div>
+</div>
+
+5. MetaMask va apărea pentru a confirma că dorești să adaugi tokenul.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_MetaMask_notification.png")
+          .default
+      }
+      alt="add token MetaMask notification"
+    />
+  </div>
+</div>
+
+## Cum să adaugi un token folosind un site de listare a monedelor
+
+Site-uri precum Coingecko sau CoinMarketCap oferă integrare MetaMask ce îți permite să adaugi un token în MetaMask direct de pe pagina lor.
+
+Pentru a folosi această metodă, pur și simplu navighează către unul dintre aceste site-uri și găsește tokenul pe care dorești să-l adaugi, utilizând bara de căutare. Apoi, găsește adresa contractului și apasă pe vulpea MetaMask. Va apărea o solicitare pentru a confirma că dorești să adaugi tokenul în portofel.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Add_token_to_MetaMask_from_coin_listing_site2.gif")
+          .default
+      }
+      alt="Add_token_to_MetaMask_from_coin_listing_site2.gif"
+    />
+  </div>
+</div>
+
+:::info
+
+#### Notă
+
+Pe aplicația MetaMask pentru mobil asigură-te că accesezi site-ul utilizând **browserul din aplicație**, și nu browserul standard al dispozitivului tău mobil. Acesta este singurul mod de a accesa linkurile web care se integrează cu MetaMask, așa cum poți face în browserul desktop folosind extensia.
+
+:::
+
+De asemenea, această metodă îți permite să adaugi tokenul pe diferite rețele, dacă un contract smart aferent a fost implementat pe acea rețea de către proprietarii tokenului. Apasă pe cele trei puncte de lângă adresa contractului pentru a selecta o altă rețea, apoi apasă pe vulpe pentru a adăuga tokenul pe rețeaua respectivă.
+
+## Utilizarea Portfolio Dapp
+
+[MetaMask Portfolio Dapp](https://portfolio.metamask.io/) este o platformă nouă asociată cu MetaMask, care adună și afișează soldurile tale de tokeni. Este foarte util în contextul nostru, căci, odată ce ți-ai conectat portofelul, Portfolio Dapp detectează și afișează automat majoritatea tokenilor.
+
+Tot ce trebuie să faci este să urmezi linkul și să îți conectezi portofelul. Dacă ai nevoie de îndrumare suplimentară, parcurge [articolele noastre](/metamask-portfolio/) despre cum să utilizezi Portfolio Dapp.

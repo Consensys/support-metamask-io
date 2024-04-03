@@ -1,0 +1,132 @@
+---
+title: 'User Guide: Tokens'
+image: /img/socialCards/user-guide-tokens.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+### If you're new to blockchains and the decentralized web, take a read through our [primer](/getting-started/learn-the-basics-of-blockchains-and-ethereum-miners-and-validators-gas-cryptocurrencies-and-nfts-block-explorer-networks-etc); the concepts outlined there will form the basis for the following discussion.
+
+It is important to remember that **MetaMask isn't just used on the Ethereum mainnet**. It's true, that's where a lot of the most popular applications are, and as the network scales, that should continue to be the case, but from the beginning, MetaMask has been designed to be open and modifiable to the world. This means it can be used on **any Ethereum-compatible blockchain network **— and there are a **lot** of those.
+
+With that in mind, this article will seek to give an explanation regarding tokens that acknowledges this multi-chain reality, especially given how much activity happens on non-mainnet chains through MetaMask.
+
+One of the most basic features of blockchain technology is the ability to track assets moving between parties. For this reason it's also called _distributed ledger technology_: in the end, it's all a series of ledgers being synced across the network. How do we track those assets? Well, they need to be quantified in some way: enter **tokens.**
+
+## **Network-Native Tokens**
+
+Most blockchain networks, be they fully public or otherwise, utilize some sort of incentivized consensus mechanism to pay for the computing power of the network, and generally there is a default token, or "native currency", that the network uses for those payments. Ethereum mainnet uses ETH for this purpose, but each network will have its own standard. This is important for the user because **unless they hold some amount of the network's native currency, they may not be able to pay for transactions, gas fees, etc.** Sometimes network-native tokens have significant differences from other tokens on the network (more on the quirks of ETH below), but in general, they're what we call **fungible tokens:**
+
+##
+
+## **Fungible tokens**
+
+Fungible tokens are those which are not unique. They are interchangeable, just like a metallic coin or a paper bill of currency. True, on most networks they're more traceable than a paper banknote — remember, there's a ledger of what tokens go where — but they're intended to be used as a medium of exchange for one purpose or another. The network currency tokens, described above, are an example of fungible tokens.
+
+###
+
+### **Fungible token standards**
+
+#### **ERC-20 Tokens**
+
+As blockchain networks have developed, standards have been put in place as to how tokens should be programmed; how they act, programmatically speaking. On the Ethereum network, many fungible tokens conform to a standard called ERC-20. So, your BNB, USDT, LINK, DAI tokens, to name a few, are ERC-20 tokens.
+
+Let's say you're on Ethereum mainnet, and you just bought yourself a few tokens of a widely-recognized and traded token. You wait for the swap to settle, and there in your MetaMask wallet, your tokens appear. Magic! ...Not quite.
+
+MetaMask doesn't automatically catalog and load every possible token into a list just in case you buy some of them — at time of writing, there are nearly 650,000 [different ERC-20 contracts out there](https://etherscan.io/tokens). It's impossible to keep up. Instead, MetaMask keeps a list of the most popular tokens, and automatically detects those; but no worries, if you get one that's less common, you can easily [add it manually](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask).
+
+### And here's the really incredible part — **you can use MetaMask on any Ethereum-compatible network, with any Ethereum-compatible token, following the same process.**
+
+Why? Simply put, because Ethereum has served as a roadmap and a standard-creating paradigm for blockchain networks. To put it another way, most people building networks want to make sure that their networks are compatible with Ethereum. So that ends up meaning that MetaMask will work just the same on a new network as it does on Ethereum mainnet.
+
+### MetaMask isn't just a wallet, and it isn't just your gateway to the Ethereum network; it's your passport to the decentralized multichain multiverse.
+
+That said, even when travelling through wormholes, you've got to do it right: [make sure you use the right bridges and portals](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains). **Just because you have tokens in your MetaMask wallet on a different blockchain doesn't mean you can just send them to your MetaMask wallet on the Ethereum blockchain**. If you do, **you can lose them forever. **We have a few helpful guides to bridging tokens between specific networks in our [Network Profiles section](/network-profiles/).
+
+#### **ERC-777 Tokens**
+
+This alternate standard was offered as an improvement over ERC-20 tokens, in that it has greater capabilities, particularly the ability to notify smart contracts or wallets when an ERC-777 token is transferred to such an entity. Of course, this means that the receiving entity has to be programmed to receive and work with that notification, which many are not. There are a number of ERC-777 tokens out there, but the ERC-20 standard by far holds predominance.
+
+#### **Wrapped Tokens**
+
+While these standards have existed for some time, they did not exist at the inception of Ethereum. As such, ETH itself, Ether, the native currency of the Ethereum mainnet, is not ERC-20 compliant. This oddity has led to the creation of Wrapped Ether, or WETH: an ERC-20 token that holds an equivalent value of the ETH for which it is swapped, but with ERC-20 functionality.
+
+The wrappers don't stop there, though: wrapping a token is a way of bringing a token from one network to another, like wrapped Bitcoin or MATIC tokens on Ethereum mainnet.
+
+#### **Stablecoins**
+
+One prominent class of ERC-20 tokens are so-called'stablecoins', that is, fungible tokens whose value per token is pegged to some external value. Many are pegged to fiat currencies, or commodity markets, or high-value items like gold.
+
+Stablecoins have some considerable nuances and complexities associated with them, due to the fact that in many jurisdictions, they are required to be collateralized; in other words, if you're issuing a coin that is pegged to the US Dollar, you may need to hold in reserve one US Dollar for every coin you issue. Due to these requirements, some stablecoins are controlled by more centralized entities.
+
+Another approach to collateralizing a stablecoins is through depositing value in other cryptocurrencies. This represent a more decentralized option, which some consider closer to the ethos of Web3. Due to the volatility of cryptocurrencies, a crypto-collateralized stablecoin may need to hold in deposit a higher amount of value as collateral than a fiat-backed stablecoin.
+
+#### **Reflection tokens**
+
+Most users get into DeFi to grow their bags — often through staking, yield farming, liquidity mining, and other complex mechanisms. Reflection tokens are set up to scratch this itch for passive income without the holder ever having to engage in any DeFi activities: you're simply awarded ever more tokens just for having them in your wallet.
+
+These payments — orchestrated by a smart contract — are proportional to the quantity of tokens the user holds, and are financed through what amounts to taxation on transactions. The advantages are obvious: as the incentive to hold is so strong, the token is protected from large-scale sell-offs. You're also free to use the token in DeFi if you want to, generating yields on top of the redistributive payments.
+
+Reflection tokens are a novel concept, with many current examples having been around for too short a time to derive any conclusions about their long-term sustainability or viability. As always with new crypto projects, DYOR and stay safe.
+
+####
+
+#### **Elastic supply / Rebase / Algorithmic tokens**
+
+A fascinating and emerging technology, elastic supply financial products seek to eliminate price volatility. Instead, these products experience supply volatility.
+
+Like a stablecoin, many (not all) elastic supply tokens have a 'target price' that references some external value, such as a fiat currency. But instead of being pegged 1:1 in _quantity_ with that external value point, the quantity of tokens expands and shrinks to maintain each holder's _value._ In theory, this fluctuation manages changes in demand, or changes to an external price (a fiat currency, for example) on which the value of the asset is based.
+
+More simply: **an elastic supply token will adjust, or rebase, the number of tokens allocated to each holder** depending on market demand for the token as well as the market value of the fixed external value, in theory, maintaining a steady value.
+
+**_If you hold rebase or elastic supply tokens, you may see the quantity of that token go up and down in your wallet._ **
+
+At least, that's the idea; it doesn't always work that way. Elastic supply products are complex financial instruments in which you should only invest if you truly understand how they might behave.
+
+Many elastic supply tokens are designed to be non-collateralized stablecoins, thus offering a more decentralized, yet stable, option. However, other elastic supply tokens are designed specifically to offer compounded gains on positive rebases, but the reverse will also be true: under a negative rebase, your losses would also be compounded.
+
+_To give you a made-up example: you buy 100 tokens, and demand grows; your 100 tokens are rebased to 120 tokens, and what's more, the value of them is greater because there's more demand; you've experienced a 30% return on your investment--at least, temporarily. Now the flip side: if lots of holders of your elastic token are selling, maybe your 100 tokens are rebased to 80, and the value has dropped; you've suffered a 30% loss._
+
+**This information is offered by way of example and education, and, as always with MetaMask resources, in no way constitutes investment advice. Do your own research and understand the projects in which you are participating.**
+
+## **Non-fungible tokens (NFTs)**
+
+What's an NFT, you ask? Well, it's there in the name. In contrast with ERC-20, network currency, or other fungible, currency-like tokens, non-fungible tokens are meant to be unique. There may be a series of them, but they are not interchangeable, one for another; each one is different. For this reason, they have been the subject of amazing innovation and creativity since the inception of Ethereum mainnet; one of the first big surges of usage and adoption of Ethereum was through [CryptoKitties](https://www.cryptokitties.co/), an NFT-based videogame in which players breed and collect unique cats, each one of them tokenized as an NFT.
+
+### **Non-fungible token standards**
+
+#### **ERC-721 Tokens**
+
+Similar to the dynamic between ERC-20 and ERC-721, there are two main NFT standards, and the first and older of the two is more dominant—although there are plenty of ERC-1155 tokens out there as well. This is the standard that's been used to create CryptoKitties, the Ethereum Name Service (ENS), CryptoPunks, Cool Cats (so many cats)—the list goes on.
+
+#### **ERC-1155 Tokens**
+
+Developed subsequently to the 721 standard, the ERC-1155 standard is incredibly powerful and while used in NFT collections, may come to be used in much more complex and nuanced ways. A smart contract that is coded according to ERC-1155 can issue a number of both fungible and non-fungible contracts. This could be particularly useful in developing a video game, for example: imagine a video game world where the users need life tokens, or currency tokens to spend in the game, which would be fungible; however, the characters themselves could be represented by non-fungible tokens, each one of them unique. With ERC-1155, all of this could be possible with a single smart contract.
+
+#### **Side note: POAPs**
+
+As you spend more time in Web3, you may hear about POAPs, especially if you attend events related to the ecosystem (in person or virtually). POAP is an acronym that stands for Proof Of Attendance Protocol; it's essentially an NFT that is deployed as a sort of badge, showing that you attended a given event. In other words, in addition to any value they may have in monetary terms, they carry bragging rights, too.
+
+If you're interested in using POAPs at your own event, ConsenSys' own Clemens Wan has written [an excellent walkthrough.](https://clemens-wan.medium.com/end-to-end-poap-guide-for-enterprises-e63ec22734fb)
+
+## **Summary**
+
+Remember, all the types outlined above are the Ethereum-native standards. Other networks, if they develop tokens that use Ethereum standards as a blueprint, may refer to them in similar, but different ways, for example keeping the numbers but changing the letters: XYZ-20 tokens, ABC-721 tokens.
+
+Tokens can store an incredible amount of real-world value. Read more about how to keep that value safe [here](/managing-my-tokens/token-safety-practices).
+
+# **FAQs:**
+
+[NFT tokens in your MetaMask wallet](/nfts/nft-tokens-in-your-metamask-wallet)
+
+[How to find a token contract address](/managing-my-tokens/custom-tokens/how-to-find-a-token-contract-address)
+
+[How to display tokens in MetaMask](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)
+
+[How to remove a token](/managing-my-tokens/custom-tokens/how-to-remove-a-token)
+
+[A token is missing from my wallet](/managing-my-tokens/custom-tokens/a-token-is-missing-from-my-wallet)
+
+[How to check my wallet activity on the blockchain explorer](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer)

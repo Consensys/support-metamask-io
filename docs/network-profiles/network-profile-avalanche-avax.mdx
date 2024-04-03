@@ -1,0 +1,266 @@
+---
+title: 'Network profile: Avalanche (AVAX)'
+image: /img/socialCards/network-profile-avalanche-avax.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+- Network name
+
+  Avalanche (C-Chain)
+
+- Token
+
+  AVAX
+
+- RPC
+
+  https://api.avax.network/ext/bc/C/rpc
+
+- Chain ID
+
+  43114
+
+- Block explorer
+
+  [Snowtrace](https://snowtrace.io/)
+
+- Website
+
+  avax.network
+
+Avalanche is an ecosystem of multiple networks, designed to run smart contracts (similarly to Ethereum). The three networks include:
+
+- The Exchange Chain (X-Chain), which is used for simple transactions
+- The Platform Chain (P-Chain), for staking and validator responsibilities
+- The Contract Chain (C-Chain), which you'll need to use to interact with dapps.
+
+Additionally, there is also a Primary Network, which validates each of these blockchains. **It is the last of this trio, the C-Chain, which is EVM-compatible, and the network you'll connect to using MetaMask**.
+
+The key distinguishing feature of Avalanche is its [consensus protocol](https://docs.avax.network), which works through validators querying groups of *other *validators whether a transaction should be accepted as valid until consensus is reached. This system is implemented on Avalanche's three networks in the form of the 'Snowman' consensus protocol and expedites block validation.
+
+Supported by these mechanisms, Avalanche's headline features include:
+
+- \>4,500tps (transactions per second) throughput capacity
+- \<2s transaction finality
+- Proof-of-stake consensus mechanism
+- Thousands of nodes, meaning the network is well decentralized.
+
+The Avalanche team also prioritise interoperability, making the network easier for developers to build on and for users to access. For example, it shares its smart contract programming language, Solidity, with Ethereum.
+
+Its [ecosystem](https://ecosystem.avax.network/marketplace) also includes a range of dapps, including decentralized and centralized exchanges, DeFi platforms and NFTs.
+
+To perform any kind of transaction on Avalanche, you will need sufficient quantities of its native token, AVAX, in your wallet.
+
+## **Using Avalanche **
+
+<details>
+<summary>Adding Avalanche to MetaMask</summary>
+<div>
+
+Adding the network is an essential first step to interacting with Avalanche. There are two ways to do this:
+
+1. [Add it using Chainlist](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist).
+2. [Add it manually](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc). The network details are at the top of this article and available via various Avalanche sources (such as [this one](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche)).
+
+Avalanche have also produced a video tutorial on adding the network that you can find [here](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+</div>
+</details>
+
+<details>
+<summary>How do I switch to Avalanche in MetaMask?</summary>
+<div>
+
+Please note the below instructions assume you have already added Avalanche network to your MetaMask (see above).
+
+<Tabs>
+
+<TabItem value="Mobile" label="Mobile">
+ On your wallet page, find where it says the current network you're connected to at the top of the screen. Tap here to select Avalanche from the networks you've already added.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/network-profiles/network-profile-avalanche-avax/metamask_avalanche_network_mobile.png")
+          .default
+      }
+      alt="MetaMask Avalanche network mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Extension" label="Extension">
+
+Select the drop-down arrow in the top left corner of the app -- it will currently display the network you're connected to, such as 'Ethereum Mainnet', or any other you used last. Scroll through the menu until you find the Avalanche network, then click on it to switch.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/network-profiles/network-profile-avalanche-avax/MetaMask_Avalanche_network_extension.png")
+          .default
+      }
+      alt="MetaMask Avalanche network extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+</div>
+</details>
+
+<details>
+<summary>Is my Avalanche address different from my MetaMask address?</summary>
+<div>
+
+Firstly, and for clarity: **you can interact with the majority of dapps on Avalanche C-Chain using MetaMask**. In a lot of cases, you don't need the Avalanche Wallet.
+
+However, if you want to access the X-Chain or P-Chain, you will need the [Avalanche Wallet](https://wallet.avax.network/). Due to the triplicate structure of Avalanche, this single wallet has three addresses -- one for each of the chains.
+
+The C-Chain address will look like an Ethereum address, beginning with 0x. This is because the C-Chain is an instance (separate occurrence, or version of) the Ethereum Virtual Machine, which is what we mean we say it's EVM-compatible. It essentially functions the same.
+
+However, and despite both being compatible, the **C-Chain address of your Avalanche wallet will be different to your MetaMask address**.
+
+:::warning
+
+#### Setting up Avalanche and MetaMask to use the same address: only for the adventurous
+
+It is possible to have MetaMask and the Avalanche Wallet use the same address by exporting your private key from MetaMask and using it to sign into the Avalanche Wallet. We do not recommend this process unless you are aware of the risk involved and know what you're doing. See [here](https://support.avax.network/en/articles/5307228-how-to-send-avax-from-metamask-to-an-exchange) for a how-to from Avalanche, and our [guide](/managing-my-wallet/secret-recovery-phrase-and-private-keys/how-to-export-an-accounts-private-key) to the process for further information. Anyone can access your account if they have your private key, so if you do export it -- be careful. Also, be **extremely **wary of anyone asking you to export your private key and give it to them. Our official support channels will never ask your for your private key/Secret Recovery Phrase.
+
+:::
+
+**Never try and send transactions from any other Avalanche chains (X-Chain or P-Chain) to your MetaMask.** You will lose the tokens and not be able to get them back, as these are incompatible blockchains. Always get these assets onto the C-Chain and then bridge them over.
+
+</div>
+</details>
+
+<details>
+<summary>Using the Avalanche bridge</summary>
+<div>
+
+Avalanche's [official bridge](https://bridge.avax.network/) can be used to move ERC-20 tokens to and from the Avalanche C-Chain. It is **only compatible with Ethereum mainnet**.
+
+You can also use the bridging options at the [MetaMask Portfolio Dapp](https://portfolio.metamask.io/bridge).
+
+This [video tutorial](https://www.youtube.com/watch?v=RLnNMfINwS0) by Avalanche for using the official bridge is very useful. In short:
+
+1. Access the [bridge](https://bridge.avax.network/).
+2. Connect your MetaMask. Make sure you select the account you want to use.
+3. Select which ERC-20 token you'd like bridge across, and input the amount. Make sure you have sufficient ETH in your wallet to pay for the transaction (the cost is displayed in the interface).
+4. The MetaMask transaction approval window will appear. Make sure you're happy with the details, and click confirm.
+5. You'll be taken to a confirmations page that displays the status of your transaction in real time. As the video tutorial explains, there is also a link here to MetaMask which streamlines adding the bridged token to your MetaMask on the Avalanche network.
+6. Once the tokens are bridged, they will appear in your MetaMask wallet, provided you have selected the Avalanche Network and added the token (see step 5).
+
+All bridged ERC-20 tokens gain the suffix **.e** on Avalanche, indicating that they have come from Ethereum -- USDT would become USDT.e, for example. These are known as 'AB' (Avalanche Bridge) tokens.
+
+**If you have AVAX on Avalanche that you want to move to MetaMask, you'll need to**:
+
+1. Make sure the AVAX is on the C-Chain. If it isn't, perform a cross-chain transfer in your Avalanche Wallet to get it there.
+2. Transfer the tokens to your MetaMask address.
+3. Use the bridge, following the process above.
+4. If completed successfully, the bridged tokens will appear in your MetaMask, back on Ethereum.
+
+</div>
+</details>
+
+<details>
+<summary>Can I bridge tokens from other networks (e.g. BSC, Polygon) to Avalanche?</summary>
+<div>
+
+Yes. However, you will have to use an unofficial bridge; a few multi-chain bridge options are listed below.
+
+**Avalanche's official bridge only supports Ethereum \<-> Avalanche C-Chain**. Please note this list does not constitute an endorsement of or affiliation with any of these platforms.
+
+- [Multichain](https://app.multichain.org/#/router) (formerly AnySwap)
+- [xPollinate](https://xpollinate.io/)
+- [Rubic](https://app.rubic.exchange/).
+
+Always make sure you know what you are doing before you sign any transactions on these platforms. Check their FAQs and support pages if unsure, and consider sending trial transactions to start with.
+
+</div>
+</details>
+
+<details>
+<summary>How do I move AVAX I bought on an exchange to MetaMask?</summary>
+<div>
+
+Generally, when you buy AVAX on an exchange, your AVAX will be on one of two networks: the X-Chain or the C-Chain.
+
+:::warning
+
+#### Do not send tokens straight from an exchange to MetaMask using the X-Chain
+
+You will lose your tokens.
+
+:::
+
+**MetaMask only works with the Avalanche C-Chain**, which is EVM-compatible. Some exchanges, such as Binance, [only support withdrawals to the C-Chain](https://academy.binance.com/en/articles/how-to-use-the-avalanche-wallet). Always check these details before making any transactions. Consider sending test transactions of small quantities if you're unsure.
+
+If your exchange does not support C-Chain, and instead uses the X-Chain, to get your AVAX on MetaMask you have to move tokens from one Avalanche network to another using the [Avalanche Wallet](https://wallet.avax.network/).
+
+Within the Avalanche wallet, find the 'Cross Chain' tab to move AVAX between the three Avalanche networks.
+
+</div>
+</details>
+
+<details>
+<summary>How do I send AVAX from one of the other Avalanche chains (i.e. not C-Chain) to MetaMask?</summary>
+<div>
+
+You'll need to do a cross-chain transaction from your Avalanche Wallet.
+
+See this [Avalanche guide](https://support.avax.network/en/articles/6169872-how-to-make-a-cross-chain-transfer-in-the-avalanche-wallet) to the process for more information.
+
+</div>
+</details>
+
+<details>
+<summary>I transferred AVAX to my MetaMask from my Avalanche Wallet using the bridge. Why don't I see the tokens?</summary>
+<div>
+
+Follow the troubleshooting checklist [here](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains):
+
+1. Have you selected the Avalanche network in MetaMask?
+2. Did you transfer the tokens correctly, i.e. use the correct bridge and input the right addresses?
+3. Have you added AVAX as a token in MetaMask?
+
+If you're still having problems after checking through this list, contact support through the link on our [support landing page](https://support.metamask.io/hc/en-us/).
+
+</div>
+</details>
+
+##
+
+## **Relevant support articles**
+
+[User Guide: Custom networks and sidechains](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains)
+
+[How to export an account private key](/managing-my-wallet/secret-recovery-phrase-and-private-keys/how-to-export-an-accounts-private-key)
+
+[ERC-20 tokens explainer](/managing-my-tokens/user-guide-tokens)
+
+[How to add unlisted tokens (custom tokens) in MetaMask](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)
+
+## **Useful resources **
+
+[Avalanche help center](https://support.avax.network/en/) (user-focused)
+
+[Avalanche docs](https://docs.avax.network/) (developer-focused)
+
+[Avalanche Bridge official tutorial videos](https://www.youtube.com/playlist?list=PLRHl-ulWK4-FPRA7SS1OrCOC8cOc2K8sP)
+
+[Avalanche Bridge FAQ](https://docs.avax.network/learn/avalanche-bridge-faq/)
+
+[Pangolin Getting Started guide](https://pangolin.exchange/tutorials/getting-started#set-up-metamask) (Pangolin is a decentralized exchange on Avalanche)

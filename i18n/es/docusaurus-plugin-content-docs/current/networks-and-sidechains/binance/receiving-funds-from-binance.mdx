@@ -1,0 +1,77 @@
+---
+title: "Recibir fondos desde Binance"
+---
+
+Si ha transferido fondos desde su cuenta de intercambio Binance a MetaMask y no puede verlos en su billetera, le recomendamos que siga estos pasos:
+
+## **Paso 1: Compruebe la transacción en un explorador de cadena de bloques**
+
+En primer lugar, deberá comprobar qué red utilizó Binance para completar la transacción. Puede hacerlo comprobando los detalles de retiro en Binance:\
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Binance_network.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Luego, tendrá que ir al explorador de la red. A continuación hay algunos ejemplos:
+
+- [Etherscan](https://etherscan.io/) para la red principal de Ethereum
+- [Bscscan](https://bscscan.com/) para BSC (Binance Smart Chain)
+- [Polygonscan](https://polygonscan.com/) para Polygon
+- [Snowtrace](https://snowtrace.io/) para Avalanche
+
+Una vez en el explorador de la cadena de bloques, busque su dirección de MetaMask o el [identificador de la transacción](/transactions-and-gas/transactions/how-to-find-a-transaction-id) para revisar los detalles de la transacción y confirmar que se ha completado.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Bscscan_address_overview.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+En la sección de resumen de la página de su cuenta en la cadena de bloques, podrá ver los saldos de sus tokens. Si el token es el token nativo (por ejemplo, BNB, ETH, MATIC o AVAX), se mostrará en la sección de saldo (como se muestra en la captura de pantalla anterior).
+
+Si no es el token nativo, se mostrará en el menú desplegable de la sección "Token".
+
+## **Paso 2: Añadir la red a MetaMask y mostrar el token si es necesario**
+
+Para agregar una red, consulte nuestra guía para agregar a través de [Chainlist](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist), o nuestro artículo sobre cómo agregar [una red personalizada](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+
+Después de agregar la red, si el token no es el token nativo de esa red, tendrá que [mostrarlo como un token personalizado](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask).
+
+En la cadena de bloques, ve a la sección de tokens y haz clic en el token que has recibido:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Etherscan_BNB_contract_address.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Para agregar el token personalizado a MetaMask tendrá que:
+
+1. Copiar la dirección del contrato del token. Consulte [aquí](/managing-my-tokens/custom-tokens/what-is-a-token-contract-address) para más orientación; esencialmente, hay que encontrar el token en el explorador de bloques y de ahí obtener su dirección.
+2. Vaya a MetaMask y busque "importar tokens" en la pestaña "Activos". Según la cantidad de tokens que hayas añadido, es posible que deba desplazarse hacia abajo para encontrar esta opción. Haga clic en esto para agregar el token, ingresando su dirección.
+
+Si ha enviado los tokens en la red incorrecta, siempre se podrá usar un puente para obtener ese token en la red deseada.
+
+Podrá usar [Multichain](https://multichain.org/) (antiguamente AnySwap) para pasar tokens por puente entre las redes más comunes.
+
+**Tenga en cuenta que para pasarlos por puente, tendrá que tener fondos en el token nativo de la red para pagar las tarifas de gas.** Estos son necesarios para toda transacción. Por ejemplo, en BSC tendrá que tener BNB, en Polygon tendrá que tener MATIC, y para Avalanche necesita AVAX.

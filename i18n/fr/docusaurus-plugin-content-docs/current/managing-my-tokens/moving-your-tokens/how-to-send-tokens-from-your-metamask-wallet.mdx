@@ -1,0 +1,142 @@
+---
+title: "Comment envoyer des jetons de votre portefeuille MetaMask ?"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Remarque :
+
+Cet article se concentre sur l'envoi d'ETH et d'autres jetons qui se conforment à la norme ERC-20. Cependant, le **processus est essentiellement le même, quel que soit le réseau** que vous utilisez, assurez-vous d'avoir assez de jetons natifs du réseau pour payer la transaction.
+
+Pour plus d'informations sur les jetons en général, [rendez-vous ici](/managing-my-tokens/user-guide-tokens). Pour plus d'informations sur les transactions sur Ethereum, [rendez-vous ici](/transactions-and-gas/transactions/user-guide-transactions-and-failed-transactions).
+
+:::
+
+## Ce dont vous aurez besoin :
+
+- L'adresse du portefeuille Ethereum du destinataire
+- Un solde suffisant des jetons _natifs de réseau _(sur Ethereum, ETH ; sur Binance Smart Chain, BNB, etc.) dans votre compte pour [couvrir les frais de gaz](/transactions-and-gas/gas-fees/user-guide-gas).
+
+**Note** : si vous utilisez un réseau autre que l'Ethereum Mainnet, veuillez vous assurer que vous avez le jeton correspondant nécessaire pour les taxes de gaz. Par exemple, le jeton BNB est utilisé comme gaz pour le réseau Binance Smart Chain (BSC) et MATIC est nécessaire pour Polygon. **Pour plus d'informations sur les réseaux autres que le réseau Ethereum, rendez-vous [ici](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains). **Vous essayez d'envoyer un NFT (un jeton ERC-721 ?) Si oui, veuillez suivre [ce](/nfts/how-do-i-send-receive-or-cash-out-an-nft) guide.
+
+## Étapes :
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. Sur la page d'accueil de votre portefeuille, assurez-vous d'être sur le compte à partir duquel vous souhaitez effectuer la transaction et cliquez sur le bouton « Envoyer » au milieu de l'écran.
+
+2. Vous devez maintenant saisir l'adresse publique du destinataire. Si vous avez déjà des adresses enregistrées dans votre carnet d'adresses, elles apparaîtront à ce stade.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_1.gif")
+          .default
+      }
+      alt="Envoyez des jetons à partir de votre extension de portefeuille MetaMask"
+    />
+  </div>
+</div>
+
+3. Saisissez le montant des jetons que vous souhaitez envoyer et cliquez sur suivant.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_2.gif")
+          .default
+      }
+      alt="Envoyez des jetons à partir de votre extension de portefeuille MetaMask"
+    />
+  </div>
+</div>
+
+4. Vous obtenez maintenant une estimation des frais d'essence de votre transaction, que vous pouvez également ajuster. Avant de cliquer sur « Confirmer » pour procéder à la transaction, il est recommandé de **vérifier deux fois l'adresse du destinataire.**
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_3.gif")
+          .default
+      }
+      alt="Envoyez des jetons à partir de votre extension de portefeuille MetaMask"
+    />
+  </div>
+</div>
+
+5. Vous serez ensuite redirigé vers la page principale où vous pouvez voir une liste de vos transactions récentes sur l'onglet « Activité ».
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. Rendez-vous sur la page d'accueil de votre compte. À partir d'ici, appuyez sur le bouton « Envoyer ».
+
+   Vous pouvez également envoyer des jetons en cliquant sur le jeton lui-même affiché sous l'onglet « Actifs » sur votre page d'accueil.
+
+2. Maintenant, vous devez saisir l'adresse à laquelle vous souhaitez envoyer. Soit collez dans l'adresse de votre presse-papier (c.-à-d. une autre application) soit sélectionnez une dans votre carnet d'adresses.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_1.gif")
+          .default
+      }
+      alt="Envoyez des jetons à partir de votre portefeuille MetaMask mobile"
+    />
+  </div>
+</div>
+
+3. Maintenant, vous serez dirigé vers un écran où vous pourrez saisir le montant que vous souhaitez envoyer. Vous pouvez également changer le type de jeton si nécessaire en appuyant sur son nom dans la zone bleue directement au-dessus du montant.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_2.png")
+          .default
+      }
+      alt="Envoyez des jetons à partir de votre portefeuille MetaMask mobile"
+    />
+  </div>
+</div>
+
+4. Lorsque vous appuyez sur « Suivant », vous verrez l'écran de confirmation. Ici vous verrez les détails de votre transaction, y compris les frais de gaz que vous allez payer.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_3.png")
+          .default
+      }
+      alt="Envoyez des jetons à partir de votre portefeuille MetaMask mobile"
+    />
+  </div>
+</div>
+
+Vous pouvez également modifier vos paramètres de gaz pour la transaction en appuyant sur la quantité surlignée d'ETH dans la zone « Frais de gaz estimés ».
+
+Appuyez sur « Envoyer » pour confirmer la transaction et terminer le processus.
+
+</TabItem>
+
+</Tabs>
+
+### Remarques
+
+- Le nombre de jetons et vos frais de transaction (gaz -- payés dans ETH ou le jeton natif du réseau, comme BNB ou MATIC) ne seront pas déduits immédiatement. L'état de la transaction est « en attente », ce qui signifie que la transaction a été soumise au réseau de blockchain et est en attente de confirmation.
+- Lorsque la transaction est réussie, vous verrez le montant mis à jour des soldes de jetons et ETH, ainsi que l'état de la transaction mis à jour à l'état « Confirmé ».
+- Si vous cliquez sur la transaction sous l'onglet « **Activité** » sur MetaMask, vous pouvez vérifier les informations de transaction et avoir la possibilité d'afficher l'enregistrement de transaction sur l'explorateur de blocs du réseau, tels que [Etherscan](https://etherscan.io/), [BscScan](https://bscscan.com/) ou [Polygonscan](https://polygonscan.com/).
+- Parfois, la confirmation de votre transaction peut prendre plus de temps. Lorsque cela se produit, vous aurez la possibilité d'**accélérer** la transaction en soumettant à nouveau la transaction (première en attente) avec un prix de gaz plus élevé, ou d'**Annuler** la transaction avant qu'elle ne soit confirmée. En savoir plus sur [l'accélération ou l'annulation d'une transaction](/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction).
+- Veuillez consulter comment [déposer (recevoir) des jetons sur votre portefeuille MetaMask](/getting-started/direct-deposit-receive-tokens-to-your-metamask-wallet)si vous souhaitez recevoir des jetons.
+- **Ce processus est exactement le même pour ETH que pour les autres jetons ERC-20, mais assurez-vous toujours que, lors de l'envoi de jetons ERC-20, le portefeuille de réception prend en charge les jetons que vous envoyez.**

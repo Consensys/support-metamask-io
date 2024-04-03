@@ -1,0 +1,326 @@
+---
+title: "Hinzufügen eines benutzerdefinierten RPC-Netzwerks"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### Inhalt:
+
+- [Hinzufügen über Chainlist](#hinzufügen-über-chainlist)
+- [Beliebte Netzwerke schnell hinzufügen](#beliebte-netzwerke-hinzufügen)
+- [Netzwerke manuell hinzufügen](#ein-netzwerk-manuell-hinzufügen)
+
+MetaMask kann auf viele mehr Netzwerke als nur auf Ethereum-Mainnet zugreifen: Sie können jedes EVM-kompatible Netzwerk hinzufügen. Das Kürzel RPC steht für Remote Procedure Call, eine Reihe von Protokollen, die es einem Client (wie MetaMask) ermöglichen, mit einer Blockchain zu kommunizieren. Ohne eine signifikante technische Tangente einzuführen, ermöglicht das Hinzufügen von Netzwerkdetails mit dem folgenden Prozess MetaMask die Verwendung eines RPC, der es Ihnen ermöglicht, mit diesem Netzwerk zu interagieren.
+
+#### Hinzufügen über Chainlist
+
+Um Netzwerke zu MetaMask hinzuzufügen, gehen Sie zu [chainlist.wtf](https://chainlist.wtf/), wo Sie MetaMask verbinden und Netzwerke mit nur wenigen Klicks hinzufügen können. In unserem [Leitfaden](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) finden Sie nähere Informationen.
+
+Beachten Sie ferner, **dass das Hinzufügen eines Netzwerks auf einem Gerät nicht bedeutet, dass es auch auf einem anderen Gerät** beim Zugriff auf dasselbe Konto angezeigt wird. Wenn Sie es in der Erweiterung hinzufügen, wird es nicht automatisch zu Ihrer MetaMask Mobile App hinzugefügt, und umgekehrt.
+
+Benutzerdefinierte Netzwerke müssen auch neu hinzugefügt werden, wenn Sie die Browsererweiterung oder die mobile App deinstallieren (danach müssen Sie [Ihr Wallet](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) mit Ihrer geheimen Wiederherstellungsphrase widerherstellen).
+
+:::info
+
+#### Warum sehe ich ein Fragezeichensymbol neben dem Netzwerknamen, nachdem ich es hinzugefügt habe?
+
+Wenn Sie ein benutzerdefiniertes Netzwerk zu MetaMask hinzufügen - dh jedes Netzwerk außer dem Ethereum-Mainnet - sehen Sie im Netzwahlschalter daneben ein Fragezeichensymbol. Es sieht so aus:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/question_mark.png").default
+      }
+      alt="question_mark.png"
+    />
+  </div>
+</div>
+
+Mach dir keine Sorgen! Dies bedeutet nicht, dass es nicht legitim oder nicht sicher ist. Es ist das beabsichtigte Verhalten, und so wird jedes Netzwerk, das Sie hinzufügen, in MetaMask angezeigt.
+
+:::
+
+## Beliebte Netzwerke hinzufügen
+
+Sowohl auf Mobile als auch auf Extension können Sie mehrere prominente Netzwerke mit einmaligem Tippen hinzufügen. Dazu gehören:
+
+- [BNB Chain/BSC](/network-profiles/network-profile-bnb-smart-chain-bnb)
+- [Polygon](/network-profiles/network-profile-polygon-matic)
+- [Avalanche](/network-profiles/network-profile-avalanche-avax)
+- [Arbitrum](/network-profiles/network-profile-arbitrum)
+- [Optimismus](/network-profiles/network-profile-optimism-op-mainnet)
+- [Palm](/network-profiles/network-profile-palm)
+- [Fantom](/network-profiles/network-profile-fantom-ftm)
+- [Harmonie](/network-profiles/network-profile-harmony-one)
+- [Aurora](/network-profiles/network-profile-aurora-)
+- [Celo](https://celo.org/).
+
+Sie können dieses Menü mit den folgenden Schritten finden:
+
+<Tabs>
+
+<TabItem value="Erweiterung" label="Erweiterung">
+
+Klicken Sie auf der Startseite Ihres Wallet auf den Netzwahlschalter am oberen Bildschirmrand und dann auf „Netzwerk hinzufügen“:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={require("../../../../../../img/i18n/legacy/add_network.png").default}
+      alt="add_network.png"
+    />
+  </div>
+</div>
+
+Von hier aus sollten Sie eine Liste der beliebtesten Netzwerke sehen, die bereit sind (es sei denn, Sie haben das Netzwerk bereits hinzugefügt). Tippen Sie auf „Hinzufügen“, um den Vorgang zu starten, und folgen Sie den Anweisungen.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/popular_networkis.png")
+          .default
+      }
+      alt="popular_networkis.png"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobilgerät" label="Mobilgerät">
+
+1. Tippen Sie auf das Hamburger-Symbol oben links auf dem Bildschirm.
+
+2. Gehen Sie zu „Einstellungen“ und dann zu „Netzwerke“.
+
+3. Hier sehen Sie eine Liste der Netzwerke, die Sie bereits hinzugefügt haben. Tippen Sie auf die Schaltfläche „Netzwerk hinzufügen“ am unteren Bildschirmrand.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/settings___network.PNG.png")
+             .default
+         }
+         alt="settings___network.PNG"
+       />
+     </div>
+   </div>
+
+4. Sie sollten jetzt eine Liste der Netzwerke sehen, die Sie unter der Registerkarte „Beliebt“ hinzufügen können, wie unten gezeigt.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/select_a_network.jpg.png")
+             .default
+         }
+         alt="select_a_network.jpg"
+       />
+     </div>
+   </div>
+
+5. Wenn Sie sich entscheiden, einen davon hinzuzufügen, werden Sie aufgefordert, zu bestätigen:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network_.PNG.png")
+             .default
+         }
+         alt="add_network_. PNG"
+       />
+     </div>
+   </div>
+
+   Und dann haben Sie die Möglichkeit, sofort zu diesem Netzwerk zu wechseln. Alles fertig!
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/switch_to_network.jpg.png")
+             .default
+         }
+         alt="switch_to_network.jpg"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+## Ein Netzwerk manuell hinzufügen
+
+Nachfolgend finden Sie eine Anleitung zur manuellen Verbindungswiederherstellung:
+
+<Tabs>
+
+<TabItem value="Erweiterung" label="Erweiterung">
+
+1. Klicken Sie auf die **Schaltfläche Netzwerkauswahl**. Sie sehen nun eine Liste der Netzwerke, mit denen Sie bereits verbunden sind**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/networks_button.png")
+             .default
+         }
+         alt="networks_button.png"
+       />
+     </div>
+   </div>
+
+2. Klicken Sie auf „Netzwerk hinzufügen”:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network.png").default
+         }
+         alt="add_network.png"
+       />
+     </div>
+   </div>
+
+3. Es öffnet sich eine neue Browser-Registerkarte mit verschiedenen Feldern zum Ausfüllen**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/Screenshot_2022-02-10_at_10.08.31.png")
+             .default
+         }
+         alt="Screenshot_2022-02-10_at_10.08.31.png"
+       />
+     </div>
+   </div>
+
+   Füllen Sie die Felder aus und klicken auf Speichern, um das Netzwerk hinzuzufügen.
+
+   Die Einzelheiten zu den oben genannten Feldern finden Sie in unseren [Netzwerkprofilen](/network-profiles/network-profiles-hub) oder alternativ in den Dokumenten (d. h. in der Entwicklerdokumentation) oder in den Anleitungen für die einzelnen Netzwerke. Beispiel:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Nachdem Sie die oben genannten Schritte durchgeführt haben, sehen Sie das benutzerdefinierte Netzwerk, wenn Sie das nächste Mal die Netzwerkauswahl aufrufen.
+
+</TabItem>
+
+<TabItem value="Mobilgerät" label="Mobilgerät">
+
+1. Tippen Sie oben links auf das Hamburger-Symbol:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_C8C734D64DE3-1.jpeg.png")
+             .default
+         }
+         alt="IMG_C8C734D64DE3-1.jpeg"
+       />
+     </div>
+   </div>
+
+2. Wählen Sie **Einstellungen:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_129413D61F95-1.jpeg.png")
+             .default
+         }
+         alt="IMG_129413D61F95-1.jpeg"
+       />
+     </div>
+   </div>
+
+3. Wählen Sie **Netzwerke:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_62D0A5FE63AE-1.jpeg.png")
+             .default
+         }
+         alt="IMG_62D0A5FE63AE-1.jpeg"
+       />
+     </div>
+   </div>
+
+4. Tippen Sie auf „**Netzwerk Hinzufügen**”:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_65A194E3EC35-1.jpeg.png")
+             .default
+         }
+         alt="IMG_65A194E3EC35-1.jpeg"
+       />
+     </div>
+   </div>
+
+5. Geben Sie die Daten des **Benutzerdefinierten RPC-Netzwerks** ein:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_E8F132CD40A6-1.jpeg.png")
+             .default
+         }
+         alt="IMG_E8F132CD40A6-1.jpeg"
+       />
+     </div>
+   </div>
+
+   Die Einzelheiten zu den oben genannten Feldern finden Sie in unseren [Netzwerkprofilen](/network-profiles/network-profiles-hub) oder alternativ in den Dokumenten (d. h. in der Entwicklerdokumentation) oder in den Anleitungen für die einzelnen Netzwerke. Beispiel:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://docs.polygon.technology/docs/develop/network-details/network/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Nachdem Sie die oben genannten Schritte durchgeführt haben, sehen Sie das benutzerdefinierte Netzwerk in der Netzwerkauswahl.
+
+</TabItem>
+
+</Tabs>

@@ -1,0 +1,112 @@
+---
+title: How to check my wallet activity on the blockchain explorer
+image: >-
+  /img/socialCards/how-to-check-my-wallet-activity-on-the-blockchain-explorer.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+[Etherscan](https://etherscan.io/) allows you to search and track the Ethereum blockchain for **transactions, addresses, tokens, prices,** and other activities taking place on the Ethereum blockchain. For links to the block explorers **for other networks, scroll to the bottom**. However, they all function similarly, so the guidance below will apply to whichever site you access.
+
+To check your account details on **Ethereum Mainnet**, please enter your [public address](/managing-my-wallet/accounts-and-addresses/how-to-view-your-account-details-and-public-address) into the search bar on etherscan.io, and you will see all of your account activity and transaction details.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../img/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer/check_wallet_activity_1.png")
+          .default
+      }
+      alt="check wallet activity"
+    />
+  </div>
+</div>
+
+:::info[Getting to the block explorer directly from MetaMask]
+
+You can also jump straight to your account's page on the block explorer from a link in MetaMask.
+
+<details>
+<summary>See how:</summary>
+
+<div>
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+Click the three vertical dots in the top-right of your wallet, and then on 'View on explorer'. The link will automatically adjust to the network you're on.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer/MetaMask_view_on_etherscan_extension.png")
+          .default
+      }
+      alt="MetaMask view on etherscan extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+From wallet view, tap the ellipsis icon to the right of your address, and then on 'View on Etherscan'. The name of the block explorer shown here will update according to the network you're on.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer/MetaMask_view_on_etherscan_mobile.gif")
+          .default
+      }
+      alt="MetaMask view on etherscan mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+</div>
+</details>
+
+:::
+
+After you enter your MetaMask public address into the block explorer or follow the link in MetaMask itself, you'll see your account's page.
+
+Below shows an example on Ethereum mainnet. Your ETH balance, its current fiat value, and the total balance of all your ERC-20 tokens are displayed. You will also see all of the account's transactions.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../img/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer/check_wallet_activity_2.png")
+          .default
+      }
+      alt="check wallet activity"
+    />
+  </div>
+</div>
+
+The same balance shown here should be reflected in MetaMask. If you see a token balance on the block explorer but not in MetaMask, make sure you've added it, using the steps in [this article.](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask) If you're still having issues finding the tokens or your ETH balance isn't the same in your MetaMask wallet, see [this article](/troubleshooting/what-to-do-when-your-balance-of-tokens-is-incorrect).
+
+**Note**: if you deposit/send your token on a network other than Ethereum Mainnet, you need to head to a different block explorer. For example:
+
+- Binance Smart Chain (BSC): [BscScan](https://bscscan.com/)
+- Polygon: [PolygonScan](https://polygonscan.com/)
+- Avalanche C-Chain: [Snowtrace](https://snowtrace.io/)
+- Arbitrum: [Arbiscan](https://arbiscan.io/)
+- Optimism: [Optimistic Ethereum Explorer](https://optimistic.etherscan.io/)
+- Harmony: [Harmony Block Explorer](https://explorer.harmony.one/)
+- Fantom: [FTMScan](https://ftmscan.com/)
+
+**Learn more about sidechains and custom networks [here](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains).**

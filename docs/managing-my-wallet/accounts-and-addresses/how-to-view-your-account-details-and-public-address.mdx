@@ -1,0 +1,99 @@
+---
+title: How to view your account details and public address
+image: /img/socialCards/how-to-view-your-account-details-and-public-address.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Where your account name is displayed, your account's public address and and other information is never far away.
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+The address of your currently selected account is displayed immediately beneath the account selector. Click to copy to your clipboard:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-view-your-account-details-and-public-address/MetaMask_copy_account_address_extension.gif")
+          .default
+      }
+      alt="MetaMask copy account address extension"
+    />
+  </div>
+</div>
+
+To view additional details about your account, click the three vertical dots in the top-right of MetaMask.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-view-your-account-details-and-public-address/MetaMask_view_account_details_menu_extension.png")
+          .default
+      }
+      alt="MetaMask view account details menu extension"
+    />
+  </div>
+</div>
+
+#### Note:
+
+_You can also access the block explorer link and account details by clicking the vertical dots next to the account in the account selector._
+
+In addition to jumping to the block explorer, you can access several functions from the 'account details' menu: you can change the account's name, access its QR code for receiving funds, and [reveal your private key](/managing-my-wallet/secret-recovery-phrase-and-private-keys/how-to-export-an-accounts-private-key) (do not do this unless you're 100% sure you need to; if someone has your private key, they can control your account and potentially steal funds).
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-view-your-account-details-and-public-address/MetaMask_view_account_details_menu2_extension.png")
+          .default
+      }
+      alt="MetaMask view account details menu extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+Your public address is displayed immediately beneath the name of the currently selected account in your wallet view. Tap to copy it to your clipboard:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-view-your-account-details-and-public-address/MetaMask_copy_account_address_mobile.gif")
+          .default
+      }
+      alt="MetaMask copy account address mobile"
+    />
+  </div>
+</div>
+
+To view further details about the account, tap the ellipsis to the right of the address. Here you can edit its name, jump to its page on the block explorer, access your [private key](/managing-my-wallet/secret-recovery-phrase-and-private-keys/how-to-export-an-accounts-private-key) (do not do this unless you're sure you need to; if someone has your private key, they can control your account and potentially steal funds), or share your address:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-view-your-account-details-and-public-address/MetaMask_view_account_details_mobile.gif")
+          .default
+      }
+      alt="MetaMask view account details mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>

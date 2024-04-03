@@ -1,0 +1,82 @@
+---
+title: "วิธีลบบัญชีออกจากกระเป๋าเงิน MetaMask ของคุณ"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+### **คุณสามารถลบได้เฉพาะบัญชีที่นำเข้า** และบัญชีภายนอกที่คุณนำเข้าด้วยกุญแจส่วนตัวหรือ JSON (เช่น กระเป๋าเงินฮาร์ดแวร์)
+
+บัญชีที่คุณได้เพิ่มโดยใช้ปุ่ม 'Create Account' (สร้างบัญชี) ใน MetaMask ไม่สามารถลบออกได้ดู[ด้านล่าง](#ฉันจะลบบัญชีที่สร้างขึ้นได้อย่างไร)สำหรับข้อมูลเพิ่มเติมและวิธีแก้ปัญหาที่เป็นไปได้
+
+<Tabs>
+
+<TabItem value="ส่วนขยาย" label="ส่วนขยาย">
+
+ไปที่ **My Accounts (บัญชีของฉัน)** โดยคลิกที่ไอเดนทิคอนของบัญชีที่มุมบนขวาคุณจะเห็นบัญชีที่คุณนำเข้าที่นี่ โดยปกติแล้วบัญชีเหล่านั้นจะมีป้ายกำกับอยู่ถัดจากชื่อ
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_extension_iported_wallet_tag.png")
+          .default
+      }
+      alt="MetaMask_extension_iported_wallet_tag.png"
+    />
+  </div>
+</div>
+
+คลิกหรือแตะบนบัญชีที่นำเข้าและมุมมองบัญชีจะเปิดขึ้นมา แตะหรือคลิกที่เมนูจุดแนวตั้งสามจุดที่อยู่ทางขวามือ การดำเนินการนี้จะแสดงรายการแบบเลื่อนลง รวมถึงตัวเลือกในการ **Remove account (ลบบัญชีออก)**:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet.gif")
+          .default
+      }
+      alt="how_to_remove_an_account_from_your_metamask_wallet.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="บนมือถือ" label="บนมือถือ">
+
+1. แตะชื่อบัญชีของคุณเพื่อแสดงหน้าจอตัวเลือกบัญชี ไม่สำคัญว่าคุณได้เลือกบัญชีใดอยู่ในขณะนี้
+
+   ในหน้าจอนี้ ให้เลื่อนจนกว่าคุณจะพบบัญชีที่นำเข้าที่คุณต้องการลบ ป้ายกำกับ 'Imported' (นำเข้า) ที่อยู่ถัดจากบัญชีจะช่วยระบุบัญชีเหล่านั้นได้โดยง่ายดาย
+
+2. กดค้างที่บัญชีเพื่อแสดงตัวเลือกในการลบออก บัญชีจะหายไปจาก MetaMask ของคุณทันทีเมื่อคุณยืนยัน
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet_mobile.gif")
+             .default
+         }
+         alt="how_to_remove_an_account_from_your_metamask_wallet_mobile.gif"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+:::info
+
+#### ฉันจะลบบัญชีที่สร้างขึ้นได้อย่างไร
+
+ขณะนี้ยังไม่สามารถลบบัญชี[ที่สร้างแล้ว](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet)ได้ เช่น บัญชีที่ปรากฏเป็น 'Account 2' (บัญชี 2) และอื่น ๆ เมื่อคุณคลิก 'Create Account' (สร้างบัญชี)หากคุณต้องการลบบัญชีเหล่านั้นออกจริง ๆ คุณจะต้องลบ MetaMask ออกจากอุปกรณ์ของคุณ (ส่วนขยายหรือมือถือ) แล้วติดตั้งใหม่ จากนั้น[กู้คืนโดยใช้วลีกู้คืนรหัสของคุณ](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) อย่างไรก็ตาม **อย่าใช้วิธีการนี้ หากคุณไม่มีวลีกู้คืนรหัสของคุณ** หากไม่มีวลีกู้คืนรหัส คุณจะไม่สามารถเข้าถึงกระเป๋าเงินของคุณได้เมื่อคุณทำการติดตั้งใหม่อีกครั้ง หากคุณทำเช่นนี้ โปรดทราบว่า:
+
+- การดำเนินการนี้จะไม่*ลบ*บัญชี เพียงแค่หยุดการมองเห็นบัญชีที่สร้างแล้วใน MetaMask เท่านั้น: เมื่อสร้างบัญชีแล้ว ที่อยู่ของคุณจะอยู่บนบล็อกเชนอย่างถาวรและ [ไม่สามารถลบออกได้](/managing-my-wallet/resetting-deleting-and-restoring/how-can-i-delete-my-metamask-wallet)
+- เมื่อคุณกู้คืนโดยใช้วลีกู้คืนรหัสของคุณ MetaMask จะเพิ่มบัญชีที่สร้างไว้ก่อนหน้านี้กลับเข้าไปใหม่อีกครั้งโดยอัตโนมัติ หากพวกเขาถือ ETH ดูข้อมูลเพิ่มเติม[ได้ที่นี่](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase)
+- บัญชีที่นำเข้าและ/หรือกระเป๋าเงินฮาร์ดแวร์ใด ๆ จะถูกลบออกในเวลาเดียวกันตรวจสอบให้แน่ใจว่าคุณได้สำรองข้อมูลกุญแจส่วนตัว/วลีชุดคำศัพท์ (หรือวลีกู้คืนรหัส หากเป็นบัญชี MetaMask อื่น) ไว้แล้ว มิฉะนั้นคุณจะไม่สามารถเข้าถึงบัญชีได้อีก
+
+:::

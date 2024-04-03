@@ -1,0 +1,34 @@
+---
+title: What is refueling?
+image: /img/socialCards/what-is-refueling.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+Refueling is a feature that ensures you receive some of the destination network's native token as part of your bridge transaction.
+
+This means that you can transact immediately on the destination network without swapping, purchasing, or bridging specifically for native tokens.
+
+To enable it, flick the toggle that appears on an eligible bridge transaction:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/bridge/what-is-refuelling/MetaMask_Portfolio_bridge_refueling.png")
+          .default
+      }
+      alt="MetaMask Portfolio bridge refueling"
+    />
+  </div>
+</div>
+
+:::info
+
+The option will only appear if you're bridging to something other than the destination network's native token.
+
+:::
+
+When you refuel, you'll receive enough of the destination network's native token for two transactions or so, calculated based on the current cost of gas.

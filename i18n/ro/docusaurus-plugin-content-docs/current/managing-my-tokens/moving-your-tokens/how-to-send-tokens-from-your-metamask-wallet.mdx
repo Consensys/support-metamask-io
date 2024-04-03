@@ -1,0 +1,140 @@
+---
+title: "Cum să trimiți tokeni din portofelul tău Metamask"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Notă:
+
+Acest articol descrie pașii pentru a trimite ETH și alți tokeni, conform cu standardul ERC-20. **Procesul este același, indiferent de rețeaua pe care o utilizezi.** Asigură-te doar că ai suficienți tokeni nativi ai rețelei, pentru taxa de gas.
+
+Pentru mai multe informații despre tokeni în general, [vezi aici](/managing-my-tokens/user-guide-tokens). Pentru informații generale privind tranzacțiile pe rețeaua Ethereum [vezi aici](/transactions-and-gas/transactions/user-guide-transactions-and-failed-transactions).
+
+:::
+
+## Vei avea nevoie de:
+
+- Adresa de cont a destinatarului.
+- Suficienți _tokeni nativi _(pe Ethereum, ETH; pe Binance Smart Chain, BNB; etc.) în contul tău, pentru [a acoperi taxa de gas](/transactions-and-gas/gas-fees/user-guide-gas).
+
+**Notă**: Dacă utilizezi o altă rețea decât rețeaua principală Ethereum, te rugăm să te asiguri că ai tokenii necesari pentru taxa de gas. De exemplu, tokenul BNB este folosit ca gas pentru rețeaua Binance Smart Chain (BSC), iar MATIC este necesar pentru Polygon. **Pentru mai multe informații despre rețele diferite de rețeaua principală Ethereum [vezi aici](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains). **Încerci să trimiți un NFT (un token ERC-721)? Dacă da, te rugăm să urmărești [acest ghid](/nfts/how-do-i-send-receive-or-cash-out-an-nft).
+
+## Pași:
+
+<Tabs>
+<TabItem value="Extensie" label="Extensie">
+
+1. De pe pagina principală a portofelului, asigură-te că te afli în contul din care dorești să efectuezi tranzacția și apasă butonul "Trimite" din mijlocul ecranului.
+
+2. Acum trebuie să introduci adresa publică a destinatarului. Dacă ai deja adrese salvate în agenda ta, acestea vor apărea în această etapă.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_1.gif")
+          .default
+      }
+      alt="Send tokens from your MetaMask wallet extension"
+    />
+  </div>
+</div>
+
+3. Introdu cantitatea de tokeni pe care dorești să o trimiți și apasă butonul "Înainte".
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_2.gif")
+          .default
+      }
+      alt="Send tokens from your MetaMask wallet extension"
+    />
+  </div>
+</div>
+
+4. Acum va fi afișată taxa de gas estimată a tranzacției , pe care o poți ajusta. Înainte de a apăsa pe "Confirmare" pentru a continua, este recomandat **să verifici din nou adresa destinatarului.**
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_3.gif")
+          .default
+      }
+      alt="Send tokens from your MetaMask wallet extension"
+    />
+  </div>
+</div>
+
+5. Vei fi apoi redirecționat către pagina principală, unde vei vedea lista cu tranzacțiile tale recente în secțiunea "Activitate".
+
+</TabItem> 
+<TabItem value="Mobil" label="Mobil">
+
+1. Accesează pagina principală a contului tău. Apoi, apasă butonul "Send" ("Trimite").
+
+   De asemenea, poți trimite tokeni selectând tokenul corespunzător, afișat în secțiunea "Assets" ("Fonduri") de pe pagina principală.
+
+2. Acum va trebui să introduci adresa la care vrei să trimiți tokenii. Fie lipești adresa din clipboard (ex. din altă aplicație) sau selectezi una din agenda de adrese.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_1.gif")
+          .default
+      }
+      alt="Send tokens from your MetaMask wallet mobile"
+    />
+  </div>
+</div>
+
+3. Acum vei fi redirecționat către pagina unde introduci suma pe care dorești să o trimiți. De asemenea, poți schimba tokenul dacă este necesar, apăsând chenarul albastru, direct deasupra sumei.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_2.png")
+          .default
+      }
+      alt="Send tokens from your MetaMask wallet mobile"
+    />
+  </div>
+</div>
+
+4. După ce apeși "Next" ("Următorul"), vei vedea pagina de confirmare. Aici vei vedea sumarul tranzacției tale, inclusiv taxa de gas pe care o vei plăti.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_3.png")
+          .default
+      }
+      alt="Send tokens from your MetaMask wallet mobile"
+    />
+  </div>
+</div>
+
+Poți edita valorile de gas pentru tranzacția în desfășurare, apăsând cantitatea evidențiată de ETH în caseta "Estimated gas fee" ("Taxă estimată de gas").
+
+Apasă "Send" ("Trimite") pentru a confirma tranzacția și a finaliza procesul.
+
+</TabItem>
+
+</Tabs>
+
+### Notă
+
+- Numărul tokenilor și taxele tale de tranzacție (gas — plătite în ETH sau tokenul nativ al rețelei, cum ar fi BNB sau MATIC) nu vor fi deduse imediat. Statusul tranzacției este în așteptare, ceea ce înseamnă că tranzacția a fost trimisă în rețeaua blockchain și este în așteptarea confirmării.
+- Când tranzacția este finalizată cu succes, vei vedea suma actualizată a tokenilor și ETH, precum și starea tranzacției actualizată la "Confirmat".
+- Dacă apeși pe tranzacția din pagina de “**Activitate**”, poți verifica detaliile legate de tranzacție și ai opțiunea de a vizualiza tranzacția pe blockchain explorer-ul rețelei, cum ar fi [Etherscan](https://etherscan.io/), [BscScan](https://bscscan.com/) sau [Polygonscan](https://polygonscan.com/).
+- Uneori, confirmarea tranzacției poate dura mai mult . Când se întâmplă acest lucru, vei avea opțiunea de a accelera tranzacția prin retrimiterea tranzacției ( prima care e în așteptare) cu un gas mai mare sau de a anula tranzacția înainte ca aceasta să fie confirmată. Află cum poți **accelera** sau **anula** o tranzacție, [apăsând aici](/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction).
+- Apasă [aici](/getting-started/direct-deposit-receive-tokens-to-your-metamask-wallet)pentru a vedea cum poți să depui (să primești) tokeni în portofelul MetaMask.
+- **Acest proces este identic, atât pentru ETH cât și pentru alți tokeni ERC-20, dar asigură-te întotdeauna că portofelul (destinatar) acceptă tokenii pe care vrei să îi trimiți, atunci când trimiți tokeni ERC-20.**

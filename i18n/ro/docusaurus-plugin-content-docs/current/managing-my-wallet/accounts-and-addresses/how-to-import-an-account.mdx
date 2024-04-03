@@ -1,0 +1,113 @@
+---
+title: "Cum să imporți un cont?"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+_Acest articol descrie procesul de adăugare în portofelul tău a conturilor care nu sunt asociate cu fraza ta secretă de recuperare a portofelului MetaMask. Dacă pornești de la o nouă instalare și dorești să accesezi un cont MetaMask existent, ar trebui să mergi la articolul nostru despre [restabilirea portofelului folosind fraza secretă de recuperare](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase). Te rugăm să reții că nu poți importa o a doua frază secretă de recuperare MetaMask în portofelul MetaMask existent. Aceasta va suprascrie originala și toate datele asociate._
+
+## **Linkuri rapide:**
+
+- [Importă folosind o cheie privată](#importă-folosind-o-cheie-privată)
+- [Importă folosind un fișier JSON](#importă-folosind-un-fișier-json)
+
+:::warning
+
+#### Notă:
+
+**Conturile importate NU AU COPIE DE REZERVĂ prin fraza secretă de recuperare**. Chiar dacă vor apărea în portofelul tău MetaMask, trebuie să salvezi cheile private folosite pentru a le importa, în același mod în care salvezi fraza secretă de recuperare. **Dacă elimini portofelul de pe dispozitivul tău, conturile tale importate vor fi eliminate odată cu acesta.** Când/dacă îți [restabilești portofelul folosind fraza secretă de recuperare](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase), va trebui să adaugi din nou conturile importate, cu cheile lor private.
+
+Citește mai multe despre conturile importate [aici](/managing-my-wallet/accounts-and-addresses/what-are-imported-accounts-).
+
+:::
+
+Pentru acest proces, vei avea nevoie de șirul cheii private sau de fișierul JSON al contului pe care dorești să îl imporți. Consultă documentația furnizorului respectiv de portofel, pentru a afla cum să îl găsești.
+
+## **Importă folosind o cheie privată**
+
+<Tabs>
+<TabItem value="Extensie" label="Extensie">
+
+1. Apasă pe iconița din colțul din dreapta sus al ferestrei pop-up MetaMask, de lângă indicatorul de rețea.
+
+2. Selecteză “**Importare cont**” din meniul drop-down:
+
+3. Vei fi redirecționat către pagina de importare. Lipește aici cheia privată și apasă pe "**Importă**".
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/How_to_import_an_account_from_private_key.gif")
+          .default
+      }
+      alt="How to import an account from private key"
+    />
+  </div>
+</div>
+
+Ar trebui să poți vedea contul nou adăugat în meniul drop-down, cu eticheta "Importat" lângă cont.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_extension_iported_wallet_tag.png")
+          .default
+      }
+      alt="MetaMask extension imported wallet tag"
+    />
+  </div>
+</div>
+
+</TabItem>
+<TabItem value="Mobil" label="Mobil">
+
+1. Din pagina de pornire, apasă pe butonul din colțul din stânga sus.
+
+2. De aici, apasă pe numele contului tău, pentru a afișa meniul de selecție a contului.
+
+3. Apasă „Importare cont” ("Import an Account").
+
+4. Pe acest ecran, inserează cheia privată a contului pe care dorești să-l imporți sau scanează un cod QR dacă este suportat de celălalt portofel. Apasă "Importă” ("Import") pentru a finaliza procesul.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/How_to_import_an_account_from_private_key_mobile.gif")
+          .default
+      }
+      alt="How_to_import_an_account_from_private_key_mobile.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+## **Importă folosind un fișier JSON**
+
+JSON (JavaScript Object Notation) este un format de fișier folosit în mod obișnuit pentru stocarea și partajarea datelor. În ce ne privește, este folosit pentru a cripta cheia privată.
+
+Poți folosi un fișier JSON pentru a importa un portofel în MetaMask, dar **numai pe extensie**. Pentru a face acest lucru, obține fișierul JSON din portofelul extern și urmează pașii pentru extensie de mai sus, până ajungi la pagina de importare de la pasul 3. De acolo:
+
+1. Pe pagina Importare cont, extinde meniul drop-down din secțiunea “**Selectează tipul**”.
+2. Selectează “**Fișier JSON**”.
+3. Apasă pe “**Alege fișierul**” și localizează fișierul din computer-ul tău.
+4. Introdu parola care îți protejează fișierul JSON (nu parola MetaMask).
+5. Apasă pe “**Importă**".
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/How_to_import_an_account_from_json_file.gif")
+          .default
+      }
+      alt="How to import an account from json file"
+    />
+  </div>
+</div>

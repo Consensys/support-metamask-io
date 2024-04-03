@@ -1,0 +1,326 @@
+---
+title: "Cách thêm RPC mạng tùy chỉnh"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### Nội dung:
+
+- [Thêm vào thông qua Chainlist](#thêm-vào-thông-qua-chainlist)
+- [Thêm các mạng lưới phổ biến nhanh chóng](#thêm-các-mạng-lưới-phổ-biến)
+- [Thêm các mạng lưới thủ công](#thêm-một-mạng-lưới-bằng-cách-thủ-công)
+
+MetaMask có thể truy cập nhiều mạng lưới khác ngoài mạng chính Ethereum, bạn có thể thêm bất cứ mạng lưới nào tương thích với EVM. Ba chữ đầu RPC là viết tắt của cuộc gọi thủ tục từ xa, là một bộ giao thức cho phép một ứng dụng khách (như MetaMask) tương tác với một blockchain. Không cần phải thông qua nhiều chi tiết kỹ thuật, việc thêm thông tin mạng lưới sử dụng quá trình dưới đây cho phép MetaMask sử dụng một RPC cho phép bạn tương tác với mạng lưới đó.
+
+#### Thêm vào thông qua Chainlist
+
+Để xem cách dễ dàng thêm các mạng lưới vào MetaMask, hãy truy cập [chainlist.wtf](https://chainlist.wtf/), nơi bạn có thể kết nối MetaMask và thêm các mạng lưới chỉ bằng vài cú nhấp chuột. Hãy xem [hướng dẫn](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) của chúng tôi để biết thêm thông tin.
+
+Ngoài ra, hãy lưu ý rằng **việc thêm mạng trên một thiết bị không có nghĩa là nó sẽ xuất hiện trên một thiết bị khác** khi truy cập vào cùng một tài khoản. Nếu bạn thêm mạng trên Tiện ích mở rộng, nó sẽ không được tự động thêm vào ứng dụng MetaMask Thiết bị di động và ngược lại.
+
+Các mạng tùy chỉnh cũng sẽ cần được thêm lại nếu bạn gỡ tiện ích mở rộng trên trình duyệt hoặc ứng dụng dành cho thiết bị di động (sau đó bạn sẽ cần [khôi phục ví của mình](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) bằng Cụm Mật khẩu Khôi phục Bí mật), hoặc đặt lại ví.
+
+:::info
+
+#### Tại sao tôi lại thấy biểu tượng dấu hỏi bên cạnh tên mạng lưới sau thi thêm vào?
+
+Khi bạn thêm một mạng lưới tùy chỉnh vào MetaMask, ví dụ như bất cứ mạng lưới nào ngoài mạng chính Ethereum, bạn sẽ thấy một biểu tượng dấu hỏi cạnh tên mạng lưới đó trong phần lựa chọn mạng lưới. Trông nó như sau:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/question_mark.png").default
+      }
+      alt="question_mark.png"
+    />
+  </div>
+</div>
+
+Đừng lo lắng! Điều này không có nghĩa nó không hợp lệ hay không đủ an toàn để sử dụng. Đây là hành động có chủ đích và là cách bất cứ mạng lưới nào bạn thêm vào sẽ xuất hiện trên MetaMask.
+
+:::
+
+## Thêm các mạng lưới phổ biến
+
+Trên cả Di động và Tiện ích mở rộng, bạn có thể thêm nhiều mạng lưới nổi bật chỉ bằng một cái chạm. Những mạng lưới đó bao gồm:
+
+- [BNB Chain/BSC](/network-profiles/network-profile-bnb-smart-chain-bnb)
+- [Polygon](/network-profiles/network-profile-polygon-matic)
+- [Avalanche](/network-profiles/network-profile-avalanche-avax)
+- [Arbitrum](/network-profiles/network-profile-arbitrum)
+- [Optimism](/network-profiles/network-profile-optimism-op-mainnet)
+- [Palm](/network-profiles/network-profile-palm)
+- [Fantom](/network-profiles/network-profile-fantom-ftm)
+- [Harmony](/network-profiles/network-profile-harmony-one)
+- [Aurora](/network-profiles/network-profile-aurora-)
+- [Celo](https://celo.org/).
+
+Bạn có thể tìm thực đơn này bằng cách làm theo các bước sau:
+
+<Tabs>
+
+<TabItem value="Tiện ích mở rộng" label="Tiện ích mở rộng">
+
+Từ trang chủ của ví của bạn, hãy nhấp vào mục chọn mạng lưới ở trên cùng của màn hình, rồi nhấp vào 'Thêm mạng lưới':
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={require("../../../../../../img/i18n/legacy/add_network.png").default}
+      alt="add_network.png"
+    />
+  </div>
+</div>
+
+Từ đây, bạn sẽ thấy danh sách các mạng lưới phổ biến đã sẵn sàng để thêm vào (trừ phi bạn đã thêm mạng lưới đó vào). Chạm vào "Thêm" để bắt đầu quá trình, và làm theo hướng dẫn.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/popular_networkis.png")
+          .default
+      }
+      alt="popular_networkis.png"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Thiết bị di động" label="Thiết bị di động">
+
+1. Chạm vào biểu tượng bánh hamburger ở góc trên bên trái màn hình.
+
+2. Vào 'Cài đặt', sau đó vào 'Mạng lưới'.
+
+3. Ở đây bạn sẽ thấy danh sách các mạng lưới bạn đã thêm vào. Chạm vào nút "Thêm mạng lưới" ở dưới cùng màn hình.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/settings___network.PNG.png")
+             .default
+         }
+         alt="settings___network.PNG"
+       />
+     </div>
+   </div>
+
+4. Giờ bạn sẽ thấy một danh sách các mạng lưới bạn có thể thêm vào tại thẻ 'Phổ biến', như dưới đây.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/select_a_network.jpg.png")
+             .default
+         }
+         alt="select_a_network.jpg"
+       />
+     </div>
+   </div>
+
+5. Khi bạn chọn thêm vào một trong số các mạng lưới này, bạn sẽ được yêu cầu xác nhận:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network_.PNG.png")
+             .default
+         }
+         alt="add_network_. PNG"
+       />
+     </div>
+   </div>
+
+   Và sau đó bạn sẽ có lựa chọn chuyển sang mạng lưới đó ngay lập tức. Hoàn tất!
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/switch_to_network.jpg.png")
+             .default
+         }
+         alt="switch_to_network.jpg"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+## Thêm một mạng lưới bằng cách thủ công
+
+Sau đây là hướng dẫn thiết lập các kết nối này bằng cách thủ công:
+
+<Tabs>
+
+<TabItem value="Tiện ích mở rộng" label="Tiện ích mở rộng">
+
+1. Nhấp vào **nút chọn mạng lưới**. Thao tác này sẽ hiển thị danh sách các mạng mà bạn đã kết nối**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/networks_button.png")
+             .default
+         }
+         alt="networks_button.png"
+       />
+     </div>
+   </div>
+
+2. Nhấp vào 'Thêm mạng':
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network.png").default
+         }
+         alt="add_network.png"
+       />
+     </div>
+   </div>
+
+3. Một thẻ trình duyệt mới sẽ mở ra, hiển thị các trường khác nhau để điền vào**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/Screenshot_2022-02-10_at_10.08.31.png")
+             .default
+         }
+         alt="Screenshot_2022-02-10_at_10.08.31.png"
+       />
+     </div>
+   </div>
+
+   Hoàn thành các trường và nhấp vào lưu để thêm mạng.
+
+   Chi tiết để điền các trường trên có thể được tìm thấy trong [hồ sơ mạng](/network-profiles/network-profiles-hub) của chúng tôi hoặc các tài liệu (tức tài liệu dành cho nhà phát triển) hoặc hướng dẫn cách thực hiện cho từng mạng. Ví dụ:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Sau khi thực hiện các bước trên, bạn sẽ thấy mạng tùy chỉnh này trong lần tiếp theo bạn truy cập vào công cụ chọn mạng.
+
+</TabItem>
+
+<TabItem value="Thiết bị di động" label="Thiết bị di động">
+
+1. Nhấn vào biểu tượng hamburger ở trên cùng bên trái:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_C8C734D64DE3-1.jpeg.png")
+             .default
+         }
+         alt="IMG_C8C734D64DE3-1.jpeg"
+       />
+     </div>
+   </div>
+
+2. Chọn **Cài đặt:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_129413D61F95-1.jpeg.png")
+             .default
+         }
+         alt="IMG_129413D61F95-1.jpeg"
+       />
+     </div>
+   </div>
+
+3. Chọn **Mạng:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_62D0A5FE63AE-1.jpeg.png")
+             .default
+         }
+         alt="IMG_62D0A5FE63AE-1.jpeg"
+       />
+     </div>
+   </div>
+
+4. Nhấn vào '**Thêm Mạng**':
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_65A194E3EC35-1.jpeg.png")
+             .default
+         }
+         alt="IMG_65A194E3EC35-1.jpeg"
+       />
+     </div>
+   </div>
+
+5. Điền thông tin chi tiết của **Mạng RPC Tùy Chỉnh**:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_E8F132CD40A6-1.jpeg.png")
+             .default
+         }
+         alt="IMG_E8F132CD40A6-1.jpeg"
+       />
+     </div>
+   </div>
+
+   Chi tiết để điền các trường trên có thể được tìm thấy trong [hồ sơ mạng](/network-profiles/network-profiles-hub) của chúng tôi hoặc các tài liệu (tức tài liệu dành cho nhà phát triển) hoặc hướng dẫn cách thực hiện cho từng mạng. Ví dụ:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://docs.polygon.technology/docs/develop/network-details/network/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Sau khi thực hiện các bước trên, bạn sẽ thấy mạng tùy chỉnh này trong phần công cụ chọn mạng.
+
+</TabItem>
+
+</Tabs>

@@ -1,0 +1,82 @@
+---
+title: "Paano mag-alis ng account sa iyong MetaMask wallet"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+### **Maaari mo lang alisin ang mga na-import na account** at external na account na na-import mo gamit ang mga pribadong key o JSON (gaya ng hardware wallet).
+
+Ang mga account na idinagdag mo gamit ang button na 'Lumikha ng Account' sa MetaMask ay hindi maaaring alisin. Tumingin sa [ibaba](#paano-ko-aalisin-ang-mga-ginawang-account) para sa karagdagang impormasyon at potensyal na solusyon.
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+Mag-navigate sa **Mga Account Ko** sa pamamagitan ng pag-click sa kanang itaas na identicon. Makikita mo rito ang anumang mga account na iyong na-import; kadalasang may label sila sa tabi ng pangalan.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_extension_iported_wallet_tag.png")
+          .default
+      }
+      alt="MetaMask_extension_iported_wallet_tag.png"
+    />
+  </div>
+</div>
+
+I-click o i-tap ang na-import na account, at magbubukas ang view ng account. I-tap o i-click ang 3 vertical na tuldok na menu sa kanan. Ilalabas nito ang dropdown, kasama ang opsyong **Alisin ang account**:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet.gif")
+          .default
+      }
+      alt="paano_alisin_ang_isang_account_mula_sa_iyong_metamask_wallet.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. I-tap ang pangalan ng iyong account upang ilabas ang screen ng tagapili ng account. Hindi mahalaga kung aling account ang kasalukuyan mong pinili.
+
+   Sa screen na ito, mag-scroll hanggang makita mo ang na-import na account na gusto mong alisin. Dapat silang madaling matukoy sa pamamagitan ng label na 'Na-import' sa tabi nila.
+
+2. Pindutin nang matagal ang account upang ilabas ang opsyong alisin ito. Agad itong mawawala sa iyong MetaMask kapag nakumpirma mo.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet_mobile.gif")
+             .default
+         }
+         alt="paano_alisin_ang_isang_account_mula_sa_iyong_metamask_wallet.gif"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+:::info
+
+#### Paano ko aalisin ang mga ginawang account?
+
+Kasalukuyang imposibleng alisin ang mga [nilikhang](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet) account — ang mga lumalabas bilang 'Account 2' atbp. kapag na-click mo ang 'Gumawa ng Account'. Kung talagang gusto mong alisin ang mga ito, kakailanganin mong alisin ang MetaMask mula sa iyong device (Extension o Mobile), muling i-install, at pagkatapos ay [i-restore gamit ang iyong Secret Recovery Phrase](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase). Gayunpaman, **HUWAG gawin ito kung wala ka ang iyong Secret Recovery Phrase**. Kung wala ito, hindi ka makakakuha ng access sa iyong wallet kapag nag-install kang muli. Kung gagawin mo ito, tandaan mo:
+
+- Hindi nito _ide-delete_ ang account, ngunit hindi lang itong makikita sa MetaMask: kapag nagawa na, permanente nang nasa blockchain ang iyong address at [hindi na maaalis](/managing-my-wallet/resetting-deleting-and-restoring/how-can-i-delete-my-metamask-wallet).
+- Kapag nag-restore ka gamit ang iyong Secret Recovery Phrase, awtomatikong muling idaragdag ng MetaMask ang mga dati nang ginawang account kung may hawak silang ETH. Tingnan [dito](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) ang karagdagang impormasyon.
+- Ang anumang mga na-import na account at/o mga wallet ng hardware ay aalisin sa parehong oras. Tiyaking naka-back up ang kanilang pribadong key/seed phrase (o Secret Recovery Phrase kung isa pang MetaMask account), o hindi mo na maa-access muli ang mga ito.
+
+:::

@@ -1,0 +1,142 @@
+---
+title: "Wie Sie Token aus Ihrer MetaMask-Wallet versenden"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Hinweis:
+
+Dieser Artikel befasst sich hauptsächlich mit dem Versand von ETH und anderen Token, die dem ERC-20-Standard entsprechen. Der **Prozess ist jedoch unabhängig vom Netzwerk, das Sie verwenden, im Wesentlichen derselbe** — Sie müssen nur über genügend Token des Netzwerks verfügen, um die Transaktion zu bezahlen.
+
+Weiterführende Inforationen zu Token im Allgemeinen finden Sie [hier](/managing-my-tokens/user-guide-tokens). Allgemeine Informationen über Ethereum-Transaktionen finden Sie [hier](/transactions-and-gas/transactions/user-guide-transactions-and-failed-transactions).
+
+:::
+
+## Was Sie benötigen:
+
+- Die Ethereum-Wallet-Adresse des Empfängers
+- Ein ausreichendes Guthaben an _nativen Netzwerktoken_ (für Ethereum, ETH; für Binance Smart Chain, BNB; etc.) das für [die Bezahlung der Gasgebühr](/transactions-and-gas/gas-fees/user-guide-gas) ausreicht.
+
+**Hinweis**: Wenn Sie mit einem anderen Netzwerk als dem Ethereum-Mainnet arbeiten, müssen Sie ebenfalls über die für die Gasgebühren entsprechenden Token verfügen. Beispiel: Der BNB-Token wird als Gas für das Binance Smart Chain (BSC)-Netzwerk verwendet, MATIC wird für Polygon benötigt. **Weitere Informationen über Netzwerke abseits vom Ethereum-Mainnet finden Sie [hier](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains). **Sie möchten ein NFT versenden (einen ERC-721-Token?) Wenn ja, folgen Sie bitte dieser [Anleitung](/nfts/how-do-i-send-receive-or-cash-out-an-nft).
+
+## Schritte:
+
+<Tabs>
+
+<TabItem value="Erweiterung" label="Erweiterung">
+
+1. Stellen Sie auf der Landing-Page Ihres Wallets sicher, dass Sie sich in dem Konto befinden, von dem Sie Transaktionen durchführen möchten, und klicken Sie auf die Schaltfläche „Senden“ in der Mitte des Bildschirms.
+
+2. Jetzt müssen Sie die öffentliche Adresse des Empfängers eingeben. Wenn Sie bereits Adressen in Ihrem Adressbuch gespeichert haben, werden sie zu diesem Zeitpunkt angezeigt.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_1.gif")
+          .default
+      }
+      alt="Senden Sie Token von Ihrer MetaMask Wallet-Erweiterung"
+    />
+  </div>
+</div>
+
+3. Geben Sie die Anzahl der Token ein, die Sie senden möchten, und klicken Sie auf Weiter.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_2.gif")
+          .default
+      }
+      alt="Senden Sie Token von Ihrer MetaMask Wallet-Erweiterung"
+    />
+  </div>
+</div>
+
+4. Jetzt werden Ihnen die geschätzten Gasgebühren Ihrer Transaktion angezeigt, die Sie auch anpassen können. Bevor Sie auf „Bestätigen“ klicken und die Transaktion abschließen, sollten **Sie die Adresse des Empfängers noch einmal überprüfen.**
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_3.gif")
+          .default
+      }
+      alt="Senden Sie Token von Ihrer MetaMask Wallet-Erweiterung"
+    />
+  </div>
+</div>
+
+5. Sie werden danach auf die Hauptseite weitergeleitet, auf der Sie unter der Registerkarte „Aktivitäten“ eine Liste der letzten Transaktionen abrufen können.
+
+</TabItem>
+
+<TabItem value="Mobilgerät" label="Mobilgerät">
+
+1. Gehen Sie zur Startseite Ihres Kontos. Tippen Sie auf die Schaltfläche „Senden”.
+
+   Sie können Token auch versenden, indem Sie auf den Token selbst klicken. Dieser wird auf Ihrer Startseite unter der Registerkarte „Aktiva” angezeigt.
+
+2. Geben Sie nun die Versandadresse ein. Fügen Sie die Adresse entweder aus der Zwischenablage (d. h. aus einer anderen Anwendung) ein oder wählen Sie eine Adresse aus Ihrem Adressbuch aus.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_1.gif")
+          .default
+      }
+      alt="Senden Sie Token von Ihrem MetaMask Wallet-Handy"
+    />
+  </div>
+</div>
+
+3. Sie gelangen nun zu einem Bildschirm, auf dem Sie den Betrag eingeben können, den Sie senden möchten. Sie können gegebenenfalls auch den Token-Typ ändern. Dazu tippen Sie auf den Tokennamen im blauen Feld direkt über dem Betrag.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_2.png")
+          .default
+      }
+      alt="Senden Sie Token von Ihrem MetaMask Wallet-Handy"
+    />
+  </div>
+</div>
+
+4. Wenn Sie auf „Weiter” tippen, gelangen Sie zum Bestätigungsbildschirm. Hier werden die Details Ihrer Transaktion angezeigt, einschließlich der zu bezahlenden Gasgebühr.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_3.png")
+          .default
+      }
+      alt="Senden Sie Token von Ihrem MetaMask Wallet-Handy"
+    />
+  </div>
+</div>
+
+Sie können auch Ihre transaktionsbezogenen Gaseinstellungen bearbeiten. Dazu tippen Sie auf die markierte ETH-Menge im Feld „Geschätzte Gasgebühr”.
+
+Tippen Sie auf „Senden”, um die Transaktion zu bestätigen und den Prozess abzuschließen.
+
+</TabItem>
+
+</Tabs>
+
+### Hinweise
+
+- Die Tokenanzahl und Ihre Transaktionsgebühren (Gas — bezahlt in ETH oder dem nativen Token des Netzwerks, wie BNB oder MATIC) werden nicht sofort abgezogen. Der Transaktionsstatus ist ausstehend. Das heißt, die Transaktion wurde an das Blockchain-Netzwerk übermittelt und muss noch bestätigt werden.
+- Wenn die Transaktion erfolgreich ist, sehen Sie den aktualisierten Betrag des Token- und ETH-Guthabens sowie den Transaktionsstatus „Bestätigt”.
+- Wenn Sie in MetaMask auf die Registerkarte **Aktivität** klicken, können Sie die Transaktionsdaten prüfen und die Transaktionseinträge im Block-Explorer abrufen, wie [Etherscan](https://etherscan.io/), [BscScan](https://bscscan.com/) oder [Polygonscan](https://polygonscan.com/).
+- Es kann länger dauern, bis Ihre Transaktion bestätigt wird. In diesem Fall können Sie die Transaktion **beschleunigen**, indem Sie die (ausstehende) Transaktion erneut mit einem höheren Gaspreis einreichen oder die Transaktion noch vor der Bestätigung **Abbrechen**. Erfahren Sie mehr darüber, wie Sie [eine Transaktion beschleunigen oder abbrechen.](/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction)
+- Bitte lesen Sie, wie Sie [Token in Ihre MetaMask-Wallet einzahlen (erhalten)](/getting-started/direct-deposit-receive-tokens-to-your-metamask-wallet), wenn Sie Token empfangen möchten.
+- **Der Ablauf ist für ETH genau derselbe wie für andere ERC-20-Token, aber überzeugen Sie sich beim Versand von ERC-20-Token, dass die Empfänger-Wallet diese Tokentype unterstützt. **

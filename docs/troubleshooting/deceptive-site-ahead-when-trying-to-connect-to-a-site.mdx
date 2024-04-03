@@ -1,0 +1,30 @@
+---
+title: '''Deceptive site ahead'' when trying to connect to a site'
+image: /img/socialCards/deceptive-site-ahead-when-trying-to-connect-to-a-site.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+This warning message appears when you attempt to connect your wallet to a site that may be a phishing scam. It will look like this:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/troubleshooting/deceptive-site-ahead-when-trying-to-connect-to-a-site/MetaMask_phishing_detection_screen.png")
+          .default
+      }
+      alt="MetaMask_phishing_detection_screen.png"
+    />
+  </div>
+</div>
+
+**We recommend you don't connect your wallet to sites that trigger this message**.
+
+If you're the owner of the site and believe it has been wrongly marked as a potential scam, please log your case here: [https://github.com/metamask/eth-phishing-detect/issues](https://github.com/metamask/eth-phishing-detect/issues)
+
+One of our team will then review your case as soon as feasible and may whitelist your site depending on their findings.
+
+You can also use [this utility](https://metamask.github.io/eth-phishing-detect/) to check why your domain was blocked, and see [here](https://github.com/MetaMask/eth-phishing-detect) for the rationale behind blocklisted sites.

@@ -1,0 +1,134 @@
+---
+title: How to install MetaMask manually
+image: /img/socialCards/how-to-install-metamask-manually.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+While MetaMask is published on multiple browser extension stores, and these stores benefit from auto-updates, there are reasons you might want to install a copy of MetaMask manually. For example, you may be using an old, unsupported dapp that no longer works with the latest version of MetaMask. Or maybe you're just nostalgic? That's cool too.
+
+In cases like this, the easiest thing to do is to download a pre-build release of MetaMask. You can [retrieve official builds of MetaMask here](https://github.com/MetaMask/metamask-extension/releases). If you're a Brave developer, you can also [build from source](https://github.com/MetaMask/metamask-extension#building-locally).
+
+**Note:** MetaMask updates can include security improvements, so using MetaMask on a browser with an auto-updating store ensures the latest updates and fixes. Sometimes, updates are marked as recommended for security reasons. You can read more about this feature (automatic security checks) and how to control updates [here](/privacy-and-security/how-to-enable-automatic-security-checks-mobile).
+
+**Also note**: **Installing extensions manually can be dangerous!** When you don't install from a store with lots of good reviews, it is harder to tell you are installing the software you intend to. Only install manually as a last resort. This kind of installation is much more prone to phishing, so make sure you are getting your MetaMask release from a trustworthy (official) source!
+
+See below for instructions for different browsers:
+
+<Tabs>
+
+<TabItem value="Chrome" label="Chrome">
+
+1. On the [releases](https://github.com/MetaMask/metamask-extension/releases) page, pick a version you'll like to install.
+
+2. Download the zip file.
+
+3. Unzip the file in a folder.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-install-metamask-manually/MetaMask_unzip_folder.gif")
+          .default
+      }
+      alt="MetaMask unzip folder"
+    />
+  </div>
+</div>
+
+4. Open Chrome, and type “chrome://extensions” in the browser URL bar.
+
+5. Click "Load Unpacked"
+
+6. On the window pop up, open the the folder unzipped earlier
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-install-metamask-manually/MetaMask_manually_install_chrome.gif")
+          .default
+      }
+      alt="MetaMask manually install chrome"
+    />
+  </div>
+</div>
+
+7. MetaMask should now be installed.
+
+</TabItem>
+
+<TabItem value="Firefox" label="Firefox">
+
+**NOTE: this method requires [Firefox Developer edition.](https://www.mozilla.org/en-US/firefox/developer/)**
+
+1. Visit: [https://addons.mozilla.org/en-US/android/addon/ether-metamask/versions/](https://addons.mozilla.org/en-US/android/addon/ether-metamask/versions/)
+
+2. Select a version you 'd like to download. Click “Download Now”, and then click “Ok” on the pop up that appears.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-install-metamask-manually/MetaMask_download_manually_firefox2.png")
+          .default
+      }
+      alt="MetaMask download manually firefox"
+    />
+  </div>
+</div>
+
+3. Type “about:addons” into browser URL bar
+
+4. Click the Settings button > Click “Install Add-on from file”
+
+5. Browse for the zip or directory with MetaMask you downloaded.
+
+6. Click "Open"
+
+7. Click "Add" on the pop-up
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-install-metamask-manually/MetaMask_manually_install_firefox.gif")
+          .default
+      }
+      alt="MetaMask manually install firefox"
+    />
+  </div>
+</div>
+
+Your installation should be complete!
+
+</TabItem>
+
+<TabItem value="Opera" label="Opera">
+
+1. Repeat step 1 to 3 of the Chrome instructions above
+2. Open Opera extension page > Click “Load unpacked extension”
+3. Browse to the unzipped folder, then click “OK”
+4. Installation complete
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-install-metamask-manually/MetaMask_manually_install_opera.gif")
+          .default
+      }
+      alt="MetaMask manually install opera"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>

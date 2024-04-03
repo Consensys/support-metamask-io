@@ -1,0 +1,66 @@
+---
+title: "トークンの残高表示が不正確な場合の対応"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### トークンがまったく表示されませんか。
+
+この問題のトラブルシューティングについては、[こちら](/managing-my-tokens/custom-tokens/a-token-is-missing-from-my-wallet)をご覧ください。
+
+:::
+
+まず、ブロックエクスプローラーに表示されているトークン残高を確認し、MetaMaskと比較します。これを行うには、ウォレットアドレスをコピーして、現在のネットワークに対応するブロックエクスプローラー（Ethereumメインネットの場合はEtherscan、Arbitrumの場合はArbiscanなど）に貼り付けます。詳細な手順については、[こちら](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer)をご覧ください。
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+MetaMask ExtensionでETHや他のトークンの残高が不正確な場合は、大変お手数ですが以下の手順を一つずつ実施し、残高が正しく表示されるかどうかをご確認ください。
+
+**手順を実施する前に、[Secret Recovery Phrase](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys)が安全な場所にバックアップされていることを確認します。**
+
+1. インターネット接続が良好で安定していることを確認します。そうでない場合、MetaMaskに正しい残高が読み込まれない可能性があります。
+2. MetaMask Extensionをインストールしたブラウザを一旦閉じて、再度開きます。
+3. 広告ブロッカーを無効にするか、VPNを使用している場合はVPNを無効にしてからMetaMaskをご利用ください。
+4. 別のネットワークに切り替えてから元のネットワークに戻します。これを行うには、アプリの上部にある現在のネットワークの表示をクリックし、別のネットワークを選択してから元のネットワークに戻します。
+5. [ブラウザのアクセス権限](/troubleshooting/metamask-states-balance-may-be-outdated-displays-in-orange-or-eth-not-added-to-balance)に問題がないことを確認します。
+6. 使用中のネットワークに複数のRPC URLが存在する場合は、別のRPC URLで試してみます。RPC URLを編集するには、[Settings] > [Network]を選択し、問題のネットワークをクリックします。詳しくは、[ネットワークの追加に関する記事](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)をご覧ください。
+7. 他の対応ブラウザ（Firefox、Chrome、Brave、Edge）を使って、公式サイト[（https://metamask.io）](https://metamask.io/)からMetaMaskをインストールします。現在使用しているブラウザのみで問題が発生している場合を想定して、12文字のSecret Recovery Phraseを使ってウォレットを復元します。
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+MetaMask Mobileに表示されているトークンの残高が正しくないことをEtherscanで確認したら、以下の手順を実行します：
+
+1. インターネット接続が良好で安定していることを確認します。そうでない場合、トークンの値が最新のものでない可能性があります。
+2. 別のネットワークに切り替えてから元のネットワークに戻します。
+3. 可能であれば使用中のネットワークのRPC URLを別なものに変更します。詳しくは、[ネットワークの追加に関する記事](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)をご覧ください。
+4. [こちらの手順](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)に従ってトークンを非表示にして、[こちらの手順](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)に従ってトークンを再度追加します。
+
+**問題のトークンがEthereum以外のネットワーク（BNB、AVAX、MATICなど）のネットワークネイティブトークン**の場合、[ネットワークを削除](/networks-and-sidechains/managing-networks/how-to-remove-networks)してから[再度追加](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)します。
+
+**問題のトークンがETHの場合、[Secret Recovery Phrase](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys)が安全な場所にバックアップされていることを確認してから**、アプリを再インストールします。
+
+</TabItem>
+
+</Tabs>
+
+これらの手順を試しても問題が解決しない場合は、[サポートページ](https://support.metamask.io/hc/en-us)の「Start a Conversation」ボタンをクリックしてお問い合わせください。
+
+:::warning
+
+#### 問題のトークンには、供給量や価値に影響を与えるような仕組みが組み込まれていますか。
+
+EthereumやEVMに対応するチェーンには、多様なユーティリティを持つ膨大な種類のトークンが存在します。トークンの中には、さまざまな条件に応じて供給量や価値が動的に変動するよう設計されているものがあります：
+
+- トークンの供給量が調整される[Rebase token（リベーストークン）](/managing-my-tokens/user-guide-tokens)。
+- さまざまな種類の取引（単純な送金、スワップ、売却など）に「税金」が適用されるトークン。これらは、「Fee on transfer（送金手数料）」トークンと呼ばれることもあります。
+
+表示されているトークンの残高が正しくないと結論づける前に、上記の条件がトークンに適用されていないかをご確認ください。このような情報は通常、プロジェクトのホワイトペーパーやドキュメントに記載されています。
+
+:::

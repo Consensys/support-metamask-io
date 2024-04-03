@@ -1,0 +1,69 @@
+---
+title: How to clear your account activity/reset account
+image: /img/socialCards/how-to-clear-your-account-activityreset-account.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+**Note**: With version 10.28.1, the name of this feature on MetaMask Extension changed from *reset account *to* clear activity and nonce data. *Both perform the same function, but in this article, we'll use the MetaMask Extension terminology (_clear activity and nonce data_) to refer to them both.
+
+You should only clear your account activity when strictly necessary, most often to resolve stuck and pending transactions. We do not recommend you reset your account unless one of our Support agents suggests you do so.
+
+This function is intended primarily for developers, who may find it useful to clear an account's activity on a test network while continuing to use the same account.
+
+Note that clearing account activity **only affects the current network**. For example: if you're on BNB Chain, the only activity that will be cleared are your transactions on BNB Chain. Transactions on other networks, such as Ethereum, will be unaffected.
+
+**Before commencing, we recommend you [download your state logs](/managing-my-wallet/using-metamask/how-to-download-state-logs). This will allow our Support agents to troubleshoot the root cause if necessary. Clearing your activity is irreversible, and not a common requirement for most users.**
+
+#### **_You will not lose value in your accounts._**
+
+### To reset the account:
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. Click the three vertical dots in the top-right corner, and then go to Settings > Advanced.
+
+2. Scroll down to the 'Clear activity and nonce data' section and click the button.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/resetting-deleting-and-restoring/how-to-clear-your-account-activity-reset-account/MetaMask_clear_activity_tab_data_extension.png")
+          .default
+      }
+      alt="MetaMask clear activity tab data extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. Head to'settings' by clicking the gear icon in the bottom right corner, and then hit 'Advanced'.
+
+2. Click the 'Reset account' button.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/resetting-deleting-and-restoring/how-to-clear-your-account-activity-reset-account/MetaMask_reset_account_mobile.png")
+          .default
+      }
+      alt="MetaMask reset account mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>

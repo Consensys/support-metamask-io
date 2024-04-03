@@ -1,0 +1,31 @@
+---
+title: What happens to my tokens when I stake through MetaMask?
+image: /img/socialCards/what-happens-to-my-tokens-when-i-stake-through-metamask.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+The answer differs here based on which of our services you are using:
+
+<Tabs>
+
+<TabItem value="Pooled staking" label="Pooled staking">
+
+When you stake ETH or MATIC through MetaMask, our dapp enables you to interact directly with your selected staking provider. Your tokens are deposited into their protocol, and you receive liquid staking tokens directly from them in return. These tokens, such as Lido's stETH and stMATIC, Rocket Pool's rETH, or Stader Lab's MaticX, represent your proportional claim to tokens in their protocol.
+
+</TabItem>
+
+<TabItem value="Validator staking" label="Validator staking">
+
+Validator staking in MetaMask Portfolio is self-custodial, which means you retain control over what happens with your stake and rewards at all times.
+
+When you deposit, MetaMask Portfolio leverages Consensys Staking infrastructure to route your transaction to the Ethereum beacon deposit contract. Your funds stay in the deposit contract until you choose to withdraw your stake and exit your validator from the network. MetaMask Staking does not take control of your funds at any point in the staking **process**.
+
+</TabItem>
+
+</Tabs>

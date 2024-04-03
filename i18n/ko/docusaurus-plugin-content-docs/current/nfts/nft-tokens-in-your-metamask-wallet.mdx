@@ -1,0 +1,156 @@
+---
+title: "MetaMask 지갑의 NFT 토큰"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::note
+
+#### 암호화폐와 web3가 처음이신가요?
+
+web3 신규 사용자를 위해 특별히 설계된 간단한 학습 환경을 확인하려면 [MetaMask 학습](https://learn.metamask.io/)으로 이동하십시오. 완전히 무료이며 다국어로 제공되며 MetaMask를 사용하여 자신의 위치를 찾는 데 도움이 되는 시뮬레이션과 같은 유용한 도구가 포함되어 있습니다.
+
+:::
+
+MetaMask에서 NFT 시청 지원은 사용 방법에 따라 다릅니다. MetaMask 확장 프로그램에서 NFT를 표시할 수 없지만 MetaMask 모바일 및 [Portfolio Dapp](https://portfolio.metamask.io)에서 볼 수 있습니다.
+
+곧 NFT 지원을 받아 MetaMask 확장 프로그램을 업데이트할 것입니다.
+
+<Tabs>
+
+<TabItem value="Portfolio Dapp" label="Portfolio Dapp">
+
+현재 MetaMask 확장 프로그램에서 NFT를 볼 수 없습니다. 대신 Portfolio Dapp으로 이동하는 것이 좋습니다. [portfolio.metamask.io](https://portfolio.metamask.io)를 통해 해당 사이트로 바로 이동하거나 '자산' 및 '활동' 탭 바로 밑에 있는 MetaMask의 '포트폴리오 사이트' 링크를 따르십시오.
+
+#### Portfolio Dapp으로 NFT 관리
+
+Portfolio Dapp은 독립형 앱으로 MetaMask를 보완하고 토큰(및 NFT)을 관리하는 데 도움이 됩니다. NFT를 보려면 다음을 수행하기만 하면 됩니다.
+
+- [Portfolio Dapp](https://portfolio.metamask.io/) 시작
+- MetaMask로 로그인하여 보고자 하는 주소로 이
+- 'NFT' 탭 클릭
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/i18n/legacy/NFT_tokens_in_your_MetaMask_wallet_1.gif")
+          .default
+      }
+      alt="MetaMask 지갑의 NFT 토큰"
+    />
+  </div>
+</div>
+
+dapp에 연동되는 계정(소유)에 기인하는 모든 NFT는 자동으로 표시되어야 합니다. 모든 NFT가 올바르게 표시되지 않을 수 있습니다. 이는 타사 출처에 대한 데이터를 검색할 수 있는 방법과 관련이 있습니다. 그러나 우리는 대부분의 NFT가 Dapp에 표시되도록 하기 위한 목표를 가지고 호환성을 극대화하기 위해 노력하고 있습니다.
+
+</TabItem>
+
+<TabItem value="모바일" label="모바일">
+
+NFT는 **NFT 탭** 아래에 표시됩니다. 일부 NFT가 모바일 앱에 표시되지 않거나 **올바르게 표시되지 않을 수 있음**을 기억하십시오.
+
+NFT를 표시하는 가장 쉬운 방법은 앱의 NFT 자동 탐지 기능을 켜는 것입니다. 이를 수행하는 방법은 [FAQ](#faq)를 참조하십시오.
+
+자동 탐지 기능을 통해 NFT를 찾을 수 없는 경우, 다음 단계를 통해 수동으로 추가할 수 있습니다.
+
+1. **NFT의 *주소*를 찾습니다.** 예를 들어 **세부 정보** 아래 NFT 페이지의 OpenSea에는 '계약 주소'라고 표시된 파란색 하이퍼 링크 가격이 있습니다. 이를 클릭하면 이더스캔의 계약 주소로 이동합니다. 페이지 왼쪽 상단에는 '계약'으로 표시된 아이콘이 있으며 오른쪽 상단에는 긴 문자열과 숫자가 있습니다. 이는 NFT를 만든 계약 주소입니다. 주소 오른쪽 '복사' 아이콘을 클릭하면 클립보드에 해당 아이콘이 표시되어야 합니다.
+
+2. MetaMask 모바일에서 'NFT'를 누르고 'NFT 가져오기' 링크를 스크롤 다운하고 누르십시오.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../img/i18n/legacy/NFT_tokens_in_your_MetaMask_Mobile2.png")
+             .default
+         }
+         alt="MetaMask 모바일의 NFT 토큰"
+       />
+     </div>
+   </div>
+
+3. 클립보드의 NFT 주소를 '주소' 상자에 붙여넣습니다.
+
+4. **NFT의 *ID*를 찾습니다.** 수집 가능한 ID는 두 개의 NFT가 동일하지 않기 때문에 고유 식별자입니다. 다시 말하지만, OpenSea에서 이 숫자는 '세부 정보' 아래에 있습니다. 이를 기록해두거나 클립보드에 복사하십시오.
+
+5. ID를 MetaMask 모바일에 'ID'로 표시된 상자에 붙여넣고 '추가' 버튼을 누르면 NFT가 NFT 탭 아래에 표시됩니다.
+
+</TabItem>
+
+</Tabs>
+
+## **FAQ**
+
+<details>
+<summary>NFT 탐지 기능을 어떻게 켤 수 있나요?</summary>
+
+<div>
+
+앱 홈페이지의 'NFT' 탭으로 전환했을 때, NFT 탐지 기능을 이미 켜지 않은 경우 프롬프트 메시지가 표시됩니다. 포함된 링크를 따라 자동 탐지 기능을 켤 수 있는 적절한 설정 메뉴를 불러옵니다.
+
+참고: **NFT 자동 탐지 기능은 이더리움 메인넷에서만 사용할 수 있습니다**. 다른 네트워크를 선택한 경우 이 옵션은 설정에 표시되지 않습니다.
+
+그렇지 않을 경우, 다음 단계를 따르십시오.
+
+1. 앱의 왼쪽 상단 모서리에 햄버거 아이콘을 눌러 설정 메뉴를 찾습니다.
+
+2. '보안 및 개인 정보 보호'를 찾습니다.
+
+3. 스위치를 눌러 자동 탐지 기능을 켭니다. **'OpenSea API 활성화' 기능도 켜야 합니다. 그렇지 않을 경우, NFT 자동 탐지 스위치가 회색으로 표시됩니다**.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../img/i18n/legacy/MetaMask_Mobile_Autodetect_NFTs.gif")
+             .default
+         }
+         alt="MetaMask 모바일 자동 탐지 NFT"
+       />
+     </div>
+   </div>
+
+   대부분의 NFT는 지갑의 'NFT' 탭 아래에 자동으로 표시됩니다.
+
+</div>
+</details>
+
+<details>
+<summary>"귀하께서는 이 NFT의 소유자가 아닙니다" 오류</summary>
+
+<div>
+
+귀하는 NFT 소유자가 아니라는 메시지를 받을 경우 해당 토큰을 오른쪽 MetaMask 계정에 추가하려고 시도해야 합니다. 또한 네트워크의 블록 탐색기에서 MetaMask 지갑 주소에 NFT를 소유하고 있는지 확인하십시오. 블록 탐색기에서 지갑을 확인하는 방법이 확실치 않을 경우 [가이드](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer)를 참조하십시오.
+
+</div>
+</details>
+
+<details>
+<summary>저에게 실제로 NFT가 있는지 확인할 수 있는 방법은 무엇입니까?</summary>
+
+<div>
+
+[블록 탐색기에서 MetaMask 지갑 주소를 검색하고](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer) 트랜잭션을 검토하여 NFT가 지갑으로 성공적으로 전송되었는지 확인하십시오. 또한, NFT의 계약 주소를 검색하고 계약 주소의 위치가 지갑 주소와 일치하는지 확인하고 트랜잭션이 완료되었는지 확인하십시오.
+
+블록 탐색기의 "ERC-1155/ERC-721 토큰 Txns" 탭을 클릭하면 NFT를 사용하여 수행한 모든 트랜잭션을 볼 수 있습니다. 여기에서 NFT를 볼 수 없는 경우 발신자에게 문의하십시오.
+
+</div>
+</details>
+
+<details>
+<summary>"개인 주소가 감지되었습니다. 수집 가능한 계약 주소를 입력하십시오."</summary>
+
+<div>
+
+NFT 주소가 아닌 지갑 주소에 붙여넣은 경우 이 오류가 표시됩니다. 위의 _모바일_ 탭 아래에 제공되어 있는 지침에 따라 NFT의 계약 주소를 찾아 대신 붙여넣습니다.
+
+</div>
+</details>
+
+#### **블록 탐색기에 트랜잭션이 나타나지 않을 경우 어떤 작업도 수행할 수 없습니다.**

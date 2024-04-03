@@ -1,0 +1,113 @@
+---
+title: "Ghidul utilizatorului: rețele personalizate și rețele paralele (sidechains)"
+---
+
+:::note
+
+#### Ești nou în spațiul crypto și web3?
+
+Accesează [MetaMask Learn](https://learn.metamask.io/) pentru o experiență de învățare simplă, concepută special pentru nou-veniți în web3. Este complet gratuit, disponibil în mai multe limbi și include instrumente utile cum ar fi simulări, pentru a te ajuta să capeți încredere în tine în timp ce utilizezi MetaMask.
+
+:::
+
+Pe măsură ce ecosistemul Ethereum se extinde, o opțiune foarte populară pentru construirea de noi tehnologii este construirea unei **rețele personalizate** sau a unei **rețele paralele** **(sidechain)** — cu alte cuvinte, un alt blockchain sau o altă rețea compatibilă cu Ethereum — care mai apoi să permită utilizatorilor transferul de tokeni sau de valoari, între rețele.
+
+Există multe [exemple proeminente](/network-profiles/network-profiles-hub), și, pe măsură ce Ethereum [se extinde](https://ethereum.org/en/developers/docs/scaling/), ele vor crește și evolua fără îndoială. MetaMask a fost și continuă să fie un punct crucial, care le permite utilizatorilor să se deplaseze mai mult sau mai puțin fără probleme între rețele.
+
+Acestea fiind spuse, **există câteva capcane semnificative și comune pe care** **_vei vrea să le eviți_ atunci când interacționezi cu sidechain-urile dorite**. **Articolul acesta este scris pentru a fi un ghid non-definitiv pentru cele mai bune practici atunci când ai de-a face cu rețele compatibile EVM. Nu avem așteptarea de a acoperi toate modalitățile de a trata fiecare instanță a fiecărui sidechain, de aceea, următoarele îndrumări sunt generale. **Sfaturile de depanare le vei găsi mai jos.
+
+## Cele mai bune practici
+
+1. 1. ### Analizează cu grijă situația
+
+      - **Nu toate rețelele sunt sigure.** Pentru a oferi, de exemplu, tranzacții mai ieftine și mai rapide, rețelele personalizate au de obicei garanții de securitate și fiabilitate diferite față de rețeaua principală. Încearcă să înțelegi riscurile înainte de a aloca o valoare semnificativă într-o rețea personalizată.
+      - **Asigură-te că ai încredere în furnizorul de rețea. **Un furnizor de rețea rău intenționat poate minți cu privire la starea blockchain-ului, poate reține tranzacțiile și poate înregistra activitatea ta în rețea și adresa IP.
+
+   2. ### Asigură-te că folosești informații exacte și corecte ale rețelelor personalizate
+
+      - **Găsește rețeaua pe [https://chainlist.wtf/](https://chainlist.wtf/) pentru a o adăuga automat la MetaMask. **De asemenea, în MetaMask, poți adăuga manual rețele personalizate folosind alte câteva metode: consultă instrucțiunile noastre [aici.](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)
+      - **Verifică întotdeauna informațiile personalizate de rețea. **Când un site web solicită să adaugi o rețea personalizată, de unde ști că poți avea încredere în informații? Avem câteva recomandări în [ghidul nostru de verificare](/networks-and-sidechains/managing-networks/verifying-custom-network-information).
+
+   3. ### Utilizează întotdeauna bridge-uri sau portaluri recunoscute pentru a muta tokenii între rețele
+
+      - **MetaMask nu poate urmări tranzacțiile între rețele.** Tu ești responsabil pentru înțelegerea modului în care funcționează orice tranzacții sau depozite între rețele. Asigură-te că ai încredere în operatorul de rețea și în orice adresă Ethereum la care trimiți fonduri.
+
+   4. ### NU trimite NICIODATĂ tokeni direct dintr-o rețea în alta
+
+      - Dacă încerci să trimiți active crypto direct dintr-o rețea sau un blockchain în altul, cel mai probabil acest lucru va duce la pierderea **permanentă și ireversibilă a activelor**
+      - **Deși o rețea personalizată poate fi compatibilă cu Ethereum, acestea nu sunt la fel cu rețeaua principală Ethereum.** Este posibil să ai aceleași adrese Ethereum pe toate rețelele, dar activele și tranzacțiile tale sunt specifice fiecărei rețele, cu excepția cazului în care furnizorul de rețea personalizat permite mutarea fondurilor în și din ea.
+      - **Aceasta înseamnă că probabil trebuie să utilizezi un bridge pentru a muta activele dintr-un blockchain în altul. Citește mai multe despre bridge-uri [aici](/networks-and-sidechains/field-guide-to-bridges).**
+
+   5. ### Ține cont de limitările suportului tehnic
+
+      MetaMask este un instrument puternic care este deschis lumii pentru a putea construi pe baza acestuia. Asta înseamnă că multe alte rețele și aplicații descentralizate(dApps) folosesc și vor folosi MetaMask ca legătură între aplicația lor descentralizată și utilizator, adică tu. Asta nu înseamnă că MetaMask oferă suport tehnic pentru toate aceste produse și protocoale. Dacă interacționezi cu o terță parte non-Consensys, non-MetaMask, solicită mai întâi asistență tehnică de la aceasta, cu excepția cazului în care ești sigur că problema cu care te confrunți provine din MetaMask.
+
+      În plus, unele schimburi descentralizate (DEX) și aplicații descentralizate(dApps) populare sunt, după cum am menționat, _protocoale_ — adică sunt contracte inteligente, programe software care trăiesc pe blockchain-ul Ethereum și nu au nicio autoritate centralizată care *să le conducă *în modul în care este gestionat un site web sau un serviciu tradițional. Ele sunt pur interacțiune peer-to-peer. **Aceasta înseamnă că este posibil să nu ofere asistență tehnică **dincolo de un forum al utilizatorilor, Slack sau canal Discord. Din nou, vezi punctul #1 de mai sus.
+
+   6. ### Înțelege cum funcționează gas-ul pe diferite rețele
+
+      Când utilizezi sau interacționezi cu un sidechain sau o rețea care nu e rețeua principlă Ethereum, te rugăm să reții că **taxele de tranzacție sunt întotdeauna plătite în moneda nativă a rețelei**, de exemplu:
+
+      - Ai nevoie de BNB pentru a plăti taxele de gas pe Binance
+      - În rețeaua Polygon vei folosi MATIC
+
+      Asigură-te că ai suficienți tokeni nativi dacă intenționezi să efectuezi tranzacții de transfer sau de schimb.
+
+## Întrebări frecvente
+
+### [Cum să folosești un bridge cu rețeaua Arbitrum, utilizând MetaMask](https://consensys.net/blog/metamask/how-to-bridge-your-assets-to-arbitrum-using-metamask/)
+
+### [Cum să folosești bridge-ul Optimism](https://consensys.net/blog/metamask/how-to-bridge-tokens-from-ethereum-to-optimism-with-metamask/)
+
+### [Cum să trimiți tokeni la Binance (BNB Smart Chain)](/networks-and-sidechains/binance/sending-assets-to-binance-bnb-smart-chain)
+
+### [Cum să trimiți tokeni din rețeaua BSC sau alte rețele, pe rețeaua principală Ethereum](/networks-and-sidechains/binance/how-to-send-tokens-from-bsc-to-ethereum-or-other-chains)
+
+### [Este MetaMask compatibil cu rețeaua Polkadot?](/networks-and-sidechains/does-metamask-support-polkadot)
+
+### [Sfaturi de utilizare a portofelului Ronin cu MetaMask](/networks-and-sidechains/tips-for-using-metamask-and-ronin-wallets-successfully)
+
+## Depanare
+
+<details>
+<summary>Nu îmi pot vedea tokenii pe [numele rețelei].</summary>
+
+<div>
+
+- Ești conectat la rețeaua corectă în MetaMask? Dacă nu vezi rețeaua de care ai nevoie, adaug-o folosind [una dintre aceste metode](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+- Ai transferat corect tokenii? (Vezi punctele 2 și 3 de mai sus).
+- Ai [adăugat tokenul](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask) la MetaMask?
+
+</div>
+</details>
+
+<details>
+<summary>Cum pot obține ETH pe rețeaua principală?</summary>
+
+<div>
+
+Vezi [aici](/metamask-portfolio/buy/how-to-buy-crypto-in-metamask).
+
+</div>
+</details>
+
+<details>
+<summary>Cum obțin [tokeni ale rețelelor personalizate] pe [rețeaua principală sau rețeaua personalizată]? Cum îi mut între rețele?</summary>
+
+<div>
+
+- Acesta este un subiect mare, cu multe nuanțe. Anumiți tokeni sidechain, cum ar fi MATIC (rețeaua Polygon), pot fi achiziționați de pe rețeaua principală Ethereum prin MetaMask Swaps.
+- Reține că, indiferent de locul din care cumperi un token, **este posibil ca totuși să trebuiască să muți tokenii printr-un bridge sau portal pentru a-i muta între rețeaua principală și sidechain.**
+
+</div>
+</details>
+
+<details>
+<summary>Primesc eroarea "Internal JSON-RPC error". Ce trebuie să fac?</summary>
+
+<div>
+
+Vezi [aici](/networks-and-sidechains/managing-networks/error-internal-json-rpc-error-when-trying-to-interact-with-other-networks).
+
+</div>
+</details>

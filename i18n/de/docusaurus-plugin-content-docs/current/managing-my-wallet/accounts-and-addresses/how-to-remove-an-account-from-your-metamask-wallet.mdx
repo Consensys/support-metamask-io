@@ -1,0 +1,82 @@
+---
+title: "So entfernen Sie ein Konto aus Ihrer MetaMask-Wallet"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+### **Sie können nur importierte** und externe Konten entfernen, die Sie mit Private Keys oder JSON importiert haben (z. B. eine Hardware-Wallet).
+
+Konten, die Sie mit der Schaltfläche „Konto erstellen“ in MetaMask hinzugefügt haben, können nicht entfernt werden. Weitere Informationen und eine mögliche Problemumgehung finden Sie [unten](#wie-lösche-ich-erstellte-konten).
+
+<Tabs>
+
+<TabItem value="Erweiterung" label="Erweiterung">
+
+Durch einen Klick auf das ganz oben rechts befindliche Konto-Identicon gelangen Sie zu **Meine Konten**: Hier erhalten Sie einen Überblick über die von Ihnen importierten Konten, die in der Regel mit einem Hinweis neben dem Namen versehen sind.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_extension_iported_wallet_tag.png")
+          .default
+      }
+      alt="MetaMask_extension_iported_wallet_tag.png"
+    />
+  </div>
+</div>
+
+Klicken oder tippen Sie auf das importierte Konto. Die Kontoansicht wird geöffnet. Tippen oder klicken Sie rechts auf das Menü mit den 3 vertikalen Punkten. Daraufhin erscheint die Dropdown-Liste mit der Option **Konto Entfernen**:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet.gif")
+          .default
+      }
+      alt="how_to_remove_an_account_from_your_metamask_wallet.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobilgerät" label="Mobilgerät">
+
+1. Tippen Sie auf Ihren Kontonamen, um den Bildschirm für die Kontoauswahl zu laden. Es spielt keine Rolle, welches Konto Sie gerade ausgewählt haben.
+
+   Scrollen Sie auf diesem Bildschirm, bis Sie das importierte Konto finden, das Sie entfernen möchten. Es sollte an dem Hinweis „Importiert” leicht zu erkennen sein.
+
+2. Drücken Sie lange auf das Konto, um die Option zum Entfernen des Kontos aufzurufen. Es wird mit Ihrer Bestätigung sofort aus Ihrem MetaMask gelöscht.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet_mobile.gif")
+             .default
+         }
+         alt="how_to_remove_an_account_from_your_metamask_wallet_mobile.gif"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+:::info
+
+#### Wie lösche ich erstellte Konten?
+
+Derzeit können [erstellte](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet) Konten nicht entfernt werden — also die Konten, die als „Konto 2” usw. angegeben werden, wenn Sie auf „Konto erstellen” klicken. Wenn Sie sie wirklich entfernen möchten, müssen Sie MetaMask von Ihrem Gerät (Erweiterung oder Mobilgerät) entfernen, neu installieren und dann mit Ihrer [geheimen Wiederherstellungsphrase wiederherstellen.](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) **UNTERLASSEN SIE DAS, wenn Sie Ihre geheime Wiederherstellungsphrase nicht kennen**. Ohne sie können Sie bei der Neuinstallation nicht auf Ihr Wallet zugreifen. Beachten Sie in diesem Zusammenhang Folgendes:
+
+- Dadurch wird das Konto nicht _gelöscht_, sondern es wird in MetaMask lediglich nicht mehr angezeigt: Nach der Erstellung befindet sich Ihre Adresse dauerhaft auf der Blockchain und [kann nicht entfernt werden](/managing-my-wallet/resetting-deleting-and-restoring/how-can-i-delete-my-metamask-wallet).
+- Wenn Sie Ihre geheime Wiederherstellungsphrase verwenden, fügt MetaMask zuvor erstellte Konten automatisch wieder hinzu, sofern sie ETH enthalten. Weitere Informationen finden Sie [hier](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase).
+- Gleichzeitig werden alle importierte Konten und/oder Hardware-Wallets entfernt. Überzeugen Sie sich, dass Sie den Private Key/die Seed Phrases (oder die geheime Wiederherstellungsphrase, wenn es sich um ein anderes MetaMask-Konto handelt) gesichert haben, da andernfalls der Zugriff verloren geht.
+
+:::

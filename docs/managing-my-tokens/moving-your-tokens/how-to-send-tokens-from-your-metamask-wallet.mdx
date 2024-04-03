@@ -1,0 +1,155 @@
+---
+title: How to send tokens from your MetaMask wallet
+image: /img/socialCards/how-to-send-tokens-from-your-metamask-wallet.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info[Note:]
+
+This article focuses on sending ETH and other tokens that conform to the ERC-20 standard. However, the **process is essentially the same regardless of the network** you're using — just make sure you have enough of the network's native token to pay for the transaction.
+
+For more information on tokens in general, [see here](/managing-my-tokens/user-guide-tokens). For general information regarding transactions on Ethereum, [see here](/transactions-and-gas/transactions/user-guide-transactions-and-failed-transactions).
+
+:::
+
+## What you'll need:
+
+- The account address of the recipient
+- A sufficient balance of the _network native token _(on Ethereum, ETH; on Binance Smart Chain, BNB; etc.) in your account to [cover the gas fee](/transactions-and-gas/gas-fees/user-guide-gas).
+
+**Note**: If you are using a network other than Ethereum Mainnet, please ensure you have the corresponding token needed for gas fees. For example, the BNB token is used as gas for the Binance Smart Chain (BSC) network, and MATIC is necessary for Polygon. **For more information on networks other than Ethereum mainnet, see [here](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains).**Are you trying to send an NFT (an ERC-721 token?) If so, please follow [this](/nfts/how-do-i-send-receive-or-cash-out-an-nft) guide.
+
+## Steps:
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. From the landing page of your wallet, [make sure you're in the account from which you want to transact](/managing-my-wallet/accounts-and-addresses/switching-accounts-in-metamask), and hit the'send' button in the middle of the screen.
+
+2. Now you need to input the public address of the recipient. If you already have addresses saved in your address book, they will appear now.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/moving-your-tokens/how-to-send-tokens-from-your-metamask-wallet/MetaMask_send_tokens_choose_recipient_extension.png")
+          .default
+      }
+      alt="MetaMask send tokens choose recipient extension"
+    />
+  </div>
+</div>
+
+3. Enter the amount of tokens you want to send and click next.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/moving-your-tokens/how-to-send-tokens-from-your-metamask-wallet/MetaMask_send_tokens_choose_amount_extension.png")
+          .default
+      }
+      alt="MetaMask send tokens choose amount extension"
+    />
+  </div>
+</div>
+
+4. Now you're presented with the estimated gas fees of your transaction, which you can also adjust. Double-checking the recipient address before clicking 'Confirm' to proceed with the transaction is generally a good idea**.**
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/moving-your-tokens/how-to-send-tokens-from-your-metamask-wallet/MetaMask_send_tokens_gas_fees_extension.png")
+          .default
+      }
+      alt="MetaMask send tokens gas fees extension"
+    />
+  </div>
+</div>
+
+5. You will then be redirected to the homepage, where you can see a list of your recent transactions on the 'Activity' tab.
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. From anywhere in MetaMask, click the wallet actions button in the middle of the tab bar. From here, tap the'send' button.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/moving-your-tokens/how-to-send-tokens-from-your-metamask-wallet/MetaMask_locate_send_button_mobile.gif")
+          .default
+      }
+      alt="MetaMask locate send button mobile"
+    />
+  </div>
+</div>
+
+2. Now you'll need to input the address you want to send to. Either paste in the address from your clipboard (i.e. another app) or select one from your address book.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/moving-your-tokens/how-to-send-tokens-from-your-metamask-wallet/MetaMask_send_tokens_choose_recipient_mobile.png")
+          .default
+      }
+      alt="MetaMask send tokens choose recipient mobile"
+    />
+  </div>
+</div>
+
+3. Now you'll be taken to a screen where you can input the amount you want to send. You can also change the token type if needed by tapping its name in the blue box directly above the amount.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/moving-your-tokens/how-to-send-tokens-from-your-metamask-wallet/MetaMask_send_tokens_choose_amount_mobile.png")
+          .default
+      }
+      alt="MetaMask send tokens choose amount mobile"
+    />
+  </div>
+</div>
+
+4. When you tap 'Next', you will see the confirmation screen. Here you will see the details of your transaction, including the gas fee you're going to pay.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/moving-your-tokens/how-to-send-tokens-from-your-metamask-wallet/MetaMask_send_tokens_gas_fees_mobile.png")
+          .default
+      }
+      alt="MetaMask send_tokens gas fees mobile"
+    />
+  </div>
+</div>
+
+You can also edit your gas settings for the transaction by tapping the highlighted quantity of ETH in the 'Estimated gas fee' box.
+
+Tap'send' to confirm the transaction and finish the process.
+
+</TabItem>
+
+</Tabs>
+
+### Notes
+
+- The number of tokens and your transaction fees (gas, paid in ETH or the native token of the network, such as BNB or MATIC) will not be deducted immediately. The transaction status is pending, which means the transaction has been submitted to the blockchain network and is awaiting confirmation.
+- When the transaction is successful, you will see the updated amount of the token and ETH balances, as well as the status of the transaction updated to “Confirmed”.
+- If you click on the transaction under the **Activity** tab on MetaMask, you can review the transaction's status and information, and you can view the transaction record on the network's block explorer, such as [Etherscan](https://etherscan.io/), [BscScan](https://bscscan.com/) or [Polygonscan](https://polygonscan.com/).
+- Sometimes, your transaction may take longer to confirm. When that happens, you'll have the option to **Speed Up** the transaction by re-submitting the (first pending) transaction with a higher gas price, or **Cancel** the transaction before it gets confirmed. Learn more about [speeding up or cancelling a transaction](/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction).
+- Please see how to [deposit (receive) tokens to your MetaMask Wallet](/getting-started/direct-deposit-receive-tokens-to-your-metamask-wallet)if you want to receive tokens.
+- **This process is exactly the same for ETH as it is for other ERC-20 tokens, but always make sure that, when sending ERC-20 tokens, the receiving wallet supports the tokens you are sending. **

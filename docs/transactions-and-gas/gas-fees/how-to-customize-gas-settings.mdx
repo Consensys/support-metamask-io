@@ -1,0 +1,137 @@
+---
+title: How to customize gas settings
+image: /img/socialCards/how-to-customize-gas-settings.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+For every transaction you send in MetaMask, you'll need to pay gas. For a general explainer, see [here](/transactions-and-gas/gas-fees/user-guide-gas).
+
+You can easily customize the gas you pay for each transaction according to your circumstances. For example, sometimes you may want to pay more to help your transaction be processed sooner; other times, you may be happy to wait.
+
+First, let's define the various terms you'll encounter when customizing gas settings:
+
+- The gas limit
+
+  The _gas limit_ is the **maximum amount of gas units you are willing to pay for** in order to carry out a transaction or EVM operation.
+
+- The max priority fee
+
+  The _max priority fee_ goes to the validator, and incentivizes them to prioritize your transaction.
+
+- The max fee
+
+  The max fee is the total, global amount paid for your transaction: **base fee + priority fee.**
+
+Remember that **gas you pay is not charged or collected by MetaMask**, and not something we can control.
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+:::info
+
+#### Using an older version of MetaMask Extension?
+
+These instructions apply to v10.29.0 or newer. In versions older than v10.29.0, you may need to first turn on 'Advanced gas controls' in settings.
+
+:::
+
+When you start to send a transaction, you'll see an icon above your gas details. This will likely read 'Low', 'Market, or 'Aggressive' depending on the last setting you used:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/gas-fees/how-to-customize-gas-settings/MetaMask_Advanced_gas_market.png")
+          .default
+      }
+      alt="MetaMask Advanced gas market"
+    />
+  </div>
+</div>
+
+Clicking on this button will allow you to choose between these three options. These describe the amount of gas you're choosing to pay, and have these main implications:
+
+- '**Low**' involves paying less for gas, and most likely waiting longer for your transaction to complete.
+- '**Market**' sets your gas to reflect the current market rates.
+- '**Aggressive**' enables you to be more forceful with your transaction, and have it completed as soon as possible by paying more.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/gas-fees/how-to-customize-gas-settings/MetaMask_edit_gas_fee_2.png")
+          .default
+      }
+      alt="MetaMask edit gas fee"
+    />
+  </div>
+</div>
+
+Hit '**Advanced**' to customize gas parameters directly.
+
+### Saving your gas settings for reuse
+
+The advanced gas fee settings are network-specific, so you can enjoy a personalized and optimized experience for each network you use.
+
+If you want to reuse the settings you've just configured, make sure to check the box that lets you save your settings as the default. Then, simply click'save' to ensure your gas settings become the default values for future use.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/gas-fees/how-to-customize-gas-settings/MetaMask_advanced_gas_controls_save_settings.png")
+          .default
+      }
+      alt="MetaMask advanced gas controls save settings"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+When you get to the final screen before sending your transaction, you will see an "**Estimated gas fee**". To the right, the fee will appear underlined in blue:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/gas-fees/how-to-customize-gas-settings/MetaMask_advanced_gas_controls_mobile_1.png")
+          .default
+      }
+      alt="MetaMask advanced gas controls mobile"
+    />
+  </div>
+</div>
+
+Click on the fee, and a menu will appear with a slider, and another option to click on 'Advanced Options'. The slider lets you pick between three options that describe how much gas you want to pay:
+
+- **'Low'** involves paying less for gas, and most likely waiting longer for your transaction to complete.
+- **'Market'** sets your gas to reflect the current market rates.
+- **'Aggressive'** enables you to be more forceful with your transaction, and have it completed as soon as possible by paying more.
+
+When you do, this menu will open and you will have the opportunity to customize your gas fully:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/gas-fees/how-to-customize-gas-settings/MetaMask_advanced_gas_controls_mobile_2.png")
+          .default
+      }
+      alt="MetaMask advanced gas controls mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>

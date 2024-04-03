@@ -1,0 +1,89 @@
+---
+title: How to add accounts in your wallet
+image: /img/socialCards/how-to-add-accounts-in-your-wallet.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info[Want to add an account from another wallet, associated with a different Secret Recovery Phrase/seed phrase?]
+
+Head to _[How to import an account](/managing-my-wallet/accounts-and-addresses/how-to-import-an-account)_ instead. Imported accounts are those you add to MetaMask that originate from other wallets, or other Secret Recovery Phrases/seed phrases. This article refers to *adding *accounts derived from your current MetaMask Secret Recovery Phrase.
+
+:::
+
+When you create your MetaMask wallet, you will be given a Secret Recovery Phrase, and an account is automatically generated. you'll see that as your _Account 1_ (default account).
+
+If you'd like to create and manage multiple MetaMask accounts, you could do so simply by adding more accounts. Each of these is associated with the same Secret Recovery Phrase: think of your wallet (your Secret Recovery Phrase) as a container of one or more accounts. (For more detail, see here: [What's the difference between a wallet and an account?](/managing-my-wallet/using-metamask/whats-the-difference-between-a-wallet-and-an-account-))
+
+**Note that once you add an account, you cannot permanently delete it. **It will exist on the blockchain forever.
+
+If you want to re-add accounts after restoring your wallet using your Secret Recovery Phrase, take a look at [this article](/managing-my-wallet/accounts-and-addresses/how-to-add-missing-accounts-after-restoring-with-secret-recovery-phrase).
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. Click the account selector at the top of your wallet.
+
+2. Click 'Add account or hardware wallet'.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet/MetaMask_find_add_account_button_extension.gif")
+          .default
+      }
+      alt="MetaMask find add account button extension"
+    />
+  </div>
+</div>
+
+3. Select 'Add a new account' in the subsequent menu.
+
+4. Enter your preferred name and then hit 'Create' to confirm.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet/MetaMask_create_new_account_extension.gif")
+          .default
+      }
+      alt="MetaMask create new account extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. In wallet view, tap the name of the currently selected account.
+
+2. On the account selector menu that appears, tap 'Add account or hardware wallet', then select 'Add new account'.
+
+3. The account will be added when you tap. If you want to change its name later, use the instructions [here](/managing-my-wallet/accounts-and-addresses/how-do-i-change-my-account-name-).
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet/MetaMask_create_additional_account_mobile.gif")
+          .default
+      }
+      alt="MetaMask create additional account mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+As mentioned above, accounts added using this method are permanent and cannot be removed. They are associated with your Secret Recovery Phrase from the point of creation onwards. If you really want to no longer see them in your wallet, you could restore your wallet (do **_not_** do this unless you have your Secret Recovery Phrase recorded somewhere, or you will lose access to all of your accounts). Any accounts with a zero ETH balance will not be automatically re-added during this process, meaning you'll no longer see them.

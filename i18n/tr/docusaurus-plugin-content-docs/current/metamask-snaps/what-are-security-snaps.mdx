@@ -1,0 +1,83 @@
+---
+title: "MetaMask Snaps İşlem İçgörüleri nedir?"
+---
+
+MetaMask Snaps'in tanıttığı yeni işlevselliklerden biri işlem içgörüleridir.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../img/metamask-snaps/what-are-security-snaps/MetaMask_Snaps_MobyMask_phishing_warning.png")
+          .default
+      }
+      alt="MetaMask_Snaps_MobyMask_phishing_warning.png"
+    />
+  </div>
+</div>
+
+İşlem İçgörüleri, işlem komutunda, Snap'lerin göndermek üzere olduğunuz bir işlem hakkında gerekli bilgileri sunmasını sağlayan yeni bir sekme sunar.
+
+## İşlem İçgörülerinin Tanıtımı
+
+İşlem İçgörüleri, Snap'lerin aşağıdaki gibi (ancak bunlarla sınırlı kalmaksızın!) gerekli içgörüleri sunmasını sağlayarak işlem yolculuğunuzu bir sonraki seviyeye taşır:
+
+1. **Kimlik avı veri tabanı kontrolleri**Kötü amaçlı bir adres ile etkileşim kurup kurmadığınızın öğrenilmesinde size ekstra yardım sunarak alıcı adresinin bilinen kimlik avı veri tabanlarına bağlı olup olmadığını bilin.
+2. **İşlem simülasyonları**Bir Snap, işlemi yerel olarak veya Yapay Zeka kullanarak simüle ederek bir işlemin başarılı ya da başarısız olabileceğini ve durum değişikliklerini tahmin edip edemeyeceğini tespit etmenize yardımcı olabilir.
+
+## İşlem İçgörülerine başlarken
+
+İşlem İçgörülerine başlamak kolaydır: küçük bir adım adım listesi hazırladık:
+
+1. **MetaMask'i güncel tutun**MetaMask tarayıcı uzantınızın en son sürümle güncel olduğundan emin olun; [nasıl güncelleyeceğinizi buradan öğrenin](/managing-my-wallet/using-metamask/how-to-update-the-version-of-metamask). MetaMask Snaps'in şu anda özel olarak MetaMask tarayıcı uzantısı için mevcut olduğunu unutmayın.
+2. **İşlem içgörülerinden yararlanan bir Snap bulun**İşlem İçgörülerinin neleri etkinleştiriğini incelemek istiyorsanız [Wallet Guard Snap](https://snaps.metamask.io/snap/npm/wallet-guard-snap?utm_source=metamaskSupport&utm_medium=knowledge-base&utm_campaign=2023_Sep_snaps-launch_content_txinsights)'i denemeyi düşünebilirsiniz.
+3. **Bir işlem başlatın**En sevdiğiniz merkeziyetsiz uygulamaya gidin ve yeni bir işlem başlatın; MetaMask onay ekranınızda yeni bir sekme belirdiğini göreceksiniz. Alıcı (sözleşme) adresi hakkında Wallet Guard Snap tarafından sunulan bilgilere erişim sağlamak ve daha önce kötü amaçlı olarak işaretlenip işaretlenmediğini görüntülemek için üzerine tıklayın.
+
+## Sıkça sorulan sorular (SSS)
+
+<details>
+<summary>Tüm Snap'lerde işlem içgörüleri var mı?</summary>
+
+<div>
+
+Her Snap işlem içgörülerini kullanmaz. İşlem içgörülerinden yararlanıp yararlanmadığını görmek için bağımsız Snap açıklamalarını inceleyin. Bir Snap yüklerken aynı zamanda istediği izinleri kontrol ederek işlem içgörülerinden yararlanıp yararlanmadığını da görebilirsiniz:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/metamask-snaps/what-are-security-snaps/MetaMask_Snaps_transaction_insights_permission.png")
+          .default
+      }
+      alt="İşlem içgörülerini al ve görüntüle"
+    />
+  </div>
+</div>
+
+</div>
+</details>
+
+<details>
+  <summary>
+    İşlem içgörüleri kullanılırken gizlilik endişeleri var mıdır?
+  </summary>
+  <div>
+    {" "}
+    Farklı Snap türleri, yükleme sırasında verilen izinlere göre farklı bilgilere
+    erişim sağlar. Üçüncü bir tarafça geliştirilen Snap ile paylaştığınız tüm kullanıcı
+    verileri doğrudan Snap geliştiricileri tarafından toplanacaktır; MetaMask'in
+    bu verilere erişimi yoktur. Sadece güvendiğiniz geliştiricilerden Snap'leri yükleyin
+    ve bir Snap'i yüklemeden önce her zaman Snap'in gizlilik politikasını ve kullanım
+    şartlarını inceleyin.{" "}
+  </div>
+</details>{" "}
+
+<details>
+  <summary>Başka sorularım var!</summary>
+  <div>
+    {" "}
+    [MetaMask Snaps SSS sayfasına](/metamask-snaps/metamask-snaps-faq) bakın.{" "}
+  </div>
+</details>
+
+İşlem içgörüleri MetaMask Snaps'in tanıttığı yeni özelliklerden sadece biridir; ayrıca [Birlikte Çalışabilirlik](/metamask-snaps/what-are-interoperability-snaps) veya [Bildirimler](/metamask-snaps/what-are-communication-snaps) özelliklerini öğrenmeyi de unutmayın! MetaMask Snaps'te yeni misiniz? [Başlayın](/metamask-snaps/getting-started-with-metamask-snaps).

@@ -1,0 +1,107 @@
+---
+title: How to remove an account from your MetaMask wallet
+image: /img/socialCards/how-to-remove-an-account-from-your-metamask-wallet.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Any account you've added to MetaMask can easily be [hidden](#hide-an-account) from your account selector menu, allowing you to view the accounts that are most important to you more easily.
+
+Depending on the account type, you may also be able to [remove accounts](#remove-an-account) from your MetaMask instance altogether.
+
+## Hide an Account
+
+Hiding an account is no big feat; click on the three vertical dots menu to the right of your account, and click 'Hide account'.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-remove-an-account-from-your-metamask-wallet/MetaMask_hide_account.gif")
+          .default
+      }
+      alt="Hide an account from your accounts list"
+    />
+  </div>
+</div>
+
+You can also easily unhide accounts so they show up in the main accounts list again. In the account selector menu, click 'Hidden accounts' to reveal the accounts you've hidden. Then, click the three vertical dots menu to the right of the account you wish to unhide, and click 'Show account'.
+
+## Remove an Account
+
+### **You can only remove imported accounts** and external accounts that you imported with a private key or JSON file (such as a hardware wallet).
+
+Accounts you've added using the '[Add account](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet)' button in MetaMask cannot be removed. See below for more information and a potential workaround, or consider hiding them.
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+Navigate to your accounts by clicking the account selector at the top of the screen. Here you will see any accounts you've imported, as they should be labelled.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-remove-an-account-from-your-metamask-wallet/MetaMask_imported_account_list_extension.png")
+          .default
+      }
+      alt="MetaMask imported account list extension"
+    />
+  </div>
+</div>
+
+In the account selector dropdown, click on the three vertical dots menu to the right of the imported account. This will open the menu where you can click '**Remove account**':
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-remove-an-account-from-your-metamask-wallet/MetaMask_remove_imported_account_extension.gif")
+          .default
+      }
+      alt="MetaMask remove imported account extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. In wallet view, tap on your account name to bring up the account selector screen. It doesn't matter which account you currently have selected.
+
+   On this screen, scroll until you find the imported account you want to remove. They should be easily identifiable through the 'Imported' label next to them.
+
+2. Long press on the account to bring up the option to remove it. It'll immediately disappear from your MetaMask when you confirm.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-to-remove-an-account-from-your-metamask-wallet/MetaMask_remove_imported_account_mobile.gif")
+          .default
+      }
+      alt="MetaMask remove imported account mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+:::info[How do I remove created accounts?]
+
+It is currently impossible to remove [created](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet) accounts — the ones that appear as 'Account 2' etc. when you click 'Add account'. If you need to remove them, you must remove MetaMask from your device (Extension or Mobile), reinstall, and then [restore using your Secret Recovery Phrase](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase). However, **DO NOT do this if you don't have your Secret Recovery Phrase**. Without it, you won't be able to get access to your wallet when you reinstall. If you do this, bear in mind:
+
+- This will not _delete_ the account, but just stop it being visible in MetaMask: once created, your address is permanently on the blockchain and [cannot be removed](/managing-my-wallet/resetting-deleting-and-restoring/how-can-i-delete-my-metamask-wallet).
+- When you restore using your Secret Recovery Phrase, MetaMask will automatically re-add previously created accounts if they hold ETH. See [here](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) for more information. If the account has some ETH in it, it will reappear when you restore.
+- Any imported accounts and/or hardware wallets will also be permanently removed. Make sure you have their private keys/seed phrases (or Secret Recovery Phrase if another MetaMask account) backed up, or you won't be able to access them again. After you restore your wallet, you can re-add external accounts by [importing them again.](/managing-my-wallet/accounts-and-addresses/how-to-import-an-account)
+
+:::

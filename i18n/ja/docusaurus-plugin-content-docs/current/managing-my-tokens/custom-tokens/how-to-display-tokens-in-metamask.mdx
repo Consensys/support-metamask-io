@@ -1,0 +1,347 @@
+---
+title: "MetaMaskでトークンを表示する方法"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+**クイックリンク：**
+
+- [自動トークン検出](#トークン検出機能の強化)
+- [検索バーを使用してトークンを追加](#手動で検索を使ってトークンを追加)
+- [カスタムトークンを追加](#カスタムトークンを追加する方法)
+- [トークンの削除／非表示](#トークンを非表示にする方法)
+- [トークンのコントラクトアドレスを見つける](#トークンのアドレスがわからない場合はどうすればいいですか)
+- [ブロックエクスプローラーを使用してトークンを追加する](#ブロックエクスプローラーを使用してトークンを追加する方法)
+- [コインリストサイトを使用してトークンを追加する](#コインリストサイトを使用してトークンを追加する方法)
+- [ポートフォリオDappの利用](#ポートフォリオdappの利用)
+
+通常、MetaMaskは、あなたのERC-20スタンダードトークン（あるいは[スタンダードトークン](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)）をアカウントページに表示します。しかし、Ethereumあるいは他のネットワーク上のトークンの急増に伴い、MetaMaskは正式なリストを保持していませんが、ERC-20準拠トークンを追加することは可能です。
+
+リストされていないトークンをMetaMaskウォレットに追加するには2つの異なる方法があります。
+
+まず、アドレスが保有する[トークンを自動で検知](#トークン検出機能の強化)する高度な機能を有効にし、ウォレットに追加することができます。これは、様々なコミュニティのトークンリストから集められたトークンのリストを使用します。**MetaMaskは、「承認された」あるいは「有効な」トークンの独自のリストは保有していません**。このオプションを選択した場合は、見慣れていないトークンについて常に注意を払う必要があることに留意してください。
+
+1. よく知らないウェブサイト、調査していないウェブサイト、信頼するに足りないウェブサイトと対話したり、接続したりしないでください。
+2. エアドロップされたトークンや見慣れないトークンを常に推測し、それに対処する前にデューデリジェンスを行ってください。トークンの安全性に関するベストプラクティスについては、[こちら](/managing-my-tokens/token-safety-practices)をご覧ください。
+3. トークンを使用してトランザクションを試み、トランザクションに失敗し、ブロックエクスプローラーにスキャマーが書いたウェブサイトへの誘導エラーが表示された場合、そのウェブサイトはフィッシングサイトである可能性が高いので、決してリンクをクリックしないでください。
+4. スキャマーがあなたの資金を奪おうとする手口についての情報を常に知っておいてください。 ウェブ上で目にする情報に、必ずしも信頼するに足る適切な保護措置が取られているわけではないことに注意してください。
+
+## トークン検出機能の強化
+
+:::info
+
+#### 特定のネットワークでのみ利用可能です。
+
+トークン検出機能の強化は以下でのみ利用できます。
+
+- Ethereumメインネット
+- Avalanche
+- BNBスマートチェーン
+- Polygon
+
+:::
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+右上のアイデンティコンをクリックし、「Settings」（設定）から「Security & Privacy」（セキュリティとプライバシー）に移動、トグルがオンになっていることを確認します。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Enhanced_automatic_token_detection_MetaMask2.png")
+          .default
+      }
+      alt="トークン自動検出機能を強化したMetaMask"
+    />
+  </div>
+</div>
+
+必要に応じてあとでいつでもオフにできます。
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+ホームページの左上のハンバーガーアイコンをヒットし、「Settings」（設定）を見つけます。ここから、「Advanced」（詳細設定）に移動し、トークン検出トグルが表示されるまでスクロールします。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Enhanced_automatic_token_detection_MetaMask_Mobile.png")
+          .default
+      }
+      alt="トークン自動検出機能を強化したトークン自動検出機能を強化したMetaMask Mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**トークン検出を有効にした後、資産リストに戻り、必要に応じて更新します。うまくいけば、以前表示されなかったトークンが表示されています。**
+
+_トークン検出は、この設定がオンかオフに関わらず、Ethereumメインネット上で行われることにご注意ください。トークン検出機能を拡張して、上記に記載された追加ネットワークをカバーするだけです。_
+
+## 手動で検索を使ってトークンを追加
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+トークンを表示するには、「**Assets**」（資産）タブをクリックしてください。トークンはこのタブに表示されているはずです。もし表示されていなければ、自動トークン検出ではこれらのトークンを見つけられなかったため、下の「Import token」（トークンをインポート）をクリックします。
+
+ここをクリックして、検索バーに移動します。
+
+1. 検索したいトークンに含まれる単語を入力します。例えば、Chainlink（シンボル：LINK）を検索したい場合は、検索バーに「LI」と入力します。すると検索バーはあらゆる提案を返してくれます。
+2. 興味のあるトークンを選択し**Next**をクリックして進みます。（トークンを選択するとすぐに、ボタンの境界線が青くハイライトされます）
+3. **Add token**（トークンを追加）をクリックして、先に進みます。それからあなたのアカウントページにリダイレクトされます。追加したばかりのトークンがリストされています。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_token_MetaMask_Extension.gif")
+          .default
+      }
+      alt="トークンをMetaMask Extensionにインポートする"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. ウォレットページで、スクリーン下方に「Import token」（トークンをインポート）のリンクを見つけられます。
+2. このリンクから検索バーに進みます。追加したいトークンの名前を入力してください。
+3. トークンを見つけたら、それをタップして選択し、スクロールダウンすると、「インポート」ボタンが見つかります。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_token_MetaMask_Mobile.gif")
+          .default
+      }
+      alt="トークンをMetaMask Mobileにインポートする"
+    />
+  </div>
+</div>
+
+アカウント資産にトークンがリストされました。
+
+</TabItem>
+
+</Tabs>
+
+## トークンを非表示にする方法
+
+いったん追加した後に、資産リストからそのトークンを削除することもできます。
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+ウォレットページで[Assets]タブを見つけ、削除したいトークンをクリックしてください。
+
+ここから、右上の3つの点をクリックし、[Hide]をクリックします。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Hide_token_extension.gif")
+          .default
+      }
+      alt="トークンのエクステンションを隠す"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+iOSとAndroidの両方で、トークンを長押ししてください。これで、削除するオプションが表示されます。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Hide_token_mobile.png")
+          .default
+      }
+      alt="トークンモバイルを非表示にする"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**検索するトークンが最も普及しているトークンでない場合、検索バーが照会したトークンを返さないことがあります。**この場合、[カスタムトークンを追加](#カスタムトークンを追加する方法)することができます（手動）。
+
+## カスタムトークンを追加する方法
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. ウォレットページの[Assets]タブの下にある[Import tokens]をクリックします。
+
+2. 上にある[Custom token]タブに切り替え、最初のフィールドにトークンのアドレスを入力します。これがどこにあるかわからない場合は、[下記](#トークンのアドレスがわからない場合はどうすればいいですか)を参照してください。
+
+3. ほとんどの場合、トークンシンボルとトークンが使用する小数点以下の桁数は自動的に入力されます。\
+   自動的に入力されない場合は、ネットワークのブロックエクスプローラーにアクセスし、トークンを見つけます。シンボルと小数点以下の桁数は、おそらく表示されます。
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details.png")
+          .default
+      }
+      alt="カスタムトークンの詳細を見つける"
+    />
+  </div>
+</div>
+
+それでもトークンの詳細が見つからない場合は、トークンのドキュメントをWeb検索して探してみてください。
+
+4. [Add Custom Token]をクリックして、次に進みます。
+5. トークンの追加を行うか、確認するページが表示されます。\
+   [Import Tokens]をクリックすると、トークンの種類がウォレットに追加されます。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_custom_token_MetaMask_Extension.gif")
+          .default
+      }
+      alt="カスタムトークンをMetaMask Extensionにインポートする"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. ウォレットのページから[Import tokens]のリンクを見つけてください。タップするとトークンを追加するメニューが表示されます。
+2. [Custom token]タブに移動します。ここで、トークンのコントラクトアドレス、シンボル、[Token of Precision]（小数点以下何桁までかなど）を求める３つのフィールドが表示されます。
+3. [トークンのアドレスを見つけて](#トークンのアドレスがわからない場合はどうすればいいですか)、最初のフィールドに貼り付けます。シンボルと小数点以下の桁数は自動的に入力されます。自動入力されない場合は、ネットワークのブロックエクスプローラにアクセスし、トークンを検索してください。そのページでトークンのシンボルや小数点以下の桁数を簡単に見つけることができます。
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details_mobile.png")
+          .default
+      }
+      alt="カスタムトークンの詳細を見つける"
+    />
+  </div>
+</div>
+
+4. [Import]をタップし、あなたのウォレットにトークンを追加します。あなたのウォレットページにリダイレクトされ、新たに加えたトークンが[tokens]タブに加わっているのが確認できます。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_custom_token_MetaMask_mobile.gif")
+          .default
+      }
+      alt="Import_custom_token_MetaMask_mobile.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+## トークンのアドレスがわからない場合はどうすればいいですか？
+
+アドレスの確認方法については、[こちらの記事](/managing-my-tokens/custom-tokens/how-to-find-a-token-contract-address)をご覧ください。
+
+トークンを送信してきた人に、トークンのコントラクトアドレスを尋ねることもできます。
+
+**誰かがあなたにトークンを送ったと言っても、トークンアドレスや、トランザクションハッシュ（独自のトランザクションID）を提供できない場合は、実際には送信していない可能性があることにご注意ください。**
+
+## ブロックエクスプローラーを使用してトークンを追加する方法
+
+> 注：この方法には一般的に同じようなデザインが採用されているため、Etherscanのほか、[BscScan](https://bscscan.com/)、[Polygonscan](https://polygonscan.com/)、[Snowtrace](https://snowtrace.io/)など、ほとんどの主要なブロックエクスプローラーで機能します。
+
+1. ブロックエクスプローラーに移動します。
+2. トークンを検索します。メニューバーの[Tokens]リンクからアクセスすることもできます。
+3. トークンのプロファイルサマリーの右上にある[More]ボタンをクリックします。
+4. [Add token to MetaMask (Web3)]をクリックします。
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_using_block_explorer.png")
+          .default
+      }
+      alt="ブロックエクスプローラーを使用してトークンを追加する"
+    />
+  </div>
+</div>
+
+5. MetaMaskは、トークンを追加したいか確認するポップアップを表示します。
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_MetaMask_notification.png")
+          .default
+      }
+      alt="MetaMaskの通知にトークンを追加する"
+    />
+  </div>
+</div>
+
+## コインリストサイトを使用してトークンを追加する方法
+
+CoingeckoやCoinMarketCapなどのサイトでは、MetaMask統合を提供しています。これにより、そのサイト上のエントリーから直接MetaMaskにトークンを追加することができます。
+
+これにアクセスするには、これらのサイトの1つにアクセスし、検索バーを使用して追加したいトークンを見つけるだけです。次に、コントラクトアドレスを見つけて、MetaMaskのキツネのアイコンをクリックします。ウォレットにトークンを追加するかを確認するプロンプトが表示されます。
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Add_token_to_MetaMask_from_coin_listing_site2.gif")
+          .default
+      }
+      alt="Add_token_to_MetaMask_from_coin_listing_site2.gif"
+    />
+  </div>
+</div>
+
+:::info
+
+#### 注意
+
+MetaMask Mobileでは、デバイスの標準ブラウザではなく、**アプリ内ブラウザを使用してサイトにアクセスしていることを確認してください**。これは、Extensionを使用してデスクトップブラウザで実行できるようにMetaMaskと統合されたWebリンクにアクセスする唯一の方法です。
+
+:::
+
+この方法なら、トークン所有者が対象のネットワークに対応するスマートコントラクトとデプロイしているかどうかによって、異なるネットワークにトークンを追加することもできます。コントラクトアドレスの隣にある3つの点をクリックして別のネットワークを選択し、キツネのアイコンをクリックして対象のネットワークにトークンを追加します。
+
+## ポートフォリオDappの利用
+
+[Portfolio Dapp](https://portfolio.metamask.io/)は、トークンの残高を集約して表示する、新しいMetaMask関連プラットフォームです。便利なことに、コンテキスト内でウォレットと接続すると、**自動的にトークンの大部分を検出**し、表示することができます。
+
+そのために必要なことは、リンクをフォローしてウォレットを接続するだけです。Dappの詳しい使用方法については、[こちらの記事](/metamask-portfolio/)をご覧ください。

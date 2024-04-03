@@ -1,0 +1,52 @@
+---
+title: Bitcoin (BTC) on EVM-compatible networks
+image: /img/socialCards/bitcoin-btc-on-evm-compatible-networks.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+## First things first:
+
+The short answer is that Bitcoin and Ethereum (and, by extension, EVM-compatible networks) are not interoperable. You cannot seamlessly bridge your Bitcoin onto Ethereum. If you want to learn why, keep reading.
+
+## Not all blockchains are created compatible.
+
+The Bitcoin network was, in many ways, the 'proof of concept' for public blockchain technology: it showed that, given proper incentive mechanisms and safety measures, a currency could be maintained on a global scale, in a decentralized, trustless—that is, with no central trusted authority—manner.
+
+The Ethereum network is the next step (arguably, an exponential step) along that path. The Ethereum blockchain isn't just keeping track of a currency. It maintains, live at all times, a global public computer that is capable of maintaining a global, decentralized currency (and many of them, at that). And on top of that, a global, decentralized monetary and financial system.
+
+## Different blockchains have different 'native currencies'
+
+This is a topic both deep and broad, but in short: virtually all public blockchains have what is called a 'native currency', the token that is used to pay for gas, transactions, or computational work on the network. Bitcoin's native currency is bitcoin (BTC), and Ethereum's native currency is Ether (ETH).
+
+## You can't just send BTC to an Ethereum address, or vice versa
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/networks-and-sidechains/bitcoin-btc-on-evm-compatible-networks/sendtokens.jpg")
+          .default
+      }
+      alt="sendtokens.jpg"
+    />
+  </div>
+</div>
+
+### **If you attempt to do this, your tokens will probably be sent into nothingness and you will not get them back.**
+
+Given that different blockchains are programmed differently, with different standards for tokens, functionality, and even wallets and addresses, you can't just send BTC to an Ethereum wallet or the other way around.
+
+That said, there are many blockchains that are _EVM-compatible_, meaning they are technically compatible with Ethereum mainnet, and tokens might be transferrable between them. **Still, this does not mean that you can just send a token from one EVM-compatible chain to another. If you are going to transfer tokens between EVM-compatible chains,[use a bridge.](/networks-and-sidechains/field-guide-to-bridges)**
+
+And remember — MetaMask is made to be your wallet no matter the EVM-compatible chain you're on. For instructions on adding a new network, [see here](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+
+## If you want to trade with BTC on an EVM-compatible chain, there are options
+
+If what you're looking to do is to hold BTC, you can do that on an EVM-compatible chain, through the use of what is called a _wrapped token _(deeper explanation [here)](/managing-my-tokens/user-guide-tokens). Essentially, this is BTC's value represented on an EVM chain, bundled within an EVM-compliant token wrapper (usually an ERC-20 token).
+
+## Keep an eye out for new developments
+
+The crypto space—and MetaMask itself—evolves very quickly. Although the blockchains and tokens themselves are fundamentally incompatible, it's possible that in the future users will be able to manage their assets across chains, including the Bitcoin Network, right from MetaMask.

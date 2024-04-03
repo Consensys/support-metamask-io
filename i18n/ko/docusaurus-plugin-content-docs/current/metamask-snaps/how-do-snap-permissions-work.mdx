@@ -1,0 +1,82 @@
+---
+title: "Snap의 권한 허용은 어떻게 진행되나요?"
+---
+
+MetaMask Snaps은 가능성의 세계를 열어주지만, 이를 활용하기 위해서는 사용자의 동의가 필요합니다. 설치 시, Snap은 MetaMask 지갑과 관련된 다양한 기능에 대한 접근 권한을 요청할 수 있으며, 이는 핸드폰에 애플리케이션을 설치하는 것과 비슷합니다.
+
+본 가이드에서는 Snap 권한의 작동 방식, 설치 시 Snap에서 요청할 수 있는 다양한 권한, 이미 설치된 Snap에 허용된 권한을 확인하는 방법에 관해 설명해 드립니다.
+
+## 접근 및 제어
+
+Snap을 설치할 때, 특정 권한을 허용하도록 요청받을 수 있습니다. 현재 Snap은 다음 권한 중 하나를 요청할 수 있습니다. 향후에 추가로 권한을 요청할 수도 있습니다.
+
+- **다른 Snap이 이 Snap과 직접 통신할 수 있도록 허용**해당 Snap이 다른 Snap과 통신하도록 허용하는 것입니다. 이는 데이터를 전송하고 다른 Snap의 기능을 강화하는 데 사용될 수 있습니다.
+- **디앱이 이 Snap과 직접 통신할 수 있도록 허용**해당 Snap이 디앱과 통신하도록 허용합니다. 데이터를 공유하고 디앱의 기능을 강화하는 데 사용될 수 있습니다.
+- **사용자 지정 다이얼로그 표시**해당 Snap을 통해 MetaMask에서 맞춤 설정 다이얼로그를 표시할 수 있습니다. 알림, 확인, 입력 프롬프트에 사용될 수 있습니다.
+- **알림 표시**해당 Snap이 MetaMask에서 알림을 표시하도록 합니다.
+- **Snap에 고유한 임의의 키 생성**해당 Snap이 임의의 키를 생성하도록 합니다. 이 키는 해당 Snap에서만 고유하게 사용되며 MetaMask 계정과는 관련이 없습니다. 이 키는 디앱 및 클라우드 기반 서비스의 인증에 사용할 수 있습니다.
+- **(프로토콜)에 대한 공개 키 보기**해당 Snap이 특정 프로토콜에 대한 공개 키와 주소를 확인하도록 합니다. Snap은 사용자의 계정이나 자산을 제어할 수 없습니다.
+- **기기에 데이터 보관 및 관리**해당 Snap이 암호화를 사용하여 데이터를 보관, 업데이트, 검색할 수 있게 합니다. 이 데이터는 기기에 안전히 보관됩니다.
+- **이더리움 공급자에게 액세스**해당 Snap이 MetaMask와 통신하여 블록체인 데이터를 확인하고 트랜잭션을 제안할 수 있도록 합니다.
+- **인터넷 액세스**해당 Snap이 타사 서버와 통신할 수 있도록 인터넷 액세스를 허용합니다. 데이터 전송 수신 모두에 사용될 수 있습니다.
+- **트랜잭션 인사이트 표시**해당 Snap이 트랜잭션을 디코딩하고 MetaMask에서 인사이트를 보여주도록 합니다. 피싱 방지 및 보안에 사용할 수 있습니다.
+- **트랜잭션을 제안하는 웹사이트의 출처 확인**해당 Snap을 통해 트랜잭션 제안이 있을 때 웹사이트의 출처를 확인할 수 있습니다. 피싱 방지 및 보안에 사용할 수 있습니다.
+- **주기적인 작업 예약 및 실행**해당 Snap이 반복 작업 또는 알림을 예약하고 실행할 수 있도록 합니다.
+
+Snap이 요청할 수 있는 전체 권한 목록은 [MetaMask Snaps 개발 문서](https://docs.metamask.io/guide/snaps-rpc-api.html)에서 확인할 수 있습니다.
+
+## 설치된 Snap에서 사용하는 권한 보기
+
+MetaMask 내에서 Snap의 구성 페이지로 이동하면 Snap에 허용된 권한을 쉽게 확인할 수 있습니다.
+
+1. MetaMask 창의 오른쪽 상단 모서리에 있는 세로 점 3개를 찾으세요. 이 점을 클릭하면 드롭다운 메뉴가 나옵니다.
+
+2. 드롭다운 메뉴에서 '설정'을 선택하세요. MetaMask 설정을 관리할 수 있는 창이 열립니다.
+
+3. 'snap '을 클릭하면 현재 MetaMask 인스턴스에 설치된 모든 Snap의 목록을 확인할 수 있습니다.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../../../img/metamask-snaps/how-do-snap-permissions-work/MetaMask_Snap_settings.gif")
+             .default
+         }
+         alt="MetaMask_Snap_settings.gif"
+       />
+     </div>
+   </div>
+
+4. 설치된 Snap 목록을 스크롤하여 확인하려는 Snap을 찾으세요. 그 후, 확인하려는 Snap의 이름을 클릭하여 정보와 설정을 확인하세요.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../../../img/metamask-snaps/how-do-snap-permissions-work/MetaMask_Snap_installed_list.png")
+             .default
+         }
+         alt="MetaMask_Snap_installed_list.png"
+       />
+     </div>
+   </div>
+
+5. 짜잔! 🙌 이제 Snap에 허용된 권한을 확인할 수 있습니다.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../../../img/metamask-snaps/how-do-snap-permissions-work/MetaMask_Snap_permissions_list.png")
+             .default
+         }
+         alt="MetaMask_Snap_permissions_list.png"
+       />
+     </div>
+   </div>

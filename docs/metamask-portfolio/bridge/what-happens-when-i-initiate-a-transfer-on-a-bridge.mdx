@@ -1,0 +1,14 @@
+---
+title: What happens when I initiate a transfer on a bridge?
+image: /img/socialCards/what-happens-when-i-initiate-a-transfer-on-a-bridge.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+1. If you're transferring an ERC-20 token, you'll need to sign a [token approval](/transactions-and-gas/transactions/what-is-a-token-approval) from your wallet, enabling the bridge to access the tokens on the source network.
+2. **Source network transaction**: You sign a transaction to deposit your tokens into the bridge on the source network. The cost of the transaction—which is the only one you'll need to sign in the bridging process—is: transfer amount + bridge provider fees + gas fees + the MetaMask fee (for more on fees, see [here](/metamask-portfolio/bridge/how-are-bridge-fees-calculated)).
+3. **Destination network transaction**: The bridge provider will initiate the transaction on the destination network once the transaction in step 2 has been validated. You don 't need to pay for this step, as its costs are usually covered by the fees you 've paid in step 2.
+
+you'll be able to track the status of each bridge within our platform.

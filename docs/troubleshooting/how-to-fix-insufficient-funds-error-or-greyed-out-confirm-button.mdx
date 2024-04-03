@@ -1,0 +1,46 @@
+---
+title: How to fix 'insufficient funds' error or greyed-out confirm button
+image: >-
+  /img/socialCards/how-to-fix-insufficient-funds-error-or-greyed-out-confirm-button.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+## Why I am getting an "insufficient funds" error?
+
+This means you do not have enough of the network's native token to cover gas fees. Generally, across [EVM-compatible networks](/network-profiles/network-profiles-hub), each transaction (including token and contract transactions) requires gas, the price of which is changeable. You can think of this as a transaction fee. For more on gas, see [here](/transactions-and-gas/gas-fees/user-guide-gas).
+
+Examples of native tokens include:
+
+- Ether (Ethereum mainnet and testnets, plus layer 2 networks such as Arbitrum or Optimism)
+- BNB (for BNB Chain, formerly BSC)
+- MATIC (Polygon)
+- AVAX (Avalanche).
+
+If you have questions relating to a specific network, please read our best practices article on sidechains and custom networks [here](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains), or check our [Network Profiles page](/network-profiles/network-profiles-hub) for the network in question to see if we've discussed the issue there.
+
+## How can I fix it?
+
+You can remedy this by sending some of the necessary native token to that account in order to be able to make the transaction.
+
+If you need to buy some tokens to get a sufficient amount, you can either purchase crypto directly (using what's known as an on-ramp), buy from an exchange, or trade other tokens on a decentralized exchange (DEX).
+
+You can buy native tokens and stablecoins on several networks directly within MetaMask — check [here](/metamask-portfolio/buy/how-to-buy-crypto-in-metamask) to see how.
+
+## Why is my "Confirm" button greyed out?
+
+On the confirmation screen, you might see the confirm button is greyed out. This will be because you have an insufficient amount of the native token necessary to pay for the transaction. See above.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/troubleshooting/how-to-fix-insufficient-funds-error-or-greyed-out-confirm-button/MetaMask_insufficient_funds.png")
+          .default
+      }
+      alt="MetaMask insufficient funds"
+    />
+  </div>
+</div>

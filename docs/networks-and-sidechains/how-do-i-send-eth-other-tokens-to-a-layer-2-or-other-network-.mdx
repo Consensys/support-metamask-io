@@ -1,0 +1,36 @@
+---
+title: How do I send ETH/other tokens to a layer 2 or other network?
+image: >-
+  /img/socialCards/how-do-i-send-ethother-tokens-to-a-layer-2-or-other-network.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+:::note
+
+#### MetaMask Bridges
+
+You can now bridge tokens between several popular networks using MetaMask Bridges, directly within MetaMask Portfolio. Check it out here: [portfolio.metamask.io/bridge](https://portfolio.metamask.io/bridge)
+
+:::
+
+The multi-chain future is now, and traversing web3 does not mean you'll be spending all your time on one chain, such as Ethereum Mainnet. Instead, you'll most likely want to move your tokens around between networks (different blockchains) to make use of specific dapps, or to take advantage of cheaper network costs (gas fees).
+
+However, moving assets between chains is not as simple as just switching networks in MetaMask, or sending them to a specific address. Instead, you need to **bridge** assets between networks.
+
+### If you want to read more about how to bridge, [see here](/networks-and-sidechains/field-guide-to-bridges).
+
+Here's a few fundamental truths to keep in mind:
+
+- Unless you bridge, **the tokens you send in any transaction are going to stay on the network you sent them on.** So if you send some ETH on Ethereum Mainnet, that ETH is going to stay on Mainnet.
+- **You can use the same account address across multiple networks, but sending to this address does not mean tokens are bridged to any other network**. They will stay on the network from which they originate. Your MetaMask address, for example, [can be used across different EVM-compatible chains](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains) (networks compatible with Ethereum), but sending tokens on different chains to this address _does not_ bridge them.
+- **It is possible to irreversibly lose assets by sending them to the wrong address**. This is particularly relevant when buying on exchanges. For example, you could purchase some MATIC (the native token of Polygon) on a centralized exchange, and receive the ERC-20 version. This means it's a mirrored version of MATIC, produced specifically for use on Ethereum and compatible networks. Although its value is equivalent on paper, *this is not the same token *as Polygon-native MATIC. If you wanted to get your ERC-20 MATIC onto Polygon itself, you'd need to bridge.
+
+#### See also:
+
+- Our [network profiles](/network-profiles/), which provide bridging advice and other guidance on specific networks
+- [User Guide: Custom Networks and Sidechains](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains)
+- [How to use MetaMask Bridges](/metamask-portfolio/bridge/how-to-use-the-bridge)
+- [Field Guide to Bridges](/networks-and-sidechains/field-guide-to-bridges)

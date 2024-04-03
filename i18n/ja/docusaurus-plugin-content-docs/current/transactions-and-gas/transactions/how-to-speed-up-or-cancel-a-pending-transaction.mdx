@@ -1,0 +1,185 @@
+---
+title: "保留中トランザクションをスピードアップあるいはキャンセルする方法"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Ethereumまたは互換性のあるネットワークでトランザクションを送信する際、支払うガスの一部は、ネットワークに対してトランザクションをより早く処理するよう求めるものであり、この要素は優先手数料として知られています。MetaMaskは、トランザクションが拾われる可能性が高いガス手数料合計の計算によって、あなたを支援しますが、低いガス価格で送信すると、長い時間待たされることがあります。トランザクションが妥当な時間内に完了されるためのガス価格については、[Etherscanのガストラッカー](https://etherscan.io/gastracker)（ガストラッカー）やご使用のネットワークの同様のトラッカーなどを参照してください。
+
+さらに、時には何か問題のある環境があり、トランザクションが長時間スタックしたり、保留中となることもあります。
+
+どのような経緯でそうなったにせよ、対処の仕方はいくつかあります。
+
+### それ以上の操作をする前に、まずブラウザを完全に終了して閉じ、再度開き、MetaMaskのロックを解除する必要があります（モバイルでは、アプリを閉じてから再度開くだけです）。これで問題が解決しない場合は、以下の手順で進めてください。
+
+## **トランザクションをスピードアップする**
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_speed_up_transaction.png")
+          .default
+      }
+      alt="MetaMaskによるトランザクションのスピードアップ"
+    />
+  </div>
+</div>
+
+以下のオプションのいずれかを試してみる。
+
+- ネットワークがこの価格でトランザクションを処理するまで待つ
+- まだの方は、**Speed Up**（スピードアップ）のボタンをクリックします。これにより、同じトランザクションを再送信することになりますが、以前より高いガス手数料で、トランザクションをより早く処理することができます。このプロセスは、オリジナルと同じノンスを使用するので、ガス手数料を2回支払う必要はありません。
+
+**トランザクションをスピードアップすると、トランザクションに費やす金額が増加する**ことを覚えておいてください。
+
+## **トランザクションをキャンセルする 方法1。アプリ内キャンセル**
+
+まだ行っていない場合、トランザクションをキャンセルするには、上記のスクリーンショットのように**Cancel**（キャンセル）を選択するだけです。**トランザクションがまだネットワーク上で保留状態にある場合にのみ、キャンセルを*試みる*ことができる**ことにご注意ください。すでに確認済みのトランザクションを元に戻すことはできません。
+
+## **トランザクションをキャンセルする 方法2。カスタムノンス**
+
+このプロセスには、同じノンス（「1回のみ使用された番号」というフレーズから派生したすべてのトランザクションの識別番号）を持つ新しいトランザクションの送信が含まれます。トランザクションは、実際に値を持っていなければならないわけではありません。例えば、0ETHを送信することも可能です。重要なのは、ネットワークに十分なガスを支払って優先順位をつけることです。
+
+この方法を使用する場合、**キャンセルしたいキュー内の最も古い保留中のトランザクションにさかのぼって作業する必要があります**。例えば、9のノンスのトランザクションをキャンセルする前に、10のノンスのトランザクションのキャンセルを試みることはできません。
+
+_以下のスクリーンショットは異なる時間に撮影されたため、それらに表示されるガス代はステップごとに異なる場合があります。このことで嫌にならないでください。これを行うと、MetaMaskは自動的にリアルタイムで更新され、市場レートを表示します。_
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. 詳細設定で、**Customize transaction nonce**（トランザクションノンスをカスタマイズ）と**Advanced gas controls（詳細なガス設定）**をオンにします。後者では、支払うガスを調整し、キャンセルしたい元のトランザクションより先に確実にキャンセル処理が行われるようにします。
+
+:::info
+
+#### 注意。
+
+MetaMask Extensionには、現在、[Enhanced Gas Fee UI](https://metamask.io/1559/)と呼ばれる実験的な機能があります。（[Advanced Gas Controls](/transactions-and-gas/gas-fees/how-to-customize-gas-settings)（高度なガス制御）と混同しないようにしてください）これらの手順は、この機能をオンにしているか否かにかかわらず実行することができますが、異なった表示になることを忘れないでください。次の手順では、Enhanced Gas UIを使用しません。次の点に注意してください。
+
+- Enhanced Gas UIをオンにしている場合、「Customize transaction nonce」（トランザクションノンスをカスタマイズ）もオンにする必要があります。
+- Enhanced Gas UIをオンにしていない場合、「Advanced Gas Controls」（詳細なガス設定）と「Customize transaction nonce」（トランザクションノンスをカスタマイズ）を両方オンにする必要があります。
+
+:::
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/12927064113947.png").default
+      }
+      alt="MetaMaskの高度な設定"
+    />
+  </div>
+</div>
+
+2. **新しいトランザクションを送信します**。新しいトランザクションでは、あなたのMetaMask公開アドレスを意味する**TO**をご自身に送信してください。**「Costom Nonce」（カスタムノンス）に、保留中のトランザクションと同じノンスを入力する**。
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/Metamask_custom_transaction_nonce_Extension.png")
+             .default
+         }
+         alt="Metamask_custom_transaction_nonce_Extension.png"
+       />
+     </div>
+   </div>
+
+3. 「Gas Fee」（ガス手数料）のとなりの「Edit」（編集）をクリックします。（実験的な[Enhanced Gas UI](/transactions-and-gas/gas-fees/how-to-customize-gas-settings)をオンにしている場合、これは「Market」（マーケット）と表示されます）。ここで以下のオプションが表示される。
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/MetaMask_advanced_gas_controls_extension.png")
+             .default
+         }
+         alt="MetaMaskの高度なガス・コントロール・エクステンション"
+       />
+     </div>
+   </div>
+
+   優先的に元のトランザクションより先にキャンセルリクエストが確実にピックアップされるには、**ガスにより多く支払う必要があります**。これらの指示に従う。
+
+   - 元のトランザクションと同じか少し高い**ガスリミット**を設定してください。
+   - 最大**優先手数料**を、元の（保留中の）トランザクションのガス手数料より（Gwei単位で）*少なくとも10%高く*設定してください。（例えば、元のトランザクションのガス手数料が30Gweiだった場合、交換／キャンセルトランザクションの最大優先手数料を33～35Gweiに設定する）
+   - 最大手数料が、交換するトランザクションの最大手数料より少なくとも30%高いことを確認してください。例えば、前回の手数料が150Gweiだった場合、今回は200Gweiに近い手数料を選択してください。
+
+   [Etherscan](https://etherscan.io/gastracker)あるいは[ETH Gas Station](https://ethgasstation.info/)のようなガストラッカーで、推奨最大手数料のガイダンスを確認してください。
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. **「Settings」（設定） > 「Advanced」（詳細）で、「Customize transaction nonce」（トランザクションノンスをカスタマイズ）をオンにします。**
+
+2. **新しいトランザクションを送信します。**新しいトランザクションでは、あなたのMetaMask公開アドレスを意味するTOをご自身に送信してください。**「Costom Nonce」（カスタムノンス）に、保留中のトランザクションと同じノンスを入力する**。
+
+   アプリでカスタムノンス設定を見つけるには、トークンの数量と受取人を入力した後に表示されるトランザクション確認画面にアクセスします。「Edit」（編集）をクリックして変更してください。
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/MetaMask_custom_transaction_nonce_Mobile.gif")
+             .default
+         }
+         alt="MetaMaskのカスタムトランザクションノンス"
+       />
+     </div>
+   </div>
+
+3. 次に、交換トランザクションが処理されるようにガス設定が構成されていることを確認する必要があります。トランザクション確認画面で、ハイライトされたガス値をタップします。
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../../../../img/transactions-and-gas/gas-fees/how-to-customize-gas-settings/MetaMask_advanced_gas_controls_mobile_1.png")
+             .default
+         }
+         alt="MetaMaskの高度なガス・コントロール・モバイル"
+       />
+     </div>
+   </div>
+
+   次に、表示されたメニューから「Advanced options」（詳細オプション）にアクセスします。
+
+4. ここから、ガスを正確に調整して、トランザクションが確実に受信されるようにすることができます。次のように画面が表示されます。
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../../../../img/transactions-and-gas/gas-fees/how-to-customize-gas-settings/MetaMask_advanced_gas_controls_mobile_2.png")
+             .default
+         }
+         alt="MetaMaskの高度なガス・コントロール・モバイル"
+       />
+     </div>
+   </div>
+
+   こちらから、ガス設定を調整します。これらの手順に従って、トランザクションが確実に受け取られるようにしてください。
+
+   - 元のトランザクションと同じか少し高い**ガスリミット**を設定してください。
+   - 最大**優先手数料**を、元の（保留中の）トランザクションのガス手数料より（Gwei単位で）*少なくとも10%高く*設定してください。（例えば、元のトランザクションのガス手数料が30Gweiだった場合、交換／キャンセルトランザクションの最大優先手数料を33～35Gweiに設定する）
+   - **最大手数料**が、交換するトランザクションの最大手数料より*少なくとも30%高い*ことを確認してください。例えば、前回の手数料が150Gweiだった場合、今回は200Gweiに近い手数料を選択してください。
+
+   [Etherscan](https://etherscan.io/gastracker)あるいは[ETH Gas Station](https://ethgasstation.info/)のようなガストラッカーで、推奨最大手数料のガイダンスを確認してください。
+
+</TabItem>
+
+</Tabs>

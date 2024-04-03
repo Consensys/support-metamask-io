@@ -1,0 +1,151 @@
+---
+title: Add a network using Chainlist
+image: /img/socialCards/add-a-network-using-chainlist.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+If you want to add networks to MetaMask, accessing Chainlist is one of the easiest ways to do it.
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. Head to the Chainlist site at [chainid.network](https://chainid.network/).
+
+2. Firstly, you'll need to connect your wallet to the site. Select 'Connect wallet' in the top right to do so.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/managing-networks/add-a-network-using-chainlist/Connect_to_chainlist_1.png")
+          .default
+      }
+      alt="Connect to chainlist"
+    />
+  </div>
+</div>
+
+When successful, the address of our selected account will replace the 'Connect wallet' button:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/managing-networks/add-a-network-using-chainlist/Connect_to_chainlist_2.png")
+          .default
+      }
+      alt="Connect to chainlist"
+    />
+  </div>
+</div>
+
+3. Now use the search bar to find the network you want to connect to. Once you've found it, click the button 'Add Chain'.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/managing-networks/add-a-network-using-chainlist/Connect_to_chainlist_3.png")
+          .default
+      }
+      alt="Connect to chainlist.png"
+    />
+  </div>
+</div>
+
+4. MetaMask itself will now spring into action, and will present you with an approval menu. Click 'Approve' to proceed.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/managing-networks/add-a-network-using-chainlist/Connect_to_chainlist_4.png")
+          .default
+      }
+      alt="Connect to chainlist.png"
+    />
+  </div>
+</div>
+
+5. This will be followed by a menu asking you whether you want to switch to the new network immediately. Confirm or reject this depending on your needs; either way, the new network will be added.
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. Head to the [Chainlist site](https://chainid.network) using the [MetaMask in-app browser](/getting-started/how-to-use-the-metamask-mobile-browser).
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../img/networks-and-sidechains/managing-networks/add-a-network-using-chainlist/MetaMask_mobile_browser_tab.png")
+             .default
+         }
+         alt="MetaMask mobile browser tab"
+       />
+     </div>
+   </div>
+
+   When you're in the browser, you can either tap the address in the menu bar at the top and navigate to [https://chainid.network](https://chainid.network) or hit the magnifying glass in the toolbar at the bottom and search from there.
+
+2. On Chainlist, you need to connect your wallet. Your currently selected account will be the one that's automatically connected, though you can easily swap by going back to your wallet view, changing the account, and heading back to Chainlist in the browser to connect.
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../img/networks-and-sidechains/managing-networks/add-a-network-using-chainlist/Connect_to_chainlist_site_mobile.png")
+             .default
+         }
+         alt="Connect to chainlist site mobile"
+       />
+     </div>
+   </div>
+
+   When your wallet is connected, the selected account address will be displayed where the 'Connect wallet' button was.
+
+3. Next, find the network you want to connect to by searching. When you find the network, hit 'Add Chain':
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../img/networks-and-sidechains/managing-networks/add-a-network-using-chainlist/Connect_to_chainlist_3.png")
+             .default
+         }
+         alt="Connect to chainlist"
+       />
+     </div>
+   </div>
+
+4. Now you'll just need to approve the addition of the network.
+
+   There will then be a subsequent option to confirm that you want to immediately switch to the new network. This step is optional, and you can easily change networks at any time regardless.
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../img/networks-and-sidechains/managing-networks/add-a-network-using-chainlist/Connect_to_chainlist_mobile_2.png")
+             .default
+         }
+         alt="Connect to chainlist mobile"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+For details on how to add custom networks by inputting their details manually, see our [article](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc) on the topic.
+
+**Please note we do not maintain the network information on Chainlist**. Make sure the network details are accurate before adding them.

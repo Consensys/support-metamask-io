@@ -1,0 +1,74 @@
+---
+title: "하드웨어 지갑 허브"
+---
+
+### MetaMask는 현재 다음의 다섯 종류의 하드웨어 지갑을 지원합니다. 에어갭 볼트(AirGap Vault), 키스톤(Keystone), 래티스(Lattice), 레저(Ledger), 트레저(Trezor). 이 지갑들은 확장 프로그램에서 지원되며 향후 업데이트에서 모바일에도 추가될 수 있습니다.
+
+:::info
+
+#### 여기 맞나요?
+
+하드웨어 지갑이 무엇이며 왜 여러분이 가져야 하는지에 대한 설명을 알고 싶다면 계속 읽으세요.
+
+특정 하드웨어 지갑과 관련하여 지원을 찾고 있다면 아래로 스크롤해 해당 섹션으로 가십시오.
+
+하드웨어 지갑을 처음으로 설정한다면 **권장하는 설정을 [사용자 가이드](/privacy-and-security/user-guide-how-to-use-a-hardware-wallet)에서 살펴보십시오.**
+
+:::
+
+####
+
+## 하드웨어 지갑은 무엇입니까? 그리고 왜 가지고 있어야 할까요?
+
+하드웨어 지갑을 이해하면 이더리움의 '내부'를 조금 더 이해하는 것을 의미합니다. '지갑'에 대해 이야기 할 때 무엇을 의미하는지 먼저 살펴봅시다. 첫인상으로 지갑은 직관적인 개념입니다. 디지털 돈과 다른 것을 보유하는 디지털 컨테이너입니다. 실제 지갑과 같이 화폐 일부와 고양이 또는 가족 사진이 있을 수도 있습니다. MetaMask 지갑에 화폐와 암호 고양이과 좀비 애니메이션 GIF를 넣을 수 있습니다. 지금까지는 꽤 비슷합니다.
+
+'지갑'이라고 부르는 것은 일종의 은유입니다. 우리가 경험하는 방식에 있어서 좋은 은유이지만 정확히 어떤 일이 일어나고 있는지 기술적으로 나타내지는 않습니다. '지갑'의 내용은 실제로는 *블록체인에서 여러분의 주소에 할당된 자산*으로 구성됩니다. ETH를 '누군가에게' 보낼 때 ETH는 어디에도 _가지_ 않습니다. 단순히 여러분의 주소에 할당된 ETH의 잔액에서 공제되고 여러분이 보내려는 주소 잔액에 재할당됩니다. 공공 블록체인 또한 *분산 원장 기술*이라고 불리며 모든 지갑들은 해당 원장과 일치한다는 것을 기억하세요. 잔액과 수탁액이 기둥을 이루며 이더리움 가상 머신(EVM)은 자동화된 회계 장부입니다.
+
+이러한 의미에서 MetaMask는 이더리움 블록체인에 요청을 전송하는 '단순한' 웹 응용 프로그램입니다. 여러분의 주소에 어떤 자산이 할당되는지에 대한 정보와 토큰을 한 주소에서 다른 주소로 '전송'하는 것 등과 같은 것입니다. 비밀 복구 문구를 사용하여 이를 수행합니다.
+
+여러분의 공개 이더리움 주소는 나머지 절반을 이룹니다. *암호화 키 페어*가 정확한 표현입니다. 공개적인 절반 부분인 여러분의 주소는 누군가 해킹해서 자금을 훔쳐갈 수 있다는 두려움 없이 누구에게나 공개할 수 있습니다. 개인적인 절반 부분인 비밀 복구 문구('시드 문구'라고도 함)는 이 문구를 가진 사람이 누구든 주소와 관련된 모든 계정에 완전하고 전체적인 접근을 가질 수 있다 인증합니다. **'내 키가 아니면 내 코인이 아니다'라는 것을 기억하세요.**
+
+MetaMask는 매우 안전하며 비밀 복구 문구에 접근할 수 없는 한 ([안전한 오프라인 위치에 적어 놓으셨죠?](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys)) 여러분의 계정은 안전합니다. MetaMask와 보안 엔지니어의 통제 밖에 있는 다른 요인들이 많이 있습니다. 여러분의 브라우저가 얼마나 안전한지, 누군가가 여러분의 컴퓨터를 물리적으로 통제할 수 있는지, 또는 바이러스를 사용해 여러분의 컴퓨터를 조종할 수 있는지 등이 그 예입니다.
+
+이러한 이유로 MetaMask 지갑에 상당한 금액을 보관하거나 또는 단순히 여러분에게 중요한 자산을 보관하고 있다면 두 번째 방어선으로 하드웨어 지갑을 사용하는 것을 권장합니다.
+
+다른 기타 요소들을 다음과 같은 방법으로 제거하세요.
+
+## TL;DR
+
+### **하드웨어 지갑은 여러분의 지갑 키를 보호하고 공격자와 지갑의 내용물 사이의 방화벽 역할을 하는 컴퓨터 외부 물리 장치입니다. **
+
+하드웨어 지갑으로 보호된 자금을 거래하기 위해서는 하드웨어 지갑과 거래를 승인하기 위한 상호작용을 해야 합니다. 이러한 방법으로 누군가가 MetaMask 지갑에 접근할 수 있다 하더라도 자산을 이동시키는 것은 막을 수 있습니다.
+
+## 에어 갭 볼트(AirGap Vault)
+
+- [에어 갭 볼트를 MetaMask에 연결하기](https://support.airgap.it/guides/metamask/)
+- [에어 갭 볼트 - 안드로이드 플레이 스토어](https://play.google.com/store/apps/details?id=it.airgap.vault&hl=en_US&gl=US)
+- [에어 갭 볼트 - iOS 앱 스토어](https://apps.apple.com/us/app/airgap-vault-secure-secrets/id1417126841)
+
+## 키스톤(Keystone)
+
+- [여러분의 키스톤을 MetaMask 지갑에 연동하기](https://support.keyst.one/3rd-party-wallets/eth-and-web3-wallets-keystone/bind-metamask-with-keystone)
+- [키스톤을 MetaMask 모바일과 연결해 ETH를 전송하는 방법](https://support.keyst.one/3rd-party-wallets/eth-and-web3-wallets-keystone/metamask-mobile)
+- [Wallet Connect를 통해 디앱용 MetaMask 모바일에서 키스톤을 사용하는 방법](https://support.keyst.one/3rd-party-wallets/eth-and-web3-wallets-keystone/metamask-mobile/defi-with-metamask-mobile)
+- [MetaMask 모바일에서 EVM 체인을 구성하는 방법](https://support.keyst.one/3rd-party-wallets/eth-and-web3-wallets-keystone/metamask-mobile/configuring-evm-chains-on-metamask-mobile)
+- [투명 QR 코드를 사용하여 하드웨어 지갑 보안을 활용하는 방법](https://consensys.net/blog/news/metamask-x-keystone-how-to-benefit-from-hardware-wallet-security-using-transparent-qr-code/)
+- 키스톤 보안 부가 가치 명제를 이해하기 위해 [여기를 참조하십시오](https://blog.keyst.one/blind-signing-a-security-black-hole-for-the-ethereum-community-13f909b848b6).
+- 사용자 정의 엔트로피 소개 등 키스톤의 보안 기능과 관련된 고급 주제들은 [여기를 참조](https://support.keyst.one/general-navigation-guide#advanced-users)하십시오.
+
+## 래티스(Lattice)
+
+- 래티스를 처음 사용하는 사용자는 다음에서 올바르게 설정되었는지 확인하세요. [https://gridplus.io/setup](https://gridplus.io/setup)
+- MetaMask 및 래티스를 사용해 시작하는 것에 대한 그리드플러스의 문서를 [여기서](https://docs.gridplus.io/setup/metamask) 참조하세요.
+
+## 레저(Ledger)
+
+레저는 MetaMask의 사용자들을 위한 광범위한 문서를 제공합니다. 다음은 여러분이 시작하는데 도움을 줄 몇 가지 문서입니다.
+
+- [설정 및 MetaMask를 사용해 여러분의 레저 이더리움(ETH) 계정에 접근하기](https://support.ledger.com/hc/en-us/articles/4404366864657-Set-up-and-use-MetaMask-to-access-your-Ledger-Ethereum-ETH-account?docs=true)
+- [나의 레저 바이낸스 스마트 체인(BSC) 계정에서 BEP-20 토큰을 볼 수 없습니다. 무엇을 해야 하나요?](https://support.ledger.com/hc/en-us/articles/4406111561617-I-don-t-see-my-BEP-20-tokens-in-my-Ledger-Binance-Smart-Chain-BSC-account-what-can-I-do-?support=true)
+- [MetaMask를 통해 여러분의 레저 폴리곤 계정에 액세스하는 방법](https://support.ledger.com/hc/en-us/articles/4418394184209-How-to-access-your-Ledger-Polygon-MATIC-account-via-Metamask?docs=true)
+
+## 트레저(Trezor)
+
+- MetaMask와의 작동성에 대한 트레저의 문서는 [여기](https://wiki.trezor.io/Apps:MetaMask)서 참조하십시오.

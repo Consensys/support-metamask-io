@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": " ",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "MetaMask Support",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.MetaMask Activity": {
+    "message": "MetaMask Activity",
+    "description": "Navbar item with label MetaMask Activity"
+  },
+  "item.label.How to Contact Support": {
+    "message": "How to Contact Support",
+    "description": "Navbar item with label How to Contact Support"
+  },
+  "item.label.MetaMask Learn": {
+    "message": "MetaMask Learn",
+    "description": "Navbar item with label MetaMask Learn"
+  }
+}

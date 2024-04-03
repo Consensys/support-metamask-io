@@ -1,0 +1,136 @@
+---
+title: "ユーザーガイド：Swaps"
+---
+
+**MetaMask Swaps**は、実際にある暗号通貨トークンを別のものと交換できるMetaMaskの機能です。（ERC-20トークンについての詳細およびこれらとNFTの違いについては、[ユーザーガイド](/managing-my-tokens/user-guide-tokens)をご覧ください。）すばらしく便利かつ簡単で、興味のあるトークンを取得するために必要な多くの手順や、サードパーティーのスマートコントラクトにさらされる量を劇的に削減しました。
+
+MetaMask Swapsは現在、こちらでご利用いたいただけます。
+
+- Ethereumメインネット
+- BNBスマートチェーン
+- Avalanche C-Chain
+- Polygon
+- Optimism
+- Arbitrum
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/i18n/legacy/MetaMask_user_guide_swaps.png")
+          .default
+      }
+      alt="MetaMaskユーザーガイド・スワップ"
+    />
+  </div>
+</div>
+
+### **スワップを行う前に知っておくべきこと。**
+
+- ERC-20標準に準拠したトークンであっても、購入、取得する前に**必ずリサーチを行ってください。** 暗号通貨と分散型ファイナンスの新規性の一つは、そのプログラマチックな性質です。トークンは必ずしも静的な資産ではありません。使用方法や、例えばこのようなウォレットに[影響](https://www.reddit.com/r/CryptoCurrency/comments/owkokz/scam_alert_vera_tokens/)する機能を持つこともあります。もちろん、悪意の度合いが低い注意点は他にもあります。例えば、トークンの中には取得はできても、そこから意図したユーティリティを得るには、特定のプラットフォームでステーキングする必要があるものもあります。
+- **Slippage**は、クリックした価格とMetaMask Swapsが許容する最終的なトランザクション価格の差額です。分散型ファイナンスと暗号通貨は、流動性や変動性が高いという性質を持っているため、価格は秒単位で変化することがあります。従って、Swapsは合意価格と最終価格の間の小さな差異を許容します。これにより、トランザクションを確実に実行し、かつ突然の急騰や急落からユーザーを守ることができるのです。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/token-swaps/i-did-a-swap-but-received-fewer-tokens-or-less-fiat-value-than-i-expected-why-/MetaMask_user_guide_swaps_slippage.png")
+          .default
+      }
+      alt="MetaMaskユーザーガイド・スワップスリッページ"
+    />
+  </div>
+</div>
+
+- **カスタムトークン**とは、MetaMaskの標準トークンリストに記載されるほど一般的ではなく、広く普及していないトークンについてのMetaMaskの呼称で、MetaMaskでネットワークとしてEthereumメインネット（[および他の少数の人気ネットワーク](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)）を選択した場合、デフォルトで検出されます。ウォレットにトークンをスワップしたのに、（数分経っても（ブロックチェーンは高速だが、**即時ではない**ことをお忘れなく））表示されない場合は、[手動でトークンを追加してみてください](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)。
+- **私たちのサポート記事は、MetaMask Swapsについてのみ説明しています**。言い換えれば、MetaMaskはMetaMask Swapsボタンを使用することで行われるスワップをサポートします。異なるプラットフォームや別のDEXでスワップを行う場合は、MetaMaskは、一定の一般的な紹介や案内を提供している場合もありますが、**これを絶対のものとみなさないで**ください。スワップを行う交換所やプラットフォームのサポートチームやコミュニティに連絡し、サポートを求めてください。
+
+:::warning
+
+#### MetaMaskはスワップの仲介者に過ぎない、ということを覚えておいてください。
+
+MetaMask Swapsを使用する際、MetaMaskはアグリゲーターや仲介者として機能していることを覚えておいてください。私たちは見積もりをまとめて、最も有利なものを提供します。そこから、手元のプラットフォーム／流動性プロバイダーとトランザクションを進めるかどうかを決定することができます。MetaMaskは、流動性を提供したり、取引を実行したり、トークンを販売したりすることはありません。
+
+:::
+
+### 飛び込む準備はできましたか。
+
+MetaMask ExtensionあるいはMobileかは問題ではありません。欲しいトークンを手に入れるにはわずか数回のクリック、あるいはタップをするだけです。
+
+MetaMaskアプリケーションのメイン画面で、「Swap」と書かれた、長方形のなかにいくつか矢印のあるボタンを探してください。ボタンをスマッシュしてください。
+
+メインのSwap画面が表示されます。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/i18n/legacy/MetaMask_user_guide_swaps_amount.png")
+          .default
+      }
+      alt="MetaMaskユーザーガイド・スワップ量"
+    />
+  </div>
+</div>
+
+#### **Swapを準備する**
+
+- まず、上部のドロップダウンメニューから、自分が持っている「使ってもいい」と思っているトークンを選びます。
+- さらにその下にある2つ目のドロップダウンメニューから、取得したいトークンを選択します。
+- 最初のトークンの金額は、支出額と取得額で納得がいくまで上下に調整してください。
+- 画面の下に、「Get quotes」（見積もりを取得）ボタンがあります。ボタンをスマッシュしてください。
+
+アプリが最適な価格を探すプロセスが表示されます。**このプロセスがMetaMask Swapsが最安値でベストのスワップサービスを行う秘密の材料なのです**。Swapsが検索しているのを見つめている間、裏では多くのことが行われています。
+
+まず、Swapsは、すべての分散型トークン取引所とトークンスワッププロトコルを探索し、最も有利な取引価格を見つけ出します。
+
+同時に、テストトランザクションを実行し、トランザクションを送信した場合、進行する可能性が高いかどうかを確認します。可能性が低い場合、これらのオプションは排除されます。**MetaMaskは、トランザクションの失敗という痛みからユーザーをここで救ってくれます**。Ethereumメインネットのガス手数料やトークンのスマートコントラクトの複雑さにより、トランザクションの失敗が、理解不能なエラーコードの無礼なことばに多大な金銭的損失を足し合わせる、ということからです。スワップが失敗する確率は非常に低く、ほぼ起こらないようにするための改善作業が今も行われています。
+
+鋭いユーザーのなかには、前の画面の左下に「3% slippage」と書かれているのに気づかれた方もいるでしょう。スリッページは、Swapsがあなたに有利に働くもう一つのパラメータです。これについては上記で詳細に説明しています。
+
+そのため、DeFiの数値計算が完了し、見積もり画面が表示されます。
+
+###
+
+#### **Swapを実行する**
+
+ここでは多くのことが進行中ですが、あまり警戒しないでください。まず、画面上部では、以前述べたようにSwapsがすべての作業を継続的に行っており、**最新の価格と利用可能状況**を確実に取得できるようにしています。
+
+画面中央にある主な機能は、**取得予定トークン量**（スリッページを考慮）が**最新の見積もり時点で**表示されています。交換レートなどの詳細が表示され、見積もり金額の算出方法やガスの詳細設定を確認しに行くことも可能です。これですべてです（[ここ](/transactions-and-gas/gas-fees/user-guide-gas)からスタート）、しかしこれはネットワークのチャージ予定額プラスMetaMaskの手数料です。**準備がOKであれば、画面からそのSwap スワイパーをスマッシュしてください。**
+
+:::info
+
+#### スワップされたトークンがウォレットに表示されないのはなぜですか？
+
+すべてのブロックチェーンのトランザクションと同様に、即時に行われるわけではありませんが、ウォレットにトークンがまもなく表示されるはずです。一般的でないトークンであったり、何らかの理由でウォレットに表示されない場合は、[ここ](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)の指示に従って追加してください。
+
+:::
+
+#### **SwapVerseを入力**
+
+MetaMaskの本当に素晴らしいところ、比類なきトークンスワップ体験を提供できる理由の一つは、これが、**ネットワークに依存しないように構築されている**ことです。接続しているブロックチェーンのネットワークがEthereum互換である限り、そのネットワーク上でMetaMaskを設定することができるのです。\
+だから何？
+
+従って、**ほかのネットワークでもMetaMask Swapsが使用できるのです**。Ethereum メインネット上である必要はありません、**例えばPolygonでもSwapsが使えるのです**。他のサイドチェーンやカスタムネットワークがオンラインになれば、ぜひ試してみてください。SwapsによりどのようなEthereum互換のネットワーク上でもトークンを取引できます。サードパーティーのプラットフォームを使わずに直接ウォレットからです。これにより、ハッキングされたり悪意あるスマートコントラクトにさらされる可能性が低くなります。
+
+Swapsを介して、*メインネット上で*Ethereum以外のトークンを取得することもできるのです。詳細は、Ethereum上でのMATICトークンについての当社の記事を[こちら](https://support.metamask.io/hc/en-us/articles/4404417979035)からご覧ください。しかし覚えておいてください。**[ブリッジやポータルを介して](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains)いつでも多元的宇宙に行けることを。**
+
+### **FAQ**
+
+[MetaMask Swapsからトークンがなくなっているのはなぜですか。](/token-swaps/why-are-some-tokens-missing-from-metamask-swaps)
+
+[MetaMask Swapsを介して購入したトークンの購入時価格を確認する方法](/token-swaps/how-do-i-see-the-price-at-time-of-purchase-for-tokens-bought-through-swaps)
+
+[私のMetaMask のスワップはなぜ失敗したのですか。](/token-swaps/why-did-my-metamask-swap-fail)
+
+[保留中のスワップをキャンセルするにはどうすればいいですか。](/token-swaps/how-to-cancel-a-pending-swap)
+
+[MetaMask Swapのボタンが使用できない／グレイアウトしているのはなぜですか。](/token-swaps/why-is-the-metamask-swap-button-unavailable---greyed-out)
+
+**[スワップを行いましたが、受け取ったトークンあるいはフィアット値が予想より少ないです。 なぜですか。](/token-swaps/i-did-a-swap-but-received-fewer-tokens-or-less-fiat-value-than-i-expected-why-)**
+
+[見積もり取得エラー](/token-swaps/error-fetching-quote)
+
+[Uniswapサポートとトラブルシューティングのヒント](/token-swaps/uniswap-support-and-troubleshooting-tips)
+
+**[ユーザーガイド：カスタムネットワークとサイドチェーン](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains)**

@@ -1,0 +1,178 @@
+---
+title: How do I stake with validator staking?
+image: /img/socialCards/how-do-i-stake-with-validator-staking.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+<div class="center-container">
+  <div class="video-container">
+    <iframe
+      class="video-iframe"
+      src="https://www.youtube.com/embed/MQRwcnQVsOE"
+      title="How to use validator staking on MetaMask Portfolio"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
+Validator staking involves depositing 32 ETH and having your validator operated by MetaMask Staking. You collect the rewards, minus a fee, and are free of the responsibility of maintaining the validator. To read more, see our explanation [here](/metamask-portfolio/stake/validator-staking/what-is-validator-staking).
+
+1. Head to MetaMask Portfolio, and then find the 'stake ' section:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stake-with-validator-staking/MetaMask_Portfolio_staking_tab.png")
+          .default
+      }
+      alt="MetaMask Portfolio staking tab"
+    />
+  </div>
+</div>
+
+2. Switch to the 'Validator staking ' tab at the top of the page:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stake-with-validator-staking/MetaMask_Portfolio_validator_staking_tab.png")
+          .default
+      }
+      alt="MetaMask Portfolio validator staking tab"
+    />
+  </div>
+</div>
+
+3. Make sure the selected account address is the one you want to use to deposit. Use the slider to choose how much ETH to stake: (Note that you can only deposit in multiples of 32, the quantity of ETH required for one validator.)
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stake-with-validator-staking/MetaMask_Portfolio_validator_staking_select_amount.png")
+          .default
+      }
+      alt="MetaMask Portfolio validator staking select amount"
+    />
+  </div>
+</div>
+
+4. Once you 've selected the amount, the details of the stake transaction will appear. If you're happy to proceed, click 'Confirm ':
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stake-with-validator-staking/MetaMask_Portfolio_validator_staking_confirm_amount.png")
+          .default
+      }
+      alt="MetaMask Portfolio validator staking confirm amount"
+    />
+  </div>
+</div>
+
+5. Confirm and sign the transaction in your MetaMask wallet.
+
+That's all there is to it! Once the transaction is complete, your funds have been received and you're in the queue for a new validator to be spun up. You should now see one or more validators listed on the page, depending on how much ETH you deposited.
+
+The duration of the activation queue depends on demand across the entire Ethereum network. To check your estimate at any time, mouse over the 'Activating ' status in the table next to each validator.
+
+## FAQs
+
+<details>
+<summary>Does MetaMask charge a fee?</summary>
+<div>
+
+Yes — MetaMask charges 10% of your validator(s ') rewards. This fee is taken when you collect your rewards, and the rewards figure you see for your validator(s) is always post-fee. you'll always receive the displayed rewards figure. (The validator rewards rate percentage also reflects your return rate after fees are subtracted.)
+
+</div>
+</details>
+
+<details>
+<summary>What happens if I lose access to the account I staked with?</summary>
+<div>
+
+MetaMask Staking is self-custodial, which means that you hold full responsibility for the security of your assets and accounts.
+
+If you lose access to the Secret Recovery Phrase (seed phrase) that backs up the account you used to stake with on MetaMask Staking, you lose access to your stake and rewards.
+
+To maximize security, we recommend that you:
+
+- Create a new account specifically to stake with (“sandboxing” it from others) and keep it separate from your day-to-day web3 activities
+- Use a hardware wallet account
+- Ensure you back up the Secret Recovery Phrase that controls the private key of the account you staked with. See our [standard guidance on SRP security](/privacy-and-security/what-is-a-secret-recovery-phrase-and-how-to-keep-your-crypto-wallet-secure) for more information.
+
+</div>
+</details>
+
+<details>
+<summary>How do you calculate rewards?</summary>
+<div>
+
+The predicted rewards rate—provided before you have any validators—is calculated based on the average performance of similar validators in the previous week.
+
+If you do have validators, the displayed rewards rate is your actual rewards rate over the entire life of your validator, minus the MetaMask fee (10%).
+
+More generally, validator rewards on Ethereum comprise a regular, consistent base rate plus inconsistent rewards received whenever your validator is randomly nominated to participate in the validation of a block. As this second portion is random, rewards vary.
+
+</div>
+</details>
+
+<details>
+  <summary>How do I withdraw my rewards?</summary>
+  <div>
+    {" "}
+    See our guide [here](/metamask-portfolio/stake/validator-staking/how-do-i-withdraw-my-validator-rewards).{" "}
+  </div>
+</details>{" "}
+
+<details>
+  <summary>How do I withdraw my stake?</summary>
+  <div>
+    {" "}
+    See our guide [here](/metamask-portfolio/stake/validator-staking/how-do-i-stop-staking-and-withdraw-my-validator-balance).{" "}
+  </div>
+</details>{" "}
+
+<details>
+<summary>What do “validators at full capacity” and “validators nearing full capacity” mean?</summary>
+<div>
+
+This means that we need to allocate additional validators to meet demand, and we 're in the process of doing so. In this case, please check back later.
+
+“Validators nearing full capacity” means this point will soon be reached.
+
+</div>
+</details>
+
+<details>
+<summary>Why is my validator's withdrawal address not my own?</summary>
+<div>
+
+When it is created, every validator is configured with a withdrawal address for receiving rewards. In a solo staking scenario—if you were running the validator independently—you would use one of your account addresses.
+
+However, when you use MetaMask Staking, we configure the withdrawal address for you. This is because the withdrawal address for every validator in MetaMask Staking is actually a unique smart contract that ensures we can subtract our fee whilst also diverting the bulk of the rewards to your account.
+
+So even though you don 't see your account designated as the withdrawal address, rest assured you will be receiving rewards.
+
+Your account—the one you originally used to deposit your stake—is the only account with access to the withdrawal address (the withdrawal smart contract).
+
+</div>
+</details>
+
+<details>
+<summary>How can I be sure my stake won 't be slashed?</summary>
+<div>
+
+“Slashing” occurs when validators lose some of their 32 ETH stake as a fine for not attesting blocks properly, or for inactivity.
+
+Consensys Staking, the service that runs your MetaMask Staking validators, has never received any slashing penalties in more than two years of operation, despite managing over $2 billion worth of ETH across more than 33,000 validators. The validators are monitored 24/7 and their infrastructure is spread across global regions and cloud providers to maximize resilience.
+
+</div>
+</details>

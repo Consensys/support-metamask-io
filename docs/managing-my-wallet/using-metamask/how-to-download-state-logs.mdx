@@ -1,0 +1,200 @@
+---
+title: How to download state logs
+image: /img/socialCards/how-to-download-state-logs.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+## Getting MetaMask Logs
+
+To help us deliver better support, we might ask you to provide your MetaMask state logs to further analyze the issues you face. These logs tell us:
+
+- Your account addresses
+- Your sent transaction history
+- Your internal UI State
+
+They don 't reveal:
+
+- Your Private Keys
+- Your Secret Recovery Phrase
+
+Despite this,** DO NOT POST YOUR LOGS PUBLICLY.**
+
+There are four types of logs that we might ask you to provide:
+
+<Tabs>
+
+<TabItem value="State logs" label="State logs">
+
+<details>
+<summary>Extension</summary>
+<div>
+
+If you've had an issue sending transactions or found a visual glitch in the rendering of MetaMask, we might ask you for a state log. To get them:
+
+1. Open MetaMask and click on the three vertical dots in the top right corner
+2. Click on'settings' and then select 'Advanced'
+3. Click on 'Download state logs'
+4. Attach the file in your response to a support ticket.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-download-state-logs/MetaMask_download_state_logs_extension.gif")
+          .default
+      }
+      alt="MetaMask download state logs extension"
+    />
+  </div>
+</div>
+
+</div>
+</details>
+
+<details>
+<summary>Mobile</summary>
+<div>
+
+1. In the MetaMask app, tap the gear icon in the tab bar to access the settings menu
+2. Select 'Advanced'
+3. Scroll down and tap on 'Download state logs**'**
+4. Attach the file in your response to a support ticket.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-download-state-logs/MetaMask_download_state_logs_mobile.gif")
+          .default
+      }
+      alt="MetaMask download state logs mobile"
+    />
+  </div>
+</div>
+
+</div>
+</details>
+
+</TabItem>
+
+<TabItem value="Chrome popup logs" label="Chrome popup logs">
+
+To get logs from the popup:
+
+1. Click the MetaMask fox in the top right of your browser.
+2. Wait for the popup to open (or partially open if that's part of the bug).
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-download-state-logs/MetaMask_inspect_element.png")
+          .default
+      }
+      alt="MetaMask inspect element"
+    />
+  </div>
+</div>
+
+3. Right-click in the newly opened popup, and select **Inspect**.
+4. Click **Console **at the top of the Inspector window.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-download-state-logs/Chrome_popup_logs2.png")
+          .default
+      }
+      alt="Chrome popup logs MetaMask"
+    />
+  </div>
+</div>
+
+5. Look for any strange logs, especially red errors!
+6. Share a screenshot with us.
+
+</TabItem>
+
+<TabItem value="Chrome background logs" label="Chrome background logs">
+
+To get logs from MetaMask's background process in Chrome:
+
+1. Right-click the MetaMask fox in the top right of your browser.
+2. Select **Manage Extension**.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-download-state-logs/Chrome_background_logs1.png")
+          .default
+      }
+      alt="Chrome background logs"
+    />
+  </div>
+</div>
+
+3. Ensure "Developer Mode" is selected in the top right.
+4. Scroll down to MetaMask, and click the "**Inspect views: background page**" link.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-download-state-logs/Chrome_background_logs2.png")
+          .default
+      }
+      alt="Chrome background logs MetaMask"
+    />
+  </div>
+</div>
+
+5. Click Console at the top of the Inspector window.
+6. Look for any strange logs, especially red errors!
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-download-state-logs/Chrome_popup_logs2.png")
+          .default
+      }
+      alt="Chrome background logs MetaMask"
+    />
+  </div>
+</div>
+
+If you are using Windows OS, usually you could see the state logs in your **Downloads** folder.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/how-to-download-state-logs/Chrome_background_logs3.1.png")
+          .default
+      }
+      alt="Chrome background logs"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Chrome crash logs" label="Chrome crash logs">
+
+If your bug involves crashing the whole browser, then having a browser console won't be much good! (It will be crashed).
+
+In these cases, you'll need to start your browser in a way that it writes its logs to the disk, so you can open that log file after the browser crashes.
+
+[This process is described here](https://www.chromium.org/for-testers/enable-logging), and we hope to write more specific steps on this in the future. If you have to go through this process, please do record the steps, so we can have more detailed instructions here for different platforms.
+
+</TabItem>
+
+</Tabs>

@@ -1,0 +1,347 @@
+---
+title: "Como mostrar tokens na MetaMask"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+**Links rápidos:**
+
+- [Deteção automática de tokens](#detecção-de-tokens-melhorada)
+- [Adicionar um token usando a barra de pesquisa](#adicionar-um-token-manualmente-com-a-pesquisa)
+- [Adicionar um token personalizado](#como-adicionar-um-token-personalizado)
+- [Remover/ocultar tokens](#como-ocultar-tokens)
+- [Encontrar o endereço do contrato do token](#e-se-eu-não-souber-o-endereço-do-token)
+- [Adicionar um token usando o explorador de blocos](#como-faço-para-adicionar-um-token-usando-um-explorador-de-blocos)
+- [Adicionando um token usando um site de listagem de moedas](#como-adicionar-um-token-usando-um-site-de-listagem-de-moedas)
+- [Usando o Dapp de portfólio](#usando-o-dapp-de-portfólio)
+
+Normalmente, a MetaMask exibe tokens padrão ERC-20 (ou [tokens padrão](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)) que você possui na página da sua conta. Entretanto, com a proliferação de tokens na rede Ethereum e outras redes, a MetaMask não mantém uma lista oficial, mas permite que você adicione qualquer token compatível com o ERC-20 que possuir.
+
+Existem duas maneiras diferentes de adicionar tokens não listados à sua carteira MetaMask:
+
+Primeiro de tudo, você pode ativar um recurso avançado que [detecte automaticamente os tokens](#detecção-de-tokens-melhorada) mantidos pelo seu endereço e os adicione à sua carteira. O recurso usará listas de tokens agregadas a partir de várias listas de tokens da comunidade; **a MetaMask não mantém uma lista proprietária de tokens “aceitos” ou “válidos**”. Se você escolher essa opção, tenha em conta que você deve sempre ter cautela sobre tokens desconhecidos:
+
+1. Não interaja ou conecte a sua carteira a nenhuma página web com a qual você não esteja familiarizado, sobre a qual não tenha pesquisado e não tem nenhuma razão para acreditar que seja confiável.
+2. Tenha sempre cuidado com tokens desconhecidos ou enviados por airdrop antes de interagir com eles. Veja mais sobre as melhores práticas para segurança de tokens [aqui](/managing-my-tokens/token-safety-practices).
+3. Se tentar transacionar usando o token, a transação falhar e o explorador de blocos mostrar um erro escrito pelo golpista pedindo que você acesse um site, saiba que provavelmente se trata de um site de phishing. Por isso, NÃO clique no link.
+4. Mantenha-se informado sobre o que os golpistas estão fazendo para tentar roubar os seus fundos. Perceba que nem sempre existem medidas de proteção adequadas para que as informações que você vê na web sejam dignas de confiança.
+
+## Detecção de tokens melhorada
+
+:::info
+
+#### Apenas disponível em determinadas redes!
+
+A detecção de tokens melhorada só está disponível em:
+
+- Mainnet Ethereum
+- Avalanche
+- BNB Smart Chain
+- Polygon
+
+:::
+
+<Tabs>
+
+<TabItem value="Extensão" label="Extensão">
+
+Clique no Identicon no canto superior direito, navegue até "Configurações" e então em "Segurança e Privacidade". Certifique-se de que a opção está ativada:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Enhanced_automatic_token_detection_MetaMask2.png")
+          .default
+      }
+      alt="Detecção de tokens automática melhorada da MetaMask"
+    />
+  </div>
+</div>
+
+Se necessário, você poderá desativar essa opção mais tarde.
+
+</TabItem>
+
+<TabItem value="Aplicativo para dispositivos móveis" label="Aplicativo para dispositivos móveis">
+
+Clique no ícone do hambúrguer no canto superior esquerdo da página inicial e encontre "Configurações". Daqui, navegue até "Avançado" e role até encontrar o botão que ativa a detecção de tokens.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Enhanced_automatic_token_detection_MetaMask_Mobile.png")
+          .default
+      }
+      alt="Detecção de tokens automática melhorada da MetaMask Mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**Após habilitar a detecção de tokens, volte à sua lista de ativos e atualize se necessário. Se tudo der certo, todos os tokens que não apareciam vão aparecer aqui agora.**
+
+_Note que a detecção de tokens acontece na rede principal da Ethereum independentemente de esta configuração estar ativa ou não. A detecção de tokens melhorada apenas expande esta função para cobrir as redes adicionais listadas acima. _
+
+## Adicionar um token manualmente com a pesquisa
+
+<Tabs>
+
+<TabItem value="Extensão" label="Extensão">
+
+Para ver os seus tokens, clique na guia **Ativos**. Seus tokens devem estar listados nesta guia. Se eles não estiverem e a detecção automática de tokens não os estiver selecionando, clique em “Importar token”, na parte inferior.
+
+Clicar aqui levará você até uma barra de pesquisa:
+
+1. Digite palavras contidas no token que você gostaria de pesquisar. Por exemplo, se eu quisesse procurar pela Chainlink (Símbolo: LINK), digitaria somente “LI” na barra e esta retornaria todas as sugestões.
+2. Selecione o token de interesse e clique em **Próximo** para continuar. (Assim que você selecionar um token, a borda do botão será realçada em azul)
+3. Clique em** Adicionar token** para continuar. Na sequência, você será redirecionado para a página da sua conta. O token que você acabou de adicionar estará listado.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_token_MetaMask_Extension.gif")
+          .default
+      }
+      alt="Importar token na extensão da MetaMask"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Aplicativo para dispositivos móveis" label="Aplicativo para dispositivos móveis">
+
+1. Na página da sua carteira, encontre o link "Importar tokens", na parte inferior da tela.
+2. Isso ativará a barra de pesquisa. Digite o nome do token que deseja adicionar.
+3. Quando você encontrá-lo, toque nele para selecioná-lo e, em seguida, role até o botão 'Importar'.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_token_MetaMask_Mobile.gif")
+          .default
+      }
+      alt="Importar token na MetaMask Mobile"
+    />
+  </div>
+</div>
+
+Agora, o token estará listado nos ativos da sua conta.
+
+</TabItem>
+
+</Tabs>
+
+## Como ocultar tokens
+
+Uma vez que estejam adicionados, você pode remover o token da sua lista de ativos.
+
+<Tabs>
+
+<TabItem value="Extensão" label="Extensão">
+
+Na página da sua carteira, encontre a guia “Ativos” e clique no token que deseja remover.
+
+Clique nos três pontos no canto superior direito e, em seguida, em 'Ocultar'.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Hide_token_extension.gif")
+          .default
+      }
+      alt="Ocultar token na extensão"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Aplicativo para dispositivos móveis" label="Aplicativo para dispositivos móveis">
+
+Tanto para iOS quanto Android, pressione sobre o token por um momento. Isso ativará a opção para removê-lo:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Hide_token_mobile.png")
+          .default
+      }
+      alt="Ocultar token no celular"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**Se o token que você pesquisar não estiver entre os tokens mais populares, a barra de pesquisa pode não retornar o token consultado.** Neste caso, você pode [adicionar um token personalizado](#como-adicionar-um-token-personalizado) (manualmente).
+
+## Como adicionar um token personalizado
+
+<Tabs>
+
+<TabItem value="Extensão" label="Extensão">
+
+1. Clique em 'Importar tokens', localizado na parte inferior da guia 'Ativos', na página inicial da sua carteira.
+
+2. Alterne para a guia 'Token personalizado', na parte superior e, em seguida, digite o endereço do token no primeiro campo. Consulte [abaixo](#e-se-eu-não-souber-o-endereço-do-token), caso ainda não saiba onde encontrar isso.
+
+3. Na maioria dos casos, o símbolo do token e o seu decimal são preenchidos automaticamente.\
+   Se isso não acontecer, confira o explorador de blocos da redes para encontrá-lo. O seu símbolo e os decimais provavelmente serão exibidos.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details.png")
+          .default
+      }
+      alt="Encontrar detalhes de token personalizado"
+    />
+  </div>
+</div>
+
+Se você ainda não conseguir encontrar os detalhes do token, tente localizar a documentação do token através de uma pesquisa na web.
+
+4. Clique em 'Adicionar Token Personalizado' para continuar.
+5. Agora você verá uma página pedindo para confirmar se deseja adicionar o token.\
+   Quando clicar em "Importar Tokens", o tipo de token será adicionado à sua carteira.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_custom_token_MetaMask_Extension.gif")
+          .default
+      }
+      alt="Importar token personalizado na extensão da MetaMask"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Aplicativo para dispositivos móveis" label="Aplicativo para dispositivos móveis">
+
+1. Encontre o link 'Importar tokens' na página inicial da sua carteira. Toque nele para ativar o menu para adicionar tokens.
+2. Mude para a guia 'Token personalizado'. Agora, você verá três campos pedindo pelo endereço do contrato do token, seu símbolo e o 'Token de Precisão' (ou seja, quantas casas decimais ele pode baixar).
+3. [Encontre o endereço do token](#e-se-eu-não-souber-o-endereço-do-token) e cole-o no primeiro campo. O símbolo e os decimais serão preenchidos automaticamente. Se isso não ocorrer, acesse o explorador de blocos da rede e busque pelo token. Na página pertinente, você pode encontrar facilmente o respectivo símbolo e decimais.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details_mobile.png")
+          .default
+      }
+      alt="Encontrar detalhes de token personalizado na versão móvel"
+    />
+  </div>
+</div>
+
+4. Toque em 'Importar' para adicioná-lo à sua carteira. Você será redirecionado de volta para a página inicial da sua carteira e poderá vê-lo na guia 'tokens'.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_custom_token_MetaMask_mobile.gif")
+          .default
+      }
+      alt="Import_custom_token_MetaMask_mobile.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+## E se eu não souber o endereço do token?
+
+Confira [este artigo](/managing-my-tokens/custom-tokens/how-to-find-a-token-contract-address) para ver algumas maneiras diferentes de encontrá-lo.
+
+Também é possível pedir o endereço do contrato do token ao responsável por lhe enviar os tokens.
+
+**Atente para o fato de que, se alguém afirma que lhe enviou tokens, mas não conseguem lhe fornecer os endereços respectivos ou os hashes das transações (um ID de transação único), é bem possível que não tenha enviado nada.**
+
+## Como faço para adicionar um token usando um explorador de blocos
+
+> Aviso: além da Etherscan, isso funcionará com a maioria dos exploradores de blocos, incluindo [a BSCScan](https://bscscan.com/), [Polygonscan](https://polygonscan.com/), [Snowtrace](https://snowtrace.io/), etc. Isso acontece porque eles geralmente compartilham um design semelhante.
+
+1. Acesse o explorador de blocos.
+2. Pesquise pelo seu token. Você também pode acessar através do link 'Tokens', na barra de menu.
+3. Clique no botão "Mais" no canto superior direito do resumo do perfil do token.
+4. Clique em "Adicionar Token à MetaMask (Web3)"
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_using_block_explorer.png")
+          .default
+      }
+      alt="adicionar token usando o explorador de blocos"
+    />
+  </div>
+</div>
+
+5. Uma janela pop-up na MetaMask pedirá que confirme se deseja adicionar o token.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_MetaMask_notification.png")
+          .default
+      }
+      alt="adicionar token pela notificação da MetaMask"
+    />
+  </div>
+</div>
+
+## Como adicionar um token usando um site de listagem de moedas
+
+Sites como Coingecko ou CoinMarketCap oferecem a integração da MetaMask, o que permite adicionar tokens à MetaMask diretamente ao entrar no site.
+
+Para acessar, basta ir a um desses sites e encontrar o token que deseja adicionar usando a barra de pesquisa. Em seguida, encontre o endereço do contrato e clique na raposa do MetaMask. Um prompt aparecerá para confirmar se você deseja adicionar o token à sua carteira.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Add_token_to_MetaMask_from_coin_listing_site2.gif")
+          .default
+      }
+      alt="Add_token_to_MetaMask_from_coin_listing_site2.gif"
+    />
+  </div>
+</div>
+
+:::info
+
+#### Aviso
+
+**Na MetaMask Mobile, certifique-se de acessar o site usando o navegador do aplicativo e** não o navegador padrão do dispositivo. Essa é a única maneira de acessar links da web que se integram com a MetaMask, do mesmo modo que você faz no seu navegador desktop usando a extensão.
+
+:::
+
+Esse método também permite que você adicione o token em redes diferentes, dependendo se um contrato inteligente correspondente foi implantado nessa rede pelos proprietários do token. Clique nos três pontos ao lado do endereço do contrato para selecionar uma rede diferente e clique na raposa para adicionar o token a essa rede.
+
+## Usando o Dapp de portfólio
+
+O [Dapp de portfólio](https://portfolio.metamask.io/) é uma plataforma nova associada à MetaMask que agrega e exibe seus saldos de tokens. Isso é útil quando você conecta sua carteira a ele, pois **ele detecta automaticamente** e exibe a maioria dos tokens.
+
+Basta seguir o link e conectar sua carteira. Confira [nossos artigos](/metamask-portfolio/) sobre como usar o dapp se precisar de mais orientações.

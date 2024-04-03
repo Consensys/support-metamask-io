@@ -1,0 +1,26 @@
+---
+title: What EL/CL clients are used for my validator?
+image: /img/socialCards/what-elcl-clients-are-used-for-my-validator.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+MetaMask and Consensys are committed to client diversity. Towards this end, Consensys is developing an execution layer (EL) client ([Besu](https://besu.hyperledger.org/)) and a consensus layer (CL) client ([Teku](https://consensys.io/teku)).
+
+The Consensys Staking infrastructure powering MetaMask validator staking uses an algorithm to distribute validators across multiple execution layer and consensus layer clients.
+
+**On the consensus layer**, we run two clients for validator duties: Teku and Lighthouse. Our algorithm allocates new validators to Teku or Lighthouse in order to maintain a 50%-50% split between Teku and Lighthouse across the entire platform.
+
+**On the execution layer**, we run two clients for validator duties: Geth and Besu. 58% of validators use Besu, and 42% use Geth.
+
+:::info
+
+Currently, Geth represents a 'supermajority', and is used by more than two-thirds of validators across the Ethereum network. Validators running supermajority clients may face greater risk in the event of a bug in the execution client software than validators running a minority client.
+
+Although Consensys already contributes to client diversity by using a mix of clients, we will continuously evaluate how Geth adoption evolves throughout the ecosystem. If Geth usage does not continue to fall ecosystem-wide, we will take additional actions to further reduce our Geth adoption.
+
+:::
+
+Beyond client diversity, Consensys Staking validators are distributed across two clouds (Azure, AWS) and six regions (two each in the US, Europe, and Asia).

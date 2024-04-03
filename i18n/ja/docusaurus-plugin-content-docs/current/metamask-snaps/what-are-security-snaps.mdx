@@ -1,0 +1,80 @@
+---
+title: "MetaMask Snaps Transaction Insights とは？"
+---
+
+MetaMask Snaps が提供する新機能の 1 つが、トランザクションインサイトです。
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../img/metamask-snaps/what-are-security-snaps/MetaMask_Snaps_MobyMask_phishing_warning.png")
+          .default
+      }
+      alt="MetaMask_Snaps_MobyMask_phishing_warning.png"
+    />
+  </div>
+</div>
+
+Transaction Insightsはトランザクションプロンプトに新しいタブを追加し、Snapから送信しようとしているトランザクションに関する重要な情報を得られるようにします。
+
+## Transaction Insights のご紹介
+
+Transaction insightsは、Snapから重要な分析情報を取得することを可能にし、トランザクションをさらなる高みへと引き上げます。以下は、取得可能な情報の一例です。
+
+1. **フィッシングデータベースチェック**受信アドレスが既知のフィッシングデータベースに関連しているかどうかを知ることで、悪質なアドレスとやり取りしていないか確認しやすくなります。
+2. **トランザクションシミュレーション**Snapは、ローカルまたはAIを使用してトランザクションのシミュレーションを行うことで、トランザクションが成功するか失敗するか判断し、ステートの変化を予測するのに役立ちます。
+
+## Transaction Insights の利用開始
+
+Transaction Insightsは簡単に利用を開始できます — 短いステップバイステップの手順をご覧ください:
+
+1. **MetaMaskを最新の状態に保つ**MetaMaskブラウザ拡張機能が最新のバージョンであることを確認します。[アップデート方法はこちらをご覧ください](/managing-my-wallet/using-metamask/how-to-update-the-version-of-metamask)。 MetaMask Snaps は現在 MetaMask ブラウザ拡張機能でのみご利用いただけます。
+2. **Transaction Insightsを使用するSnapのインストール**Transaction Insightsで何ができるか興味をお持ちの方は、[Wallet Guard Snap](https://snaps.metamask.io/snap/npm/wallet-guard-snap?utm_source=metamaskSupport&utm_medium=knowledge-base&utm_campaign=2023_Sep_snaps-launch_content_txinsights)をお試しください。
+3. **トランザクションの開始**お気に入りの DApps に移動して、新しいトランザクションを開始します。MetaMask の確認ページに新しいタブが表示されます。 それをクリックすると、Wallet Guard Snapからの受信 (コントラクト) アドレスに関する情報にアクセスし、以前悪質であるとしてフラグが設定されているかどうかを確認できます。
+
+## よくある質問 (FAQ)
+
+<details>
+<summary>すべてのSnapでトランザクションインサイトが利用できますか？</summary>
+
+<div>
+
+すべてのSnapがトランザクションインサイトを使用するわけではありません。 トランザクションインサイトを使用するかは、それぞれのSnapの説明をご確認ください。 Snapをインストールする際、要求されるアクセス許可を確認することでも、トランザクションインサイトを使用するかどうかがわかります。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/metamask-snaps/what-are-security-snaps/MetaMask_Snaps_transaction_insights_permission.png")
+          .default
+      }
+      alt="トランザクションインサイトの取得と表示"
+    />
+  </div>
+</div>
+
+</div>
+</details>
+
+<details>
+  <summary>
+    トランザクションインサイトの使用にあたり、プライバシーの心配はありますか？
+  </summary>
+  <div>
+    {" "}
+    Snapがアクセスできる情報はその種類ごとに異なり、インストール時にどのようなアクセス許可を付与されるかによって決まります。
+    サードパーティにより開発されたSnapに共有されたユーザーデータは、すべてSnapの開発者により直接収集されます。MetaMaskはこのデータにアクセスできません。
+    Snapは信頼できる開発者からのみインストールし、インストールする前に必ずSnapのプライバシーポリシーおよび利用規約を確認してください。{" "}
+  </div>
+</details>{" "}
+
+<details>
+  <summary>他にも質問があります！</summary>
+  <div>
+    {" "}
+    [MetaMask Snaps に関するよくある質問ページ](/metamask-snaps/metamask-snaps-faq)をご覧ください。{" "}
+  </div>
+</details>
+
+トランザクションインサイトは、MetaMask Snaps により追加される新機能の 1 つに過ぎません。[Interoperability](/metamask-snaps/what-are-interoperability-snaps) や [Notifications](/metamask-snaps/what-are-communication-snaps) もぜひご覧ください！ MetaMask Snaps は初めてですか？ [利用を開始](/metamask-snaps/getting-started-with-metamask-snaps)。

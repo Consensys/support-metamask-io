@@ -1,0 +1,102 @@
+---
+title: How to turn on Blockaid security alerts
+image: /img/socialCards/how-to-turn-on-blockaid-security-alerts.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Thanks to MetaMask's partnership with web3 security specialists [Blockaid](https://www.blockaid.io/), you can now receive transaction security alerts directly in MetaMask whilst maintaining total data privacy.
+
+The feature is currently available on the following networks:
+
+- Ethereum
+- BNB chain
+- Polygon
+- Arbitrum
+- Optimism
+- Avalanche
+- Linea
+
+## How to turn on Blockaid security alerts
+
+Blockaid security alerts are enabled by default in MetaMask Extension and Mobile; you're all set to to receive transaction security alerts for each transaction you're about to submit!
+
+:::info
+
+If you had previously enabled the "OpenSea + Blockaid (Beta)" option in the Experimental settings of MetaMask Extension, which makes use of requests to third-party security providers, consider switching over to simply "Blockaid (Recommended)", which uses a privacy-preserving system to locally simulate your transactions, ensuring that you are maintaining total data privacy.
+
+:::
+
+## How to report a false positive
+
+If you see a Blockaid alert on a site that you're sure is legitimate—not trying to defraud you—you can report it as a false positive. The Blockaid team can then review the data you send as part of the report, investigate the site and request, and make changes to their database if necessary.
+
+To report a false positive, first click the 'See details' button to expand the alert, and then click 'Report an issue':
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/privacy-and-security/how-to-turn-on-blockaid-security-alerts/MetaMask_Blockaid_deceptive_request_warning_contact.png")
+          .default
+      }
+      alt="MetaMask Blockaid deceptive request contact"
+    />
+  </div>
+</div>
+
+This will open a web page allowing you to submit details of the transaction that you were attempting. Click 'Continue' to proceed, and then you'll be taken to a form. Here you can:
+
+- Use the text field to add any details you feel are relevant
+- Expand the 'Details' dropdown to view the information about your transaction that will be submitted.
+
+The 'Details' section is automatically populated with data from MetaMask, so you don't need to touch it.
+
+Click 'Submit' to send the report.
+
+## How does it work?
+
+Together, Blockaid and MetaMask have developed a security alert system using a **privacy-preserving **system that **simulates transactions locally**, providing warnings in your MetaMask wallet if a transaction is suspected as fraudulent.
+
+### How does it improve security?
+
+#### Transaction simulation
+
+When security alerts are turned on, your transaction is simulated locally before you sign it, checking whether it could result in you losing funds.
+
+If this check returns a positive — i.e. you're likely to lose funds due to the interaction — you'll see a "This is a deceptive request" warning displayed on the transaction confirmation screen:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/privacy-and-security/how-to-turn-on-blockaid-security-alerts/MetaMask_Blockaid_security_alert.png")
+          .default
+      }
+      alt="MetaMask Blockaid deceptive request security alert"
+    />
+  </div>
+</div>
+
+**The security alerts do not prevent you from losing funds or interacting with fraudulent dapps**. Even though a warning is displayed, you can still confirm the transaction if you choose to.
+
+Simulating transactions also has the advantage of preventing funds loss if a usually reputable protocol is hacked. When [balancer.fi](https://balancer.fi/) was briefly [compromised](https://rekt.news/balancer-rekt/), for example, Blockaid simulations successfully identified and flagged transactions that would have caused funds loss, even though Balancer was a trusted source.
+
+#### Maintaining a database of fraudulent dapps
+
+As well as simulating transactions, the security system is updated frequently with the latest Blockaid data on fraudulent dapps. The simulation system is, therefore, complemented by warnings whenever you interact with a dapp that Blockaid's continual scanning has already identified as fraudulent.
+
+Blockaid shares the database to a MetaMask server, which, in turn, is passed on to your MetaMask instance every few hours to make sure your wallet is up to date with the latest threats.
+
+### Maximizing your privacy
+
+The local simulation process means the credentials of your MetaMask account, your device, and your internet connection (such as IP address) do not need to be exposed to check the transaction. The only external communication during a transaction is requesting the latest on-chain data from your node provider to get the latest context for the transaction.
+
+Your transaction therefore **_never leaves your wallet_** until you sign it.
+
+Additionally, the database of fraudulent sites allows you to benefit from the latest web3 security intel without exposing any personal information about your device, browser, internet, or MetaMask accounts.

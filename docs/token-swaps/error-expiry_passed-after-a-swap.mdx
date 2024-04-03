@@ -1,0 +1,29 @@
+---
+title: 'Error: ''EXPIRY PASSED'' after a swap'
+image: /img/socialCards/error-expiry-passed-after-a-swap.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+If you try to swap using MetaMask Swaps and your swap fails, you could see this error message on the block explorer:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../img/token-swaps/error-expiry_passed-after-a-swap/EXPIRY_PASSED.png")
+          .default
+      }
+      alt="EXPIRY_PASSED.png"
+    />
+  </div>
+</div>
+
+This happens either when:
+
+- You waited too long in MetaMask to perform the swap, or;
+- You submitted the swap right as the quotes were about to refresh.
+
+Retry the attempted swap as normal, and you should no longer encounter the same error. If you do, [get in touch with Support](/getting-started/how-to-contact-metamask-support).

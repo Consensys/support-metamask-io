@@ -1,0 +1,55 @@
+---
+title: >-
+  I have sent funds from Binance Smart Chain to MetaMask but I don't see the
+  tokens in my MetaMask wallet
+image: >-
+  /img/socialCards/i-have-sent-funds-from-binance-smart-chain-to-metamask-but-i-dont-see-the-tokens-in-my-metamask-wallet.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+### Check out our [User Guide on sidechains and custom networks](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains); it may answer a lot of questions and help you understand what's going on better.
+
+To summarize the situation this article is covering:
+
+- You've sent funds from BSC to MetaMask but the tokens are not in your MetaMask account.
+- Binance has confirmed that the transaction was successful and that the withdrawal address is correct.
+- You used the BSC network and sent funds as BEP-20 tokens.
+
+Firstly, we need to confirm the transaction was successful. To do this:
+
+1. Go to [BSCScan](https://bscscan.com/)
+2. Enter your MetaMask [public address](/managing-my-wallet/accounts-and-addresses/how-to-view-your-account-details-and-public-address)
+3. Click on "BEP-20 tokens" as per below and check if you find the transaction.
+4. Click on "token" and check if you find your "missing" tokens.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/moving-your-tokens/i-have-sent-funds-from-binance-smart-chain-to-metamask-but-i-dont-see-the-tokens-in-my-metamask-wallet/BSCScan_transaction.png")
+          .default
+      }
+      alt="BSCScan_transaction.png"
+    />
+  </div>
+</div>
+
+If you found the transaction and the tokens: great news, it will be an easy fix! All you need to do is:
+
+1. **Add the BSC network to MetaMask**
+
+   - See here for [Binance's guide](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Add via Chainlist](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist)
+   - [Add custom network manually](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)
+
+2. **Add the token itself to MetaMask on the BSC network**
+   - [How to add unlisted tokens (custom tokens) in MetaMask](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)
+
+Please note that MetaMask is set by default to connect to the Ethereum Mainnet, not the Binance Smart Chain (BSC) Network.
+
+If you want to move the tokens to Ethereum mainnet, you can use MetaMask Bridges at [portfolio.metamask.io/bridge](https://portfolio.metamask.io/bridge). (See our [guide](/metamask-portfolio/bridge/how-to-use-the-bridge) for more information.)
+
+You can find more details about BSC in our [Binance section](https://support.metamask.io/hc/sections/4499267442331) or by accessing [Binance support](https://www.binance.com/en/support).

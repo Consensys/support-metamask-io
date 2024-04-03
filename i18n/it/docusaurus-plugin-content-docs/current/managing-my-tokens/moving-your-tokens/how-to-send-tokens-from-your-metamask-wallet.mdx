@@ -1,0 +1,142 @@
+---
+title: "Come inviare token dal portafoglio MetaMask"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Nota:
+
+Questo articolo è incentrato sull'invio di ETH e altri token conformi allo standard ERC-20. Tuttavia, la **procedura è essenzialmente la stessa indipendentemente dalla rete** che stai usando: devi solo assicurarti di avere abbastanza token nativi della rete per pagare la transazione.
+
+Per ulteriori informazioni sui token in generale, [leggi qui](/managing-my-tokens/user-guide-tokens). Per informazioni generali riguardo le transazioni su Ethereum, [leggi qui](/transactions-and-gas/transactions/user-guide-transactions-and-failed-transactions).
+
+:::
+
+## Di cosa avrai bisogno:
+
+- Indirizzo del portafoglio Ethereum del destinatario
+- Un saldo sufficiente nel _token nativo di rete_ (su Ethereum, ETH, Binance Smart Chain, BNB ecc.) presente sul tuo account a [coprire il costo in gas](/transactions-and-gas/gas-fees/user-guide-gas).
+
+**Nota**: se stai utilizzando una rete diversa da Ethereum Mainnet, assicurati di avere i token corrispondenti necessari per i costi in gas. Ad esempio, il token BNB viene utilizzato come gas per la rete Binance Smart Chain (BSC) e MATIC è necessario per Polygon. **Per ulteriori informazioni su reti diverse dalla rete Ethereum principale, leggi [qui](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains). **Stai cercando di inviare un NFT (un token ERC-721)? In tal caso, consulta [questa](/nfts/how-do-i-send-receive-or-cash-out-an-nft) guida.
+
+## Passaggi:
+
+<Tabs>
+
+<TabItem value="Estensione" label="Estensione">
+
+1. Dalla pagina di destinazione del portafoglio, assicurati di essere nell'account da cui vuoi effettuare la transazione e premi il pulsante "Invia" al centro dello schermo.
+
+2. Ora devi inserire l'indirizzo pubblico del destinatario. Se hai già degli indirizzi salvati nella tua rubrica, appariranno in questa fase.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_1.gif")
+          .default
+      }
+      alt="Invia i token dall'estensione portafoglio MetaMask"
+    />
+  </div>
+</div>
+
+3. Inserisci l'importo dei token che vuoi inviare e fai clic su avanti.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_2.gif")
+          .default
+      }
+      alt="Invia i token dall'estensione portafoglio MetaMask"
+    />
+  </div>
+</div>
+
+4. Ora ti viene presentata la stima dei costi in gas della tua transazione, che puoi anche modificare. Prima di fare clic su "Conferma" per procedere con la transazione, ti consigliamo di **ricontrollare l'indirizzo del destinatario.**
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_3.gif")
+          .default
+      }
+      alt="Invia i token dall'estensione portafoglio MetaMask"
+    />
+  </div>
+</div>
+
+5. Verrai quindi reindirizzato alla pagina principale dove potrai vedere un elenco delle tue transazioni recenti nella scheda "Attività".
+
+</TabItem>
+
+<TabItem value="App mobile" label="App mobile">
+
+1. Vai alla home page del tuo account. Da qui, tocca il tasto "Send".
+
+   Per inviare i token, puoi anche fare clic sul token stesso, visualizzato nella scheda "Patrimonio" sulla tua home page.
+
+2. Ora devi inserire l'indirizzo a cui vuoi inviare i token. Incolla l'indirizzo dagli appunti (ad es. un'altra app) o selezionane uno dalla tua rubrica.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_1.gif")
+          .default
+      }
+      alt="Invia i token dal tuo portafoglio MetaMask mobile"
+    />
+  </div>
+</div>
+
+3. Verrai indirizzato a una schermata in cui puoi inserire l'importo che desideri inviare. Se necessario, puoi anche cambiare il tipo di token toccando il suo nome nella casella blu direttamente sopra l'importo.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_2.png")
+          .default
+      }
+      alt="Invia i token dal tuo portafoglio MetaMask mobile"
+    />
+  </div>
+</div>
+
+4. Toccando "Avanti", vedrai la schermata di conferma. Qui vedrai i dettagli della tua transazione, incluso il costo in gas che pagherai.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_3.png")
+          .default
+      }
+      alt="Invia i token dal tuo portafoglio MetaMask mobile"
+    />
+  </div>
+</div>
+
+Puoi anche modificare le impostazioni del gas per la transazione toccando la quantità di ETH evidenziata nella casella "Estimated gas fee".
+
+Tocca "Send" per confermare la transazione e completare il processo.
+
+</TabItem>
+
+</Tabs>
+
+### Note
+
+- Il numero di token e i costi per la transazione (gas, pagato in ETH o nel token nativo della rete, tipo BNB o MATIC) non verranno detratti immediatamente. Lo stato della transazione è in sospeso, il che significa che la transazione è stata inviata alla rete della blockchain ed è in attesa di conferma.
+- Quando la transazione ha esito positivo, vedrai l'importo aggiornato del token e dei saldi ETH, nonché lo stato della transazione aggiornato a "Confermata".
+- Se fai clic sulla transazione nella scheda **Attività** su MetaMask, puoi rivedere le informazioni sulla transazione e avere la possibilità di visualizzare il record della transazione su un block explorer della rete, tipo [Etherscan](https://etherscan.io/), [BscScan](https://bscscan.com/) o [Polygonscan](https://polygonscan.com/).
+- A volte, la conferma della transazione potrebbe richiedere più tempo. Quando ciò accade, puoi scegliere **Velocizza** per velocizzare l'operazione inviando nuovamente l'operazione (prima in sospeso) con un prezzo del gas superiore o **Annulla** per annularla prima che venga confermata. Scopri di più su come [velocizzare o annullare una transazione](/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction).
+- Consulta come depositare [(ricevere) token nel portafoglio MetaMask](/getting-started/direct-deposit-receive-tokens-to-your-metamask-wallet) se vuoi ricevere token.
+- **Questa procedura è esattamente identica per ETH come per altri token ERC-20, ma quando invii token ERC-20, assicurati sempre che il portafoglio del ricevente supporti i token che stai inviando. **

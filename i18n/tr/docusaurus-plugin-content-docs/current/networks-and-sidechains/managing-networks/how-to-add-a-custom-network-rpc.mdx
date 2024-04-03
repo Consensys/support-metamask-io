@@ -1,0 +1,326 @@
+---
+title: "Bir özel ağ RPC'si nasıl eklenir?"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### İçindekiler:
+
+- [Chainlist üzerinden ekleme](#chainlist-üzerinden-ekleme)
+- [Popüler ağları hızlı bir şekilde ekleme](#ekledikten-sonra-ağ-adının-yanında-neden-soru-işareti-simgesi-görüyorum)
+- [Ağları manuel olarak ekleme](#bir-ağı-manuel-olarak-ekleme)
+
+MetaMask, Ethereum mainnet'ten çok daha fazla ağa erişebilir; EVM-uyumlu her ağı ekleyebilirsiniz. RPC kısaltması uzaktan prosedür çağrısı (remote procedure call) terimini ifade eder. Bu, bir istemcinin (MetaMask gibi) blok zinciri ile etkileşime girmesine izin veren protokoller dizisidir. Başka bir önemli teknik eylem dizisine başvurmadan aşağıdaki işlemi kullanarak ağ detaylarını eklemek, MetaMask'ın o ağ ile etkileşim kurmanıza olanak tanıyan bir RPC (uzaktan prosedür çağrısı) kullanmasına izin verir.
+
+#### Chainlist üzerinden ekleme
+
+MetaMask'a ağları eklemenin kolay bir yolu için, [chainlist.wtf](https://chainlist.wtf/) adresine gidin; burada MetaMask'a bağlanabilir ve sadece birkaç tıklama ile ağları ekleyebilirsiniz. Daha fazla bilgi için [kılavuzumuza](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) göz atın.
+
+Ayrıca, **bir cihaza ağ eklemenin aynı hesaba başka bir cihazdan erişirken ağın görüntüleneceği anlamına gelmediğini** lütfen unutmayın. Uzantı üzerinde eklerseniz ağ MetaMask Mobil uygulamanıza otomatik olarak eklenmez ve bunun tersi de geçerlidir.
+
+Tarayıcı eklentisini veya mobil uygulamayı kaldırırsanız (ki bu işlemden sonra Gizli Kurtarma İfadenizi kullanarak [cüzdanınızı geri yüklemeniz](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) gerekecektir) özel ağların da yeniden eklenmesi gerekecektir.
+
+:::info
+
+#### Ekledikten sonra ağ adının yanında neden soru işareti simgesi görüyorum?
+
+MetaMask'a özel bir ağ (yani Ethereum mainnet dışındaki herhangi bir ağ) eklediğinizde, ağ seçicisinde bu ağın yanında bir soru işareti simgesi göreceksiniz. Şu şekilde görünür:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/question_mark.png").default
+      }
+      alt="question_mark.png"
+    />
+  </div>
+</div>
+
+Endişelenmeyin! Bu, kullanımının meşru olmadığı veya güvenli olmadığı anlamına gelmez. Bu istenilen bir davranıştır ve eklediğiniz her ağ, MetaMask'ta böyle görünecektir.
+
+:::
+
+## Popüler ağları ekleme
+
+Hem Mobil hem de Eklentide, sadece bir dokunuşla birçok önemli ağı kolayca ekleyebilirsiniz. Bunlar arasında şunlar da yer alır:
+
+- [BNB Chain/BSC](/network-profiles/network-profile-bnb-smart-chain-bnb)
+- [Polygon](/network-profiles/network-profile-polygon-matic)
+- [Avalanche](/network-profiles/network-profile-avalanche-avax)
+- [Arbitrum](/network-profiles/network-profile-arbitrum)
+- [Optimism](/network-profiles/network-profile-optimism-op-mainnet)
+- [Palm](/network-profiles/network-profile-palm)
+- [Fantom](/network-profiles/network-profile-fantom-ftm)
+- [Harmony](/network-profiles/network-profile-harmony-one)
+- [Aurora](/network-profiles/network-profile-aurora-)
+- [Celo](https://celo.org/).
+
+Bu menüyü, aşağıdaki adımları kullanarak bulabilirsiniz:
+
+<Tabs>
+
+<TabItem value="Uzantı" label="Uzantı">
+
+Cüzdanınızın ana sayfasında, ekranın en üstündeki ağ seçicisine ve ardından "Ağ ekle"ye tıklayın:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={require("../../../../../../img/i18n/legacy/add_network.png").default}
+      alt="add_network.png"
+    />
+  </div>
+</div>
+
+Buradan (ağı zaten eklemediyseniz) eklenmeye hazır popüler ağların bir listesini göreceksiniz. Süreci başlatmak için "Ekle" ye dokunun ve talimatları takip edin.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/popular_networkis.png")
+          .default
+      }
+      alt="popular_networkis.png"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobil" label="Mobil">
+
+1. Ekranın sol üst kısmındaki hamburger simgesine dokunun.
+
+2. "Ayarlar" bölümüne ve ardından "Ağlar" bölümüne gidin.
+
+3. Burada zaten eklemiş olduğunuz ağların bir listesini göreceksiniz. Ekranın en altındaki "Ağ Ekle" düğmesine dokunun.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/settings___network.PNG.png")
+             .default
+         }
+         alt="settings___network.PNG"
+       />
+     </div>
+   </div>
+
+4. Şimdi "Popüler" sekmesi altında, aşağıda gösterildiği gibi, ekleyebileceğiniz ağların bir listesini göreceksiniz.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/select_a_network.jpg.png")
+             .default
+         }
+         alt="select_a_network.jpg"
+       />
+     </div>
+   </div>
+
+5. Bunlardan birini eklemeyi seçtiğinizde, seçiminizi onaylamanız istenecektir:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network_.PNG.png")
+             .default
+         }
+         alt="add_network_. PNG"
+       />
+     </div>
+   </div>
+
+   Daha sonra size hemen bu ağa geçiş seçeneği sunulacaktır. Hepsi bu kadar!
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/switch_to_network.jpg.png")
+             .default
+         }
+         alt="switch_to_network.jpg"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+## Bir ağı manuel olarak ekleme
+
+Aşağıdakiler, bu bağlantıları manuel olarak kurmak için kullanılabilecek talimatlardır:
+
+<Tabs>
+
+<TabItem value="Uzantı" label="Uzantı">
+
+1. **Ağ seçicisi düğmesine** tıklayın. Bu, zaten bağlı olduğunuz ağların bir listesini görüntüleyecektir**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/networks_button.png")
+             .default
+         }
+         alt="networks_button.png"
+       />
+     </div>
+   </div>
+
+2. 'Ağ ekle' seçeneğine tıklayın:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network.png").default
+         }
+         alt="add_network.png"
+       />
+     </div>
+   </div>
+
+3. Yeni bir tarayıcı sekmesi açılacak ve doldurulacak çeşitli alanlar görüntülenecektir**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/Screenshot_2022-02-10_at_10.08.31.png")
+             .default
+         }
+         alt="Screenshot_2022-02-10_at_10.08.31.png"
+       />
+     </div>
+   </div>
+
+   Alanları doldurun ve ağı eklemek için 'kaydet' seçeneğine tıklayın.
+
+   Yukarıdaki alanlar için ayrıntılar [ağ profillerimizde](/network-profiles/network-profiles-hub) veya alternatif olarak dokümantasyonda (yani geliştirici belgelerinde) ya da her bir ağın nasıl yapılır kılavuzunda bulunabilir. Örneğin:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Yukarıdaki adımları uyguladıktan sonra ağ seçicisine bir dahaki erişiminizde özel ağı görebileceksiniz.
+
+</TabItem>
+
+<TabItem value="Mobil" label="Mobil">
+
+1. Sol üst kısımdaki hamburger simgesine dokunun:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_C8C734D64DE3-1.jpeg.png")
+             .default
+         }
+         alt="IMG_C8C734D64DE3-1.jpeg"
+       />
+     </div>
+   </div>
+
+2. **Ayarlar** bölümünü seçin:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_129413D61F95-1.jpeg.png")
+             .default
+         }
+         alt="IMG_129413D61F95-1.jpeg"
+       />
+     </div>
+   </div>
+
+3. **Ağlar** bölümünü seçin:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_62D0A5FE63AE-1.jpeg.png")
+             .default
+         }
+         alt="IMG_62D0A5FE63AE-1.jpeg"
+       />
+     </div>
+   </div>
+
+4. '**Ağ Ekle**' seçeneğine dokunun:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_65A194E3EC35-1.jpeg.png")
+             .default
+         }
+         alt="IMG_65A194E3EC35-1.jpeg"
+       />
+     </div>
+   </div>
+
+5. **Özel RPC Ağı** ayrıntılarını doldurun:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_E8F132CD40A6-1.jpeg.png")
+             .default
+         }
+         alt="IMG_E8F132CD40A6-1.jpeg"
+       />
+     </div>
+   </div>
+
+   Yukarıdaki alanlar için ayrıntılar [ağ profillerimizde](/network-profiles/network-profiles-hub) veya alternatif olarak dokümantasyonda (yani geliştirici belgelerinde) ya da her bir ağın nasıl yapılır kılavuzunda bulunabilir. Örneğin:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://docs.polygon.technology/docs/develop/network-details/network/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Yukarıdaki adımları uyguladıktan sonra, ağ seçicisinde özel ağı görebilirsiniz.
+
+</TabItem>
+
+</Tabs>

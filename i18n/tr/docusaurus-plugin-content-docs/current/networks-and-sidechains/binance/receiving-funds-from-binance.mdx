@@ -1,0 +1,77 @@
+---
+title: "Binance'ten fon alma"
+---
+
+Binance borsa hesabınızdan MetaMask'e para gönderdiyseniz ve bu parayı cüzdanınızda göremiyorsanız, aşağıdaki adımları izlemenizi öneririz:
+
+## **Adım 1: Bir blok zinciri gezgininde işlemi kontrol edin**
+
+Öncelikle Binance'ın işlemi tamamlamak için hangi ağı kullandığını öğrenmeniz gerekecektir. Bunu, Binance'ta para çekme bilgilerini kontrol ederek yapabilirsiniz:\
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Binance_network.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Ardından, ağın gezginine gitmeniz gerekecektir. İşte birkaç örnek:
+
+- Ethereum mainnet için [Etherscan](https://etherscan.io/)
+- BSC (Binance Smart Chain) için [Bscscan](https://bscscan.com/)
+- Polygon için [Polygonscan](https://polygonscan.com/)
+- Avalanche için [Snowtrace](https://snowtrace.io/)
+
+Blok zinciri gezginindeyken, işlemin ayrıntılarını bulmak ve tamamlandığını doğrulamak için MetaMask adresinizi veya [işlem kimliğini](/transactions-and-gas/transactions/how-to-find-a-transaction-id) aratın.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Bscscan_address_overview.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Blok gezgininde, hesap sayfanızın genel bakış bölümünde token bakiyelerinizi görebilirsiniz. Token, yerel token (BNB, ETH, MATIC, AVAX) ise (yukarıdaki ekran görüntüsünde olduğu gibi) bakiye bölümünde görünecektir.
+
+Yerel token değilse "Token" bölümündeki aşağı açılır menüde görünecektir.
+
+## **Adım 2: Ağı MetaMask'a ekleyin ve gerekiyorsa token'ı görüntüleyin**
+
+Bir ağ eklemek için lütfen [Chainlist](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) kullanarak ekleme kılavuzumuza veya [özel ağ ekleme makalemize](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc) göz atın.
+
+Ağı ekledikten sonra, token'ınız o ağın yerel token'ı değilse [özel bir token olarak görüntülemeniz](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask) gerekecektir.
+
+Blok gezgini üzerinde token bölümüne gidin ve aldığınız token'ın üzerine tıklayın:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Etherscan_BNB_contract_address.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Özel token'ı MetaMask'a eklemek için şunları yapmanız gerekecektir:
+
+1. Token'ın sözleşme adresini kopyalayın. Daha fazla rehberlik için [buraya](/managing-my-tokens/custom-tokens/what-is-a-token-contract-address) göz atın. Esasen token'ı blok gezgini üzerinde bulmanız ve oradan adresini almanız gerekir.
+2. MetaMask'a gidin ve "Varlıklar" sekmesi altında "token'ları içe aktar" seçeneğini bulun. Daha önce ne kadar token eklediğinize bağlı olarak, bu seçeneği bulmak için ekranı bir miktar kaydırmanız gerekebilir. Token eklemek için bunun üzerine tıklayın, adresini girin.
+
+Token'ları yanlış ağ üzerinde gönderdiyseniz token'ı istenilen ağa getirmek için her zaman köprü kullanabilirsiniz.
+
+Token'ları en yaygın ağlar arasında köprülemek için [Multichain](https://multichain.org/)'i (eski adıyla AnySwap) kullanabilirsiniz.
+
+**Token'ları köprülemek ve gas ücretlerini ödemek için ağın yerel token'ı biriminde fon sahibi olmanız gerektiğini unutmayın.** Bunlar her işlem için gereklidir. Örneğin, BSC üzerinde BNB'ye, Polygon üzerinde MATIC'e ve Avalanche için AVAX'a ihtiyacınız olacaktır.

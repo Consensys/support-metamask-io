@@ -1,0 +1,210 @@
+---
+title: How to speed up or cancel a pending transaction
+image: /img/socialCards/how-to-speed-up-or-cancel-a-pending-transaction.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Have you tried MetaMask Activity?
+
+MetaMask Activity is a new tool that can analyze your transactions and automatically suggest possible resolutions, and it has a built-in function dedicated to pending transactions. Why not try it out? See [here](/metamask-activity/troubleshooting-a-pending-or-stuck-transaction-with-metamask-activity) for more information.
+
+:::
+
+When you submit a transaction on Ethereum or a compatible network, part of the gas you pay is a bid to the network to process your transaction sooner — this element is known as the priority fee.
+
+Although MetaMask will assist you by calculating a total gas fee likely to have your transaction picked up, you can end up waiting a long time if you submit with a low gas price. For advice on what gas prices will result in a transaction being finalized in a reasonable amount of time, please refer to sources such as [Etherscan's gas tracker](https://etherscan.io/gastracker), or a similar tracker for whichever network you're using.
+
+Additionally, there are sometimes circumstances where something goes wrong, and a transaction is just stuck, or pending for a very long time.
+
+No matter how you got to this point, there are a few different ways to address it.
+
+**Before you take any further action, your first step should be to exit and close your browser completely, reopen it, and unlock MetaMask (on mobile, just close the app and reopen it). If that doesn't solve the problem, continue with the following:**
+
+## Speeding up a transaction
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/MetaMask_speed_up_pending_transaction_extension.png")
+          .default
+      }
+      alt="MetaMask speed up pending transaction extension"
+    />
+  </div>
+</div>
+
+Try one of the options below:
+
+- Wait until the network is willing to process transactions at this price
+- If you haven't done so already, click that button that says '**Speed up**'. This will let you re-submit the same transaction, but with a higher gas fee that should allow the transaction to be processed faster. Since this process re-uses the same nonce as the original, you do not need to pay for gas twice.
+
+Bear in mind that **speeding up the transaction will increase the amount you're spending for the transaction**.
+
+## Canceling a transaction
+
+### Method 1: In-app cancellation
+
+If you haven't done this already, to cancel the transaction, simply select **Cancel**, as in the screenshot above. Please note, **a cancellation can only be _attempted_ if the transaction is still pending on the network. **Transactions that have already been confirmed cannot be reversed.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/MetaMask_cancel_pending_transaction_extension.png")
+          .default
+      }
+      alt="MetaMask cancel pending transaction extension"
+    />
+  </div>
+</div>
+
+### Method 2: Custom nonce
+
+This process involves sending a new transaction with the same nonce (an identifying number for every transaction, derived from the phrase 'number only used once'). The transaction does not actually have to have any value — e.g. you could send 0 ETH. What matters is that you pay enough gas for the network to prioritize it.
+
+When using this method, **you will need to work backwards from the oldest pending transaction in the queue that you want to cancel**. For example, you cannot attempt to cancel a transaction with a nonce of 10 before canceling nonce 9.
+
+Note also that you *may *be able to cancel multiple transactions at once if they have the same nonce. Since a nonce—by definition—can only be used once, cancelling one of them will cancel all that have the same nonce.
+
+_The screenshots below were taken at different times, so the gas fees shown in them can vary, even from step to step. Don't let this put you off! When you do this yourself, MetaMask will automatically update in real time to show market rates._
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. In advanced settings, turn on **Customize transaction nonce**. You'll need this turned on so you can send a replacement transaction (using the same nonce). Find out how to locate a transaction's nonce [here](/transactions-and-gas/transactions/how-to-find-a-transaction-nonce).
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/MetaMask_customize_transaction_nonce_settings.png")
+          .default
+      }
+      alt="MetaMask customize transaction nonce settings"
+    />
+  </div>
+</div>
+
+2. **Send a new transaction**. In the new transaction, send **TO** yourself, meaning your MetaMask public address. **Fill in 'Custom Nonce' with the same nonce as the transaction that is still pending**:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/Metamask_custom_transaction_nonce2_Extension.png")
+          .default
+      }
+      alt="Metamask custom transaction nonce Extension"
+    />
+  </div>
+</div>
+
+3. Next to the displayed gas fee on the transaction confirmation screen, you'll see a button that reads 'Market' (it can also read 'Low' or 'Aggressive' depending on your last used setting). Click it, and then click 'Advanced' at the bottom:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/MetaMask_advanced_gas_controls_find.gif")
+          .default
+      }
+      alt="MetaMask advanced gas controls find"
+    />
+  </div>
+</div>
+
+To make sure your cancellation request is picked up as a priority, and before the original, **you will need to pay more for gas**. On this screen, follow these instructions:
+
+- Set your **gas limit** _comparable to or slightly higher_ than your original transaction.
+- Set your** priority fee** to _at least 10% higher_ (in Gwei) than the gas fee of the original (pending) transaction (e.g. if that transaction had a gas fee of 30 Gwei, set the max priority fee in the replacement/cancellation transaction to 33-35 Gwei).
+- Make sure your **max fee** is at least 30% higher than the max fee of the transaction you're replacing. For example, if your previous fee was 150 Gwei, choose something nearer 200 Gwei this time.
+
+Check a gas tracker such as [Etherscan's](https://etherscan.io/gastracker) or [ETH Gas Station](https://ethgasstation.info/) for guidance on recommended max fees.
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. **In Settings > Advanced, turn on 'Customize transaction nonce'.**
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/MetaMask_customize_transaction_nonce_settings_mobile.png")
+          .default
+      }
+      alt="MetaMask customize transaction nonce settings mobile"
+    />
+  </div>
+</div>
+
+\*\* \*\*
+
+2. **Send a new transaction.** In the new transaction, send TO yourself, meaning your MetaMask public address. **[Set the nonce](/transactions-and-gas/transactions/how-to-customize-a-transaction-nonce) to the same nonce as the transaction that is still pending**.
+
+   To find the custom nonce setting in the app, get to the transaction confirmation screen, which appears after you've entered the token quantity and recipient. Hit 'Edit' to change it:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/MetaMask_custom_transaction_nonce_Mobile.gif")
+          .default
+      }
+      alt="MetaMask custom transaction nonce Mobile"
+    />
+  </div>
+</div>
+
+3. Now you need to make sure your gas settings are configured so that your replacement transaction is processed. From the transaction confirmation screen, tap the highlighted gas value:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/MetaMask_advanced_gas_controls_mobile_1.png")
+          .default
+      }
+      alt="MetaMask advanced gas controls mobile"
+    />
+  </div>
+</div>
+
+Now access 'Advanced options' from the menu that appears.
+
+4. From here, you can precisely adjust gas to make sure your transaction is picked up. You'll now be looking at a screen that looks like this:
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/MetaMask_advanced_gas_controls_mobile_2.png")
+             .default
+         }
+         alt="MetaMask advanced gas controls mobile"
+       />
+     </div>
+   </div>
+
+   From here, adjust the gas settings. Follow these instructions to make sure your transaction is picked up:
+
+   - Set your **gas limit** _comparable to or slightly higher_ than your original transaction.
+   - Set your **max priority fee** to _at least 10% higher_ (in Gwei) than the gas fee of the original (pending) transaction (e.g. if that transaction had a gas fee of 30 Gwei, set the max priority fee in the replacement/cancellation transaction to 33-35 Gwei).
+   - Make sure your **max fee** is _at least 30% higher_ than the max fee of the transaction you're replacing. For example, if your previous fee was 150 Gwei, choose something nearer 200 Gwei this time.
+
+   Check a gas tracker such as [Etherscan's](https://etherscan.io/gastracker) or [ETH Gas Station](https://ethgasstation.info/) for guidance on recommended max fees.
+
+</TabItem>
+
+</Tabs>

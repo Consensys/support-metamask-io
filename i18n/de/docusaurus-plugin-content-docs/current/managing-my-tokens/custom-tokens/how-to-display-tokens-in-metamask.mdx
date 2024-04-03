@@ -1,0 +1,322 @@
+---
+title: "So zeigen Sie Token in MetaMask an"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+**Schnellzugriff:**
+
+- [Automatische Token-Erkennung](#verbesserte-token-erkennung)
+- [Mit der Suchleiste einen Token hinzufügen](#einen-token-manuell-mit-der-suchfunktion-hinzufügen)
+- [Einen benutzerdefinierten Token hinzufügen](#einen-benutzerdefinierten-token-hinzufügen)
+- [Token entfernen/ausblenden](#token-ausblenden)
+- [Die Vertragsadresse des Token suchen](#was-kann-ich-tun-wenn-ich-die-token-adresse-nicht-kenne)
+- [Einen Token mit dem Block-Explorer hinzufügen](#einen-token-mit-dem-block-explorer-hinzufügen)
+- [Hinzufügen eines Tokens über eine Münzlistenseite](#so-fügen-sie-einen-token-mithilfe-einer-coinlistenseite-hinzu)
+- [Verwenden der Portfolio Dapp](#verwenden-der-portfolio-dapp)
+
+Normalerweise werden in MetaMask Ihre eigenen ERC-20 (oder [Standard-Token](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)) auf Ihrer Kontoseite angezeigt. Wegen der zunehmenden Verbreitung von Token auf Ethereum und in anderen Netzwerken gibt es bei MetaMask keine endgültige Liste — Sie können aber jeden Ihrer ERC-20-konformen Token hinzufügen.
+
+Nicht gelistete Token können auf zwei verschiedene Arten in Ihre MetaMask-Wallet aufgenommen werden:
+
+Dazu aktivieren Sie zunächst eine erweiterte Funktion. Diese [erkennt automatisch Token](#verbesserte-token-erkennung), die Ihrer Adresse zugeordnet sind, und trägt sie in Ihre Wallet ein. Dabei werden Listen von Token aus verschiedenen Token-Listen der Community verwendet; **MetaMask unterhält keine eigene Liste mit „akzeptierten„ oder „gültigen„ Token**. Wenn Sie sich für diese Variante entscheiden, achten Sie darauf, dass Sie bei unbekannten Token besonders vorsichtig sein sollten:
+
+1. Kommunizieren Sie nicht mit einer Ihnen unbekannten Website bzw. verknüpfen Sie nicht Ihre Wallet mit einer Website, über die Sie sich nicht informiert haben und die Sie nicht für vertrauenswürdig halten.
+2. Überprüfen Sie einen abgeworfenen oder unbekannten Token immer und gehen Sie mit der gebotenen Sorgfalt vor, bevor Sie damit interagieren. Weitere Informationen zu bewährten Verfahren für die Token-Sicherheit finden Sie [hier](/managing-my-tokens/token-safety-practices).
+3. Wenn Sie versuchen, eine Transaktion mit dem Token zu tätigen und Ihre Transaktion fehlschlägt, zeigt der Block-Explorer einen Fehler an, der vom Betrüger geschrieben wurde und Sie auf eine Website weiterleitet. Dies ist wahrscheinlich eine Phishing-Website. Klicken Sie daher NICHT auf diesen Link.
+4. Informieren Sie sich über die Betrugsmethoden, mit denen Betrüger versuchen, an Ihr Geld zu kommen. Sie sollten sich darüber im Klaren sein, dass die Sicherheitsmaßnahmen nicht immer ausreichen, damit die im Internet veröffentlichten Informationen auch wirklich als vertrauenswürdig einzustufen sind.
+
+## Verbesserte Token-Erkennung
+
+:::info
+
+#### Nur in bestimmten Netzwerken verfügbar!
+
+Die verbesserte Token-Erkennung ist nur verfügbar auf:
+
+- Ethereum-Mainnet
+- Avalanche
+- BNB Smart Chain
+- Polygon
+
+:::
+
+<Tabs>
+
+<TabItem value="Erweiterung" label="Erweiterung">
+
+Klicken Sie auf die Registerkarte **Assets** und Ihre Token werden angezeigt. Sie sollten unter dieser Registerkarte aufgeführt sein. Wenn nicht, und wenn auch automatische Token-Erkennung zu keinem Ergebnis führt, klicken Sie unten auf „Token importieren“.
+
+Mit einem Klick hier gelangen Sie zur Suchleiste:
+
+1. Geben Sie den gesuchten Namen des Token ein. Wenn Sie zum Beispiel nach Chainlink (Symbol: LINK) suchen möchten, geben Sie einfach „LI“ in die Leiste ein und die Suchmaske zeigt alle Vorschläge an.
+2. Wählen Sie den gewünschten Token aus und klicken Sie auf **Weiter**. (Sobald Sie einen Token auswählen, wird der Rand der Schaltfläche blau hinterlegt)
+3. Klicken Sie auf** Token hinzufügen** und fahren Sie fort. Danach werden Sie auf Ihre Kontoseite umgeleitet. Nun wird der soeben hinzugefügte Token angeführt.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_token_MetaMask_Extension.gif")
+          .default
+      }
+      alt="Token importieren MetaMask-Erweiterung"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobilgerät" label="Mobilgerät">
+
+1. Auf Ihrer Wallet-Seite finden Sie am unteren Bildschirmrand den Link „Token importieren“.
+2. Daraufhin wird die Suchleiste angezeigt. Geben Sie den Namen des Token ein, den Sie hinzufügen möchten.
+3. Nachdem Sie den Token gefunden haben, tippen Sie ihn an, um ihn auszuwählen und scrollen Sie dann nach unten, bis Sie die Schaltfläche „Importieren“ sehen.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_token_MetaMask_Mobile.gif")
+          .default
+      }
+      alt="Token importieren MetaMask Mobile"
+    />
+  </div>
+</div>
+
+Der Token wird nun unter Ihrem Kontoguthaben aufgelistet.
+
+</TabItem>
+
+</Tabs>
+
+## Einen Token manuell mit der Suchfunktion hinzufügen
+
+<Tabs>
+   <TabItem value="Erweiterung" label="Erweiterung">
+      Klicken Sie auf die Registerkarte Assets und Ihre Token werden angezeigt. Sie sollten unter dieser Registerkarte aufgeführt sein. Wenn nicht, und wenn auch automatische Token-Erkennung zu keinem Ergebnis führt, klicken Sie unten auf „Token importieren“.
+
+      Mit einem Klick hier gelangen Sie zur Suchleiste:
+
+      1. Geben Sie den gesuchten Namen des Token ein. Wenn Sie zum Beispiel nach Chainlink (Symbol: LINK) suchen möchten, geben Sie einfach „LI“ in die Leiste ein und die Suchmaske zeigt alle Vorschläge an.
+      2. Wählen Sie den gewünschten Token aus und klicken Sie auf Weiter. (Sobald Sie einen Token auswählen, wird der Rand der Schaltfläche blau hinterlegt)
+      3. Klicken Sie auf Token hinzufügen und fahren Sie fort. Danach werden Sie auf Ihre Kontoseite umgeleitet. Nun wird der soeben hinzugefügte Token angeführt.
+
+   </TabItem>
+   <TabItem value="Mobilgerät" label="Mobilgerät">
+      1. Auf Ihrer Wallet-Seite finden Sie am unteren Bildschirmrand den Link „Token importieren“.
+      2. Daraufhin wird die Suchleiste angezeigt. Geben Sie den Namen des Token ein, den Sie hinzufügen möchten.
+      3. Nachdem Sie den Token gefunden haben, tippen Sie ihn an, um ihn auszuwählen und scrollen Sie dann nach unten, bis Sie die Schaltfläche „Importieren“ sehen.
+
+      Der Token wird nun unter Ihrem Kontoguthaben aufgelistet.
+
+   </TabItem>
+</Tabs>
+
+## Token ausblenden
+
+Sie können einen hinzugefügten Token aus Ihrer Asset-Liste entfernen.
+
+<Tabs>
+
+<TabItem value="Erweiterung" label="Erweiterung">
+
+Suchen Sie auf Ihrer Wallet-Seite die Registerkarte „Guthaben“ und klicken Sie auf den Token, den Sie entfernen möchten.
+
+Klicken Sie auf die drei Punkte in der oberen rechten Ecke und dann auf „Ausblenden“.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Hide_token_extension.gif")
+          .default
+      }
+      alt="Token Erweiterung ausblenden"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobilgerät" label="Mobilgerät">
+
+Für iOS und Android, lange auf das Token drücken. Dadurch haben Sie Möglichkeit, einen Token zu entfernen:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Hide_token_mobile.png")
+          .default
+      }
+      alt="Token Mobile ausblenden"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**Wenn der gesuchte Token nicht zu den beliebtesten gehört, erhalten Sie eventuell in der Suchleiste keinen Treffer.** In diesem Fall können Sie einen [benutzerdefinierten Token hinzufügen](#einen-benutzerdefinierten-token-hinzufügen)(manuell).
+
+## Einen benutzerdefinierten Token hinzufügen
+
+<Tabs>
+
+<TabItem value="Erweiterung" label="Erweiterung">
+
+1. Klicken Sie auf „Token importieren“, das sich unten auf der Registerkarte „Guthaben“ auf der Startseite Ihrer Wallet befindet.
+
+2. Wechseln Sie oben auf die Registerkarte „Benutzerdefinierter Token“ und geben Sie danach in das erste Feld die Token-Adresse ein. Siehe [hier](#was-kann-ich-tun-wenn-ich-die-token-adresse-nicht-kenne), wenn Sie bei der Suche Hilfe benötigen.
+
+3. In den meisten Fällen werden das Token Symbol und die Token Dezimalzahl automatisch ausgefüllt.\
+   Wenn nicht, gehen Sie zum Block Explorer des Netzwerks und finden Sie das Token. Wahrscheinlich werden seine Symbole und die Dezimalstellen angezeigt.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details.png")
+          .default
+      }
+      alt="Benutzerdefinierte Token Details finden"
+    />
+  </div>
+</div>
+
+Können Sie die Token-Details trotzdem nicht finden, versuchen Sie, die Dokumentation des Tokens über eine Websuche zu finden.
+
+4. Um fortzusetzen, klicken Sie auf „Benutzerdefinierten Token hinzufügen“.
+5. Sie sehen nun eine Seite, auf der Sie aufgefordert werden, zu bestätigen, dass Sie das Token hinzufügen möchten.\
+   Wenn Sie auf „Token importieren“ klicken, wird der Token-Typ zu Ihrer Wallet hinzugefügt.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_custom_token_MetaMask_Extension.gif")
+          .default
+      }
+      alt="Importieren Sie benutzerdefinierte Token MetaMask Extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobilgerät" label="Mobilgerät">
+
+1. Den Link für den „Token-Import“ finden Sie auf der Startseite Ihrer Wallet. Tippen Sie darauf und rufen so das Menü zum Hinzufügen von Token auf.
+2. Wechseln Sie auf die Registerkarte „Benutzerdefinierter Token“. Hier sehen Sie drei Felder, in denen Sie nach der Vertragsadresse des Tokens, seinem Symbol und dem „Präzisionswert“ gefragt werden (d. h. wie viele Dezimalstellen er erreichen kann).
+3. [Haben Sie die Token-Adresse gefunden](#was-kann-ich-tun-wenn-ich-die-token-adresse-nicht-kenne), fügen Sie sie in das erste Feld ein. Das Symbol und die Dezimalzahlen sollten automatisch ausgefüllt werden. Ist das nicht der Fall, wechseln Sie zum Netzwerk-Block-Explorer und suchen nach dem Token. Auf der Seite finden Sie ganz einfach das Symbol und die Dezimalstellen.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details_mobile.png")
+          .default
+      }
+      alt="Benutzerdefinierte Token Details Mobil finden"
+    />
+  </div>
+</div>
+
+4. Um ihn zu Ihrer Wallet hinzuzufügen, tippen Sie auf „Import“. Sie werden wieder auf die Startseite Ihrer Wallet weitergeleitet und finden unter der Registerkarte „Token“ den Import.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_custom_token_MetaMask_mobile.gif")
+          .default
+      }
+      alt="Import_custom_token_MetaMask_mobile.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+## Was kann ich tun, wenn ich die Token-Adresse nicht kenne?
+
+Werfen Sie einen Blick auf [diesen Artikel](/managing-my-tokens/custom-tokens/how-to-find-a-token-contract-address), um ein paar verschiedene Möglichkeiten zu sehen, es zu finden.
+
+Sie könnten auch den Absender, der Ihnen die Token schickt, nach der Vertragsadresse des Tokens fragen.
+
+**Wenn Ihnen jemand sagt, dass er Ihnen Token geschickt hat, aber nicht die Adresse des Tokens oder den Transaktionshash (eine eindeutige Transaktions-ID) angeben kann, ist es möglich, dass er dies noch nicht veranlasst hat.**
+
+## Einen Token mit dem Block-Explorer hinzufügen
+
+> Hinweis: Zusätzlich zu Etherscan funktioniert dies mit den meisten großen Blockexplorern, einschließlich [BscScan](https://bscscan.com/), [Polygonscan](https://polygonscan.com/), [Snowtrace](https://snowtrace.io/), etc., da sie im Allgemeinen ein ähnliches Design haben.
+
+1. Gehen Sie zum Block-Explorer.
+2. Suchen Sie nach dem Token. Sie können auch den „Token“ in Menüleiste nutzen.
+3. Klicken Sie auf die Schaltfläche „Mehr“ oben rechts in der Profilübersicht des Tokens.
+4. Klicken Sie auf „Token zu MetaMask hinzufügen (Web3)“
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_using_block_explorer.png")
+          .default
+      }
+      alt="Token mit dem Block Explorer hinzufügen"
+    />
+  </div>
+</div>
+
+5. MetaMask fordert Sie auf zu bestätigen, dass Sie das Token hinzufügen möchten
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_MetaMask_notification.png")
+          .default
+      }
+      alt="Token MetaMask Benachrichtigung hinzufügen"
+    />
+  </div>
+</div>
+
+## So fügen Sie einen Token mithilfe einer Coinlistenseite hinzu
+
+Websites wie Coingecko oder CoinMarketCap bieten MetaMask, das es Ihnen ermöglicht, einen Token direkt von seinem Eintrag auf ihrer Website zu MetaMask hinzuzufügen.
+
+Um darauf zuzugreifen, gehen Sie einfach zu einer dieser Seiten und suchen Sie das Token, das Sie hinzufügen möchten, über die Suchleiste. Suchen Sie dann die Vertragsadresse und klicken Sie auf den MetaMask Es erscheint eine Aufforderung, um zu bestätigen, dass Sie den Token zu Ihrem Wallet hinzufügen möchten.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Add_token_to_MetaMask_from_coin_listing_site2.gif")
+          .default
+      }
+      alt="Add_token_to_MetaMask_from_coin_listing_site2.gif"
+    />
+  </div>
+</div>
+
+:::info
+
+#### Anmerkungen
+
+**Stellen Sie sicher, dass Sie auf MetaMask Mobile nicht den Standardbrowser Ihres Geräts, sondern den In-App-Browser verwenden**. Nur so können Sie auf Weblinks zugreifen, die sich in MetaMask integrieren lassen, wie Sie dies in Ihrem Desktop-Browser mit der Erweiterung tun können.
+
+:::
+
+Diese Methode ermöglicht es Ihnen auch, das Token in verschiedenen Netzwerken hinzuzufügen, je nachdem, ob ein entsprechender Smart Contract von den Token-Besitzern in diesem Netzwerk bereitgestellt wurde. Klicken Sie auf die drei Punkte neben der Vertragsadresse, um ein anderes Netzwerk auszuwählen, und klicken Sie dann auf den Fuchs, um das Token zu diesem Netzwerk hinzuzufügen.
+
+## Verwenden der Portfolio Dapp
+
+Die [Portfolio Dapp](https://portfolio.metamask.io/) ist eine neue, mit MetaMask verbundene Plattform, die Ihre Token Salden aggregiert und anzeigt. In unserem Kontext ist es sinnvoll, dass sobald Sie Ihr Wallet verbunden haben, **es automatisch** die Mehrheit der Token erkennt und anzeigt.
+
+Sie müssen nur dem Link folgen und Ihr Wallet verbinden. Lesen Sie [unsere Artikel](/metamask-portfolio/) zur Verwendung der Dapp, wenn Sie weitere Anleitung benötigen.

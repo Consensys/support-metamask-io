@@ -1,0 +1,203 @@
+---
+title: How to add a custom network RPC
+image: /img/socialCards/how-to-add-a-custom-network-rpc.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### Contents:
+
+- [Adding via Chainlist](#adding-via-chainlist)
+- [Adding popular networks quickly](#adding-popular-networks)
+- [Adding networks manually](#adding-a-network-manually)
+
+MetaMask can access many more networks than just Ethereum mainnet: you can add any EVM-compatible network.
+
+The initialism RPC stands for remote procedure call, a set of protocols that allow a client (such as MetaMask) to interact with a blockchain.
+
+#### Adding via Chainlist
+
+For an easy way of adding networks to MetaMask, go to [chainlist.wtf](https://chainlist.wtf/), where you can connect MetaMask and add networks with only a few clicks. See our [guide](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) for more information.
+
+Also, please note that **adding a network on one device does not mean it will appear on another device** when accessing the same account. If you add it on Extension, it will not automatically be added to your MetaMask Mobile app, and vice versa.
+
+Custom networks will also need to re-added if you uninstall the browser extension or mobile app (after which you'd need to [restore your wallet](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) using your Secret Recovery Phrase).
+
+## Adding popular networks
+
+On both Mobile and Extension, you can easily add several prominent networks with just a tap. These include:
+
+- [Arbitrum](/network-profiles/network-profile-arbitrum)
+- [Avalanche](/network-profiles/network-profile-avalanche-avax)
+- [BNB Chain/BSC](/network-profiles/network-profile-bnb-smart-chain-bnb)
+- [Base](https://base.org/)
+- [Celo](https://celo.org/)
+- [Gnosis Chain](https://docs.gnosischain.com/)
+- [Optimism](/network-profiles/network-profile-optimism-op-mainnet)
+- [Polygon](/network-profiles/network-profile-polygon-matic)
+- [zkSync Era](https://zksync.io/)
+
+You can find this menu using the following steps:
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+From the homepage of your wallet, click on the network selector in the top left, and then on 'Add network':
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/MetaMask_add_network_1_extension.gif")
+          .default
+      }
+      alt="MetaMask add network extension"
+    />
+  </div>
+</div>
+
+From here, you should see a list of popular networks ready to add (unless you've added the network already). Tap 'Add' to start the process, and follow the prompts.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/MetaMask_add_network_2_extension.png")
+          .default
+      }
+      alt="MetaMask add network extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. Tap the network selector at the top of the screen. (Alternatively, you can tap the gear icon to access settings, and then go to 'Networks'.)
+
+2. Here you'll see a list of networks that you've already added. Tap the 'Add Network' button at the bottom of the screen.
+
+3. You should now see a list of networks you can add under the 'Popular' tab, as shown below.
+
+4. When you choose to add one of them, you'll be prompted to confirm:
+
+   You'll then get the option to switch immediately to that network. All done!
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../img/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/MetaMask_add_network_mobile.gif")
+             .default
+         }
+         alt="MetaMask add network mobile"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+## Adding a network manually
+
+The following are instructions for establishing these connections manually:
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. Click on the **network selector button**. This will display a list of networks that you've added already.
+
+2. Click 'Add network':
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../img/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/MetaMask_add_network_1_extension.gif")
+             .default
+         }
+         alt="MetaMask add network extension"
+       />
+     </div>
+   </div>
+
+3. MetaMask will open in a new tab in fullscreen mode. From here, find and the 'Add network manually' button at the bottom of the network list.
+
+   <div class="center-container">
+     <div class="img-large">
+       <img
+         src={
+           require("../../../img/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/MetaMask_add_custom_network_extension.png")
+             .default
+         }
+         alt="MetaMask add custom network extension"
+       />
+     </div>
+   </div>
+
+   Complete the fields and click'save' to add the network.
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../img/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/MetaMask_add_custom_network_extension_form.png")
+             .default
+         }
+         alt="MetaMask add network extension"
+       />
+     </div>
+   </div>
+
+   The details for the above fields can be found in our [network profiles](/network-profiles/network-profiles-hub) or docs (i.e. developer documentation) or how-to guides for each network. For example:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   After performing the above steps, you will be able to see the custom network the next time you access the network selector.
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. Tap the network selector at the top of the screen.
+
+2. Tap on 'Add Network'.
+
+3. Switch to the 'Custom networks' tab.
+
+4. Fill in the network's details:
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../img/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/MetaMask_add_custom_network_mobile.gif")
+             .default
+         }
+         alt="MetaMask add custom network mobile"
+       />
+     </div>
+   </div>
+
+   The details for the above fields can be found in our [network profiles](/network-profiles/network-profiles-hub) or docs (i.e. developer documentation) or how-to guides for each network. For example:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://docs.polygon.technology/docs/develop/network-details/network/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   After performing the above steps, you can see the custom network in the network selector.
+
+</TabItem>
+
+</Tabs>

@@ -1,0 +1,82 @@
+---
+title: "Cách xóa tài khoản khỏi ví MetaMask của bạn"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+### **Bạn chỉ có thể xóa các tài khoản đã nhập** và các tài khoản bên ngoài được bạn nhập bằng khóa riêng tư hoặc JSON (chẳng hạn như ví cứng).
+
+Các tài khoản bạn đã thêm vào bằng nút 'Tạo tài khoản' trong MetaMask không thể bị xóa. Hãy xem [dưới đây](#làm-thế-nào-để-xóa-các-tài-khoản-đã-tạo) để biết thêm thông tin và cách xử lý.
+
+<Tabs>
+
+<TabItem value="Tiện ích mở rộng" label="Tiện ích mở rộng">
+
+Di chuyển đến **Tài khoản của Tôi** bằng cách nhấp vào biểu tượng tài khoản ở trên cùng bên phải. Ở đây bạn sẽ thấy mọi tài khoản bạn đã nhập vào; chúng thường có nhãn đính kèm tên.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_extension_iported_wallet_tag.png")
+          .default
+      }
+      alt="MetaMask_extension_iported_wallet_tag.png"
+    />
+  </div>
+</div>
+
+Nhấp hoặc nhấn vào tài khoản đã nhập và chế độ xem tài khoản sẽ mở ra. Nhấn hoặc nhấp vào menu 3 dấu chấm dọc ở bên phải. Thao tác này sẽ hiển thị danh sách thả xuống, bao gồm cả tùy chọn **Xóa tài khoản**:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet.gif")
+          .default
+      }
+      alt="how_to_remove_an_account_from_your_metamask_wallet.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Thiết bị di động" label="Thiết bị di động">
+
+1. Nhấn vào tên tài khoản của bạn để hiển thị màn hình chọn tài khoản. Không quan trọng bạn hiện giờ chọn tài khoản nào.
+
+   Trên màn hình này, hãy kéo xuống đến khi bạn tìm thấy tài khoản đã nhập mà bạn muốn xóa. Chúng sẽ dễ dàng nhận diện được nhờ nhãn 'Đã nhập' bên cạnh chúng.
+
+2. Nhấn và giữ tài khoản đó để hiển thị tùy chọn xóa. Nó sẽ ngay lập tức biến mất khỏi MetaMask của bạn khi bạn xác nhận.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet_mobile.gif")
+             .default
+         }
+         alt="how_to_remove_an_account_from_your_metamask_wallet_mobile.gif"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+:::info
+
+#### Làm thế nào để xóa các tài khoản đã tạo?
+
+Hiện không thể xóa các tài khoản [đã tạo](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet) — những tài khoản xuất hiện dưới dạng "Tài khoản 2" v.v. khi bạn nhấp vào "Tạo tài khoản". Nếu bạn thực sự muốn xóa chúng, bạn sẽ cần xóa MetaMask khỏi thiết bị của mình (Tiện ích mở rộng hoặc Thiết bị di động), cài đặt lại và sau đó [khôi phục bằng Cụm mật khẩu Khôi phục Bí mật](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase). Tuy nhiên, **KHÔNG làm như vậy nếu bạn không còn Cụm mật khẩu Khôi phục Bí mật**. Không có cụm từ này, bạn sẽ không thể truy cập vào ví của mình khi bạn cài đặt lại. Nếu bạn làm vậy, hãy nhớ rằng:
+
+- Hành động này sẽ không _xóa_ tài khoản, mà chỉ khiến nó ngừng hiển thị trong MetaMask: một khi được tạo ra, địa chỉ của bạn là vĩnh viễn trên blockchain và [không thể bị xóa](/managing-my-wallet/resetting-deleting-and-restoring/how-can-i-delete-my-metamask-wallet).
+- Khi bạn khôi phục bằng Cụm mật khẩu Khôi phục Bí mật, MetaMask sẽ tự động thêm lại các tài khoản đã tạo trước đó nếu chúng có ETH. Xem [tại đây](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) để biết thêm thông tin.
+- Mọi tài khoản và/hoặc ví cứng đã nhập cũng sẽ đồng thời bị xóa. Hãy đảm bảo bạn đã sao lưu khóa riêng tư/cụm từ hạt giống (hoặc Cụm mật khẩu Khôi phục Bí mật nếu là một tài khoản MetaMask khác), nếu không bạn sẽ không thể truy cập vào chúng lần nữa.
+
+:::

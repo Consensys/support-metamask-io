@@ -1,0 +1,92 @@
+---
+title: 'How do I send, receive, or cash out an NFT?'
+image: /img/socialCards/how-do-i-send-receive-or-cash-out-an-nft.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### Did you recently acquire an NFT, and you don't see it in the relevant account?
+
+Follow the steps [here](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer) to look up the account on the block explorer. On the bottom half of the page, click on the tab titled "NFT Transfers"; there you should see a list of all the tokens you have in your wallet, ordered by when they entered it. If it's on Etherscan, it's in the account. **For more information on making NFTs appear in MetaMask, see [here](/nfts/nft-tokens-in-your-metamask-wallet).**
+
+#### Did you recently sell an NFT, and you don't see a transaction in your account?
+
+Often, the process of selling an NFT is performed through a smart contract (a blockchain program), and as a result, the funds you receive are delivered to you through an **_internal transaction_, which do not show up in your MetaMask activity**. To check internal transactions, [locate your account address on Etherscan](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer) and about halfway down the page, click on the 'Internal Transactions' tab. The transaction should be there.
+
+Another way to verify that you received funds in exchange for your NFT is by [verifying that your balance is correct](/managing-my-tokens/how-to-externally-verify-that-your-balance-is-correct).
+
+## Receiving an NFT
+
+When you buy an NFT, it's often transferred to you automatically through a marketplace. If that is not the case, please follow and double-check these steps to ensure it is a successful transaction:
+
+1. Provide the sender with your public address. If you need, learn how to find this [here](/managing-my-wallet/accounts-and-addresses/how-to-copy-your-metamask-account-public-address-)
+2. Make sure you have enough of the network's native token (ETH, MATIC, BNB, etc.) to pay for gas
+3. Have the sender send the NFT to your public address
+4. [View the NFT in MetaMask](/nfts/nft-tokens-in-your-metamask-wallet).
+
+As long as you're looking at the correct account in MetaMask, the NFTs should appear under the 'NFTs' tab.
+
+There are a number of platforms that exist for buying and selling NFTs and, in general, ERC-721 tokens: [Nifty's](https://niftys.com/), [OpenSea](https://opensea.io/), [Rarible](https://rarible.com/), [YellowHeart](https://yh.io/), etc.
+
+## Sending an NFT
+
+Sending an NFT (ERC-721) in MetaMask is very similar to sending conventional tokens (usually ERC-20 tokens, often just referred to as coins or crypto).
+
+Please note that **sending ERC-1155 NFTs is not supported in either MetaMask Extension or Mobile**. See here for more information: [Does MetaMask support ERC-1155?](/nfts/does-metamask-support-erc-1155)
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+To send NFTs in MetaMask Extension, you must be using v10.28.1 or later.
+
+1. Navigate to the 'NFTs' tab on your homepage and select the NFT you want to send to access a page that shows the NFT's details
+
+2. Click the'send' button and input the recipient's address
+
+3. Hit 'Next' when you're ready and review the transaction details. Click to 'Confirm' to submit the transaction and send your NFT
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../img/nfts/how-do-i-send-receive-or-cash-out-an-nft/MetaMask_send_NFT_extension.gif")
+             .default
+         }
+         alt="MetaMask send NFT extension"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. Make sure you have enough of the network's native token to pay for the transaction
+2. Tap on the 'NFTs' tab
+3. Tap on the icon of the NFT you wish to send
+4. Tap on the'send' button at the bottom of the screen:
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../img/nfts/how-do-i-send-receive-or-cash-out-an-nft/MetaMask_send_NFT_mobile.png")
+             .default
+         }
+         alt="MetaMask send NFT mobile"
+       />
+     </div>
+   </div>
+
+5. Enter the address you wish to send it to, hit 'Next', and follow the standard transaction prompts
+
+For more on gas, and transactions, see [here](/transactions-and-gas/gas-fees/user-guide-gas); to learn more about token types, see our [guide](/managing-my-tokens/user-guide-tokens).
+
+</TabItem>
+
+</Tabs>

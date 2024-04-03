@@ -1,0 +1,75 @@
+---
+title: How do I log out of (lock) my wallet?
+image: /img/socialCards/how-do-i-log-out-of-lock-my-wallet.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Remember: MetaMask isn't like a traditional website, where you're _logging in_ to a remote server. Rather, MetaMask stores your Secret Recovery Phrase, private keys, and a certain amount of information about how you use MetaMask (the'state logs') on your local device, so that whenever you want to carry out an operation on a blockchain, your SRP and private keys are ready to be used.
+
+In this sense, you don't _log out_ of MetaMask, but you can _lock_ the application, so that you'll have to re-enter your password or biometrics to log back in.
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+Click the three vertical dots in the top right of your wallet, and then select 'Lock MetaMask' from the dropdown menu:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-do-i-log-out-of-lock-my-wallet/MetaMask_lock_wallet_extension.gif")
+          .default
+      }
+      alt="MetaMask lock wallet extension"
+    />
+  </div>
+</div>
+
+You can also set an auto-lock, which you can find in Settings > Advanced**: **
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-do-i-log-out-of-lock-my-wallet/MetaMask_adjust_autolock_settings_extension.gif")
+          .default
+      }
+      alt="MetaMask adjust autolock settings extension"
+    />
+  </div>
+</div>
+
+Here you can set a timer in minutes after which the wallet will be locked.
+
+You can also add an extra layer of security by adding a hardware wallet. Refer to **[this article](/privacy-and-security/hardware-wallet-hub)** on hardware wallet integration.
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+To manually lock the app, tap the gear icon in the tab to access settings, and then scroll to the bottom. Tapping 'Lock' will prompt a confirmation message:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/how-do-i-log-out-of-lock-my-wallet/MetaMask_lock_wallet_mobile.gif")
+          .default
+      }
+      alt="MetaMask lock wallet mobile"
+    />
+  </div>
+</div>
+
+You can also add an extra layer of security by adding a hardware wallet. Refer to **[this article](/privacy-and-security/hardware-wallet-hub)** on hardware wallet integration.
+
+</TabItem>
+
+</Tabs>

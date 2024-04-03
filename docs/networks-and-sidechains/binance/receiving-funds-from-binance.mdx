@@ -1,0 +1,82 @@
+---
+title: Receiving funds from Binance
+image: /img/socialCards/receiving-funds-from-binance.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+If you have sent funds from your Binance exchange account to MetaMask and cannot see them in your wallet, we recommend you follow these steps:
+
+## **Step 1: Check the transaction on a blockchain explorer**
+
+First you will need to check which network Binance used to complete the transaction. You can do that by checking the withdrawal details on Binance:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Binance_network.png")
+          .default
+      }
+      alt="Binance network"
+    />
+  </div>
+</div>
+
+Then you will need to go to the network's explorer. Here are a few examples:
+
+- [Etherscan](https://etherscan.io/) for Ethereum mainnet
+- [Bscscan](https://bscscan.com/) for BSC (Binance Smart Chain)
+- [Polygonscan](https://polygonscan.com/) for Polygon
+- [Snowtrace](https://snowtrace.io/) for Avalanche
+
+Once on the blockchain explorer, either search for your MetaMask address or for the [transaction ID](/transactions-and-gas/transactions/how-to-find-a-transaction-id) to call up the transaction's details and confirm that it has been completed.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Bscscan_address_overview.png")
+          .default
+      }
+      alt="Bscscan address overview"
+    />
+  </div>
+</div>
+
+On the overview section of your account's page in the block explorer, you will be able to see your token balances. If the token is the native token (BNB, ETH, MATIC, AVAX) it will appear in the balance section (as in the screenshot above).
+
+If it is not the native token, it will appear in the dropdown menu in the 'Token' section.
+
+## **Step 2: Add the network to MetaMask and display the token if required**
+
+In order to add a network, please check our guide to adding using [Chainlist](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist), or our [article on adding a custom network](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+
+After adding the network, if your token is not the native token of that network, you will have to [display it as a custom token](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask).
+
+On the block explorer, go to the token section and click on the token you received:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Etherscan_BNB_contract_address.png")
+          .default
+      }
+      alt="Etherscan BNB contract address"
+    />
+  </div>
+</div>
+
+In order to add the custom token to MetaMask you will need to:
+
+1. Copy the token's contract address. See [here](/managing-my-tokens/custom-tokens/what-is-a-token-contract-address) for further guidance; essentially, you need to find the token on the block explorer and get its address from there.
+2. Go to MetaMask and find 'import tokens' under the 'Assets' tab. Depending on how many tokens you've already added, you may need to scroll a bit to find this. Click on this to add the token, inputting its address.
+
+If you have sent the tokens on the wrong network, you can always use a bridge to get that token on the desired network.
+
+You can use [MetaMask Bridges](/metamask-portfolio/bridge/how-to-use-the-bridge) for this, accessible in MetaMask Extension by clicking the 'Bridge' button on the homepage, or by heading to [portfolio.metamask.io](https://portfolio.metamask.io/).
+
+**Note that in order to bridge the tokens, you will need to have funds in the network's native token in order to pay for the gas fees. **These are required for any transaction. For example, on BSC you will need BNB, on Polygon you'll require MATIC, and for Avalanche you need AVAX.

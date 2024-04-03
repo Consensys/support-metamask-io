@@ -1,0 +1,77 @@
+---
+title: "Geld von Binance erhalten"
+---
+
+Wenn Sie Gelder von Ihrem Binance an MetaMask gesendet haben und sie nicht in Ihrem Wallet sehen können, empfehlen wir Ihnen, diese Schritte auszuführen:
+
+## **Schritt 1: Überprüfen Sie die Transaktion in einem Blockchain-Explorer**
+
+Zuerst müssen Sie überprüfen, welches Netzwerk Binance zum Abschluss der Transaktion verwendet hat. Sie können das tun, indem Sie die Rückzugsdaten auf Binance überprüfen:\
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Binance_network.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Dann gehen Sie zum Netzwerkexplorer. Hier sind einige Beispiele:
+
+- [Etherscan](https://etherscan.io/) für das Ethereum-Mainnet
+- [Bscscan](https://bscscan.com/) für BSC (Binance Smart Chain)
+- [Polygonscan](https://polygonscan.com/) für Polygon
+- [Snowtrace](https://snowtrace.io/) für Avalanche
+
+Sobald Sie sich im Blockchain-Explorer befinden, suchen Sie entweder nach Ihrer MetaMask-Adresse oder nach der [Transaktions-ID](/transactions-and-gas/transactions/how-to-find-a-transaction-id), um die Details der Transaktion aufzurufen und zu bestätigen, dass sie abgeschlossen wurde.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Bscscan_address_overview.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Im Übersichtsabschnitt auf der Seite Ihres Kontos im Block-Explorer können Sie Ihre Token-Salden sehen. Wenn es sich bei dem Token um den nativen Token (BNB, ETH, MATIC, AVAX) handelt, wird er im Abschnitt „Balance“ angezeigt (wie im Screenshot oben).
+
+Sofern es sich nicht um einen nativen Token handelt, wird dieser im Dropdown-Menü im Abschnitt Token angezeigt.
+
+## **Schritt 2: Fügen Sie das Netzwerk zu MetaMask hinzu und zeigen Sie den Token bei Bedarf an**
+
+Wenn Sie ein Netzwerk hinzufügen möchten, lesen Sie bitte unsere Anleitung zum Hinzufügen mit [Chainlist](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist), oder unseren [Artikel, der sich mit dem Hinzufügen eines benutzerdefinierten Netzwerks beschäftigt](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+
+Wenn der Token nach dem Hinzufügen des Netzwerks nicht der native Token dieses Netzwerks ist, müssen Sie ihn als [benutzerdefinierten Token anzeigen.](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)
+
+Gehen Sie im Block-Explorer zum Abschnitt Token und klicken Sie auf den Token, den Sie erhalten haben:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Etherscan_BNB_contract_address.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Um den benutzerdefinierten Token in MetaMask aufzunehmen, müssen Sie Folgendes tun:
+
+1. Die Vertragsadresse des Tokens kopieren. Eine Anleitung finden Sie [hier](/managing-my-tokens/custom-tokens/what-is-a-token-contract-address); grundsätzlich müssen Sie den Token im Block-Explorer finden und dort seine Adresse abrufen.
+2. Gehen Sie zu MetaMask und suchen Sie unter der Registerkarte „Aktiva” nach „Token importieren”. Wenn Sie bereits viele Token hinzugefügt haben, müssen Sie möglicherweise ein wenig scrollen, um dies zu finden. Klicken Sie darauf, um den Token hinzuzufügen und geben seine Adresse ein.
+
+Wenn Sie die Token im falschen Netzwerk verschickt haben, können Sie jederzeit eine Brücke verwenden, um den betreffenden Token in das gewünschte Netzwerk zu übertragen.
+
+Fürs Bridging von Token zwischen den gängigsten Netzwerken können Sie [Multichain](https://multichain.org/) (ehemals AnySwap) verwenden.
+
+**Fürs Bridging der Token müssen Sie über Guthaben in den Token des Netzwerks verfügen, damit Sie die Gasgebühren bezahlen können. **Das ist bei jeder Transaktion notwendig. Für BSC benötigen Sie zum Beispiel BNB, für Polygon MATIC und für Avalanche AVAX.

@@ -1,0 +1,77 @@
+---
+title: "Recevoir des fonds de Binance"
+---
+
+Si vous avez envoyé des fonds de votre compte de change Binance à MetaMask et que vous ne les voyez pas dans votre portefeuille, nous vous recommandons de suivre les étapes suivantes :
+
+## **Étape 1 : Vérifiez la transaction sur un explorateur de blockchain**
+
+Vous devez d'abord vérifier quel réseau Binance a utilisé pour effectuer la transaction. Vous pouvez le faire en vérifiant les détails du retrait sur Binance :\
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Binance_network.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Ensuite, vous devrez aller dans l'explorateur du réseau. Voici quelques exemples :
+
+- [Etherscan](https://etherscan.io/) pour le réseau Ethereum
+- [Bscscan](https://bscscan.com/) pour BSC (Binance Smart Chain)
+- [Polygonscan](https://polygonscan.com/) pour Polygon
+- [Snowtrace](https://snowtrace.io/) pour Avalanche
+
+Une fois sur l'explorateur de la blockchain, recherchez votre adresse MetaMask ou [l'identifiant de la transaction](/transactions-and-gas/transactions/how-to-find-a-transaction-id) pour consulter les détails de la transaction et confirmer qu'elle a été effectuée.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Bscscan_address_overview.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Dans la section « Vue d'ensemble » de la page de votre compte dans l'explorateur de blocs, vous pourrez voir le solde de vos jetons. Si le jeton est le jeton natif (BNB, ETH, MATIC, AVAX), il apparaîtra dans la section solde (comme dans la capture d'écran ci-dessus).
+
+Si ce n'est pas le jeton natif, il apparaîtra dans le menu déroulant dans la section Jeton.
+
+## **Étape 2 : ajouter le réseau à MetaMask et afficher le jeton si nécessaire**
+
+Pour ajouter un réseau, veuillez consulter notre guide sur l'ajout de réseaux à l'aide de [Chainlist](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) ou notre [article sur l'ajout d'un réseau personnalisé](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+
+Après avoir ajouté le réseau, si votre jeton n'est pas le jeton natif de ce réseau, vous devrez [l'afficher comme un jeton personnalisé](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask).
+
+Dans l'explorateur de blocs, allez dans la section des jetons et cliquez sur le jeton que vous avez reçu :
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Etherscan_BNB_contract_address.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Pour ajouter le jeton personnalisé à MetaMask, vous devrez :
+
+1. Copiez l'adresse du contrat du jeton. Voir [ici](/managing-my-tokens/custom-tokens/what-is-a-token-contract-address) pour plus de conseils ; pour faire simple, vous devez trouver le jeton sur l'explorateur de blocs et obtenir son adresse à partir de là.
+2. Allez dans Metamask et trouvez « importer des jetons » sous l'onglet « Actifs ». Selon le nombre de jetons que vous avez déjà ajoutés, vous devrez peut-être faire défiler un peu la page pour le trouver. Cliquez sur ce bouton pour ajouter le jeton, en saisissant son adresse.
+
+Si vous avez envoyé les jetons sur le mauvais réseau, vous pouvez toujours utiliser un bridge pour obtenir ce jeton sur le réseau souhaité.
+
+Vous pouvez utiliser [Multichain](https://multichain.org/) (anciennement AnySwap) pour relier les jetons entre les réseaux les plus courants.
+
+**Notez que pour relier les jetons, vous devrez avoir des fonds dans le jeton natif du réseau afin de payer les frais de gaz. **Ces éléments sont requis pour toute transaction. Par exemple, sur BSC vous aurez besoin de BNB, sur Polygon de MATIC, et pour Avalanche d'AVAX.

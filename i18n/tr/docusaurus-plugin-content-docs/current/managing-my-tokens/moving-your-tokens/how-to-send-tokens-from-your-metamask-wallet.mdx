@@ -1,0 +1,142 @@
+---
+title: "MetaMask cüzdanınızdan nasıl token gönderirsiniz?"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Not:
+
+Bu makale, ERC-20 standardına uygun ETH ve diğer token'ların gönderilmesine odaklanmaktadır. Bununla birlikte, **kullandığınız ağ ne olursa olsun süreç esasen aynıdır**; yalnızca işlem ödemesini yapmak için ağın yerel token'ından yeterli miktarda bulundurduğunuzdan emin olun.
+
+Genel olarak token'lar hakkında daha fazla bilgi için [buraya göz atın](/managing-my-tokens/user-guide-tokens). Ethereum üzerinde işlemlerle ilgili genel bilgiler için [buraya göz atın](/transactions-and-gas/transactions/user-guide-transactions-and-failed-transactions).
+
+:::
+
+## İhtiyacınız olanlar:
+
+- Alıcının Ethereum cüzdan adresi
+- Hesabınızda [gas ücretini karşılamaya yetecek miktarda](/transactions-and-gas/gas-fees/user-guide-gas) _ağın yerel tokenı _(Ethereum'da ETH, Binance Akıllı Zincir'de BNB vb.) cinsinden bakiye.
+
+**Not**: Ethereum Mainnet dışında bir ağ kullanıyorsanız lütfen gas ücretleri için gerekli token miktarına sahip olduğunuzdan emin olun. Örneğin, Binance Smart Chain (BSC) ağı için gas birimi olarak BNB, Polygon için MATIC gereklidir. **Ethereum mainnet dışındaki ağlar hakkında daha fazla bilgi için [buraya](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains) göz atın. **Bir NFT (ERC-721 token) göndermeye mi çalışıyorsunuz? Öyleyse lütfen [bu](/nfts/how-do-i-send-receive-or-cash-out-an-nft) kılavuzu inceleyin.
+
+## Adımlar:
+
+<Tabs>
+
+<TabItem value="Uzantı" label="Uzantı">
+
+1. Cüzdan açılış sayfasından işlem yapmak istediğiniz hesabınıza girdiğinizden emin olun ve ekranın ortasındaki "Gönder" düğmesine tıklayın.
+
+2. Şimdi alıcının açık adresini girmeniz gerekecektir. Adres defterinizde önceden kaydedilmiş adresler varsa, ilgili adresler bu aşamada görünecektir.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_1.gif")
+          .default
+      }
+      alt="MetaMask cüzdan eklentinizden token gönderme"
+    />
+  </div>
+</div>
+
+3. Göndermek istediğiniz token miktarını girin ve "ileri" seçeneğine tıklayın.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_2.gif")
+          .default
+      }
+      alt="MetaMask cüzdan eklentinizden token gönderme"
+    />
+  </div>
+</div>
+
+4. Şimdi işleminizin tahmini gas ücretleri gösterilecektir, burada ayarlama yapabilirsiniz. İşleme devam etmek için "Onayla"ya tıklamadan önce **alıcı adresini tekrar kontrol etmek** iyi bir fikirdir.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_3.gif")
+          .default
+      }
+      alt="MetaMask cüzdan eklentinizden token gönderme"
+    />
+  </div>
+</div>
+
+5. Daha sonra "Hareketler" sekmesinde son işlemlerinizin listesini görebileceğiniz ana sayfaya yönlendirileceksiniz.
+
+</TabItem>
+
+<TabItem value="Mobil" label="Mobil">
+
+1. Hesabınızın ana sayfasına gidin. Burada 'Gönder' düğmesine dokunun.
+
+   Ayrıca, ana sayfanızdaki 'Varlıklar' sekmesi altında görüntülenen token'ın üzerine tıklayarak da gönderim yapabilirsiniz.
+
+2. Şimdi göndermek istediğiniz adresi girmeniz gerekir. Panodan (yani başka bir uygulamadan) adresi yapıştırabilir veya adres defterinizden birini seçebilirsiniz.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_1.gif")
+          .default
+      }
+      alt="MetaMask cüzdan mobil'den token gönderme"
+    />
+  </div>
+</div>
+
+3. Şimdi göndermek istediğiniz miktarı girebileceğiniz bir ekrana yönlendirileceksiniz. Ayrıca gerekirse miktarın hemen üzerinde bulunan mavi kutudaki adına dokunarak token türünü de değiştirebilirsiniz.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_2.png")
+          .default
+      }
+      alt="MetaMask cüzdan mobil'den token gönderme"
+    />
+  </div>
+</div>
+
+4. 'İleri' seçeneğine dokunduğunuzda, onay ekranını göreceksiniz. Burada ödeyeceğiniz gas ücreti de dahil olmak üzere işleminizin ayrıntılarını görüntüleyebilirsiniz.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_3.png")
+          .default
+      }
+      alt="MetaMask cüzdan mobil'den token gönderme"
+    />
+  </div>
+</div>
+
+Ayrıca 'Tahmini gas ücreti' kutusunda vurgulanan ETH miktarına dokunarak işlem için gas ayarlarınızı da düzenleyebilirsiniz.
+
+İşlemi onaylamak ve bitirmek için 'Gönder' seçeneğine dokunun.
+
+</TabItem>
+
+</Tabs>
+
+### Notlar
+
+- Token sayısı ve işlem ücretleriniz (ETH ya da BMB veya MATIC gibi ağın yerel token'ı cinsinden ödenen gas) hesabınızdan hemen düşülmeyecektir. İşlemin durumu beklemededir; yani işlem blok zinciri ağına gönderilmiş ve onay beklemektedir.
+- İşlem başarılı olduğunda, güncellenmiş token ve ETH bakiyelerinin yanı sıra işlemin durumunun "Onaylandı" olarak güncellendiğini görebilirsiniz.
+- MetaMask üzerinde **Etkinlik** sekmesi altında bulunan işleminize tıkladığınızda, işlem bilgilerini gözden geçirebilir ve işlem kaydını ağın [Etherscan](https://etherscan.io/), [BscScan](https://bscscan.com/) veya [Polygonscan](https://polygonscan.com/) gibi blok gezginleri üzerinde görüntüleme seçeneğine erişebilirsiniz.
+- Bazı durumlarda işleminizin onaylanması daha uzun sürebilir. Böyle bir durumda, (ilk bekleyen) işleminizi daha yüksek bir gas fiyatı ile yeniden göndererek **Hızlandırabilir** veya işlemi onaylanmadan önce **İptal Edebilirsiniz**. [İşlemi hızlandırmak veya iptal etmek](/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction) hakkında daha fazla bilgi edinin.
+- Hesabınıza gönderilen token'ları almak istiyorsanız [MetaMask Cüzdanımda nasıl token alırım (yatırırım)](/getting-started/direct-deposit-receive-tokens-to-your-metamask-wallet) makalesini inceleyin.
+- **Bu işlem diğer ERC-20 token'ları için olduğu gibi ETH için de aynıdır, ancak ERC-20 token'ları gönderirken alıcı cüzdanın gönderdiğiniz token'ları desteklediğinden emin olun.**

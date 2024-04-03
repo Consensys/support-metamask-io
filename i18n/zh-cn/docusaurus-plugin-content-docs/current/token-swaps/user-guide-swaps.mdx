@@ -1,0 +1,137 @@
+---
+title: "用户指南：互换"
+---
+
+**MetaMask Swaps** 是 MetaMask 的一项功能，具体用途是加密货币代币两两互换（有关 ERC-20 代币以及这些代币与 NFT 之间区别的更多信息，请参阅我们的[用户指南](/managing-my-tokens/user-guide-tokens)）。要想获取您感兴趣的代币，使用这项功能可谓非常方便和直接，并且大大减少操作步骤以及第三方智能合约的风险敞口数量。
+
+MetaMask Swaps 目前可在以下区块链使用：
+
+- 以太坊主网
+- BNB Smart Chain
+- Avalanche C-Chain
+- Polygon
+- Optimism
+- Arbitrum
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/i18n/legacy/MetaMask_user_guide_swaps.png")
+          .default
+      }
+      alt="MetaMask 用户指南互换"
+    />
+  </div>
+</div>
+
+### **互换须知：**
+
+- 即使代币符合 ERC-20 标准，也应**研究清楚再行购买或获取代币**。加密货币和去中心化金融的一个新颖之处在于程序化性质；代币未必是静态资产；其某些功能或会影响其使用方式，或者影响钱包，例如，像[这样](https://www.reddit.com/r/CryptoCurrency/comments/owkokz/scam_alert_vera_tokens/)。当然，还有其他善意告诫：例如，您可以获得某些代币，但为了从中获得预期的效用，需要将其质押在特定平台上。
+- **滑点**是您点击的价格与 MetaMask Swaps 所能承受的最终交易价之间的变化量。去中心化金融和加密货币具有高流动性和波动性，价格瞬息万变；因此，互换会在您同意的价格与最终价格之间产生些许差异，以确保交易顺利完成，但差异不能过大，以免遭受价格暴涨或暴跌冲击。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/token-swaps/i-did-a-swap-but-received-fewer-tokens-or-less-fiat-value-than-i-expected-why-/MetaMask_user_guide_swaps_slippage.png")
+          .default
+      }
+      alt="MetaMask 用户指南互换滑点"
+    />
+  </div>
+</div>
+
+- **自定义代币** 是 MetaMask 所谓在 MetaMask 的标准代币列表中不常见或非主流的代币，当您在 MetaMask 中选择以太坊主网（[及一些其他流行网络](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)）为您的网络时，默认情况下会检测到这些代币。如果您将代币换至钱包中，但未见到代币（几分钟后再看。请记住，区块链速度很快，但**非即时**），[请尝试手动添加代币。](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)
+- **我们的支持文章仅涉及 MetaMask Swaps**。换句话说，MetaMask 支持使用 MetaMask Swaps 按钮完成互换。如果您直接在不同平台或另一个 DEX 上执行互换，MetaMask 可能会提供一些一般指导，但**并非权威指导**；请联系支持团队或社区，获取关于互换交易所或平台的帮助。
+
+:::warning
+
+#### 记住：MetaMask 只是互换的中介！
+
+当您使用 MetaMask Swaps 时，请记住 MetaMask 充当聚合器或中介：我们汇总报价并为您提供最有利的报价。在那里，您可以决定是否继续与当前平台/流动性提供商交易。MetaMask 不提供流动性、执行交易或向您出售代币。
+
+:::
+
+### 准备好开始使用了吗？
+
+无论您是使用 MetaMask 扩展版还是移动版，都无关紧要，获取代币只不过是点击几下而已。
+
+在 MetaMask 应用程序主屏幕上，找到一个带有矩形箭头，名为“Swap”的按钮。狂点那个按钮！
+
+您将会看到互换主屏幕。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/i18n/legacy/MetaMask_user_guide_swaps_amount.png")
+          .default
+      }
+      alt="MetaMask 用户指南互换金额"
+    />
+  </div>
+</div>
+
+#### **准备互换**
+
+- 首先，使用顶部的下拉菜单，选择您持有并愿意支出的代币。
+- 接下来，使用第二个下拉菜单，选择您有兴趣获取的代币。
+- 将第一种代币的金额调高或调低，直到您对支出金额或购买金额满意为止。
+- 在屏幕的底部，有一个“获取报价”按钮。狂点那个按钮！
+
+您会看到该应用程序正在搜索最优价格。**这个过程正是让 MetaMask Swaps 成为最便宜和最佳互换服务的秘诀。**Swaps 搜索之时，后台发生了很多事情。
+
+首先，Swaps 正在搜索各个去中心化代币交易所以及代币互换协议，为您找到最有利的汇率。
+
+同时，Swaps 正在运行测试交易，以确保如果您最终确实提交了交易，则该交易会顺利完成，如果没有，那些选项将会过滤掉。**MetaMask 帮助用户摆脱**交易失败的痛苦：由于以太坊主网的 Gas 费和代币智能合约的复杂性，交易失败不仅产生令人费解的错误代码，而且造成重大经济损失。Swap 的失败率非常低，目前仍在改进，以求尽可能实现零失败。
+
+一些目光敏锐的用户会注意到，在上个屏幕的左下角，提到了“3% 的滑点”。滑点是 Swaps 中对您有利的另一个参数，上文已经详细解释。
+
+完成 DeFi 数字运算后，您将看到报价屏幕：
+
+###
+
+#### **执行互换**
+
+这里发生的事情有点多，但无需惊慌。首先，在页面的顶端，您会看到 Swaps 正在持续执行我们之前提到的所有工作，以确保您掌握**最新的价格和供应情况**。
+
+主要功能在屏幕中间：**自上次报价以来您将获取的**代币金额（请记住滑点**。您可以查看汇率等详细信息，还可以选择深入了解报价的计算方式以及高级 Gas 设置。这本身就是一个完整的主题（从[这里](/transactions-and-gas/gas-fees/user-guide-gas)开始），但这仅仅是网络要收取的金额，还得加上 MetaMask 的费用。\
+**如果您准备好了，请狂点屏幕上的 Swap 按钮\*\*
+
+:::info
+
+#### 为什么我的钱包中没有显示所互换的代币？
+
+与所有区块链交易一样，并非即时完成，但很快就能在钱包中看到代币。如果您的代币并不常见，或者由于某种原因，而没有显示在钱包中，请按照我们在[此处](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)的说明添加代币。
+
+:::
+
+#### **SwapVerse 登场**
+
+MetaMask 真正卓越之处，及其能够提供无与伦比的代币互换体验的原因，就在于 MetaMask的**构建与网络无关**：只要您连接的区块链网络兼容以太坊，就可以配置 MetaMask 在该网络上使用。\
+那又怎样？
+
+所以，**您也可以在其他网络上使用 MetaMask 互换**。您不一定要在以太坊主网上使用 Swaps；比如说**您也可以在 Polygon 上使用 Swaps**。随着其他侧链和自定义网络的上线，您可以都尝试一下。借助 Swaps，您能够于钱包中在兼容以太坊的网络上交易代币，无需直接对接第三方平台，从而减少您暴露于潜在黑客攻击或恶意智能合约的风险。
+
+您甚至可以透过 Swaps *在主网上*获取非以太坊代币。有关这方面的更多信息，请参阅[此处](https://support.metamask.io/hc/en-us/articles/4404417979035)关于以太坊 MATIC 代币的文章。但请记住：**始终[使用网桥和门户网站](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains)浏览多元宇宙。**
+
+### **常见问题解答**
+
+[为什么 MetaMask Swaps 中缺少某些代币？](/token-swaps/why-are-some-tokens-missing-from-metamask-swaps)
+
+[使用 MetaMask Swaps 购买代币时，如何查看代币价格](/token-swaps/how-do-i-see-the-price-at-time-of-purchase-for-tokens-bought-through-swaps)
+
+[为什么 MetaMask 互换会失败？](/token-swaps/why-did-my-metamask-swap-fail)
+
+[如何取消待处理的互换？](/token-swaps/how-to-cancel-a-pending-swap)
+
+[为什么 MetaMask Swap 按钮不可用/灰化？](/token-swaps/why-is-the-metamask-swap-button-unavailable---greyed-out)
+
+**[我互换了一次，但收到的代币或法定货币价值比我预期的要少。为什么？](/token-swaps/i-did-a-swap-but-received-fewer-tokens-or-less-fiat-value-than-i-expected-why-)**
+
+[获取报价时出错](/token-swaps/error-fetching-quote)
+
+[Uniswap 支持和故障排除提示](/token-swaps/uniswap-support-and-troubleshooting-tips)
+
+**[用户指南：自定义网络和侧链](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains)**

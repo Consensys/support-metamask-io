@@ -1,0 +1,66 @@
+---
+title: "代币余额不正确时，该怎么办？"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### 代币根本没有显示出来？
+
+请在[此处](/managing-my-tokens/custom-tokens/a-token-is-missing-from-my-wallet)查看关于解决此问题的指南。
+
+:::
+
+首先，验证区块浏览器上显示的代币余额，然后与 MetaMask 对比。要完成此操作，可以复制您的钱包地址，然后粘贴到与您所在网络对应的区块浏览器中，以太坊主网的是 Etherscan，Arbitrum 则是 Arbiscan 等等。有关详细说明，请参阅[此处](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer)。
+
+<Tabs>
+
+<TabItem value="扩展版" label="扩展版">
+
+如果您的 MetaMask 扩展显示的 ETH 或其他代币余额不正确或不准确，请逐一尝试以下步骤，直到您看到正确的余额为止。
+
+**在继续之前，确保您已经安全备份了[助记词](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys)。**
+
+1. 检查您的互联网连接是否牢固稳定。否则，MetaMask 可能无法加载正确的余额。
+2. 关闭安装了 MetaMask 扩展程序的浏览器，然后重新打开。
+3. 尝试关闭您安装的所有广告拦截器，或者，如果您使用 VPN，请关闭 VPN 再尝试使用 MetaMask。
+4. 切换到不同的网络，然后重新回来。为此，请单击应用顶部的当前网络。选择不同的网络，然后再次切换回原来的网络。
+5. 确保您没有遇到[浏览器权限问题](/troubleshooting/metamask-states-balance-may-be-outdated-displays-in-orange-or-eth-not-added-to-balance)。
+6. 如果有多个 RPC URL 可用于您正在使用的网络，请尝试不同的 RPC URL。您可以转到“设置”>“网络”，然后单击相关网络来编辑 RPC URL。请参阅[关于添加网络的文章](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)，以了解详情。
+7. 从官方网站 [https://metamask.io](https://metamask.io/)，使用其他受支持的浏览器（Firefox、Chrome、Brave、Edge）安装 MetaMask , 然后尝试使用 12 字助记词恢复您的钱包，以防问题仅出现在您当前使用的浏览器中。
+
+</TabItem>
+
+<TabItem value="移动版" label="移动版">
+
+在 Etherscan 上验证了 MetaMask Mobile 中显示的代币数量不正确后，请按照以下步骤操作：
+
+1. 确保您的互联网连接是否牢固稳定。否则，代币值可能无法更新。
+2. 更改到不同的网络，然后重新切换回来。
+3. 如有可能，将您所在网络的 RPC URL 更改到替代 URL。请参阅[关于添加网络的文章](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)，以了解详情。
+4. 按照[此处](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)的说明，隐藏代币，然后按照[此处](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)的说明，重新添加代币。
+
+**如果相关代币是以太坊以外某个网络的原生代币，**如 BNB、AVAX、MATIC 等，请尝试[删除网络](/networks-and-sidechains/managing-networks/how-to-remove-networks)，然后[重新添加](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)。
+
+**如果相关代币是 ETH，则确保您的[助记词](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys)已经安全备份**，然后重新安装应用。
+
+</TabItem>
+
+</Tabs>
+
+如果您在尝试这些步骤之后仍然遇到问题，请点击[支持页面](https://support.metamask.io/hc/en-us)上的“开始对话”按钮，与我们联系。
+
+:::warning
+
+#### 代币是否具有影响供应或价值的内置机制？
+
+以太坊和 EVM 兼容链拥有大量具有不同实用程序的代币。某些代币旨在根据各种条件，动态改变供应或价值：
+
+- [变基代币](/managing-my-tokens/user-guide-tokens)，即调整了代币供应。
+- 带有“税收”的代币适用于不同类型的交易（例如简单的转移、交换、出售等）。有时，这些代币称为“转账费用”代币。
+
+在您断定您的余额不正确之前，请检查您的代币是否存在类似的情况。通常，查看项目的白皮书或文档，便可找到这些信息。
+
+:::

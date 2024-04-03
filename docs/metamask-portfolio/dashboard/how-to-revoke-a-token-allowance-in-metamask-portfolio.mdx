@@ -1,0 +1,82 @@
+---
+title: How to revoke a token allowance in MetaMask Portfolio
+image: /img/socialCards/how-to-revoke-a-token-allowance-in-metamask-portfolio.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+You can view and revoke any token allowances (also known as token approvals) in MetaMask Portfolio.
+
+Currently supported networks include:
+
+- Ethereum mainnet
+- Polygon
+- BNB Chain
+
+## What is a token allowance?
+
+Allowances are permissions that you sign to indicate consent for a dapp to access a given number of a specific token type. Usually, this is because you're interacting with a dapp that involves an operation like depositing, sending, staking, etc. — all of which require tokens to be moved _from_ your account and, generally, *to *a smart contract or another [externally owned account](https://ethereum.org/en/developers/docs/accounts/#types-of-account) (just like yours). **You can read a more in-depth explainer of token allowances [here](/transactions-and-gas/transactions/what-is-a-token-approval).** (Note that you don't need to sign allowances for ETH — only ERC-20 and ERC-777 tokens require them.)
+
+Once an allowance is signed, its existence is recorded on the blockchain, meaning it will be valid until you sign another transaction that revokes it. Each allowance limits how many tokens of that type the dapp can access. For example, if you signed an allowance for 1,000 USDC, you could order the dapp to use up to 1,000 USDC tokens in one transaction or many — either way, the permission is valid until you've used up this allowance.
+
+:::warning
+
+#### Spending caps in MetaMask
+
+When you sign a token allowance in MetaMask, you're prompted to specify how many of the tokens you want to allow access to. We call this a "spending cap", and you can [read more about the process here](/privacy-and-security/how-to-customize-token-approvals-with-a-spending-cap). Dapps often request a default value, which in many cases is so large it essentially permits unlimited access. Unlimited token approvals, as they are known, are dangerous — signing one to a fraudulent dapp, or a legitimate dapp that is hacked, can result in all of a certain token type being drained from your wallet without you being aware.
+
+:::
+
+## How to view and revoke token allowances
+
+1. Head to [MetaMask Portfolio](https://portfolio.metamask.io/) and make sure your wallet is connected.
+
+2. Head to'settings'. On a desktop browser, this is found in the drop-down menu on the top-left of the page:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/dashboard/how-to-revoke-a-token-allowance-in-metamask-portfolio/MetaMask_Portfolio_find_account_settings.png")
+          .default
+      }
+      alt="MetaMask_Portfolio_find_account_settings.png"
+    />
+  </div>
+</div>
+
+On mobile, hit the hamburger icon in the top-left to access it:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/dashboard/how-to-revoke-a-token-allowance-in-metamask-portfolio/MetaMask_Portfilio_locate_settings_mobile.gif")
+          .default
+      }
+      alt="MetaMask Portfilio locate settings mobile"
+    />
+  </div>
+</div>
+
+3. Select the 'Allowances' category in the settings menu.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/dashboard/how-to-revoke-a-token-allowance-in-metamask-portfolio/MetaMask_Portfilio_revoke_allowance.png")
+          .default
+      }
+      alt="MetaMask Portfilio revoke allowance"
+    />
+  </div>
+</div>
+
+Make sure you select the account whose allowances you want to view. You can only select one account at a time.
+
+4. Click the revoke button next to the allowance you want to revoke.
+
+5. Submit the transaction in MetaMask. Since revocation requires submitting a transaction to the network, **you will need pay gas fees to revoke an allowance**.

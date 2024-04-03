@@ -1,0 +1,326 @@
+---
+title: "วิธีเพิ่ม RPC ในเครือข่ายที่กำหนดเอง"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### เนื้อหา:
+
+- [การเพิ่มผ่าน Chainlist](#การเพิ่มผ่าน-chainlist)
+- [การเพิ่มเครือข่ายที่นิยมอย่างรวดเร็ว](#การเพิ่มเครือข่ายที่นิยม)
+- [การเพิ่มเครือข่ายด้วยตนเอง](#การเพิ่มเครือข่ายด้วยตนเอง)
+
+MetaMask สามารถเข้าถึงเครือข่ายได้มากกว่าเพียง Ethereum Mainnet: คุณสามารถเพิ่มเครือข่ายใดก็ตามที่เข้ากันได้กับ EVMRPC ย่อมา Remote Procedure Call ซึ่งเป็นชุดของโปรโตคอลที่อนุญาตให้ไคลเอนต์ (เช่น MetaMask) สามารถโต้ตอบกับบล็อกเชนการเพิ่มรายละเอียดเครือข่ายโดยใช้กระบวนการด้านล่างนี้ช่วยให้ MetaMask ใช้ RPC ที่ทำให้คุณสามารถโต้ตอบกับเครือข่ายนั้นได้โดยไม่ต้องแนะนำการสัมผัสกันทางเทคนิคที่สำคัญ
+
+#### การเพิ่มผ่าน Chainlist
+
+สำหรับวิธีการง่าย ๆ ในการเพิ่มเครือข่ายไปยัง MetaMask โปรดไปยัง [chainlist.wtf](https://chainlist.wtf/) ที่ซึ่งคุณสามารถเชื่อมต่อ MetaMask และเพิ่มเครือข่ายได้ด้วยการคลิกเพียงไม่กี่ครั้งดู [คู่มือ](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist)ของเรา สำหรับข้อมูลเพิ่มเติม
+
+นอกจากนี้ โปรดทราบว่าการ**เพิ่มเครือข่ายบนอุปกรณ์หนึ่ง ไม่ได้หมายความว่าเครือข่ายจะปรากฏบนอุปกรณ์อื่น**เมื่อเข้าถึงบัญชีเดียวกัน หากคุณเพิ่มลงใน Extension ก็จะไม่มีการเพิ่มลงในแอปมือถือ MetaMask โดยอัตโนมัติ และเช่นเดียวกับในทางกลับกัน
+
+คุณจำเป็นต้องเพิ่มเครือข่ายที่กำหนดเองกลับเข้าไปอีกครั้งด้วย หากคุณถอนการติดตั้งส่วนขยายเบราว์เซอร์หรือแอปมือถือ (หลังจากนั้น คุณจะต้อง[กู้คืนกระเป๋าเงินของคุณ](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) โดยใช้วลีกู้คืนรหัสของคุณ)
+
+:::info
+
+#### ทำไมฉันถึงเห็นไอคอนเครื่องหมายคำถามถัดจากชื่อเครือข่ายหลังจากที่ฉันเพิ่มเครือข่าย
+
+เมื่อคุณเพิ่มเครือข่ายที่กำหนดเองไปยัง MetaMask ซึ่งก็คือเครือข่ายใด ๆ นอกเหนือจาก Ethereum Mainnet คุณจะเห็นไอคอนเครื่องหมายคำถามอยู่ถัดไปในตัวเลือกเครือข่ายซึ่งมีลักษณะเป็นเช่นนี้:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/question_mark.png").default
+      }
+      alt="question_mark.png"
+    />
+  </div>
+</div>
+
+ไม่ต้องกังวล!นี่ไม่ได้หมายความว่าไม่ถูกต้องหรือไม่ปลอดภัยที่จะใช้นี่เป็นพฤติกรรมที่ตั้งใจไว้และเป็นวิธีที่เครือข่ายใดก็ตามที่คุณเพิ่มจะปรากฏใน MetaMask
+
+:::
+
+## การเพิ่มเครือข่ายที่นิยม
+
+คุณสามารถเพิ่มเครือข่ายที่โดดเด่นหลายเครือข่ายได้อย่างง่ายดายด้วยการแตะเพียงครั้งเดียวทั้งในอุปกรณ์เคลื่อนที่และส่วนขยายซึ่ง ได้แก่:
+
+- [BNB Chain/BSC](/network-profiles/network-profile-bnb-smart-chain-bnb)
+- [Polygon](/network-profiles/network-profile-polygon-matic)
+- [Avalanche](/network-profiles/network-profile-avalanche-avax)
+- [Arbitrum](/network-profiles/network-profile-arbitrum)
+- [Optimism](/network-profiles/network-profile-optimism-op-mainnet)
+- [Palm](/network-profiles/network-profile-palm)
+- [Fantom](/network-profiles/network-profile-fantom-ftm)
+- [Harmony](/network-profiles/network-profile-harmony-one)
+- [Aurora](/network-profiles/network-profile-aurora-)
+- [Celo](https://celo.org/)
+
+คุณสามารถพบเมนูนี้ได้โดยใช้ขั้นตอนดังต่อไปนี้:
+
+<Tabs>
+
+<TabItem value="ส่วนขยาย" label="ส่วนขยาย">
+
+จากหน้าแรกของกระเป๋าเงินของคุณ คลิกที่ตัวเลือกเครือข่ายที่ด้านบนของหน้าจอ จากนั้นคลิก 'Add network' (เพิ่มเครือข่าย):
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={require("../../../../../../img/i18n/legacy/add_network.png").default}
+      alt="add_network.png"
+    />
+  </div>
+</div>
+
+จากตรงนี้ คุณควรเห็นรายการเครือข่ายที่ได้รับความนิยมซึ่งพร้อมที่จะเพิ่มเข้าไป (เว้นแต่ว่าคุณยังได้เพิ่มเครือข่ายนั้นไปแล้ว)แตะ 'Add' (เพิ่ม) เพื่อเริ่มกระบวนการ และทำตามคำแนะนำ
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/popular_networkis.png")
+          .default
+      }
+      alt="popular_networkis.png"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="บนมือถือ" label="บนมือถือ">
+
+1. แตะไอคอนแฮมเบอร์เกอร์ที่ด้านบนซ้ายของหน้าจอ
+
+2. ไปที่'settings' (การตั้งค่า) จากนั้นไปที่ 'Network' (เครือข่าย)
+
+3. ที่นี่ คุณจะเห็นรายการเครือข่ายที่คุณได้เพิ่มไปแล้วแตะปุ่ม 'Add Network' (เพิ่มเครือข่าย) ที่ด้านล่างของหน้าจอ
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/settings___network.PNG.png")
+             .default
+         }
+         alt="settings___network.PNG"
+       />
+     </div>
+   </div>
+
+4. ตอนนี้คุณควรเห็นรายการเครือข่ายที่คุณสามารถเพิ่มลงไปได้ภายใต้แท็บ 'Popular' (ได้รับความนิยม) ดังที่แสดงด้านล่างนี้
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/select_a_network.jpg.png")
+             .default
+         }
+         alt="select_a_network.jpg"
+       />
+     </div>
+   </div>
+
+5. เมื่อคุณเลือกที่จะเพิ่มรายการใดรายการหนึ่ง คุณจะได้รับแจ้งให้ยืนยัน:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network_.PNG.png")
+             .default
+         }
+         alt="add_network_PNG"
+       />
+     </div>
+   </div>
+
+   จากนั้นคุณจะได้รับตัวเลือกให้เปลี่ยนไปยังเครือข่ายนั้นโดยทันทีเสร็จแล้ว!
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/switch_to_network.jpg.png")
+             .default
+         }
+         alt="switch_to_network.jpg"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+## การเพิ่มเครือข่ายด้วยตนเอง
+
+ต่อไปนี้เป็นคำแนะนำในการสร้างการเชื่อมต่อเหล่านี้ด้วยตัวเอง:
+
+<Tabs>
+
+<TabItem value="ส่วนขยาย" label="ส่วนขยาย">
+
+1. คลิกที่ **ปุ่มตัวเลือกเครือข่าย**คุณจะเห็นรายชื่อเครือข่ายที่คุณได้เชื่อมต่อแล้ว**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/networks_button.png")
+             .default
+         }
+         alt="networks_button.png"
+       />
+     </div>
+   </div>
+
+2. คลิก 'Add network' (เพิ่มเครือข่าย):
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network.png").default
+         }
+         alt="add_network.png"
+       />
+     </div>
+   </div>
+
+3. แท็บเบราว์เซอร์ใหม่จะเปิด แสดงช่องต่าง ๆ ให้กรอกข้อมูล**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/Screenshot_2022-02-10_at_10.08.31.png")
+             .default
+         }
+         alt="Screenshot_2022-02-10_at_10.08.31.png"
+       />
+     </div>
+   </div>
+
+   กรอกข้อมูลในช่องและคลิก Save (บันทึก) เพื่อเพิ่มเครือข่าย
+
+   รายละเอียดสำหรับช่องข้างต้นสามารถดูได้ใน [โปรไฟล์เครือข่าย](/network-profiles/network-profiles-hub) ของเรา หรืออีกวิธีช่องทางหนึ่งคือ เอกสาร (เช่น เอกสารสำหรับนักพัฒนา) หรือคู่มือวิธีใช้สำหรับแต่ละเครือข่าย ตัวอย่างเช่น:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche)
+
+   หลังจากดำเนินการขั้นตอนข้างต้น คุณจะสามารถดูเครือข่ายที่กำหนดเองในครั้งต่อไปที่คุณเข้าถึงตัวเลือกเครือข่ายได้
+
+</TabItem>
+
+<TabItem value="บนมือถือ" label="บนมือถือ">
+
+1. แตะบนไอคอนแฮมเบอร์เกอร์ที่ด้านบนซ้าย:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_C8C734D64DE3-1.jpeg.png")
+             .default
+         }
+         alt="IMG_C8C734D64DE3-1.jpeg"
+       />
+     </div>
+   </div>
+
+2. เลือก **Settings (การตั้งค่า):**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_129413D61F95-1.jpeg.png")
+             .default
+         }
+         alt="IMG_129413D61F95-1.jpeg"
+       />
+     </div>
+   </div>
+
+3. เลือก **Network (เครือข่าย):**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_62D0A5FE63AE-1.jpeg.png")
+             .default
+         }
+         alt="IMG_62D0A5FE63AE-1.jpeg"
+       />
+     </div>
+   </div>
+
+4. แตะบน '**Add Network**' (เพิ่มเครือข่าย):
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_65A194E3EC35-1.jpeg.png")
+             .default
+         }
+         alt="IMG_65A194E3EC35-1.jpeg"
+       />
+     </div>
+   </div>
+
+5. กรอกรายละเอียด**เครือข่าย RPC ที่กำหนดเอง**:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_E8F132CD40A6-1.jpeg.png")
+             .default
+         }
+         alt="IMG_E8F132CD40A6-1.jpeg"
+       />
+     </div>
+   </div>
+
+   รายละเอียดสำหรับช่องข้างต้นสามารถดูได้ใน [โปรไฟล์เครือข่าย](/network-profiles/network-profiles-hub) ของเรา หรืออีกวิธีช่องทางหนึ่งคือ เอกสาร (เช่น เอกสารสำหรับนักพัฒนา) หรือคู่มือวิธีใช้สำหรับแต่ละเครือข่าย ตัวอย่างเช่น:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://docs.polygon.technology/docs/develop/network-details/network/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche)
+
+   หลังจากดำเนินการขั้นตอนข้างต้น คุณจะสามารถดูเครือข่ายที่กำหนดเองในตัวเลือกเครือข่ายได้
+
+</TabItem>
+
+</Tabs>

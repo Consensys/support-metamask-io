@@ -1,0 +1,408 @@
+{
+  "How can we help?": {
+    "message": "Hoe kunnen we helpen?"
+  },
+  "MetaMask Support": {
+    "message": "MetaMask-ondersteuning"
+  },
+  "Search": {
+    "message": "Zoek"
+  },
+  "Search...": {
+    "message": "Zoeken..."
+  },
+  "MetaMask only offers customer service through this Help Center and our community forums.": {
+    "message": "MetaMask biedt alleen ondersteuning via het helpcentrum en onze communitykanalen. We zullen je NOOIT om je geheime herstelzin vragen!"
+  },
+  "Getting Started with MetaMask 🦊": {
+    "message": "Aan de slag met MetaMask 🦊"
+  },
+  "Community 🫂": {
+    "message": "Community 🫂"
+  },
+  "Join discussions with other users 😎": {
+    "message": "Neem deel aan gesprekken met andere gebruikers 😎 op onze Discourse-pagina"
+  },
+  "New here? We have you covered.": {
+    "message": "Nieuw hier? We staan voor je klaar"
+  },
+  "Knowledge base": {
+    "message": "Kennisbank"
+  },
+  "Promoted Articles": {
+    "message": "Gepromote artikelen"
+  },
+  "If someone asks you for this information, don't give it to them!": {
+    "message": "Geef niemand deze informatie, zelfs niet als hierom wordt gevraagd!"
+  },
+  "Start a Conversation 💬": {
+    "message": "Start een gesprek 💬"
+  },
+  "Get in touch if you are unable to find an answer elsewhere.": {
+    "message": "Neem contact op als je nergens een antwoord kunt vinden"
+  },
+  "Sign In": {
+    "message": "Inloggen"
+  },
+  "Articles in this section": {
+    "message": "Artikels in deze sectie"
+  },
+  "MetaMask Support on Twitter": {
+    "message": "MetaMask-ondersteuning op Twitter"
+  },
+  "MetaMask YouTube": {
+    "message": "MetaMask YouTube"
+  },
+  "MetaMask Learn": {
+    "message": "MetaMask Learn"
+  },
+  "MetaMask Activity 🦊": {
+    "message": "MetaMask Activity 🦊"
+  },
+  "Never share your Secret Recovery Phrase 🔐": {
+    "message": "Never share your Secret Recovery Phrase 🔐",
+    "description": "Button text on homepage"
+  },
+  "Set up, Configure, Learn": {
+    "message": "Set up, Configure, Learn"
+  },
+  "MetaMask Community": {
+    "message": "MetaMask Community"
+  },
+  "Chat with Support": {
+    "message": "Chat with Support"
+  },
+  "Join the Village 🏘️": {
+    "message": "Join the Village 🏘️"
+  },
+  "Are you a web3 denizen? Come join the village.": {
+    "message": "Are you a web3 denizen? Come join the village.",
+    "description": "Card description"
+  },
+  "See all articles ➡️": {
+    "message": "See all articles ➡️"
+  },
+  "Getting Started": {
+    "message": "Van start gaan"
+  },
+  "MetaMask Portfolio": {
+    "message": "MetaMask Portfolio"
+  },
+  "Managing my Wallet": {
+    "message": "Mijn wallet beheren"
+  },
+  "Managing my Tokens": {
+    "message": "Mijn tokens beheren"
+  },
+  "Network Profiles": {
+    "message": "Network Profiles"
+  },
+  "Networks and Sidechains": {
+    "message": "Netwerken en sidechains"
+  },
+  "NFTs": {
+    "message": "NFTs"
+  },
+  "Privacy and Security": {
+    "message": "Privacy en beveiliging"
+  },
+  "Third party platforms and dapps": {
+    "message": "Third party platforms and dapps"
+  },
+  "Token Swaps": {
+    "message": "Tokenswaps"
+  },
+  "Transactions and Gas": {
+    "message": "Transacties en Gas"
+  },
+  "Troubleshooting": {
+    "message": "Probleemoplossing "
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Deze pagina is gecrasht.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll naar boven",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archief",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archief",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Paginanavigatie blog",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Nieuwere items",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Oudere items",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Paginanavigatie blog",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Nieuwer bericht",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Ouder bericht",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Een bericht|{count} berichten",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} getagd met \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Laat alle tags zien",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Schakel tussen donkere en lichte modus (momenteel {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "donkere modus",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "lichte modus",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Broodkruimels",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} artikelen",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Documentatie pagina",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Vorige",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Volgende",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Een artikel getagd|{count} artikelen getagd",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} met \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Versie: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Dit is nog niet uitgegeven documentatie voor {siteTitle}, versie {versionLabel}",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Dit is de documentatie voor {siteTitle} {versionLabel}, welke niet langer actief wordt onderhouden.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Voor de huidige documentatie, zie de {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "laatste versie",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Bewerk deze pagina",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link naar {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " op {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " door {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Laatst bijgewerkt{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versies",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "Pagina niet gevonden",
+    "description": "The title of the 404 page"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.admonition.caution": {
+    "message": "pas op",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "gevaar",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "notitie",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Sluiten",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigatie recente blogitems",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Gekopieerd",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Kopieer code naar klembord",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Kopieer",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Tekstterugloop in-/uitschakelen",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Talen",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NotFound.p1": {
+    "message": "We kunnen niet vinden waar je naar op zoek bent.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Neem contact op met de eigenaar van de website die naar de originele URL heeft geleid en laat weten dat de link niet meer werkt.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Op deze pagina",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Lees meer",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Lees meer over {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Homepagina",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Een minuut leestijd|{readingTime} minuten leestijd",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Zijbalk inklappen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Zijbalk inklappen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Terug naar het hoofdmenu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Zijbalk uitklappen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Zijbalk uitklappen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Probeer opnieuw",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Ga naar hoofdinhoud",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  }
+}

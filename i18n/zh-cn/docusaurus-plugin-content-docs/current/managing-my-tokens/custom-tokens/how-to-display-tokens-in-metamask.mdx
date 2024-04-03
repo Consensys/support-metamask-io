@@ -1,0 +1,347 @@
+---
+title: "如何在 MetaMask 中显示代币"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+**快速链接：**
+
+- [自动检测代币](#增强型代币检测)
+- [使用搜索栏添加代币](#使用搜索功能手动添加代币)
+- [添加自定义代币](#如何添加自定义代币)
+- [删除/隐藏代币](#如何隐藏代币)
+- [查找代币的合约地址](#如果我不知道代币地址怎么办)
+- [使用区块浏览器添加代币](#如何使用区块浏览器添加代币)
+- [使用代币列表网站添加代币](#如何使用代币列表网站添加代币)
+- [使用投资组合 Dapp](#使用投资组合-dapp)
+
+通常，MetaMask 会在您的账户页面上显示您拥有的 ERC-20 标准代币（或[标准代币](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)）。然而，随着以太坊以及其他网络上代币的激增，MetaMask 并未保留权威列表，但您可以添加所持有符合 ERC-20 的代币。
+
+有两种不同的方法可以将未列出的代币添加到 MetaMask 钱包中：
+
+首先，您可以启用一项高级功能，[自动检测](#增强型代币检测)您的地址所持有的代币，然后将其添加至您的钱包中。这将使用从各种社区代币列表中聚合的代币列表；**MetaMask 不保留“已接受”或“有效”代币的专有列表**。如果选择此选项，请记住，对于不熟悉的代币，应始终保持谨慎：
+
+1. 凡是您不熟悉、尚未研究并且不可信的网站，切勿与其互动或将钱包与其连接。
+2. 对于空投或不熟悉的代币，应始终抱有质疑态度，先做尽职调查再与之互动。请在[此处](/managing-my-tokens/token-safety-practices)查看有关代币安全的最佳实践。
+3. 如果您尝试使用代币做交易，但交易失败，区块浏览器会显示诈骗者写入的错误，将您引导至某个网站，这很可能是钓鱼网站，因此请勿点击此链接。
+4. 时刻掌握诈骗者试图窃取资金的方式。 应当认识到，网上所见信息可信与否始终缺乏充分保障。
+
+## 增强型代币检测
+
+:::info
+
+#### 仅在某些网络上可用！
+
+增强型代币检测仅在以下网络可用：
+
+- 以太坊主网
+- Avalanche
+- BNB Smart Chain
+- Polygon
+
+:::
+
+<Tabs>
+
+<TabItem value="扩展版" label="扩展版">
+
+单击右上角的身份图标，导航至“设置”，然后单击“安全与隐私”，确保切换开关已打开。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Enhanced_automatic_token_detection_MetaMask2.png")
+          .default
+      }
+      alt="增强型自动代币检测 MetaMask"
+    />
+  </div>
+</div>
+
+如有必要，稍后可随时关闭此功能。
+
+</TabItem>
+
+<TabItem value="移动版" label="移动版">
+
+点击主页左上角的汉堡包图标，然后找到“设置”。从这里转到“高级”，然后滚动，直到找到代币检测开关。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Enhanced_automatic_token_detection_MetaMask_Mobile.png")
+          .default
+      }
+      alt="增强型自动代币检测 MetaMask Mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**启用代币检测后，返回到您的资产列表，如有需要，刷新一下，这样您之前没有看到的代币便会显示出来。**
+
+_请注意，无论此设置是开还是关，以太坊主网上都会执行代币检测；增强型代币检测只是扩展了此功能，以涵盖上面列出的其他网络。 _
+
+## 使用搜索功能手动添加代币
+
+<Tabs>
+
+<TabItem value="扩展版" label="扩展版">
+
+要查看您的代币，请单击**资产**选项卡。您的代币应列在此选项卡下。如果没有，并且自动检测代币功能没有发现代币，请单击底部的“导入代币”。
+
+单击此处将进入搜索栏：
+
+1. 输入要搜索的代币中包含的单词。例如，如想查找 Chainlink（符号：LINK），只需在栏中输入“LI”，搜索栏就会返回全部建议。
+2. 选择感兴趣的代币，然后单击**“下一步”**继续。(选择了代币后，按钮的边框就会以蓝色突出显示）
+3. 单击** “添加代币”**以继续。然后，您将重定向到您的账户页面。将列出您刚刚添加的代币。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_token_MetaMask_Extension.gif")
+          .default
+      }
+      alt="导入代币 MetaMask 扩展"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="移动版" label="移动版">
+
+1. 在您的钱包页面上，找到屏幕底部的“导入代币”链接。
+2. 这将打开搜索栏。输入您要添加的代币名称。
+3. 找到代币后，点击以选中，然后向下滚动，便会看到“导入”按钮。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_token_MetaMask_Mobile.gif")
+          .default
+      }
+      alt="导入代币 MetaMask Mobile"
+    />
+  </div>
+</div>
+
+现在代币将列在您账户的资产下。
+
+</TabItem>
+
+</Tabs>
+
+## 如何隐藏代币
+
+添加代币后，可从资产列表中移除代币。
+
+<Tabs>
+
+<TabItem value="扩展版" label="扩展版">
+
+在您的钱包页面上，找到“资产”选项卡，然后单击您要移除的代币。
+
+在此处，单击右上角的三个点，然后单击“隐藏”。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Hide_token_extension.gif")
+          .default
+      }
+      alt="隐藏代币扩展"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="移动版" label="移动版">
+
+在 iOS 和 Android 设备上，长按代币。将会弹出移除代币的选项：
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Hide_token_mobile.png")
+          .default
+      }
+      alt="隐藏代币 mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**如果您搜索的代币并非热门代币，搜索栏可能不会显示您查询的代币。**在这种情况下，您可以（手动）[添加自定义代币](#如何添加自定义代币)。
+
+## 如何添加自定义代币
+
+<Tabs>
+
+<TabItem value="扩展版" label="扩展版">
+
+1. 点击钱包主页“资产”选项卡底部的“导入代币”。
+
+2. 切换到顶部的“自定义代币”选项卡，然后在第一个字段中输入代币地址。如果您不知道在哪里找到，请参阅[下文](#如果我不知道代币地址怎么办)。
+
+3. 在大多数情况下，代币符号和代币小数点将自动填充。\
+   如果没有填充，请转到该网络的区块浏览器，找到代币。代币的符号和小数点一般会显示出来。
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details.png")
+          .default
+      }
+      alt="查找自定义代币详情"
+    />
+  </div>
+</div>
+
+如果您仍然找不到代币的详细信息，请尝试通过网络搜索找到代币的文档。
+
+4. 单击“添加自定义代币”以继续。
+5. 您现在将看到一个页面，要求您确认是否要添加代币。\
+   点击“导入代币”，代币类型将添加到您的钱包中。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_custom_token_MetaMask_Extension.gif")
+          .default
+      }
+      alt="导入自定义代币 MetaMask 扩展"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="移动版" label="移动版">
+
+1. 从钱包主页中找到“导入代币”的链接。点击链接，就会弹出添加代币的菜单。
+2. 切换到“自定义代币”选项卡。现在，您将会看到三个字段，要求您提供代币的合约地址、符号以及“代币精度”（即代币可以降至小数点后多少位）。
+3. [找到代币地址](#如果我不知道代币地址怎么办)并将其粘贴到第一个字段中。符号和小数点会自动填充。如果没有，请前往网络的区块浏览器，并搜索该代币。在其页面上，您可以轻松找到代币的符号和小数点。
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details_mobile.png")
+          .default
+      }
+      alt="查找自定义代币详情 mobile"
+    />
+  </div>
+</div>
+
+4. 点击“导入”将其添加到您的钱包中。您将重回钱包主页，在“代币”选项卡下便能看到代币。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Import_custom_token_MetaMask_mobile.gif")
+          .default
+      }
+      alt="Import_custom_token_MetaMask_mobile.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+## 如果我不知道代币地址怎么办？
+
+阅读[这篇文章](/managing-my-tokens/custom-tokens/how-to-find-a-token-contract-address)，了解不同的查找方法。
+
+您也可以向发送代币的人询问代币的合约地址。
+
+**请注意，如果有人告诉您已向您发送了代币，但无法提供代币地址，或交易哈希值（唯一交易 ID），那么实际上并未发送代币。**
+
+## 如何使用区块浏览器添加代币
+
+> 注：除了 Etherscan 之外，这也适用于大多数主流区块浏览器，包括 [BscScan](https://bscscan.com/)、[Polygonscan](https://polygonscan.com/)、[Snowtrace](https://snowtrace.io/) 等等，它们的设计通常相差无几。
+
+1. 转至区块浏览器。
+2. 搜索您的代币。您也可以点击菜单栏中的“代币”链接。
+3. 单击代币配置文件摘要右上角的“更多”按钮。
+4. 单击“将代币添加到 MetaMask (Web3)”
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_using_block_explorer.png")
+          .default
+      }
+      alt="使用区块浏览器添加代币"
+    />
+  </div>
+</div>
+
+5. MetaMask 会弹出提示，让您确认是否要添加该代币。
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_MetaMask_notification.png")
+          .default
+      }
+      alt="添加代币 MetaMask 通知"
+    />
+  </div>
+</div>
+
+## 如何使用代币列表网站添加代币
+
+Coingecko 或 CoinMarketCap 等网站提供 MetaMask 集成，您可以直接从其网站上的条目向 MetaMask 添加代币。
+
+要访问，只需前往这些站点，然后使用搜索栏找到您要添加的代币。然后找到合约地址，点击 MetaMask 狐狸。将出现一个提示，确认您想把代币添加到您的钱包。
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Add_token_to_MetaMask_from_coin_listing_site2.gif")
+          .default
+      }
+      alt="Add_token_to_MetaMask_from_coin_listing_site2.gif"
+    />
+  </div>
+</div>
+
+:::info
+
+#### 注
+
+**在 MetaMask Mobile 上，确保您使用应用内浏览器访问网站**，而不是您设备的标准浏览器。这是访问集成 MetaMask 的网页链接的唯一方法，就像您可以在桌面浏览器上使用扩展程序一样。
+
+:::
+
+您还可以使用此方法在不同网络上添加代币，具体取决于代币所有者是否已在该网络上部署相应的智能合约。单击合约地址旁边的三个点，以选择不同的网络，然后单击狐狸，在该网络上添加代币。
+
+## 使用投资组合 Dapp
+
+[投资组合 Dapp](https://portfolio.metamask.io/)是一个与 MetaMask 关联的新平台，整合并显示您的代币余额。在这种背景下非常有用，您在连接钱包之后，它便会**自动检测**和显示绝大部分的代币。
+
+您只需要点击链接，连接您的钱包。如果需要更多指导，请参阅[我们的文章](/metamask-portfolio/)，了解 dapp 的使用方法。

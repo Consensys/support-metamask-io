@@ -1,0 +1,82 @@
+---
+title: "MetaMask cüzdanınızdan bir hesabı nasıl kaldırırsınız?"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+### **Yalnızca içe aktarılan hesapları** ve özel anahtar ya da JSON ile içe aktardığınız harici hesaplarınızı (donanım cüzdanı gibi) kaldırabilirsiniz.
+
+MetaMask'ta "Hesap Oluştur" düğmesini kullanarak eklediğiniz hesaplar kaldırılamaz. Daha fazla bilgi ve potansiyel bir çözüm için [aşağıya](#oluşturulan-hesapları-nasıl-kaldırırım) göz atın.
+
+<Tabs>
+
+<TabItem value="Uzantı" label="Uzantı">
+
+Sağ üstteki hesap identicon'una (tanımlayıcı simge) tıklayarak **Hesaplarım** kısmına gidin. Burada içe aktardığınız hesapları tüm göreceksiniz; genellikle isimlerinin yanında bir etiket bulunur.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_extension_iported_wallet_tag.png")
+          .default
+      }
+      alt="MetaMask_extension_iported_wallet_tag.png"
+    />
+  </div>
+</div>
+
+İçe aktarılan hesaba tıklayın veya dokunun; hesap görünümü açılacaktır. Sağ taraftaki 3 dikey nokta menüsüne dokunun veya tıklayın. Bu, **Hesabı kaldır** seçeneğini de içeren aşağı açılır menüyü getirecektir:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet.gif")
+          .default
+      }
+      alt="how_to_remove_an_account_from_your_metamask_wallet.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobil" label="Mobil">
+
+1. Hesap seçme ekranını getirmek için hesap adınıza dokunun. O anda hangi hesabı seçtiğinizin önemi yoktur.
+
+   Bu ekranı, kaldırmak istediğiniz içe aktarılan hesabı bulana kadar kaydırın. Bu hesaplar, yanlarındaki 'İçe Aktarıldı' etiketi sayesinde kolayca tespit edilebilirler.
+
+2. Kaldırma seçeneğini getirmek için hesabın üzerine uzun basın. Onayladığınızda MetaMask'ınızdan hemen kaybolacaktır.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet_mobile.gif")
+             .default
+         }
+         alt="how_to_remove_an_account_from_your_metamask_wallet_mobile.gif"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+:::info
+
+#### Oluşturulan hesapları nasıl kaldırırım?
+
+Şu anda, [oluşturulmuş](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet) hesapları, yani 'Hesap Oluştur' seçeneğine tıkladığınızda 'Hesap 2' vb. şeklinde görünen hesapları kaldırmak imkansızdır. Onları gerçekten kaldırmak istiyorsanız cihazınızdan MetaMask'ı (Uzantı veya Mobil) kaldırmanız, yeniden yüklemeniz ve ardından [Gizli Kurtarma İfadenizi kullanarak geri getirmeniz](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) gerekir. Ancak, **Gizli Kurtarma İfadeniz yoksa bu işlemi YAPMAYIN**. Bu ifade (kod) olmadan, yeniden kurulum yaptığınızda cüzdanınıza erişim sağlayamazsınız. Bunu yaparsanız şunları unutmayın:
+
+- Bu işlem, hesabı _silmeyecektir_, yalnızca MetaMask'ta görünmemesini sağlayacaktır: Adresiniz oluşturulduktan sonra blok zincirinde kalıcı olarak yer alır ve [kaldırılamaz](/managing-my-wallet/resetting-deleting-and-restoring/how-can-i-delete-my-metamask-wallet).
+- Gizli Kurtarma İfadenizi kullanarak geri yüklediğinizde, MetaMask önceden oluşturulmuş hesapları ETH tutarı mevcutsa otomatik olarak yeniden ekleyecektir. Daha fazla bilgi için [buraya](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) göz atın.
+- İçe aktarılan tüm hesaplar ve/veya donanım cüzdanları aynı anda kaldırılacaktır. Özel anahtar/tohum ifadelerini (veya başka bir MetaMask hesabındaysa Gizli Kurtarma İfadesini) yedeklediğinizden emin emin olun. Aksi takdirde onlara tekrar erişemezsiniz.
+
+:::

@@ -1,0 +1,38 @@
+---
+title: Infura connectivity issues
+image: /img/socialCards/infura-connectivity-issues.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+MetaMask makes dapp adoption quick and easy because we host a blockchain connection by default, and our trusty friends at Infura do an amazing job making this experience feel totally seamless, [almost all of the time](https://status.infura.io/)!
+
+Sometimes, some dapp usage has grown much faster than we've been able to anticipate, and so MetaMask's default provider connection can become intermittent. Sometimes we have to limit abusive sites.
+
+At times like that, there are three options:
+
+1. Wait and be patient.
+2. Connect to another blockchain provider in place of Infura (like [your own local node](/managing-my-wallet/using-metamask/using-a-local-node))
+3. Use another client.
+
+## Connecting to another blockchain provider
+
+To connect, you'll need to run a local RPC server, and then connect to it in MetaMask as if you were selecting a network. On both Extension and Mobile, the network selector is at the top of the screen, in the middle.
+
+When you have successfully [spun up your own node](/managing-my-wallet/using-metamask/using-a-local-node), it will run on 'Localhost 8545', which you'll find in your networks list by default (you may need to go to Settings > Advanced > Show test networks to make sure this is displayed):
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/networks-and-sidechains/infura-connectivity-issues/Using_a_local_node_in_MetaMask.png")
+          .default
+      }
+      alt="Using a local node in MetaMask"
+    />
+  </div>
+</div>
+
+Select it to start using your node to send requests to the blockchain.

@@ -1,0 +1,121 @@
+---
+title: Manually connecting to a dapp
+image: /img/socialCards/manually-connecting-to-a-dapp.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Usually, when you try and connect to a dapp by clicking a 'connect with MetaMask' button—or something with similar wording—MetaMask will pop up and ask if you're happy to do so.
+
+If the dapp to which you're trying to connect doesn't automatically prompt you to connect your MetaMask, or for whatever reason you want to initiate the connection manually, follow these steps:
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+Navigate to the site you want to manually connect to, and then click on the MetaMask Extension icon in the browser toolbar in the top-right:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/third-party-platforms-and-dapps/manually-connecting-to-a-dapp/MetaMask_manual_connect_1.png")
+          .default
+      }
+      alt="MetaMask manual connect"
+    />
+  </div>
+</div>
+
+In MetaMask, click on the three dots menu in the upper right corner, and then on **Connected sites:**
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/third-party-platforms-and-dapps/manually-connecting-to-a-dapp/MetaMask_find_connected_sites_extension.gif")
+          .default
+      }
+      alt="MetaMask find connected sites extension"
+    />
+  </div>
+</div>
+
+Click the **Manually connect to current site** button at the bottom of the list.
+
+:::warning
+
+#### Note:
+
+This button will not appear if one of your other accounts is connected to the dapp, or if you have another wallet installed in your browser that has an account connected to the dapp. If you're in this position, check through connected sites in MetaMask for each account by following the instructions [here](/third-party-platforms-and-dapps/disconnect-wallet-from-a-dapp). If the issue persists, check the accounts in your other wallet clients.
+
+:::
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/third-party-platforms-and-dapps/manually-connecting-to-a-dapp/MetaMask_manually_connect_to_dapp_extension.png")
+          .default
+      }
+      alt="MetaMask manually connect to dapp extension"
+    />
+  </div>
+</div>
+
+Next, select the account(s) you want to connect, then follow the prompts to confirm the process:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/third-party-platforms-and-dapps/manually-connecting-to-a-dapp/MetaMask_manually_connect_to_dapp_2_extension.png")
+          .default
+      }
+      alt="MetaMask manually connect to dapp extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+Tap on the 'browser' tab at the bottom of the screen:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/third-party-platforms-and-dapps/manually-connecting-to-a-dapp/MetaMask_mobile_browser_tab.png")
+          .default
+      }
+      alt="MetaMask mobile browser tab"
+    />
+  </div>
+</div>
+
+Next, find the site that you're looking for:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/third-party-platforms-and-dapps/manually-connecting-to-a-dapp/MetaMask_mobile_navigate_to_cryptokitties.gif")
+          .default
+      }
+      alt="MetaMask mobile navigate to cryptokitties"
+    />
+  </div>
+</div>
+
+From here, find and tap a button marked 'Connect' or similar—the exact design will vary depending on the dapp—and choose the account(s) you want to use with the dapp.
+
+</TabItem>
+
+</Tabs>

@@ -1,0 +1,130 @@
+---
+title: Reconciling and keeping track of your accounts
+image: /img/socialCards/reconciling-and-keeping-track-of-your-accounts.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+### Many users find it useful to perform a manual analysis of their accounts, checking to make sure the transactions align with what they intended.
+
+It can be useful to see how much you spent on gas fees, how your balances rose and fell over time, etc. In accounting, **this is referred to as 'reconciliation'**.
+
+MetaMask doesn't yet have this feature built-in. Instead, given the nature of blockchain technology, it's transparently available on blockchain explorers, such as [Etherscan](https://etherscan.io/) or [BscScan](https://bscscan.com/) (as most block explorers are very similar under the hood, this method also applies to those of other EVM-compatible chains, such as Avalanche's Snowtrace).
+
+## **Method 1: Block explorer balance checkers**
+
+Both these platforms have a built-in balance checker (click for the [Etherscan version](https://etherscan.io/balancecheck-tool), or the [BscScan version](https://bscscan.com/balancecheck-tool)), which allows you to request a snapshot of your wallet's contents at any point in the past. These services **only support checks on your ETH and BNB** balances, respectively, so will not be applicable if you're investigating other token balances. Other networks' block explorers are likely to have similar services, however.
+
+You can narrow down the snapshot by date, or, for even more precision (down to ca. 10-15 second timeframes), by block number:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/reconciling-and-keeping-track-of-your-accounts/Reconciling_and_keeping_track_of_your_accounts_balance_checker.png")
+          .default
+      }
+      alt="Reconciling and keeping track of your accounts balance checker"
+    />
+  </div>
+</div>
+
+The results will look like the below — detailing the block or date, the quantity of ETH held at that time, and how that quantity compares to the current holdings in your wallet.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/reconciling-and-keeping-track-of-your-accounts/Etherscan_balance_checker_result.png")
+          .default
+      }
+      alt="Etherscan balance checker result"
+    />
+  </div>
+</div>
+
+**If you need help locating the block number** you want to search, see the methods below (applicable to Ethereum, using Etherscan). Similar routes will also apply to other EVM-compatible networks, such as BSC.
+
+Go via the account route:
+
+1. In the MetaMask Extension, click the account dropdown arrow and select the three vertical dots icon for the account you want to view on an explorer. Then, select "View on explorer":
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/reconciling-and-keeping-track-of-your-accounts/MetaMask_view_account_on_block_explorer_extension.gif")
+          .default
+      }
+      alt="MetaMask view account on block explorer extension"
+    />
+  </div>
+</div>
+
+On Mobile, hit the ellipses icon on the right side of the screen next to the account address and select 'View on Etherscan':
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/reconciling-and-keeping-track-of-your-accounts/MetaMask_view_account_on_block_explorer_mobile.gif")
+          .default
+      }
+      alt="MetaMask view account on block explorer mobile"
+    />
+  </div>
+</div>
+
+2. Find the transaction in your account's list. Its block number will be listed in the same row.
+
+Or go via the transaction route:
+
+1.  Locate the transaction:
+
+    - Extension: Access the 'Activity' tab and click on the relevant transaction.
+    - Mobile: Tap the hamburger icon and either select 'Transaction History', or select the token on your wallet landing page to view all its transactions.
+
+2.  Click/tap on the transaction and select 'View on Etherscan' (Mobile) or 'View on block explorer' (Extension).
+
+3.  The block will be listed on the Etherscan transaction page.
+
+## **Method 2: Downloading a spreadsheet (.csv) history of your wallet transactions**
+
+(for Ethereum mainnet)
+
+- Navigate to [Etherscan](https://etherscan.io/) and search for your [wallet address](/managing-my-wallet/accounts-and-addresses/how-to-copy-your-metamask-account-public-address-).
+- Scroll down to the bottom of the page, past all your transactions.
+- In the lower right-hand corner, there should be a link to "Download CSV Export":
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/reconciling-and-keeping-track-of-your-accounts/Reconciling_and_keeping_track_of_your_accounts_CSV_1.png")
+          .default
+      }
+      alt="Reconciling and keeping track of your accounts CSV"
+    />
+  </div>
+</div>
+
+- Click on this; you should be presented with a dialogue that allows you to specify the date range you're interested in looking at:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/accounts-and-addresses/reconciling-and-keeping-track-of-your-accounts/Etherscan_download_transactions_CSV.png")
+          .default
+      }
+      alt="Etherscan download transactions CSV"
+    />
+  </div>
+</div>
+
+- Fill out the dates and the captcha and click 'Download'.
+- You should have in your downloads location a file titled "export-" plus your wallet address. This file should have a complete listing of all transactions involving your wallet (except for internal transactions) for the timeframe you requested.
+
+See also our [article regarding tax compliance](/managing-my-wallet/tax-compliance-and-crypto-assets).

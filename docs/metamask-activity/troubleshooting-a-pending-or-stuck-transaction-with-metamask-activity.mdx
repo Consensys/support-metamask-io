@@ -1,0 +1,83 @@
+---
+title: Troubleshooting a pending or stuck transaction with MetaMask Activity
+image: >-
+  /img/socialCards/troubleshooting-a-pending-or-stuck-transaction-with-metamask-activity.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+### Is one of your recent transactions in MetaMask stuck or "pending"?
+
+Our pending transaction troubleshooting tool will help you take a closer look.
+
+First, you'll need the transaction hash, which is the unique identifier of the transaction. Here are our [instructions on how to find it](/transactions-and-gas/transactions/how-to-find-a-transaction-id).
+
+Once you have the hash, click on "Help with a pending transaction" on [activity.metamask.io](https://activity.metamask.io):
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/metamask-activity/troubleshooting-a-pending-or-stuck-transaction-with-metamask-activity/MMA_help_with_pending_transaction.png")
+          .default
+      }
+      alt="MMA help with pending transaction"
+    />
+  </div>
+</div>
+
+This is where you'll paste the transaction hash:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/metamask-activity/troubleshooting-a-pending-or-stuck-transaction-with-metamask-activity/MMA_paste_transaction_ID.png")
+          .default
+      }
+      alt="MMA paste transaction ID"
+    />
+  </div>
+</div>
+
+Next, select the network on which you submitted the transaction.
+
+Now click "View", and MetaMask Activity will search to determine the status of the transaction. Once the search is complete, you can see whether your transaction is successful, failed, or pending:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/metamask-activity/troubleshooting-a-pending-or-stuck-transaction-with-metamask-activity/MMA_transaction_pending2.png")
+          .default
+      }
+      alt="MMA transaction pending"
+    />
+  </div>
+</div>
+
+Stuck and pending transactions can have different solutions, and MetaMask Activity will present you with the right resources to guide you though any necessary next steps.
+
+If you're looking for more information about failed transactions, [start here](/transactions-and-gas/transactions/user-guide-transactions-and-failed-transactions).
+
+### If you have ideas for how we can continue to improve MetaMask Activity, please submit them via the feedback form at the bottom of the MetaMask Activity page.
+
+<div class="center-container">
+  <div class="img-large">
+    <a
+      href="https://consensys.deform.cc/mma-feedback/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src={
+          require("../../img/metamask-activity/known-issues-and-supported-browsers/mceclip0.png")
+            .default
+        }
+        alt="MetaMask ENS send example"
+      />
+    </a>
+  </div>
+</div>

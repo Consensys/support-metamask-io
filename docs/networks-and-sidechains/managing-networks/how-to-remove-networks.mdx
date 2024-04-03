@@ -1,0 +1,67 @@
+---
+title: How to remove networks
+image: /img/socialCards/how-to-remove-networks.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+As they're essentially instructions that point MetaMask in the correct direction (towards an RPC endpoint), all the networks you add are removable. Note that preloaded networks like Ethereum mainnet and Linea can't be removed.
+
+Follow the steps below for the platform you're using:
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. Click the network selector in the top left to bring up the list of networks you've previously added. Find the network you want to remove and click the cross that appears when you hover over it.
+
+2. Click 'Delete' on the menu that appears.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/managing-networks/how-to-remove-networks/MetaMask_remove_a_network_extension.gif")
+          .default
+      }
+      alt="MetaMask remove a network extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. Tap the gear icon in the tab bar to open settings.
+
+2. Find 'Networks' in the settings menu.
+
+3. You'll now see a list of the networks you've previously added to your MetaMask.
+
+   Tap on the network you want to remove to open further details, and then tap 'Delete' at the bottom of the screen.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/networks-and-sidechains/managing-networks/how-to-remove-networks/MetaMask_remove_a_network_mobile.gif")
+          .default
+      }
+      alt="MetaMask remove a network mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+If you need to re-add a network, just follow the same steps you used to add it originally: [via Chainlist](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) or [manually](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+
+Please note that testnets will be displayed automatically and cannot be removed. If you don't want to see them, there's a toggle in settings that allows you to hide them. See [here](/managing-my-wallet/using-metamask/how-to-view-testnets-in-metamask) for instructions.

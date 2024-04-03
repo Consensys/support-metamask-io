@@ -1,0 +1,326 @@
+---
+title: "Een custom RPC-netwerk toevoegen"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### Inhoud:
+
+- [Toevoegen via Chainlist](#toevoegen-via-chainlist)
+- [Snel populaire netwerken toevoegen](#populaire-netwerken-toevoegen)
+- [Netwerken handmatig toevoegen](#een-netwerk-handmatig-toevoegen)
+
+MetaMask heeft toegang tot veel meer netwerken dan alleen Ethereum-mainnet: je kunt elk EVM-compatibel netwerk toevoegen. Het initiaalwoord RPC staat voor 'remote procedure call', een reeks protocollen waarmee een client (zoals MetaMask) met een blockchain kan communiceren. Zonder een belangrijke technische tangens te introduceren, stelt het toevoegen van netwerkdetails via het onderstaande proces MetaMask in staat om een RPC te gebruiken waarmee je kunt communiceren met dat netwerk.
+
+#### Toevoegen via Chainlist
+
+Voor een eenvoudige manier om netwerken aan MetaMask toe te voegen, ga naar [chainlist.wtf](https://chainlist.wtf/), waar je MetaMask kunt verbinden en netwerken kunt toevoegen met slechts een paar klikken. Zie onze [handleiding](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) voor meer informatie.
+
+Houd er ook rekening mee dat **het toevoegen van een netwerk op het ene apparaat, niet betekent dat het op een ander apparaat ook wordt weergegeven** wanneer hetzelfde account wordt geopend. Het wordt niet automatisch aan je MetaMask-app toegevoegd als je het in de extensie toevoegt, en vice versa.
+
+Aangepaste netwerken moeten ook opnieuw worden toegevoegd, als je de browserextensie of mobiele app verwijdert (waarna je [je wallet moet herstellen](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) via je geheime herstelzin).
+
+:::info
+
+#### Waarom zie ik een vraagteken naast de netwerknaam nadat ik deze heb toegevoegd?
+
+Wanneer je een aangepast netwerk toevoegt aan MetaMask - d.w.z. elk ander netwerk dan Ethereum-mainnet - zie je een vraagtekenpictogram ernaast in de netwerkselector. Het ziet er zo uit:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/question_mark.png").default
+      }
+      alt="question_mark.png"
+    />
+  </div>
+</div>
+
+Maak je geen zorgen! Dit betekent niet dat het niet legitiem of niet veilig is om te gebruiken. Dit is het bedoelde gedrag en hoe elk netwerk dat je toevoegt zal verschijnen in MetaMask.
+
+:::
+
+## Populaire netwerken toevoegen
+
+Op zowel Mobiel als Extensie, kun je eenvoudig verschillende prominente netwerken toevoegen met slechts een tik. Deze omvatten:
+
+- [BNB Chain/BSC](/network-profiles/network-profile-bnb-smart-chain-bnb)
+- [Polygon](/network-profiles/network-profile-polygon-matic)
+- [Avalanche](/network-profiles/network-profile-avalanche-avax)
+- [Arbitrum](/network-profiles/network-profile-arbitrum)
+- [Optimism](/network-profiles/network-profile-optimism-op-mainnet)
+- [Palm](/network-profiles/network-profile-palm)
+- [Fantom](/network-profiles/network-profile-fantom-ftm)
+- [Harmony](/network-profiles/network-profile-harmony-one)
+- [Aurora](/network-profiles/network-profile-aurora-)
+- [Celo](https://celo.org/).
+
+Je kunt dit menu vinden met behulp van de volgende stappen:
+
+<Tabs>
+
+<TabItem value="Extensie" label="Extensie">
+
+Klik op de homepage van je wallet op de netwerkselector bovenaan het scherm en vervolgens op 'Netwerk toevoegen':
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={require("../../../../../../img/i18n/legacy/add_network.png").default}
+      alt="add_network.png"
+    />
+  </div>
+</div>
+
+Vanaf hier zou je een lijst met populaire netwerken moeten zien die je kunt toevoegen (tenzij je het netwerk al hebt toegevoegd). Tik op 'Toevoegen' om het proces te starten en volg de prompts.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/popular_networkis.png")
+          .default
+      }
+      alt="popular_networkis.png"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobiel" label="Mobiel">
+
+1. Tik op het hamburgerpictogram in de linkerbovenhoek van het scherm.
+
+2. Ga naar 'Instellingen' en vervolgens naar 'Netwerken'.
+
+3. Hier zie je een lijst met netwerken die je al hebt toegevoegd. Tik op de knop 'Netwerk toevoegen' onder aan het scherm.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/settings___network.PNG.png")
+             .default
+         }
+         alt="settings___network.PNG"
+       />
+     </div>
+   </div>
+
+4. Je zou nu een lijst met netwerken moeten zien die je kunt toevoegen onder het tabblad 'Populair', zoals hieronder wordt getoond.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/select_a_network.jpg.png")
+             .default
+         }
+         alt="select_a_network.jpg"
+       />
+     </div>
+   </div>
+
+5. Wanneer je ervoor kiest om een van deze toe te voegen, wordt je gevraagd om te bevestigen:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network_.PNG.png")
+             .default
+         }
+         alt="add_network_. PNG"
+       />
+     </div>
+   </div>
+
+   En dan krijg je de optie om direct naar dat netwerk te schakelen. Klaar!
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/switch_to_network.jpg.png")
+             .default
+         }
+         alt="switch_to_network.jpg"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+## Een netwerk handmatig toevoegen
+
+Gebruik de volgende instructies om handmatig deze verbindingen te maken:
+
+<Tabs>
+
+<TabItem value="Extensie" label="Extensie">
+
+1. Klik op de **knop netwerkselector**. Je krijgt een lijst te zien met netwerken waar je al verbinding mee hebt**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/networks_button.png")
+             .default
+         }
+         alt="networks_button.png"
+       />
+     </div>
+   </div>
+
+2. Klik op 'Netwerk toevoegen':
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network.png").default
+         }
+         alt="add_network.png"
+       />
+     </div>
+   </div>
+
+3. Er wordt een nieuw browsertabblad geopend, en er verschijnen verschillende velden om in te vullen**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/Screenshot_2022-02-10_at_10.08.31.png")
+             .default
+         }
+         alt="Screenshot_2022-02-10_at_10.08.31.png"
+       />
+     </div>
+   </div>
+
+   Vul de velden in, en klik op 'Opslaan' om het netwerk toe te voegen.
+
+   De gegevens voor de bovenstaande velden kun je vinden in onze [netwerkprofielen](/network-profiles/network-profiles-hub), maar ook in de ontwikkelaarsdocumentatie of in de handleidingen voor elk netwerk. Bijvoorbeeld:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Nadat je de bovenstaande stappen hebt uitgevoerd, krijg je het aangepaste netwerk te zien als je de netwerkselector een volgende keer opent.
+
+</TabItem>
+
+<TabItem value="Mobiel" label="Mobiel">
+
+1. Tik linksboven op het hamburger-icoontje:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_C8C734D64DE3-1.jpeg.png")
+             .default
+         }
+         alt="IMG_C8C734D64DE3-1.jpeg"
+       />
+     </div>
+   </div>
+
+2. Selecteer **Instellingen:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_129413D61F95-1.jpeg.png")
+             .default
+         }
+         alt="IMG_129413D61F95-1.jpeg"
+       />
+     </div>
+   </div>
+
+3. Selecteer **Netwerken:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_62D0A5FE63AE-1.jpeg.png")
+             .default
+         }
+         alt="IMG_62D0A5FE63AE-1.jpeg"
+       />
+     </div>
+   </div>
+
+4. Tik op '**Netwerk toevoegen**':
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_65A194E3EC35-1.jpeg.png")
+             .default
+         }
+         alt="IMG_65A194E3EC35-1.jpeg"
+       />
+     </div>
+   </div>
+
+5. Vul de gegevens in van het **custom RPC-netwerk**:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_E8F132CD40A6-1.jpeg.png")
+             .default
+         }
+         alt="IMG_E8F132CD40A6-1.jpeg"
+       />
+     </div>
+   </div>
+
+   De gegevens voor de bovenstaande velden kun je vinden in onze [netwerkprofielen](/network-profiles/network-profiles-hub), maar ook in de ontwikkelaarsdocumentatie of in de handleidingen voor elk netwerk. Bijvoorbeeld:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://docs.polygon.technology/docs/develop/network-details/network/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Nadat je de bovenstaande stappen hebt uitgevoerd, kun je het custom netwerk in de netwerkselector zien.
+
+</TabItem>
+
+</Tabs>

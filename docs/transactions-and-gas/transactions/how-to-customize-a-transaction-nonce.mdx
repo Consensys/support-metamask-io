@@ -1,0 +1,107 @@
+---
+title: How to customize a transaction nonce
+image: /img/socialCards/how-to-customize-a-transaction-nonce.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+## What is a nonce?
+
+The term 'nonce' is a [portmanteau](https://en.wikipedia.org/wiki/Portmanteau) of '**n**umber used **on**ly on**ce**': every single transaction you _send_ from your MetaMask wallet has one, and the number (starting with 0 for the first transaction you send) increases in increments of 1.
+
+Each transaction's nonce is an identifier that ensures your transactions are processed by the network in the correct order, preventing ['double spend' scenarios](https://support.mycrypto.com/general-knowledge/ethereum-blockchain/what-is-nonce/).
+
+In MetaMask, adjusting the nonce can be useful if you need to [speed up or cancel pending transactions](/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction).
+
+## How do I customize the nonce when sending a transaction?
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+Customizing the nonce isn't possible unless you enable it. To do so, head to settings by clicking the three vertical dots in the top right of your wallet, then go to Settings > Advanced:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-customize-a-transaction-nonce/MetaMask_customize_transaction_nonce_settings.png")
+          .default
+      }
+      alt="MetaMask customize transaction nonce settings"
+    />
+  </div>
+</div>
+
+Start to [send a transaction](/managing-my-tokens/moving-your-tokens/how-to-send-tokens-from-your-metamask-wallet) from your wallet. Enter the recipient address and the value, and click 'Next'. Before you confirm the transaction, you'll see a breakdown of the gas fees and other details that looks like this:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-customize-a-transaction-nonce/MetaMask_customize_transaction_nonce_transaction.png")
+          .default
+      }
+      alt="MetaMask_customize_transaction_nonce_transaction.png"
+    />
+  </div>
+</div>
+
+Click the 'Custom nonce' field to enter the number you need, and, when you're ready to submit the transaction, 'Confirm'.
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+Customizing the nonce isn't possible unless you enable it. To do so, head to settings by tapping the gear icon in the tab bar, and then going to the 'Advanced':
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-customize-a-transaction-nonce/MetaMask_customize_transaction_nonce_settings_mobile.png")
+          .default
+      }
+      alt="MetaMask customize transaction nonce settings mobile"
+    />
+  </div>
+</div>
+
+Start to [send a transaction](/managing-my-tokens/moving-your-tokens/how-to-send-tokens-from-your-metamask-wallet), and input the recipient's address and the value you want to send. Now tap 'Next', and you'll be taken to a screen that looks like this:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-customize-a-transaction-nonce/MetaMask_customize_transaction_nonce_transaction_mobile_1.png")
+          .default
+      }
+      alt="MetaMask customize transaction nonce transaction mobile"
+    />
+  </div>
+</div>
+
+When you tap the highlighted 'Edit' text next to the nonce field, you'll be able to customize it using the plus and minus buttons:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-customize-a-transaction-nonce/MetaMask_customize_transaction_nonce_transaction_mobile_2.png")
+          .default
+      }
+      alt="MetaMask customize transaction nonce transaction mobile"
+    />
+  </div>
+</div>
+
+Press'save' to confirm your choice.
+
+</TabItem>
+
+</Tabs>

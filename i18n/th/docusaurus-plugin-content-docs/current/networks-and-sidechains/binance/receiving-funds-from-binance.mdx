@@ -1,0 +1,77 @@
+---
+title: "การรับเงินทุนจาก Binance"
+---
+
+หากคุณได้ส่งเงินทุนจากบัญชีแลกเปลี่ยน Binance ของคุณไปยัง MetaMask และไม่เห็นเงินทุนเหล่านั้นภายในกระเป๋าเงินของคุณ เราขอแนะนำให้คุณปฏิบัติตามขั้นตอนเหล่านี้:
+
+## **ขั้นตอนที่ 1: ตรวจสอบธุรกรรมดังกล่าวบนตัวสำรวจบล็อกเชน**
+
+ก่อนอื่นคุณจะต้องตรวจสอบว่า เครือข่ายใดที่ Binance ใช้ในการดำเนินการธุรกรรมดังกล่าวให้เสร็จสมบูรณ์ คุณสามารถทำเช่นนั้นได้โดยการตรวจสอบรายละเอียดการถอนบน Binance:\
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Binance_network.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+จากนั้นคุณจะต้องไปที่ Explorer ของเครือข่าย นี่คือบางตัวอย่าง:
+
+- [Etherscan](https://etherscan.io/) สำหรับ Ethereum Mainnet
+- [Bscscan](https://bscscan.com/) สำหรับ BSC (Binance Smart Chain)
+- [Polygonscan](https://polygonscan.com/) สำหรับ Polygon
+- [Snowtrace](https://snowtrace.io/) สำหรับ Avalanche
+
+เมื่ออยู่บนตัวสำรวจบล็อกเชนนั้นแล้ว ให้ค้นหาที่อยู่ MetaMask ของคุณหรือค้นหา [รหัสธุรกรรม](/transactions-and-gas/transactions/how-to-find-a-transaction-id) เพื่อเรียกรายละเอียดของธุรกรรมดังกล่าวขึ้นมาและยืนยันว่ามีการดำเนินการเสร็จสมบูรณ์แล้ว
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Bscscan_address_overview.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+ในส่วนภาพรวมของหน้าบัญชีของคุณในตัวสำรวจบล็อก คุณจะสามารถดูยอดคงเหลือโทเค็นของคุณได้ หากโทเค็นดังกล่าวเป็นโทเค็นท้องถิ่น (BNB, ETH, MATIC, AVAX) โทเค็นนั้นจะปรากฏในส่วนยอดคงเหลือ (เช่นในภาพหน้าจอด้านบน)
+
+หากไม่ใช่โทเค็นท้องถิ่นแล้ว โทเค็นนั้นจะปรากฏในเมนูแบบเลื่อนลงในส่วน 'Token' (โทเค็น)
+
+## **ขั้นตอนที่ 2: เพิ่มเครือข่ายดังกล่าวไปยัง MetaMask และแสดงผลโทเค็นหากจำเป็น**
+
+หากต้องการเพิ่มเครือข่าย โปรดตรวจสอบคู่มือของเราเพื่อเพิ่มโดยใช้ [Chainlist](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) หรือ[ดูบทความของเราสำหรับการเพิ่มเครือข่ายแบบกำหนดเอง](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)
+
+หลังจากเพิ่มเครือข่าย หากโทเค็นของคุณไม่ใช่ Native Token ของเครือข่ายนั้น คุณจะต้อง[แสดงโทเค็นเป็นโทเค็นที่กำหนดเอง](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)
+
+บนตัวสำรวจบล็อกเชน ให้ไปที่ส่วนโทเค็นและคลิกที่โทเค็นที่คุณได้รับ:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Etherscan_BNB_contract_address.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+หากต้องการเพิ่มโทเค็นที่กำหนดไปยัง MetaMask คุณจะต้อง:
+
+1. คัดลอก Contract Address ของโทเค็น โปรดดู[ที่นี่](/managing-my-tokens/custom-tokens/what-is-a-token-contract-address)สำหรับคำแนะนำเพิ่มเติม โดยจำเป็นคุณต้องหาโทเค็นบน Block Explorer และรับที่อยู่จากที่นั่น
+2. ไปที่ MetaMask และค้นหา 'Import Tokens' (นำเข้าโทเค็น) ภายใต้แท็บ 'Assets' (สินทรัพย์) คุณอาจต้องเลื่อนหาเล็กน้อยกว่าจะพบโดยจะขึ้นอยู่กับจำนวนโทเค็นที่คุณได้เพิ่มไปแล้ว คลิกที่สิ่งนี้เพื่อเพิ่มโทเค็น ป้อนที่อยู่ของโทเค็น
+
+หากคุณได้ส่งโทเค็นไปผิดเครือข่าย คุณสามารถใช้สะพานเชื่อมเพื่อรับโทเค็นนั้นบนเครือข่ายที่ต้องการได้เสมอ
+
+คุณสามารถใช้ [Multichain](https://multichain.org/) (เดิมเป็น AnySwap) เพื่อเชื่อมต่อโทเค็นระหว่างเครือข่ายที่พบบ่อยที่สุด
+
+**โปรดทราบว่าการที่จะเชื่อมต่อโทเค็น คุณจะต้องมีเงินทุนใน Native Token ของเครือข่ายเพื่อที่จะจ่ายเงินค่าธรรมเนียมแก๊ส **ซึ่งเป็นสิ่งจำเป็นสำหรับทุกการทำธุรกรรมตัวอย่างเช่น บน BSC คุณจะต้องมี BNB บน Polygon คุณจะมี MATIC และสำหรับ Avalanche คุณจะต้องมี AVAX

@@ -1,0 +1,87 @@
+---
+title: My MetaMask Portfolio dashboard is inaccurate or not up to date
+image: >-
+  /img/socialCards/my-metamask-portfolio-dashboard-is-inaccurate-or-not-up-to-date.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Having issues with your balance in MetaMask?
+
+This article is specifically about the balances displayed in MetaMask Portfolio, at [portfolio.metamask.io.](https://portfolio.metamask.io/) For a guide on what to do if your MetaMask balance is incorrect, see [here](/troubleshooting/what-to-do-when-your-balance-of-tokens-is-incorrect). If tokens are missing completely, see [here](/managing-my-tokens/custom-tokens/a-token-is-missing-from-my-wallet) or [here](/managing-my-tokens/my-token-is-missing-a-price-or-fiat-value).
+
+:::
+
+We rely on various on-chain data solutions to provide the most accurate, up-to-date balance information for your dashboard. Sometimes, this balance may get out of sync due to a variety of reasons, including [chain reorganization](https://cointelegraph.com/explained/what-is-chain-reorganization-in-blockchain-technology), lag time in data indexing, or incorrect token pricing information. These issues will typically be resolved on their own in a short amount of time as our systems catch up to the latest chain activity.
+
+Even if your balance is out of sync:
+
+- Your actual on-chain token balance has not changed
+- No transactions have been made on your behalf.
+
+## What can I do in the meantime?
+
+Your dashboard balance will automatically update as the potential issues above are resolved and fresh data is available. If you want to accelerate the process, you can try to resync the balance of a specific token, or try a hard refresh, which affects all tokens displayed in your portfolio.
+
+Resyncing an individual token is quicker than a hard refresh, since much less data needs to be retrieved.
+
+<Tabs>
+
+<TabItem value="Resync one token" label="Resync one token">
+
+Head to the 'Token actions' button for the token whose balance you want to update, and then click 'Resync balance':
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/dashboard/my-metamask-portfolio-dashboard-is-inaccurate-or-not-up-to-date/MetaMask_Portfolio_resync_balance.png")
+          .default
+      }
+      alt="MetaMask Portfolio resync balance"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Hard refresh all tokens" label="Hard refresh all tokens">
+
+Head to Settings by clicking the account icon in the top-right of the dapp, and then select 'Accounts':
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/dashboard/my-metamask-portfolio-dashboard-is-inaccurate-or-not-up-to-date/MetaMask_Portfolio_find_account_settings.png")
+          .default
+      }
+      alt="MetaMask Portfolio find account settings"
+    />
+  </div>
+</div>
+
+Find the account whose balance you want to refresh and click the three vertical dots next to it when you mouseover. Once in the 'More actions' menu, you'll see the option to 'Resync balances'. Click it to refresh your balances.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/dashboard/my-metamask-portfolio-dashboard-is-inaccurate-or-not-up-to-date/MetaMask_Portfolio_resync_account_balance.png")
+          .default
+      }
+      alt="MetaMask Portfolio resync account balance"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>

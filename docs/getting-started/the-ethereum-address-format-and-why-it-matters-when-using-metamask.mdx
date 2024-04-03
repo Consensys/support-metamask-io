@@ -1,0 +1,51 @@
+---
+title: The Ethereum address format and why it matters when using MetaMask
+image: >-
+  /img/socialCards/the-ethereum-address-format-and-why-it-matters-when-using-metamask.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+When you create a MetaMask account, or [add a new account](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet) to your wallet, you're given a unique **public address**.
+
+On Ethereum and other networks compatible with the Ethereum Virtual Machine (EVM), **public addresses all share the same format: they begin with _0x_, and are followed by 40 alphanumeric characters **(numerals and letters), adding up to 42 characters in total. They're also *not *case sensitive.
+
+This address is a number, even though it also includes alphabetical characters. This is because the hexadecimal (base 16) system used to generate the address doesn't just use numerals, like our ten-digit decimal system. Instead, the hexadecimal system uses the numerals 0-9 *and *the letters A-F. This means it has 16 characters at its disposal, hence the name base _16_. In computer science and many programming languages, the 0x prefix is used at the start of all hex numbers, as they are known, to differentiate them from decimal values.
+
+## **How does this affect your daily use of MetaMask? **
+
+### Interoperability: use the same address on different networks
+
+As mentioned above, EVM-compatible networks all share the Ethereum address format. This is because they're generally 'hard forks', based heavily on Ethereum's design, or share key fundamentals. Not all are derived directly from Ethereum, though — many were developed separately and designed for compatibility. Reflecting much of the same architecture naturally lends itself to sharing address formats too.
+
+Due to these shared characteristics, you can use MetaMask to [interact with any other EVM-compatible network](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains) **using the same address**. This includes networks such as:
+
+- [Polygon](/network-profiles/network-profile-polygon-matic)
+- [BSC (BNB Chain)](/network-profiles/network-profile-bnb-smart-chain-bnb)
+- [Fantom](/network-profiles/network-profile-fantom-ftm)
+- [Avalanche (C-Chain)](/network-profiles/network-profile-avalanche-avax).
+
+Try it out: [add a network](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc) to MetaMask, or switch over from one you've already added. Notice how your account and its address stay the same. This means your MetaMask address on both Ethereum mainnet and BSC, for example, is exactly the same.
+
+However, the interplay of networks and tokens (particularly the question of [ERC-20 variants](/managing-my-tokens/user-guide-tokens) of native tokens) can be complex and is not without risk, so please always do your research before sending a transaction. A network's native tokens are unlikely to be interchangeable with the (ERC-20) version that you can send and receive on MetaMask, for example.
+
+For information on some of the most prominent EVM-compatible networks you can use with MetaMask, head to our [network profiles page](/network-profiles/network-profiles-hub). Follow the link to the network you're investigating to read more about bridging, tokens, and the nuances of its use.
+
+### Interacting with networks that have different address formats: be careful!
+
+:::warning
+
+#### tl;dr
+
+**Don't use MetaMask with any addresses that don't use the Ethereum format**, either when sending or receiving. This is in addition to the fact **you should never send tokens straight from one network to another without bridging**. (There are some cases where you won't lose them, but in most scenarios, you will.) You could, for instance, send tokens on Polygon to your MetaMask address, and be able to view them in MetaMask — presuming you have the Polygon network and the tokens themselves added. However, you would not be able to use these tokens on Ethereum, despite the ease with which you can switch over to mainnet in MetaMask. You'd need to bridge the tokens over separately.
+
+Check out our [Field Guide to Bridges](/networks-and-sidechains/field-guide-to-bridges) for more information.
+
+:::
+
+Whilst MetaMask is a flexible passport to accessing Ethereum and EVM-compatible chains, there are **some cases where you need to exercise caution** when it comes to address formats:
+
+- **EVM-compatible networks with different formats**. Just because a network is EVM-compatible does not necessarily mean it uses an *0x *address in all circumstances. The Harmony network, for example, is fully EVM-compatible, but [allows users to switch between an 0x and one1 version of their address](/network-profiles/network-profile-harmony-one) (although the number which follows this prefix is the same). Others, like Avalanche, have multiple chains with varying levels of EVM support ([you should only interact with Avalanche C-Chain on MetaMask](/network-profiles/network-profile-avalanche-avax)).
+- **Non-EVM-compatible networks: stay away**. As flexible as MetaMask is, you cannot interact with non-EVM-compatible networks on completely different blockchains. The most obvious example would be Bitcoin, whose address format is completely different. If the blockchain has nothing or little to do with Ethereum, it is unlikely to be usable with MetaMask.

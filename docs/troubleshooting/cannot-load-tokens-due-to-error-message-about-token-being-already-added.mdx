@@ -1,0 +1,33 @@
+---
+title: Cannot load tokens due to error message about token being already added
+image: >-
+  /img/socialCards/cannot-load-tokens-due-to-error-message-about-token-being-already-added.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+If you get an error about a token having already been added when trying to add a token, you can solve it through the following process:
+
+1. Right-click on the MetaMask Extension
+2. Select 'This Can Read and Change Site Data'
+3. Select 'On All Sites' instead of 'When You Click the Extension'
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/troubleshooting/cannot-load-tokens-due-to-error-message-about-token-being-already-added/MetaMask_read_change_data_on_all_sites.png")
+          .default
+      }
+      alt="MetaMask read and change data on all sites"
+    />
+  </div>
+</div>
+
+You may also need to close and re-open your browser, or try a different internet connection entirely.
+
+Note that this only applies to Chromium-based browsers (Chrome, Edge, Brave), and not Firefox. MetaMask Extension on Firefox is configured to request this permission as a requirement of use.
+
+If you continue to experience issues, [please contact MetaMask Support](/getting-started/how-to-contact-metamask-support).

@@ -1,0 +1,148 @@
+---
+title: Disconnect wallet from a dapp
+image: /img/socialCards/disconnect-wallet-from-a-dapp.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Looking to disconnect your wallet from a dapp?
+
+Below are the methods for both MetaMask Extension and MetaMask Mobile. For more detailed information about permissions surrounding dapps, see our User Guide [here](/third-party-platforms-and-dapps/user-guide-dapps), our [token approvals explainer](/transactions-and-gas/transactions/what-is-a-token-approval) or this [blog post](https://consensys.net/blog/metamask/the-seal-of-approval-know-what-youre-consenting-to-with-permissions-and-approvals-in-metamask/).
+
+:::danger
+
+#### Disconnecting vs. revoking approvals: **not the same thing**
+
+Following the steps below will only disconnect your wallet from the dapp. Depending on what it originally requested, this will prevent it from viewing your public address, wallet contents, transaction history, and even the ability to initiate transactions.
+
+It **will not revoke any [token approvals](/transactions-and-gas/transactions/what-is-a-token-approval)** that you have in place with that dapp, meaning that **even if you disconnect the dapp, it may still be able to access and move your tokens**. For more information on revoking approvals, see [this article](/privacy-and-security/how-to-revoke-smart-contract-allowances-token-approvals), or [our Twitter thread](https://twitter.com/MetaMask/status/1499848000549515265).
+
+:::
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. Within the Account view, click on the 3 dots button on the top right-hand corner.
+
+2. In the expanded menu, click on **Connected Sites.**
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/third-party-platforms-and-dapps/disconnect-wallet-from-a-dapp/MetaMask_Extension_find_connected_sites.gif")
+          .default
+      }
+      alt="MetaMask Extension find connected sites"
+    />
+  </div>
+</div>
+
+3. Click on the **Disconnect** next to any sites you wish to disconnect from:
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../img/third-party-platforms-and-dapps/disconnect-wallet-from-a-dapp/MetaMask_Extension_disconnect_from_site.png")
+             .default
+         }
+         alt="MetaMask Extension disconnect from site"
+       />
+     </div>
+   </div>
+
+   If you have multiple accounts connected to the same site, the option to remove connections from all of your accounts will appear when you click disconnect:
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../img/third-party-platforms-and-dapps/disconnect-wallet-from-a-dapp/MetaMask_extension_disconnect_all_accounts.png")
+             .default
+         }
+         alt="MetaMask extension disconnect all accounts"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+With version 6.0 of the app, we've improved how you manage dapp connections. You can now alter them specifically for each dapp, rather than erasing them all simultaneously. However, if you still want to disconnect from all sites simultaneously, click [here](#disconnecting-from-all-dapps-simultaneously) or scroll down.
+
+1. Open the browser and use the search bar or type the URL of the site whose permissions you want to manage:
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../img/third-party-platforms-and-dapps/disconnect-wallet-from-a-dapp/MetaMask_mobile_browser_tab.png")
+             .default
+         }
+         alt="MetaMask mobile browser tab"
+       />
+     </div>
+   </div>
+
+2. Once on the site, tap the account icon in the top right-hand corner:
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../img/third-party-platforms-and-dapps/disconnect-wallet-from-a-dapp/MetaMask_mobile_find_dapp_permissions.gif")
+             .default
+         }
+         alt="MetaMask mobile find dapp permissions"
+       />
+     </div>
+   </div>
+
+3. This will display which of your accounts are currently connected to the dapp. To manage this, tap 'Permissions' next to the site's URL.
+
+4. Tap 'Revoke' if you want to remove the connection between the dapp and a specific account, or 'Revoke all' to disconnect all of your accounts:
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../img/third-party-platforms-and-dapps/disconnect-wallet-from-a-dapp/MetaMask_mobile_disconnect.png")
+             .default
+         }
+         alt="MetaMask mobile disconnect accounts"
+       />
+     </div>
+   </div>
+
+To use these dapps in future, you must connect your account(s) again.
+
+### Disconnecting from all dapps simultaneously
+
+Head to **Settings > Security & Privacy > Clear privacy data** to remove, with one tap, any dapp connections/permissions in place for the currently selected account:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/third-party-platforms-and-dapps/disconnect-wallet-from-a-dapp/MetaMask_mobile_clear_privacy_data.gif")
+          .default
+      }
+      alt="MetaMask mobile clear privacy data"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**See also:**
+
+[Manually connecting to a Dapp](/third-party-platforms-and-dapps/manually-connecting-to-a-dapp/)

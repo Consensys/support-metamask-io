@@ -1,0 +1,66 @@
+---
+title: "Wat te doen als je tokensaldo niet klopt"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Verschijnen de tokens helemaal niet?
+
+Zie [hier](/managing-my-tokens/custom-tokens/a-token-is-missing-from-my-wallet) onze handleiding voor het oplossen van dit probleem.
+
+:::
+
+Controleer eerst de tokensaldi in de block explorer en vergelijk met MetaMask. Je doet dit door je wallet-adres te kopiëren en het te plakken in de block explorer die overeenkomt met het netwerk waarop je je bevindt: Etherscan voor Ethereum-mainnet, Arbiscan voor Arbitrum, enz. Voor gedetailleerde instructies, zie [hier](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer).
+
+<Tabs>
+
+<TabItem value="Extensie" label="Extensie">
+
+Als je MetaMask-extensie het onjuiste of onnauwkeurige saldo voor ETH of andere tokens weergeeft, probeer dan de onderstaande stappen één voor één tot je je saldo correct ziet.
+
+**Voordat je verder gaat, zorg ervoor dat je je [geheime herstelzin](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys) op een veilige plaats bewaart.**
+
+1. Controleer of je internetverbinding sterk en stabiel is. Zo niet, dan kan MetaMask mogelijk niet de juiste saldi laden.
+2. Sluit je browser waar je de MetaMask-extensie hebt geïnstalleerd en open deze opnieuw.
+3. Probeer alle advertentieblokkers die je hebt geïnstalleerd uit te schakelen, of, als je een VPN gebruikt, probeer MetaMask te gebruiken met deze uitgeschakeld.
+4. Schakel over naar een ander netwerk en weer terug. Klik daarvoor bovenaan de app op je huidige netwerk. Selecteer een ander netwerk en schakel vervolgens weer terug naar je oorspronkelijke netwerk.
+5. Zorg ervoor dat je niet met een [machtigingskwestie voor de browser](/troubleshooting/metamask-states-balance-may-be-outdated-displays-in-orange-or-eth-not-added-to-balance) te maken hebt.
+6. Probeer een andere RPC URL, als er meer dan één beschikbaar is voor het netwerk dat je gebruikt. Je kunt de RPC URL bewerken door te gaan naar Instellingen > Netwerk, en dan te klikken op het betreffende netwerk. Zie ons [artikel over het toevoegen van netwerken](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc) voor meer informatie.
+7. Installeer MetaMask met een andere ondersteunde browser (Firefox, Chrome, Brave, Edge) vanaf onze officiële website [https://metamask.io](https://metamask.io/) en probeer dan je wallet te herstellen met de 12-woorden geheime herstelzin voor het geval het probleem zich alleen voordoet in de browser die je momenteel gebruikt.
+
+</TabItem>
+
+<TabItem value="Mobiel" label="Mobiel">
+
+Zodra je op Etherscan hebt geverifieerd dat het aantal tokens dat wordt weergegeven in MetaMask Mobile onjuist is, volg dan deze stappen:
+
+1. Zorg ervoor dat je internetverbinding sterk en stabiel is. Als dat niet zo is, zijn de waarden van de tokens misschien niet actueel.
+2. Schakel over naar een ander netwerk en vervolgens weer terug.
+3. Wijzig waar mogelijk de RPC URL van het netwerk waarop je je bevindt naar een alternatief. Zie ons [artikel over het toevoegen van netwerken](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc) voor meer informatie.
+4. Verberg de token met [deze](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask) instructies en voeg dan de token opnieuw toe, volgens [deze](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask) instructies.
+
+**Als de token in kwestie een network native token is voor een ander netwerk dan Ethereum** (BNB, AVAX, MATIC, enz.), probeer dan [het netwerk te verwijderen](/networks-and-sidechains/managing-networks/how-to-remove-networks) en vervolgens [opnieuw toe te voegen](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+
+**Als de token in kwestie ETH is, zorg er dan voor dat je [geheime herstelzin](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys) op een veilige plaats is opgeslagen** en installeer de app opnieuw.
+
+</TabItem>
+
+</Tabs>
+
+Als je na het proberen van deze stappen nog steeds problemen ondervindt, neem dan contact met ons op via de knop 'Een gesprek beginnen' op onze [support pagina](https://support.metamask.io/hc/en-us).
+
+:::warning
+
+#### Heeft de token ingebouwde mechanismen die het aanbod of de waarde beïnvloeden?
+
+Ethereum en EVM-compatibele ketens herbergen een enorme verscheidenheid aan tokens met verschillende utilities. Sommige tokens zijn ontworpen om dynamisch van aanbod of waarde te veranderen onder verschillende omstandigheden:
+
+- [Rebase tokens](/managing-my-tokens/user-guide-tokens), waar het aanbod van tokens wordt aangepast
+- Tokens met "belastingen" die van toepassing zijn op transacties van verschillende aard (bijv. eenvoudige overdracht, ruil, verkoop, enz.). Deze worden soms aangeduid als 'fee on transfer'-tokens.
+
+Voordat je concludeert dat je saldo onjuist is, moet je nagaan of er soortgelijke voorwaarden gelden voor je token. Je kunt deze informatie meestal vinden door het witboek of de documentatie van het project te raadplegen.
+
+:::

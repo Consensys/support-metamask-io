@@ -1,0 +1,86 @@
+---
+title: "Cum să trimiți, să primești sau să încasezi un NFT?"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### Ai achiziționat recent un NFT și nu este vizibil în contul tău?
+
+Urmează pașii [de aici](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer) pentru a afla adresa contului tău pe Etherscan. În partea de jos a paginii, apasă pe secțiunea "NFT Transfers"; acolo vei vedea o listă cu toate NFT-urile pe care le deții, ordonate după data la care le-ai primit. Dacă apare pe Etherescan, atunci este și în portofelul tău. **Pentru mai multe informații despre NFT-urile din portofelul tău MetaMask, [vezi aici](/nfts/nft-tokens-in-your-metamask-wallet).**
+
+#### Ai vândut recent un NFT, iar tranzacția nu este vizibilă în contul tău?
+
+Adesea, procesul de vânzare al unui NFT se efectuează prin intermediul unui contract smart (un program blockchain), iar ca urmare, fondurile pe care le primești îți sunt livrate printr-o **_tranzacție internă,_ care nu apare în secțiunea de tranzacții din portofelul tău MetaMask**. Ca să verifici tranzacțiile interne, [localizează-ti adresa contului pe Etherscan](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer) și pe la jumătatea paginii apasă pe secțiunea "Internal transactions" ("Tranzactii interne"). Tranzacția ar trebui să fie acolo.
+
+O altă modalitate de a verifica fondurile primite în schimbul NFT-ului tău este [să îți verifici soldul](/managing-my-tokens/how-to-externally-verify-that-your-balance-is-correct).
+
+## Primirea unui NFT
+
+Atunci când achiziționezi un NFT, de obicei acesta este transferat automat prin intermediul unui marketplace. În caz contrar, urmează și verifică pașii pentru ca tranzacția să fie reușită:
+
+1. Oferă expeditorului adresa ta publică. Poți învăța cum să faci acest lucru [aici.](/managing-my-wallet/accounts-and-addresses/how-to-copy-your-metamask-account-public-address-)
+2. Asigură-te că ai destui tokeni nativi rețelei (ETH, MATIC, BNB, etc.) pentru a plăti taxa de gas.
+3. Cere expeditorului să trimită NFT-ul la adresa ta publică.
+4. [Vizualizează NFT-ul în portofelul tău MetaMask](/nfts/nft-tokens-in-your-metamask-wallet).
+
+Atâta timp cât ai selectat contul corespunzător în MetaMask, NFT-ul ar trebui să apară în secțiunea "NFT" din MetaMask.
+
+Există o serie de platforme pentru cumpărarea și vânzarea NFT-urilor și a tokenilor ERC-721: [Nifty's](https://niftys.com/), [OpenSea](https://opensea.io/), [Rarible](https://rarible.com/), [YellowHeart](https://yh.io/), etc.
+
+## Trimiterea unui NFT
+
+Trimiterea unui NFT (token ERC-721) în MetaMask este foarte similară cu trimiterea unui token convenţional (de obicei tokeni ERC-20, adesea denumiți doar monede sau crypto).
+
+Te rugăm să reții că **trimiterea NFT-urilor ERC-1155 nu este posibilă, nici în extensie și nici în aplicația MetaMask pentru mobil**. Vezi aici pentru mai multe informații: [MetaMask suportă ERC-1155?](/nfts/does-metamask-support-erc-1155)
+
+<Tabs>
+<TabItem value="Extensie" label="Extensie">
+
+Pentru a trimite NFT-uri în extensia MetaMask, trebuie să folosești versiunea v10.28.1 sau mai nouă.
+
+1. Navighează la secțiunea "NFT" de pe pagina principală și selectează NFT-ul dorit, pentru a completa următoarele detalii.
+
+2. Apasă pe butonul "Trimite" și introdu adresa destinatarului.
+
+3. Apasă "Continuă" când ești gata și verifică detaliile tranzacției. Apasă "Confirmare" pentru a trimite NFT-ul.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/i18n/legacy/MetaMask_Extension_send_NFT.gif")
+          .default
+      }
+      alt="MetaMask Extension send NFT"
+    />
+  </div>
+</div>
+
+</TabItem> 
+<TabItem value="Mobil" label="Mobil">
+
+1. Asigură-te că ai suficienți tokeni nativi rețelei pentru a plăti pentru tranzacție.
+2. Apasă pe secțiunea "NFT".
+3. Apasă pe iconița de NFT pe care dorești să-l trimiți.
+4. Apasă pe butonul "Send" ("Trimite") din partea de jos a ecranului:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/i18n/legacy/MetaMask_Mobile_Send_NFT.png")
+          .default
+      }
+      alt="MetaMask Mobile Send NFT"
+    />
+  </div>
+</div>
+
+5. Introdu adresa la care dorești să-l trimiți, apasă "Next" ("Mai departe") și urmează instrucțiunile.
+
+Pentru a afla mai multe despre gas și tranzacții [vezi aici](/transactions-and-gas/gas-fees/user-guide-gas); pentru a afla mai mult despre tipuri de tokeni, consultă [ghidul nostru](/managing-my-tokens/user-guide-tokens).
+
+</TabItem>
+
+</Tabs>

@@ -1,0 +1,130 @@
+---
+title: How do I stop staking and withdraw my validator balance?
+image: /img/socialCards/how-do-i-stop-staking-and-withdraw-my-validator-balance.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+You can exit your validator and withdraw your stake and any outstanding rewards at any time.
+
+You can only exit one validator at a time. Your validator will stop earning rewards once your validator has exited.
+
+1. Find the validator you want to exit and click the three vertical dots on the right of its entry.
+
+2. Select 'Withdraw total balance ':
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stop-staking-and-withdraw-my-validator-balance/MetaMask_Portfolio_validator_staking_withdraw_total_balance.png")
+          .default
+      }
+      alt="MetaMask Portfolio validator staking withdraw total balance"
+    />
+  </div>
+</div>
+
+3. Review the withdrawal, and click 'Confirm ' if you want to proceed.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stop-staking-and-withdraw-my-validator-balance/MetaMask_Portfolio_validator_staking_review_withdrawal.png")
+          .default
+      }
+      alt="MetaMask Portfolio validator staking review withdrawal"
+    />
+  </div>
+</div>
+
+If you have never withdrawn rewards for this validator before, you'll need to sign two transactions rather than one. The first will prepare your account address for withdrawal, and the other will effect the withdrawal.
+
+4. Sign the transaction in MetaMask. Back in MetaMask Portfolio, you'll be able to confirm that your transaction is in progress:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stop-staking-and-withdraw-my-validator-balance/MetaMask_Portfolio_transaction_in_progress.png")
+          .default
+      }
+      alt="MetaMask Portfolio transaction in progress"
+    />
+  </div>
+</div>
+
+Once the transaction is complete, your validator will enter the exit queue:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stop-staking-and-withdraw-my-validator-balance/MetaMask_Portfolio_transaction_complete.png")
+          .default
+      }
+      alt="MetaMask Portfolio transaction complete"
+    />
+  </div>
+</div>
+
+The duration of the exit queue depends on network activity — an estimate is displayed after you start the withdrawal, and can also be found at any time by mousing over (or tapping, on mobile) the 'Withdrawing ' status displayed next to the listed validator:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stop-staking-and-withdraw-my-validator-balance/MetaMask_Portfolio_withdrawing.png")
+          .default
+      }
+      alt="MetaMask Portfolio withdrawing"
+    />
+  </div>
+</div>
+
+5. Your withdrawn funds will not be immediately available — you'll need to return and claim them in MetaMask Staking once the withdrawal process is complete. When your balance is ready to claim, the validator's status will read 'Withdrawal complete ', and you'll see a 'Claim balance ' button:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stop-staking-and-withdraw-my-validator-balance/MetaMask_Portfolio_claim_balance.png")
+          .default
+      }
+      alt="MetaMask Portfolio claim balance"
+    />
+  </div>
+</div>
+
+Click this button to review details of the claim, then 'Confirm ' to prompt a transaction to sign in your wallet:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stop-staking-and-withdraw-my-validator-balance/MetaMask_Portfolio_review_claim.png")
+          .default
+      }
+      alt="MetaMask Portfolio review claim"
+    />
+  </div>
+</div>
+
+When finished, you'll see this message that your transaction is complete:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../img/metamask-portfolio/stake/validator-staking/how-do-i-stop-staking-and-withdraw-my-validator-balance/MetaMask_Portfolio_claim_transaction_complete.png")
+          .default
+      }
+      alt="MetaMask Portfolio claim transaction complete"
+    />
+  </div>
+</div>
+
+Once the claim transaction is confirmed on chain, your balance and rewards will be in your account.

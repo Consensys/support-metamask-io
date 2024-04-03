@@ -1,0 +1,77 @@
+---
+title: "Binanceから資金を受け取る"
+---
+
+Binance取引所のアカウントからMetaMaskに資金を送り、ウォレットに表示されない場合、以下の手順に従うことを推奨します。
+
+## **ステップ1：ブロックチェーンエクスプローラーでトランザクションを確認する**
+
+まず、Binanceがトランザクションを完了するために使用したネットワークを確認する必要があります。Binanceで出金の詳細を確認することで、それが可能です。\
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Binance_network.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+そのうえで、ネットワークのエクスプローラーに移動します。以下にいくつか例を示します。
+
+- Ethereum Mainnet用の[Etherscan](https://etherscan.io/)
+- BSC（Binance Smart Chain）用の[Bscscan](https://bscscan.com/)
+- Polygon用の[Polygonscan](https://polygonscan.com/)
+- Avalanche用の[Snowtrace](https://snowtrace.io/)
+
+ブロックチェーンエクスプローラーで、MetaMaskのアドレスを検索するか、[トランザクションID](/transactions-and-gas/transactions/how-to-find-a-transaction-id)を検索して、トランザクションの詳細を呼び出し、完了したことを確認します。
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Bscscan_address_overview.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+ブロックエクスプローラーでアカウントのページの概要セクションで、トークンの残高を確認することができます。トークンがネイティブトークン（BNB、ETH、MATIC、AVAX）である場合は、残高セクションに表示されます（上のスクリーンショットを参照）。
+
+ネイティブトークンでない場合、「Token」（トークン）セクションのドロップダウンメニューに表示されます。
+
+## **ステップ2：MetaMaskにネットワークを追加し、必要に応じてトークンを表示します。**
+
+ネットワークを追加するには、[Chainlist](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist)を使用して追加する際についてのガイド、あるいは[カスタムネットワークを追加する際についての記事](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)を確認してください。
+
+ネットワークを追加後、あなたのトークンがそのネットワークのネイティブトークンでない場合、[カスタムトークンとして表示](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)する必要があります。
+
+ブロックチェーンエクスプローラーで、「Token」（トークン）セクションに進み、受け取ったトークンをクリックしてください。
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Etherscan_BNB_contract_address.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+MetaMaskにカスタムトークンを追加するには、以下の手順が必要です。
+
+1. トークンのコントラクトアドレスをコピーします。より詳細なガイダンスについては[こちら](/managing-my-tokens/custom-tokens/what-is-a-token-contract-address)をご覧ください。基本的に、ブロックエクスプローラーでトークンを確認し、そこからそのアドレスを取得する必要があります。
+2. MetaMaskに移動し、「Assets」（資産）タブの「import tokens」（トークンをインポート）を確認します。追加済みのトークン数によっては、確認するのに少しスクロールする必要があるかもしれません。これをクリックしてトークンを追加し、アドレスを入力します。
+
+間違ったネットワーク上でトークンを送信してしまった場合、いつでもブリッジを使用して目的のネットワーク上にそのトークンを取得することができます。
+
+[Multichain](https://multichain.org/)（以前のAnySwap）を使用して最も一般的なネットワーク間でトークンをブリッジすることができます。
+
+**トークンをブリッジするには、ガス手数料を払うためにネットワークのネイティブトークンで資金を保有しておく必要があります。**これらはあらゆるトランザクションで必要です。例えば、BSCではBNBが、PolygonではMATICが、AvalancheではAVAXが必要です。

@@ -1,0 +1,82 @@
+---
+title: "Comment supprimer un compte de votre portefeuille MetaMask ?"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+### **Vous ne pouvez supprimer que les comptes importés** et les comptes externes que vous avez importés avec des clés privées ou JSON (comme un portefeuille matériel).
+
+Les comptes que vous avez ajoutés en utilisant le bouton « Créer un compte » dans MetaMask ne peuvent pas être supprimés. Voir [ci-dessous](#comment-supprimer-les-comptes-créés) pour plus d'informations et une solution potentielle.
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+Naviguez vers **Mes comptes** en cliquant sur l'identicon de compte en haut à droite. Vous verrez ici tous les comptes que vous avez importés ; ils ont généralement une étiquette à côté du nom.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_extension_iported_wallet_tag.png")
+          .default
+      }
+      alt="MetaMask_extension_iported_wallet_tag.png"
+    />
+  </div>
+</div>
+
+Cliquez ou appuyez sur le compte importé et la vue du compte s'ouvrira. Appuyez ou cliquez sur le menu à 3 points verticaux sur la droite. La liste déroulante apparaît, y compris l'option « **Supprimer le compte** » :
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet.gif")
+          .default
+      }
+      alt="how_to_remove_an_account_from_your_metamask_wallet.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. Appuyez sur le nom de votre compte pour afficher l'écran du sélecteur de compte. Le compte que vous avez actuellement sélectionné importe peu.
+
+   Sur cet écran, faites défiler jusqu'à ce que vous trouviez le compte importé que vous souhaitez supprimer. Il devrait être facilement identifiable par l'étiquette « Importé » à côté.
+
+2. Appuyez longuement sur le compte pour faire apparaître l'option permettant de le supprimer. Il disparaîtra immédiatement de votre MetaMask lorsque vous confirmerez.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet_mobile.gif")
+             .default
+         }
+         alt="how_to_remove_an_account_from_your_metamask_wallet_mobile.gif"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+:::info
+
+#### Comment supprimer les comptes créés ?
+
+Il est actuellement impossible de supprimer les comptes [créés](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet), ceux qui apparaissent comme « Compte 2 », etc. lorsque vous cliquez sur « Créer un compte ». Si vous souhaitez vraiment les supprimer, vous devrez supprimer MetaMask de votre appareil (Extension ou Mobile), réinstaller, puis [restaurer en utilisant votre phrase de récupération secrète](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase). Cependant, **NE LE FAITES PAS si vous n'avez pas votre phrase de récupération secrète**. Sans elle, vous ne pourrez pas accéder à votre portefeuille lorsque vous effectuerez la réinstallation. Si vous faites cela, n'oubliez pas les éléments suivants :
+
+- Cela ne _supprimera_ pas le compte, mais il ne sera plus visible dans MetaMask ; une fois créée, votre adresse est définitivement sur la blockchain et [ne peut pas être supprimée](/managing-my-wallet/resetting-deleting-and-restoring/how-can-i-delete-my-metamask-wallet).
+- Lorsque vous restaurez en utilisant votre phrase de récupération secrète, MetaMask ajoutera automatiquement les comptes précédemment créés s'ils détiennent des ETH. Voir [ici](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) pour plus d'informations.
+- Tous les comptes ou les portefeuilles matériels importés seront supprimés en même temps. Assurez-vous d'avoir sauvegardé leur clé privée/seed phrase (ou phrase de récupération secrète s'il s'agit d'un autre compte MetaMask), ou vous ne pourrez plus y accéder.
+
+:::

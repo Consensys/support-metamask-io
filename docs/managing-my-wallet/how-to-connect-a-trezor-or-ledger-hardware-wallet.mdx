@@ -1,0 +1,138 @@
+---
+title: How to connect a Trezor or Ledger Hardware Wallet
+image: /img/socialCards/how-to-connect-a-trezor-or-ledger-hardware-wallet.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+:::info[Hardware Wallet Hub]
+
+This article is being retained for reference purposes -- please refer primarily to our [Hardware Wallet Hub](/privacy-and-security/hardware-wallet-hub) for guidance.
+
+:::
+
+:::warning
+
+As of Chrome version 91, the API that enabled our Ledger support (U2F) no longer supports hardware wallets. MetaMask has implemented a new Ledger Live support that allows you to continue to connect to your Ledger device via the Ledger Live desktop app.
+
+:::
+
+MetaMask allows you to connect a Trezor or Ledger wallet. This allows you to:
+
+- Check your account balance (ETH or Tokens).
+- Sign transactions — e.g. send ETH and ERC20 tokens and collectibles (NFTs), deploy contracts, etc.
+- Sign messages
+
+**Why connect your hardware wallet to MetMask?** Some sites may have integration with MetaMask but not with Trezor or Ledger wallets yet. Connecting your wallet with MetaMask, allows you to interact with those sites now! In addition, this helps developers, as it gives their users more options with less development work on their end.
+
+**_For Chrome v91:_**
+
+Make sure you have Ledger Live app installed with your Ledger accounts visible.
+
+Then, to enable Ledger Live support w/MetaMask, go to **Settings > Advanced > Use Ledger Live**
+
+**NOTE:** If the integration with Ledger Live does not work, you can install MetaMask on Firefox to connect via U2F. Continue with the instructions below for those steps.
+
+**_For Firefox and Chrome v90 or older:_**
+
+**How do I connect my Trezor or Ledger Hardware Wallet?**
+
+Before you start, make sure you have
+
+- _the most up-to-date firmware on your Ledger or Trezor device_
+
+- _up-to-date browser_
+
+- _up-to-date Ethereum App on the Ledger (from Ledger Live > Manager)_
+
+- _"blind signing" enabled on the device (if needed for what you are doing)_
+
+- _Ledger Live app closed_
+
+- _the device plugged in via USB, NOT Bluetooth _
+
+- _the device unlocked and in the Ethereum app_
+
+- _Your Ledger's connection to MetaMask can be broken due to your browser cache -- try clearing it if any problems arise_
+
+- _Windows 10 security popup? [Try this fix](https://support.ledger.com/hc/en-us/articles/360020669680-Solutions-for-the-Windows-10-security-pop-up)_
+
+- **_Still having trouble connecting?_**
+
+  - **_[Ledger Support](https://support.ledger.com/hc/en-us/articles/115005165269)_**
+  - [Trezor Support](https://trezor.io/support/technical/)
+
+1\. Unlock your MetaMask
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/managing-my-wallet/how-to-connect-a-trezor-or-ledger-hardware-wallet/Screen_Shot_2018-12-06_at_2.23.47_PM.png")
+          .default
+      }
+      alt="Screen_Shot_2018-12-06_at_2.23.47_PM.png"
+    />
+  </div>
+</div>
+
+2\. Select the icon on the top-right corner
+
+3\. Select Connect Hardware Wallet
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/managing-my-wallet/how-to-connect-a-trezor-or-ledger-hardware-wallet/Screen_Shot_2018-12-06_at_2.24.02_PM.png")
+          .default
+      }
+      alt="Screen_Shot_2018-12-06_at_2.24.02_PM.png"
+    />
+  </div>
+</div>
+
+4\. Choose **Ledger** or **Trezor**
+
+5\. Click **connect**
+
+6\. Select an account you want to interact with (note: MetaMask can only have one account connected and accessible at any given time)
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/managing-my-wallet/how-to-connect-a-trezor-or-ledger-hardware-wallet/Screen_Shot_2018-12-07_at_1.12.32_PM.png")
+          .default
+      }
+      alt="Screen_Shot_2018-12-07_at_1.12.32_PM.png"
+    />
+  </div>
+</div>
+
+Once you successfully connect your account, it will behave just like any other MetaMask account, with the difference that you need to have your wallet plugged in for signing transactions or messages.
+
+If later you want to remove the connected account, simply click the X next to it on the account list menu (MetaMask will remember your account name and transaction history if you reimport that account in the future).
+
+**What if I cannot find the account that I'm looking for?**
+
+If you previously used an account and would like to connect it to MetaMask, make sure you view multiple pages of accounts on BOTH derivation paths (Ledger Live and Legacy).
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/managing-my-wallet/how-to-connect-a-trezor-or-ledger-hardware-wallet/mceclip0.png")
+          .default
+      }
+      alt="mceclip0.png"
+    />
+  </div>
+</div>
+
+**Why is my MetaMask address/account not listed when I connect my Trezor?**\
+When you connect your Trezor wallet and the list of addresses/accounts displays, these are addresses/accounts associated with only your Trezor, not your MetaMask wallet.
+
+To use the benefits and features of a hardware wallet, you will need to use one of your Trezor addresses/accounts, not your MetaMask address/account.

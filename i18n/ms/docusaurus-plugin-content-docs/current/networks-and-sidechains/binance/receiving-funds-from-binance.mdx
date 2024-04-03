@@ -1,0 +1,77 @@
+---
+title: "Menerima dana daripada Binance"
+---
+
+Jika anda telah menghantar dana daripada akaun pertukaran Binance anda ke MetaMask dan tidak dapat melihatnya dalam dompet anda, kami mengesyorkan anda mengikuti langkah berikut:
+
+## **Langkah 1: Semak transaksi pada blok rantai penjelajah**
+
+Mula-mula anda perlu menyemak rangkaian Binance yang digunakan untuk menyelesaikan transaksi. Anda boleh melakukannya dengan menyemak butiran pengeluaran pada Binance:\
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Binance_network.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Kemudian anda perlu pergi ke penjelajah rangkaian tersebut. Berikut ialah beberapa contoh:
+
+- [Etherscan](https://etherscan.io/) untuk rangkaian utama Ethereum
+- [Bscscan](https://bscscan.com/) untuk BSC (Rantaian Pintar Binance)
+- [Polygonscan](https://polygonscan.com/) untuk Polygon
+- [Snowtrace](https://snowtrace.io/) untuk Avalanche
+
+Setelah menggunakan blok rantai penjelajah, sama ada mencari alamat MetaMask anda atau untuk [ID transaksi](/transactions-and-gas/transactions/how-to-find-a-transaction-id) untuk memanggil butiran transaksi dan mengesahkan bahawa ia telah selesai.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Bscscan_address_overview.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Pada bahagian gambaran keseluruhan halaman akaun anda dalam penjelajah blok, anda akan dapat melihat baki token anda. Jika token ialah token natif (BNB, ETH, MATIC, AVAX) ia akan muncul dalam bahagian baki (seperti dalam tangkapan skrin di atas).
+
+Jika ia bukan token natif, ia akan muncul pada menu ke bawah di bahagian Token.
+
+## **Langkah 2: Tambahkan rangkaian pada MetaMask dan paparkan token jika perlu**
+
+Untuk menambah rangkaian, sila semak panduan kami tentang penambahan menggunakan [Senarai Rantaian](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist), atau [artikel kami tentang penambahan rangkaian tersuai](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+
+Selepas menambah rangkaian, jika token anda bukan token asli rangkaian tersebut, anda akan perlu [memaparkannya sebagai token tersuai](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask).
+
+Pada penjelajah blok rantai, pergi ke bahagian Token dan klik pada token yang telah diterima:
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../../img/networks-and-sidechains/binance/receiving-funds-from-binance/Etherscan_BNB_contract_address.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+Untuk menambah token tersuai ke MetaMask, anda perlu:
+
+1. Salinkan alamat kontrak token. Lihat [di sini](/managing-my-tokens/custom-tokens/what-is-a-token-contract-address) untuk panduan lanjut; pada asasnya, anda perlu mencari token tersebut pada penjelajah blok dan mendapatkan alamatnya dari sana.
+2. Pergi ke Metamask dan cari 'token import' di bawah tab 'Aset'. Bergantung pada jumlah token yang telah ditambahkan, anda mungkin perlu menatal sedikit untuk menjumpainya. Ketik padanya untuk menambah token dan masukkan alamatnya.
+
+Jika anda telah menghantar token di rangkaian yang salah, anda sentiasa boleh menggunakan jambatan untuk mendapatkan token tersebut di rangkaian yang diinginkan.
+
+Anda boleh menggunakan [Multichain](https://multichain.org/) (dulu AnySwap) untuk menghubungkan token antara rangkaian yang paling biasa dipakai.
+
+**Dimaklumkan bahawa, untuk menghubungkan token, anda perlu mempunyai dana dalam bentuk token asli rangkaian tersebut untuk membayar fi gas. **Ini diperlukan untuk sebarang transaksi. Sebagai contoh, di BSC anda akan perlukan BNB, di Polygon anda akan perlukan MATIC, dan untuk Avalanche anda perlukan AVAX.

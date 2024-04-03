@@ -1,0 +1,82 @@
+---
+title: "Come rimuovere un account dal portafoglio MetaMask"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+### **Puoi rimuovere solo account importati** e account esterni importati con chiavi private o JSON (ad esempio un portafoglio hardware).
+
+Gli account che hai aggiunto utilizzando il pulsante "Crea account" in MetaMask non possono essere rimossi. Vedi [sotto](#come-faccio-a-rimuovere-gli-account-creati) per ulteriori informazioni e per un potenziale rimedio.
+
+<Tabs>
+
+<TabItem value="Estensione" label="Estensione">
+
+Vai su **Miei account** facendo clic sull'identicon dell'account in alto a destra. Qui vedrai tutti gli account che hai importato; di solito hanno un'etichetta accanto al nome.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_extension_iported_wallet_tag.png")
+          .default
+      }
+      alt="MetaMask_extension_iported_wallet_tag.png"
+    />
+  </div>
+</div>
+
+Fai clic o tocca l'account importato per la aprire la visualizzazione dell'account. Tocca o fai clic sul menu con 3 puntini verticali a destra. Viene visualizzato il menu a discesa che include l'opzione **Rimuovi account**:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet.gif")
+          .default
+      }
+      alt="how_to_remove_an_account_from_your_metamask_wallet.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="App mobile" label="App mobile">
+
+1. Tocca il nome del tuo account per visualizzare la schermata di selezione dell'account. Non importa quale account hai selezionato attualmente.
+
+   In questa schermata, scorri fino a trovare l'account importato che vuoi rimuovere. Dovrebbero essere facilmente identificabili, visto che hanno un'etichetta che dice "Imported".
+
+2. Premi a lungo sull'account per visualizzare l'opzione per rimuoverlo. Scomparirà immediatamente da MetaMask dopo la tua conferma.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet_mobile.gif")
+             .default
+         }
+         alt="how_to_remove_an_account_from_your_metamask_wallet_mobile.gif"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+:::info
+
+#### Come faccio a rimuovere gli account creati?
+
+Al momento non è possibile rimuovere gli account [creati](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet), ovvero quelli che appaiono come "Account 2" ecc. quando fai clic su "Crea account". Se vuoi davvero rimuoverli, dovrai rimuovere MetaMask dal tuo dispositivo (estensione o app mobile), reinstallarli e infine [ripristinarli utilizzando la tua frase di backup segreta](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase). Tuttavia, **NON eseguire l'operazione se non hai la tua frase di backup segreta**. Senza questa frase, non sarai in grado di accedere al tuo portafoglio quando lo reinstalli. Se decidi di rimuoverli, tieni presente quanto segue:
+
+- Questa operazione non _eliminerà_ l'account, ma lo renderà invisibile su MetaMask: quando crei un indirizzo rimane sulla blockchain in modo permanente e [non può essere rimosso](/managing-my-wallet/resetting-deleting-and-restoring/how-can-i-delete-my-metamask-wallet).
+- Quando esegui il ripristino utilizzando la tua frase di backup segreta, MetaMask aggiunge automaticamente nuovamente gli account creati in precedenza se contengono ETH. Leggi [qui](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) per ulteriori informazioni.
+- Eventuali account importati e/o portafogli hardware verranno rimossi contemporaneamente. Assicurati di aver eseguito il backup della loro frase chiave/seme privata o della frase di backup segreta se è un account MetaMask, altrimenti non sarai più in grado di accedervi.
+
+:::

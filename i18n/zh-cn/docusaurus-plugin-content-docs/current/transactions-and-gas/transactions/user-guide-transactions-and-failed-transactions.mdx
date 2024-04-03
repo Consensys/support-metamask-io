@@ -1,0 +1,89 @@
+---
+title: "用户指南：交易和失败的交易"
+---
+
+:::note
+
+#### 加密货币和 web3 的新手？
+
+前往 [MetaMask Learn](https://learn.metamask.io/) 获得专为 web3 新手设计的直接学习体验。完全免费，提供多种语言版本，并包含有用的工具，例如模拟，帮助您熟悉 MetaMask。
+
+:::
+
+#### _本文包含交易相关资源的解释和链接，以及交易失败的原因，常见交易失败情景的链接，以及修复方法：_
+
+- [区块链交易剖析](#区块链交易剖析)
+- [常见问题](#出错)
+- [主要修复](#解决问题)
+- [更多资源和后续步骤](#后续步骤)
+- [常见问题解答](#常见问题解答)
+
+## **区块链交易剖析**
+
+谈到公共区块链网络上的“交易”，通常是指两个地址之间的交互；换句话说，就是代币（无论是否同质化），或是从一个地址“发送”到另一个地址的其他加密资产。还有一些交易称为“内部交易”，是指智能合约之间的交互，基本上不在本文讨论范围之内。
+
+#### 想要更多信息？
+
+有关区块链网络及其一般工作原理的更多信息，请查看[此处的介绍文章](https://metamask.zendesk.com/hc/en-us/articles/360015489611-Learn-the-basics-of-blockchains-and-Ethereum-miners-and-validators-gas-cryptocurrencies-and-NFTs-block-explorer-networks-etc-)。如果您遇到不熟悉的单词，可[随时查询词汇表](https://consensys.net/knowledge-base/a-blockchain-glossary-for-beginners/)。
+
+为了清楚起见，实际并未发生所谓的*发送*。像以太坊这样支持智能合约的区块链网络有许多不同的组件或功能。其中之一就是我们所说的“计算机”：以太坊虚拟机 (EVM)，能够运行程序（“智能合约”）。然而，系统的“主干”是一个*分布式账本*：**比如一个电子表格，一方面包含每个以太坊钱包地址，而每个地址都有一个列，代表其持有的每种加密资产。**
+
+举例说明。假设 Guillaume 想给 Dolores 发送一笔交易。Guillaume 的账户里有 1.36 个 ETH，他打算给 Dolores 发送 0.5 个 ETH。即使在熊市中，对 Dolores 来说也是美好的一天。
+
+Guillaume 打开 MetaMask 钱包，输入 Dolores 的地址，设置 gas 费参数，然后点击“发送”。
+
+此时，交易进入本地临时持有状态，称为本地内存池**。然后交易将由网络中最近的节点“拾取”；根据 Guillaume 的 [gas 设置](https://metamask.zendesk.com/hc/en-us/articles/360022895972-Using-advanced-gas-controls)，他的交易将得到优先处理（**Guillaume 愿意为每[每单位 gas](https://metamask.zendesk.com/hc/en-us/articles/4404600179227-User-Guide-Gas) 支付的费用越多，交易处理速度就越快**），并传播到网络中的其他节点。节点将验证 Guillaume 是否有 ETH 可供支出，然后实际执行“交易”：**修改分类账；从 Guillaume 的余额中扣除 0.5 ETH，并存入 Dolores 的账户。
+
+*“冥冥有手写天书，彩笔无情挥不已，流尽人间泪几千，不能洗去半行字”：*ETH 本身并非在网络中移动；这不是从 Guillaume 的电脑发送电子邮件到 Dolores 的 MetaMask 收件箱或诸如此类。Guillaume 向以太坊网络发送了一个请求（**在 MetaMask 中经[私钥验证](https://metamask.zendesk.com/hc/en-us/articles/4404722782107-User-guide-Secret-Recovery-Phrase-password-and-private-keys)**），从其账户扣款并存入 Dolores 的账户，在验证过程编程到网络协议后，交易完成。
+
+#### _这就是交易的全部内容：即向分类账提出请求，将某物从某个地址重新分配到另一个地址。_
+
+## **出错**
+
+出错的原因有很多。通常，MetaMask 本质就是软件：MetaMask 发生了故障，或者您试图使用的网络存在配置错误；出现连接错误。
+
+一个**常见的问题是，用户为了降低交易费用，设置了非常低的 gas 限额**，并且网络条件非常拥挤，以至于区块中没有空间容纳此种“廉价”交易，有时会持续很长一段时间：最终，交易“丧失时效”，用户不得不取消。
+
+**如果您已发送交易但尚未最终完成**，则在 MetaMask 中显示为“待处理”。
+
+**如果您发送了一笔交易，但失败了，最可能的原因是缺乏 gas**：您“用完了 gas”，换句话说，交易有 gas 费，再乘以 gas 价格，导致网络原生货币的总量大于您钱包里的货币。
+
+#### 信息
+
+有关 Gas 计算[的](https://metamask.zendesk.com/hc/en-us/articles/4404600179227-User-Guide-Gas)更多信息，请在此处查阅我们的 Gas 指南。
+
+发生这种情况的原因有很多，但重点在于您要执行的交易是什么。在网络流量高峰期铸造 NFT 可能会消耗大量 gas； 如果您正在尝试一项新交易或实验交易，那么可以在测试网上尝试，之后再支付实际网络费用。
+
+## **解决问题**
+
+### **关键因素 #1：本地还是向网络广播**
+
+在诊断交易问题时，尤其是待处理交易，您需要查看该交易是否仍在本地内存池中，还是已进入网络，因某种原因而停滞不动。如果交易在本地内存池中，解决方案非常简单，即锁定和解锁 MetaMask 钱包（**确保您知道密码，并在之前备份了助记词**）。如果交易进入了网络，解决方案或会较为复杂。
+
+有关解决这些问题的更多信息，请参阅以下链接。
+
+### **关键因素 #2：随机数**
+
+这个词可能意味着几种不同的东西。它是“number only used once（数字仅用一次）”的缩写，在本文中，它大致表示“交易编号”，从发送地址做出的第一笔交易开始。例如，如果您从不同的 MetaMask 实例（同时具有相同的钱包地址）触发两笔不同的交易，则会真正陷入麻烦。**地址的交易根据随机数按顺序递增。**但是，正如随机数能够导致交易停滞一样，随机数也是解除交易停滞状态的关键。
+
+有关该技术的更多信息，请[参阅此处](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-Speed-Up-or-Cancel-a-Pending-Transaction)。
+
+## **后续步骤**
+
+### _如果您有失败或待处理的交易，请查阅以下资源以获得帮助。_
+
+#### [如何从 MetaMask 钱包发送代币](https://metamask.zendesk.com/hc/en-us/articles/360015488931)
+
+#### [如何加快或取消待处理的交易](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-Speed-Up-or-Cancel-a-Pending-Transaction)
+
+#### [为什么交易因“Gas 耗尽”错误而失败？](https://metamask.zendesk.com/hc/en-us/articles/360038849792-Why-did-my-transaction-fail-with-an-Out-of-Gas-error-How-can-I-fix-it-)
+
+#### [Uniswap 故障排除](https://metamask.zendesk.com/hc/en-us/articles/360053394291-Uniswap-support-and-troubleshooting-tips)
+
+#### [用户指南：Gas](https://metamask.zendesk.com/hc/en-us/articles/4404600179227-User-Guide-Gas)
+
+#### [是否可以撤销已确认的交易？](https://metamask.zendesk.com/hc/en-us/articles/360059957352-Can-I-reverse-an-already-confirmed-transaction-)
+
+## **常见问题解答**
+
+#### *问：我钱包中的一个账户有待处理或排队中的交易。是否可以从同一钱包内的其他账户开始另一笔交易？*答：是的，可以。随机数按账户计算，而非按钱包计算。

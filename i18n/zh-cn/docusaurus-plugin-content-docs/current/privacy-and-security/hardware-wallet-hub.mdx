@@ -1,0 +1,74 @@
+---
+title: "硬件钱包中心"
+---
+
+### MetaMask 目前支持五款硬件钱包：AirGap Vault、Keystone、Lattice、Ledger 和 Trezor。这些钱包在扩展版上受到支持，并且可以在未来的更新中添加到移动版中。
+
+:::info
+
+#### 我是在正确的地方吗？
+
+如果您正在寻找有关什么是硬件钱包以及为什么应该拥有硬件钱包的解释，请继续阅读。
+
+如果您正在寻找有关您特定硬件钱包的支持，请向下滚动到相应部分。
+
+如果您是首次设置硬件钱包，**请参阅我们的[用户指南](/privacy-and-security/user-guide-how-to-use-a-hardware-wallet)，了解我们的推荐配置。**
+
+:::
+
+####
+
+## 什么是硬件钱包？为什么应该拥有硬件钱包？
+
+了解硬件钱包就意味着稍微了解一下以太坊的“内部机制”。我们首先看一下钱包的真正含义。首先，这是一个直观的概念：硬件钱包是一个数字容器，用来存放数字货币和其他东西。就像，在一个真正的钱包里，你可能有一些货币和一些猫或家人的照片；而在你的 MetaMask 钱包中，有一些货币和一些加密猫咪以及僵尸的动画 GIF。迄今为止，相差无几。
+
+嗯，事实证明，称其为“钱包”有点象征的色彩。就我们的体验而言，这个比喻很好，但从技术上讲，并不能准确表明正在发生的事情。”钱包“的内容实际包含*分配到您在区块链上的地址的资产*。 我们向某人发送 ETH 时，ETH 哪也*不*去；只是从您地址上的 ETH 余额中扣除，然后重新分配到您所要发送到的地址的余额中。记住，公共区块链也称为*分布式账本技术*，我们所有的钱包都是该分类帐中的行；我们的余额、我们的持有量是列，而以太坊虚拟机是我们的自动簿记员。
+
+从这个意义上说，MetaMask“只是”一个网络应用程序，它向以太坊区块链发送请求：关于哪些资产分配到您的地址的信息；从一个地址“发送”代币到另一个地址，等等。它使用您的助记词来做到这一点。
+
+您的公共以太坊地址是一对的一半：准确来说是*一对密钥*。公共部分，即您的地址，可以提供给任何人，而不必担心他们能够侵入并窃取您的资金。私人部分，即助记词，验证拥有者对地址及相关联所有账户具有完完全全的访问权限。**记住：”不是你的钥匙，就不是你的代币“。**
+
+现在，MetaMask 非常安全，只要没有人可以访问您的助记词（[您已在线下妥善保存了助记词，对吧？](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys)），您的账户就是安全的。还有许多其他因素超出了 MetaMask 及其安全工程师的控制范围：例如，您的浏览器的安全性如何，是否有人实际控制了您的计算机，或者是否使用病毒接管了您的计算机。
+
+出于这个原因，我们建议，如果您在 MetaMask 钱包中存有大额代币，或者是对您重要的资产，那么您应使用硬件钱包，当作第二道防线。
+
+有了所有这些背景之后：
+
+## TL;DR
+
+### **硬件钱包是计算机外部的物理设备，保护钱包密钥，并充当攻击者与钱包内容之间的防火墙。**
+
+为了使用受硬件钱包保护的资金来做交易，您必须与硬件钱包交互以批准交易。这样，即使有人以某种方式获得了您的 MetaMask 钱包的访问权限，他们也将无法取走钱包的内容。
+
+## AirGap Vault
+
+- [将 AirGap Vault 连接 MetaMask](https://support.airgap.it/guides/metamask/)
+- [AirGap Vault - Android Play Store](https://play.google.com/store/apps/details?id=it.airgap.vault&hl=en_US&gl=US)
+- [AirGap Vault - iOS App Store](https://apps.apple.com/us/app/airgap-vault-secure-secrets/id1417126841)
+
+## Keystone
+
+- [将 Keystone 与 MetaMask 钱包绑定](https://support.keyst.one/3rd-party-wallets/eth-and-web3-wallets-keystone/bind-metamask-with-keystone)
+- [如何将 Keystone 连接 MetaMask 移动版并发送 ETH](https://support.keyst.one/3rd-party-wallets/eth-and-web3-wallets-keystone/metamask-mobile)
+- [如何通过”钱包连接“，将 Keystone 配合 MetaMask 移动版用于 dApp](https://support.keyst.one/3rd-party-wallets/eth-and-web3-wallets-keystone/metamask-mobile/defi-with-metamask-mobile)
+- [如何在 MetaMask 移动版上配置 EVM 链](https://support.keyst.one/3rd-party-wallets/eth-and-web3-wallets-keystone/metamask-mobile/configuring-evm-chains-on-metamask-mobile)
+- [如何使用透明二维码发挥硬件钱包的安全性](https://consensys.net/blog/news/metamask-x-keystone-how-to-benefit-from-hardware-wallet-security-using-transparent-qr-code/)
+- 如需了解 Keystone 的安全增值主张，[请参阅此处](https://blog.keyst.one/blind-signing-a-security-black-hole-for-the-ethereum-community-13f909b848b6)。
+- 有关 Keystone 安全功能的高级主题，包括引入自定义熵，[请阅读此处](https://support.keyst.one/general-navigation-guide#advanced-users)。
+
+## Lattice
+
+- 对于首次使用 Lattice 的用户，确保您已正确设置：[https://gridplus.io/setup](https://gridplus.io/setup)
+- 在此处查看 GridPlus 关于开始使用 MetaMask 及 Lattice 的文档[](https://docs.gridplus.io/setup/metamask)。
+
+## Ledger
+
+Ledger 为 MetaMask 的用户提供了广泛的文档。以下是一些可以帮助您入门的文档：
+
+- [设置并使用 MetaMask 访问您的 Ledger Ethereum (ETH) 账户](https://support.ledger.com/hc/en-us/articles/4404366864657-Set-up-and-use-MetaMask-to-access-your-Ledger-Ethereum-ETH-account?docs=true)
+- [我在 Ledger Binance Smart Chain (BSC) 账户中没有看到我的 BEP-20 代币，应该怎么办？](https://support.ledger.com/hc/en-us/articles/4406111561617-I-don-t-see-my-BEP-20-tokens-in-my-Ledger-Binance-Smart-Chain-BSC-account-what-can-I-do-?support=true)
+- [如何通过 MetaMask 访问您的 Ledger Polygon 账户](https://support.ledger.com/hc/en-us/articles/4418394184209-How-to-access-your-Ledger-Polygon-MATIC-account-via-Metamask?docs=true)
+
+## Trezor
+
+- 请在[此处](https://wiki.trezor.io/Apps:MetaMask)参阅 Trezor 关于 MetaMask 可操作性的文档。

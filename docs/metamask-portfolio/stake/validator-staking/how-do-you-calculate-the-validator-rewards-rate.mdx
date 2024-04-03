@@ -1,0 +1,20 @@
+---
+title: How do you calculate the validator rewards rate?
+image: /img/socialCards/how-do-you-calculate-the-validator-rewards-rate.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+'Rewards ' refers to the payment Ethereum validators receive from the protocol in return for their contributions to keeping the network secure, stable, and operational. They comprise:
+
+- A base rate, paid to validators who attest blocks. This is frequent because it happens at every block, and;
+- Additional rewards paid to the one validator who was randomly selected to propose the block.
+
+Since the responsibility for block proposal is assigned to validators randomly, and the rewards for proposing a block depends on the transactions included in the specific block, the amount of rewards earned when proposing a new block varies. If your validator's rewards rate on MetaMask Staking is higher or lower than expected, it's most likely because of this natural variation.
+
+The way we represent your rewards rate varies depending on which stage of the validator process you're in:
+
+- **If you haven 't staked yet**—or you're in the activation queue, waiting for your validator to become operational—the displayed rewards rate is based on the performance of Consensys Staking validators in the past week.
+- **If you have already staked**, the rewards rate you see is the actual performance of your validator, with the 10% MetaMask fee already subtracted.

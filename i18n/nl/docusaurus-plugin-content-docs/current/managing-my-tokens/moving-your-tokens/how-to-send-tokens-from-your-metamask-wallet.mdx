@@ -1,0 +1,142 @@
+---
+title: "Tokens versturen vanuit je MetaMask-wallet"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Opmerking:
+
+Dit artikel gaat over het versturen van ETH en andere tokens die aan de ERC-20-standaard voldoen. Het **proces is ongeveer hetzelfde voor de andere netwerken**, maar zorg er wel voor dat je genoeg originele netwerk-tokens hebt om voor de transactie te betalen.
+
+Meer informatie over tokens in het algemeen vind je [hier](/managing-my-tokens/user-guide-tokens). Meer algemene informatie over transacties op Ethereum vind je [hier](/transactions-and-gas/transactions/user-guide-transactions-and-failed-transactions).
+
+:::
+
+## Wat je nodig hebt:
+
+- Het wallet-adres (Ethereum) van de ontvanger
+- Genoeg saldo van het _originele netwerk-token_ (ETH voor Ethereum, BNB voor Binance Smart Chain, etc.) op je account om [de kosten](/transactions-and-gas/gas-fees/user-guide-gas) van gas te betalen.
+
+**Opmerking**: Als je een custom RPC-netwerk gebruikt dat niet het Ethereum-mainnet is, moet je ervoor zorgen dat je genoeg netwerk-tokens hebt om de kosten van gas te betalen. De BNB-token wordt bijvoorbeeld als gas gebruikt voor Binance Smart Chain (BSC) en voor Polygon is MATIC vereist. **Meer informatie over andere netwerken dan het Ethereum-mainnet vind je [hier](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains). **Probeer je een NFT (ERC-721-token) te versturen? Als het antwoord ja is, volg dan [deze handleiding](/nfts/how-do-i-send-receive-or-cash-out-an-nft).
+
+## Stappen:
+
+<Tabs>
+
+<TabItem value="Extensie" label="Extensie">
+
+1. Zorg ervoor dat je op de startpagina van je wallet op de account staat van waaruit je een transactie wilt doen, en klik op de knop 'Verzenden' in het midden van het scherm.
+
+2. Nu moet je het openbare adres van de ontvanger invoeren. Als je al adressen hebt opgeslagen in je adresboek, zullen ze in dit stadium verschijnen.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_1.gif")
+          .default
+      }
+      alt="Tokens versturen vanuit je MetaMask-walletextensie"
+    />
+  </div>
+</div>
+
+3. Voer het aantal tokens in dat je wilt verzenden en klik op Volgende.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_2.gif")
+          .default
+      }
+      alt="Tokens versturen vanuit je MetaMask-walletextensie"
+    />
+  </div>
+</div>
+
+4. Nu krijg je de geschatte gaskosten van je transactie te zien, die je ook kunt aanpassen. Voordat je op 'Bevestigen' klikt om door te gaan met de transactie, is het een goed idee om het adres van de **ontvanger te controleren.**
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_extension_3.gif")
+          .default
+      }
+      alt="Tokens versturen vanuit je MetaMask-walletextensie"
+    />
+  </div>
+</div>
+
+5. Je wordt dan doorgestuurd naar de hoofdpagina waar je een lijst van je recente transacties kunt zien op het tabblad 'Activiteit'.
+
+</TabItem>
+
+<TabItem value="Mobiel" label="Mobiel">
+
+1. Ga naar de homepage van je account. Tik hier op de knop 'Versturen'.
+
+   Je kunt tokens ook versturen door op de token zelf te klikken, die je homepage vindt onder het tabblad 'Activa'.
+
+2. Nu moet je het adres invoeren waar je naar toe wilt sturen. Plak het adres vanuit je klembord (andere app), of selecteer er één uit je adresboek.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_1.gif")
+          .default
+      }
+      alt="Tokens verzenden vanaf je mobiele MetaMask-wallet"
+    />
+  </div>
+</div>
+
+3. Je komt nu op een scherm waar je het bedrag kunt invoeren dat je wilt versturen. Je kunt, als het nodig is, ook het tokentype wijzigen, door net boven het bedrag in het blauwe vak op de tokennaam te tikken.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_2.png")
+          .default
+      }
+      alt="Tokens verzenden vanaf je mobiele MetaMask-wallet"
+    />
+  </div>
+</div>
+
+4. Als je op 'Volgende' tikt, krijg je het bevestigingsscherm te zien. Hier zie je de details van je transactie, waaronder ook het te betalen tarief voor gas.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/Send_tokens_from_your_MetaMask_wallet_mobile_3.png")
+          .default
+      }
+      alt="Tokens verzenden vanaf je mobiele MetaMask-wallet"
+    />
+  </div>
+</div>
+
+Je kunt je instellingen voor de transactie van gas aanpassen, door in het vak 'Geschat tarief voor gas' op de gemarkeerde hoeveelheid ETH te tikken.
+
+Tik op 'Versturen' om de transactie te bevestigen en het proces af te ronden.
+
+</TabItem>
+
+</Tabs>
+
+### Opmerkingen
+
+- Het aantal tokens en de transactiekosten (gas, te betalen in ETH of de originele netwerk-token, zoals BNB of MATIC) worden niet onmiddellijk in mindering gebracht. De status van de transactie is in behandeling, wat betekent dat de transactie is ingediend bij het blockchain-netwerk, en in afwachting van bevestiging is.
+- Als de transactie geslaagd is, zie je dat het saldo van de token en ETH is bijgewerkt, en ook de status van de transactie is gewijzigd naar 'Bevestigd'.
+- Als je in MetaMask op het tabblad **Activiteit** op de transactie klikt, kun je de transactiedetails bekijken en krijg je ook de mogelijkheid om de transactiegegevens in te zien op de block explorer van het netwerk, zoals [Etherscan](https://etherscan.io/), [BscScan](https://bscscan.com/) of [Polygonscan](https://polygonscan.com/).
+- Soms kan het even duren voor je transactie wordt bevestigd. Als dat gebeurt, kun je de transactie **versnellen** door de transactie die in behandeling is, opnieuw in te dienen met een hoger tarief voor gas, of door de transactie te **annuleren** voordat ze wordt bevestigd. Hier kun je meer te weten komen[over het versnellen of annuleren van een transactie](/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction).
+- Lees meer over[tokens storten (ontvangen) in je MetaMask-wallet](/getting-started/direct-deposit-receive-tokens-to-your-metamask-wallet), als je tokens wilt ontvangen.
+- **Dit proces is precies hetzelfde voor ETH en andere ERC-20-tokens, maar zorg dat je zeker weet dat de ontvangende wallet ERC-20-tokens ondersteunt, als je die verstuurt.**

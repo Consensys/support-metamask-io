@@ -1,0 +1,80 @@
+---
+title: "Cum să elimini un cont din portofelul tău MetaMask"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+### **Poți elimina doar conturile importate și conturile externe pe care le-ai importat cu chei private sau JSON (precum un portofel hardware).**
+
+Conturile pe care le-ai adăugat folosind butonul “Creează Cont” în MetaMask nu pot fi eliminate. Pentru mai multe informații și posibile soluții, vezi [mai jos.](#cum-pot-să-elimin-conturile-create)
+
+<Tabs>
+<TabItem value="Extensie" label="Extensie">
+
+Navighează la **Conturile mele** apăsând pe iconița de cont din partea din dreapta sus. Aici vei vedea orice cont importat; de obicei au o etichetă lângă nume.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_extension_iported_wallet_tag.png")
+          .default
+      }
+      alt="MetaMask_extension_iported_wallet_tag.png"
+    />
+  </div>
+</div>
+
+Apasă pe contul importat, pentru a-l vizualiza. Apasă pe meniul din dreapta cu 3 puncte verticale. Acesta va evidenția meniul drop-down, care include și opțiunea să **Elimini Contul**:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet.gif")
+          .default
+      }
+      alt="how_to_remove_an_account_from_your_metamask_wallet.gif"
+    />
+  </div>
+</div>
+
+</TabItem>
+<TabItem value="Mobil" label="Mobil">
+
+1. Apasă pe numele contului tău pentru a afișa meniul de selectare de cont. Nu contează ce cont este selectat momentan.
+
+   În acest meniu derulează până ce găsești contul importat pe care dorești să-l elimini. Ar trebui să fie ușor de identificat datorită etichetei “Importat” ("Imported") din dreptul lui.
+
+2. Apasă lung pe cont ca să apară opțiunea de a-l elimina. Odată ce confirmi, acesta va dispărea imediat din portofelul tău MetaMask.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/how_to_remove_an_account_from_your_metamask_wallet_mobile.gif")
+             .default
+         }
+         alt="how_to_remove_an_account_from_your_metamask_wallet_mobile.gif"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+:::info
+
+#### Cum pot să elimin conturile create?
+
+Momentan este imposibilă eliminarea conturilor [create](/managing-my-wallet/accounts-and-addresses/how-to-add-accounts-in-your-wallet) — cele care apar ca și “Cont 2” etc. atunci când apeși pe “Creează Cont”. Dacă dorești neapărat să le elimini, va trebui să ștergi aplicația MetaMask de pe dispozitivul tău (extensie sau mobil), să reinstalezi și să [restabilești portofelul Metamask, folosind fraza ta secretă de recuperare](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase). Totuși, **SĂ NU faci acest lucru dacă nu ai fraza secretă de recuperare**. Fără ea, nu vei avea acces la portofelul tău după reinstalare. Dacă faci acest lucru, ține minte:
+
+- Contul nu va fi _șters_ doar nu va mai fi vizibil în MetaMask: odată creată, adresa ta este permanent pe blockchain și [nu poate fi eliminată](/managing-my-wallet/resetting-deleting-and-restoring/how-can-i-delete-my-metamask-wallet).
+- Când restabilești folosind fraza ta secretă de recuperare, MetaMask va readauga automat conturile create anterior, în cazul în care conțin ETH. Apasă [aici](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) pentru mai multe informații.
+- Orice cont importat sau/și portofele hardware vor fi eliminate în același timp. Asigură-te că ai salvat cheile private/seed phrase-urile (sau frază secretă de recuperare în cazul altui cont MetaMask), altfel nu le vei mai putea accesa.
+
+:::

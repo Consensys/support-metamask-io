@@ -1,0 +1,66 @@
+---
+title: "Was ist zu tun, wenn Ihr Token-Saldo falsch ist"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### Token erscheinen überhaupt nicht?
+
+Lesen Sie unseren Leitfaden zur Behebung dieses Problems [hier](/managing-my-tokens/custom-tokens/a-token-is-missing-from-my-wallet).
+
+:::
+
+Überprüfen Sie zunächst die Token-Salden, die im Block-Explorer angezeigt werden, und vergleichen Sie mit MetaMask. Sie tun dies, indem Sie Ihre Wallet-Adresse kopieren und sie in den Block Explorer einfügen, der dem Netzwerk entspricht, auf dem Sie sich befinden — Etherscan für Ethereum Mainnet, Arbiscan für Arbitrum usw. Für detaillierte Anweisungen siehe [hier](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer).
+
+<Tabs>
+
+<TabItem value="Erweiterung" label="Erweiterung">
+
+Wenn Ihre MetaMask-Erweiterung den falschen oder ungenauen Saldo für ETH oder andere Token anzeigt, versuchen Sie die folgenden Schritte nacheinander, bis Sie Ihren Saldo korrekt sehen.
+
+**Bevor Sie fortfahren, stellen Sie sicher, dass Sie Ihre [geheime Wiederherstellungsphrase](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys) an einem sicheren Ort gesichert haben.**
+
+1. Überprüfen Sie, ob Ihre Internetverbindung stark und stabil ist. Wenn nicht, kann MetaMask möglicherweise nicht die richtigen Salden laden.
+2. Schließen Sie Ihren Browser, in dem Sie die MetaMask-Erweiterung installiert haben, und öffnen Sie ihn erneut.
+3. Versuchen Sie, alle von Ihnen installierten Werbeblocker auszuschalten, oder, wenn Sie ein VPN verwenden, versuchen Sie, MetaMask mit deaktiviertem Gerät zu verwenden.
+4. Wechseln Sie zu einem anderen Netzwerk und wieder zurück. Klicken Sie dazu oben in der App auf Ihr aktuelles Netzwerk. Wählen Sie ein anderes Netzwerk aus und wechseln Sie dann wieder zu Ihrem ursprünglichen Netzwerk.
+5. Stellen Sie sicher, dass kein Problem mit [den Browserberechtigungen](/troubleshooting/metamask-states-balance-may-be-outdated-displays-in-orange-or-eth-not-added-to-balance) besteht.
+6. Versuchen Sie eine andere RPC URL, wenn für das von Ihnen verwendete Netzwerk mehr als eine verfügbar ist. Sie können die RPC bearbeiten, indem Sie zu Einstellungen > Netzwerk gehen und dann auf das betreffende Netzwerk klicken. Weitere Informationen finden Sie in unserem [Artikel zum Hinzufügen von Netzwerken](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+7. Installieren Sie MetaMask mit einem anderen unterstützten Browser (Firefox, Chrome, Brave, Edge) von unserer offiziellen Website [https://metamask.io](https://metamask.io/) , und versuchen Sie dann, Ihre Brieftasche mit der 12-Wort-Secret Recovery Phrase wiederherzustellen, falls das Problem nur in dem Browser vorhanden ist, den Sie derzeit verwenden.
+
+</TabItem>
+
+<TabItem value="Mobilgerät" label="Mobilgerät">
+
+Nachdem Sie auf Etherscan überprüft haben, dass die Anzahl der Token, die in MetaMask Mobile angezeigt werden, falsch ist, gehen Sie wie folgt vor:
+
+1. Stellen Sie sicher, dass Ihre Internetverbindung stark und stabil ist. Wenn nicht, sind Token Werte möglicherweise nicht auf dem neuesten Stand.
+2. Wechseln Sie zu einem anderen Netzwerk und wechseln Sie dann wieder zurück.
+3. Ändern Sie die RPC des Netzwerks, in dem Sie sich befinden, nach Möglichkeit in eine Alternative. Weitere Informationen finden Sie in unserem [Artikel zum Hinzufügen von Netzwerken](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+4. Verstecken Sie das Token nach den Anweisungen [hier](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask), und fügen Sie das Token nach den Anweisungen [hier](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask) erneut hinzu.
+
+**Wenn es sich bei dem betreffenden Token um einen netzwerkeigenen Token für ein anderes Netzwerk als Ethereum** (BNB, AVAX, MATIC usw.) handelt, versuchen Sie, [das Netzwerk zu löschen](/networks-and-sidechains/managing-networks/how-to-remove-networks) und es dann [erneut hinzuzufügen](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc).
+
+**Wenn es sich bei dem betreffenden Token um ETH handelt, stellen Sie sicher, dass Ihre [geheime Wiederherstellungsphrase](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys) an einem sicheren Ort gesichert wird**, und installieren Sie die App neu.
+
+</TabItem>
+
+</Tabs>
+
+Wenn Sie nach dem Ausführen dieser Schritte immer noch Probleme haben, kontaktieren Sie uns bitte über die Schaltfläche "Eine Unterhaltung starten" auf unserer [Support](https://support.metamask.io/hc/en-us)-Seite.
+
+:::warning
+
+#### Hat der Token integrierte Mechanismen, die Angebot oder Wert beeinflussen?
+
+Ethereum- und EVM-kompatible Ketten beherbergen eine enorme Vielfalt an Token mit verschiedenen Dienstprogrammen. Einige Token sind so konzipiert, dass sie Angebot oder Wert dynamisch gemäß verschiedenen Bedingungen ändern:
+
+- [Rebase Token](/managing-my-tokens/user-guide-tokens), wo das Tokenangebot angepasst wird
+- Token mit „Steuern“ für Transaktionen verschiedener Art (z. B. einfache Übertragung, Swap, Verkauf usw.). Diese werden manchmal als „Gebühr auf Übertragungen“ Token bezeichnet.
+
+Bevor Sie zu dem Schluss kommen, dass Ihr Guthaben falsch ist, überprüfen Sie, ob ähnliche Bedingungen für Ihren Token gelten. Sie können diese Informationen normalerweise finden, indem Sie das Whitepaper oder die Dokumentation des Projekts überprüfen.
+
+:::

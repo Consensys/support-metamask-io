@@ -1,0 +1,52 @@
+---
+title: 'Revert back to earlier version, or add custom build to Chrome'
+image: >-
+  /img/socialCards/revert-back-to-earlier-version-or-add-custom-build-to-chrome.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+This is fairly advanced functionality, and isn't something you're likely to need to do unless you're a software developer, or unless a Support agent is directing you to do so. Proceed with caution.
+
+Previous versions of MetaMask can be found [here](https://github.com/MetaMask/metamask-extension/releases).
+
+- Open `Settings` > `Extensions`.
+- Alternatively, use the URL `chrome://extensions/` in your address bar
+- Check "Developer mode" in the upper right-hand corner.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/revert-back-to-earlier-version-or-add-custom-build-to-chrome/Chrome_developer_mode.png")
+          .default
+      }
+      alt="Chrome developer mode"
+    />
+  </div>
+</div>
+
+- At the top, click `Load Unpacked`.
+- Navigate to your custom or previous version `metamask-plugin/dist/chrome` folder.
+- Click `Select`.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/using-metamask/revert-back-to-earlier-version-or-add-custom-build-to-chrome/MetaMask_manually_install_chrome.gif")
+          .default
+      }
+      alt="MetaMask manually install chrome"
+    />
+  </div>
+</div>
+
+- Change to your locale via `chrome://settings/languages`
+- Restart the browser and test the plugin in your locale
+
+You now have the plugin, and can click 'inspect views: background plugin' to view its dev console.
+
+Instructions for Firefox and Opera can be found [here](/managing-my-wallet/using-metamask/how-to-install-metamask-manually).

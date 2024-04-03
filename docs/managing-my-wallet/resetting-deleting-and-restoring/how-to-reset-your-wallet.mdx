@@ -1,0 +1,206 @@
+---
+title: How to reset your wallet
+image: /img/socialCards/how-to-reset-your-wallet.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+**This article describes the wallet reset process, which is different from an account reset**. [Click here](/managing-my-wallet/resetting-deleting-and-restoring/how-to-clear-your-account-activity-reset-account) to read about resetting your account.
+
+**Contents:**
+
+- [What is a wallet reset?](#what-is-a-wallet-reset)
+- [Why might I need to do it?](#why-might-i-need-to-reset-my-wallet)
+- [How do I do it?](#how-do-i-reset-my-wallet)
+- [Re-adding accounts after your wallet reset](#re-adding-accounts-after-you-reset-your-wallet)
+
+## **What is a wallet reset?**
+
+A wallet reset essentially returns your MetaMask Extension or Mobile app to the state it was in when you downloaded it: it **clears your Secret Recovery Phrase and your accounts from the software**. After you execute a reset, you'll need to re-enter your Secret Recovery Phrase to get access to your wallet again. (_This is why you should never reset your wallet unless you have your SRP to hand.) _
+
+Currently, the **wallet reset function is** **only visible on Mobile** (on the lock screen, when you log out). However, **you can also reset your wallet on Extension**. See our [steps](#how-do-i-reset-my-wallet) below for more detail.
+
+### What's the difference between resetting my wallet and resetting my account?
+
+Although similar in name, these two options have different effects.
+
+**Reset wallet** will completely remove your wallet from the device, requiring you to restore with your SRP. '**Reset account**' will wipe your transaction history, leaving your wallet otherwise untouched. See our [account reset article](/managing-my-wallet/resetting-deleting-and-restoring/how-to-clear-your-account-activity-reset-account) for additional detail.
+
+:::info[In summary:]
+
+**Reset account** will wipe your transaction history, but keep your wallet in MetaMask.
+
+**Reset wallet** will completely remove your wallet from this MetaMask install.
+
+:::
+
+Most users will have no need to reset their account, and we suggest only doing so when recommended to by a Support agent or when one of our articles suggests it.
+
+## **Why might I need to reset my wallet?**
+
+The two main reasons are:
+
+- You want to stop using your existing MetaMask wallet and create a new one, with a new Secret Recovery Phrase
+- You want to [reset your password](/managing-my-wallet/resetting-deleting-and-restoring/how-can-i-reset-my-password), potentially because you've forgotten it.
+
+Currently, the process is the same in both cases.
+
+## **How do I reset my wallet?**
+
+:::danger
+
+#### Warning!
+
+**Only follow these instructions if you have your Secret Recovery Phrase backed up and available.**
+
+If you start the reset process without it, you may not be able to access your account ever again.
+
+If you don't have it to hand, and are still signed in to MetaMask, learn how to reveal your phrase [here](/privacy-and-security/how-to-reveal-your-secret-recovery-phrase).
+
+Please note that when resetting your wallet, **any accounts (addresses) that do not originate from your Secret Recovery Phrase will not be recovered afterwards**. These imported accounts, either hardware wallet or imported via private key, are **not included** under the Secret Recovery Phrase and will need to be [re-added manually](/managing-my-wallet/accounts-and-addresses/how-to-add-missing-accounts-after-restoring-with-secret-recovery-phrase). Please be sure to verify that you have the private key details for any imported accounts before proceeding with the reset process. See [here](/managing-my-wallet/accounts-and-addresses/what-are-imported-accounts-) for more on imported accounts.
+
+:::
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. To start with, you will need to uninstall MetaMask. Rather than doing this within the app itself, you'll need to remove it using your browser's extension settings. For example, on Chrome, you can just right click on the extension icon in the top right, and click 'Remove from Chrome'.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/resetting-deleting-and-restoring/how-to-reset-your-wallet/MetaMask_remove_extension_from_chrome.png")
+          .default
+      }
+      alt="MetaMask_remove_extension_from_chrome.png"
+    />
+  </div>
+</div>
+
+You can also go to chrome://extensions/ and click the 'Remove' button there:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/resetting-deleting-and-restoring/how-to-reset-your-wallet/Remove_MetaMask_Extension.png")
+          .default
+      }
+      alt="Remove MetaMask Extension"
+    />
+  </div>
+</div>
+
+2. [Reinstall MetaMask](/getting-started/getting-started-with-metamask).
+
+3. When you reinstall the MetaMask Extension, you'll see a welcome message. Click through. Now you'll be presented with the option to either import a wallet or create a new one. Since we're resetting in this case, we just want to import.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/resetting-deleting-and-restoring/how-to-reset-your-wallet/MetaMask_import_using_secret_recovery_phrase_1_extension.png")
+          .default
+      }
+      alt="MetaMask import using secret recovery phrase extension"
+    />
+  </div>
+</div>
+
+4. Enter your Secret Recovery Phrase (all lower case) and your preferred password:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/resetting-deleting-and-restoring/how-to-reset-your-wallet/MetaMask_import_using_secret_recovery_phrase_2_extension.png")
+          .default
+      }
+      alt="MetaMask import using secret recovery phrase extension"
+    />
+  </div>
+</div>
+
+If you entered your Secret Recovery Phrase correctly, the process is now complete, and you should be able to access your wallet in Extension as before.
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. Lock your account by tapping the gear icon in the tab bar, then scrolling to the bottom of the settings menu and hitting 'Lock'.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/resetting-deleting-and-restoring/how-to-reset-your-wallet/MetaMask_lock_wallet_mobile.gif")
+          .default
+      }
+      alt="MetaMask lock wallet mobile"
+    />
+  </div>
+</div>
+
+2. On the lock screen, tap 'Reset wallet'.
+
+3. A warning message will appear, reminding you to not proceed unless you have your Secret Recovery Phrase securely recorded. Tap through and then type 'delete' in the field in the subsequent screen to confirm your intention.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/resetting-deleting-and-restoring/how-to-reset-your-wallet/MetaMask_reset_app_mobile.gif")
+          .default
+      }
+      alt="MetaMask reset app mobile"
+    />
+  </div>
+</div>
+
+4. Now you'll be redirected to a screen that looks like this. Tap 'Import using Secret Recovery Phrase'.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/resetting-deleting-and-restoring/how-to-reset-your-wallet/MetaMask_import_using_secret_recovery_phrase_1_mobile.png")
+          .default
+      }
+      alt="MetaMask import using secret recovery phrase mobile"
+    />
+  </div>
+</div>
+
+5. Input your Secret Recovery Phrase — all in lower case, with spaces between words. You'll also need to choose a password.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-wallet/resetting-deleting-and-restoring/how-to-reset-your-wallet/MetaMask_import_using_secret_recovery_phrase_2_mobile.png")
+          .default
+      }
+      alt="MetaMask import using secret recovery phrase mobile"
+    />
+  </div>
+</div>
+
+Once you input your Secret Recovery Phrase correctly, you're finished!
+
+</TabItem>
+
+</Tabs>
+
+## **Re-adding accounts after you reset your wallet**
+
+Now that your wallet has been reset, let's talk about **re-adding accounts**:
+
+- Any imported accounts (such as hardware wallets) will not automatically reappear -- you need to re-add them manually.
+- Any additional accounts you originally had on that MetaMask instance will not necessarily be restored alongside the auto-generated original (i.e. Account 1, before renaming). MetaMask will proceed through your previous accounts in ascending order until it hits one with 0 ETH, in which case it will stop, and any beyond that will not be added. However, you can easily get them back by [re-adding accounts](/managing-my-wallet/accounts-and-addresses/how-to-add-missing-accounts-after-restoring-with-secret-recovery-phrase) until you reach the one you're looking for.

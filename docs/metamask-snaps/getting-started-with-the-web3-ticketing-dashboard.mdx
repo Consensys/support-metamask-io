@@ -1,0 +1,203 @@
+---
+title: Getting started with the Web3 Ticketing Dashboard
+image: /img/socialCards/getting-started-with-the-web3-ticketing-dashboard.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+It's now possible to manage and interact with your MetaMask support tickets, directly from within MetaMask! Using the power of [MetaMask Snaps,](/metamask-snaps/getting-started-with-metamask-snaps) it is now possible to stay in touch with the MetaMask support team without having to interact by email.
+
+<div class="center-container">
+  <div class="video-container">
+    <iframe
+      class="video-iframe"
+      src="https://www.loom.com/embed/1fac2801628043e3a92d7227fb0a7f1c"
+      title="What is MetaMask?"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
+### How does this change the way I'm used to interacting with the support team?
+
+If you've reached out to MetaMask before, you've likely interacted with MetaMask's support team by using the [live chat](/getting-started/how-to-contact-metamask-support) on the MetaMask help center:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/metamask-snaps/getting-started-with-the-web3-ticketing-dashboard/22153716733467.png")
+          .default
+      }
+      alt="MetaMask Support start a conversation"
+    />
+  </div>
+</div>
+
+We aim to solve every user request in a live manner, but some requests just need more time for investigation. At that point, an asynchronous support ticket is created, you are asked to provide an email address, and the conversation moves to that communication channel.
+
+But what if you could simply give us your MetaMask account address and chat with support directly from MetaMask? Look no further, the [Web3 Ticketing Snap](https://tickets.metamask.io/) enables this!
+
+### Why should I use this?
+
+Well, first, **convenience**. Getting support-related conversations from right within the MetaMask interface is rather neat. More importantly, **privacy**; we don't need to know your email address. We only care about your MetaMask account address (which we store as a reversible hash in our systems).
+
+You'll also benefit from additional **security;** no more replying to emails from scammers pretending that they are MetaMask support. All the communication is encrypted and secured after we have proved that you hold the MetaMask account that you're trying to connect with. In order to ensure that you are the owner of the address that you are saying you are, we use [Sign-In with Ethereum](https://docs.login.xyz/general-information/siwe-overview).
+
+Once we prove that you hold the keys associated with your account, we generate an authentication key used for communication within our support system. This way, nobody else can impersonate you.
+
+### **How do I get started?**
+
+Head over to [tickets.metamask.io](https://tickets.metamask.io/)and install the [Web3 Ticketing Snap](https://snaps.metamask.io/snap/npm/consensys/web3tickets-snap/). Sign in, and you're all set!
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../img/metamask-snaps/getting-started-with-the-web3-ticketing-dashboard/22153716738331.png")
+          .default
+      }
+      alt="MetaMask Snaps Web3 Ticketing install"
+    />
+  </div>
+</div>
+
+Next time when you talk to the MetaMask support team, and they need to create a ticket for you, let them know your preferred MetaMask account address that you'd like to use.
+
+### Wait, what's a Snap?
+
+MetaMask Snaps is a platform that allows anyone to extend the functionality of MetaMask. [Learn more about MetaMask Snaps](/metamask-snaps/getting-started-with-metamask-snaps).
+
+## Frequently asked questions (FAQs)
+
+<details>
+<summary>What is the Web3 Ticketing Dashboard (tickets.metamask.io)?</summary>
+
+<div>
+
+The [Web3 Ticketing Dashboard](https://tickets.metamask.io/) allows you to install the Web3 Ticketing Snap, where you sign in with your desired MetaMask account and create the authentication token used for secure communication with the MetaMask support team.\
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../img/metamask-snaps/getting-started-with-the-web3-ticketing-dashboard/22153702502555.png")
+          .default
+      }
+      alt="MetaMask Web3 ticketing snap page"
+    />
+  </div>
+</div>
+
+Once you're all set up, the Dashboard gives you an overview of the ticket(s) associated with your MetaMask account. This is also where you can interact with your open tickets.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../img/metamask-snaps/getting-started-with-the-web3-ticketing-dashboard/22153716745755.png")
+          .default
+      }
+      alt="MetaMask Web3 ticketing snap chat dashboard"
+    />
+  </div>
+</div>
+
+You can also adjust your notification preferences.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/metamask-snaps/getting-started-with-the-web3-ticketing-dashboard/22153716753051.png")
+          .default
+      }
+      alt="MetaMask Web3 ticketing snap notifications preferences"
+    />
+  </div>
+</div>
+
+There are two options:
+
+- **Dialog box notification** - this option is enabled by default, and will pop up the ticket conversation directly in your MetaMask instance.
+
+  <div class="center-container">
+    <div class="img-small">
+      <img
+        src={
+          require("../../img/metamask-snaps/getting-started-with-the-web3-ticketing-dashboard/22153702530075.png")
+            .default
+        }
+        alt="MetaMask Web3 ticketing snap chat UI"
+      />
+    </div>
+  </div>
+
+- **Browser pop-up notification** - we recommend using the dialog box notification option; however, if you'd like to disable dialog box notifications, you can make use of browser pop-ups instead, and rely on the desktop notifications provided by your operating system. Ensure that you allow desktop notifications on your operating system, otherwise, notifications might not show up correctly.
+
+It's worth mentioning that both of these options make use of [MetaMask notifications](/metamask-snaps/what-are-communication-snaps). If in doubt, you'll always be able to view your Web3 Ticketing notifications here:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/metamask-snaps/getting-started-with-the-web3-ticketing-dashboard/22153702535451.png")
+          .default
+      }
+      alt="MetaMask find snap notifications"
+    />
+  </div>
+</div>
+
+After clicking "Notifications", you'll be able to see any new notifications from the Web3 Ticketing Snap.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/metamask-snaps/getting-started-with-the-web3-ticketing-dashboard/22153716767515.png")
+          .default
+      }
+      alt="MetaMask Web3 ticketing snap notifications"
+    />
+  </div>
+</div>
+
+</div>
+</details>
+
+<details>
+<summary>Do I need to keep the Web3 Ticketing Dashboard open to receive notifications in MetaMask?</summary>
+<div>
+
+No, just make sure to sign in for the first time to get the authentication key generated, then you are free to close it.
+
+Since Metamask is a browser extension, the Snap notifications can only work while the browser is open. You can always double-check if there's been an update to your tickets by checking the in-app Metamask notifications or navigating to the [Web3 Ticketing Dashboard](https://tickets.metamask.io/).
+
+</div>
+</details>
+
+<details>
+<summary>Do I still need to provide my email address to the live chat agent, besides my MetaMask account address?</summary>
+<div>
+
+While we're battle-testing this new notification mechanism, we thought it would also be wise to keep email notifications active. So yes, initially, you'll have to provide both the email and MetaMask account addresses. In the future, it's going to be up to you if you'd like to provide both.
+
+</div>
+</details>
+
+<details>
+<summary>Will this prevent users from falling for social engineering scams?</summary>
+<div>
+
+We're aware that there are scammers out there who will try to trick you into going to fake sites or social media groups and make you think that you're talking to a real MetaMask support agent.
+
+The Web3 Ticketing Snap can help alleviate this issue. Every Snap has to be allowlisted by MetaMask, which is only done after a thorough audit. Even if a scammer were to create a similar Snap, the Snap wouldn't be able to pass the audit, and, therefore, wouldn't be added to the allowlist.
+
+**Always** check the URL of [tickets.metamask.io](https://tickets.metamask.io/) before signing in. **Never** share your private keys of secret recovery phrase with others.
+
+</div>
+</details>

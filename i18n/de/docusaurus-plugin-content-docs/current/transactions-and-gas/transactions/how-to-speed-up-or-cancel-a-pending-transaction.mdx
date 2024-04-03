@@ -1,0 +1,185 @@
+---
+title: "So beschleunigen oder stornieren Sie eine ausstehende Transaktion"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Wenn Sie eine Transaktion auf Ethereum oder einem kompatiblen Netzwerk einreichen, ist ein Teil des von Ihnen bezahlten Gases ein Gebot an das Netzwerk, Ihre Transaktion früher zu verarbeiten - dieses Element wird als die Prioritätsgebühr bezeichnet. Obwohl MetaMask Sie bei der Berechnung eines Gesamtgaspreises unterstützt, bei dem es wahrscheinlich ist, dass Ihre Transaktion abgeholt wird, können Sie am Ende lange warten, wenn Sie einen niedrigen Gaspreis einreichen. Wenn Sie wissen möchten, welche Gaspreise zum Abschluss einer Transaktion in einem angemessenen Zeitraum, ziehen Sie bitte Quellen wie den [Gas-Tracker von Etherscan](https://etherscan.io/gastracker)oder einen ähnlichen Tracker für das von Ihnen genutzte Netz zurate.
+
+Ferner kann es vorkommen, dass etwas nicht klappt und eine Transaktion einfach stecken bleibt oder sehr lange aussteht.
+
+Wie auch immer Sie in diese Lage gekommen sind, es gibt mehrere Möglichkeiten, das Problem zu beheben.
+
+### Bevor Sie weitere Maßnahmen ergreifen, sollten Sie Ihren Browser vollständig verlassen und schließen, ihn erneut öffnen und MetaMask entsperren (auf Mobilgeräten schließen Sie einfach die App und öffnen Sie sie erneut). Bleibt das Problem bestehen, gehen Sie wie folgt vor:
+
+## **Beschleunigen einer Transaktion**
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/MetaMask_speed_up_transaction.png")
+          .default
+      }
+      alt="MetaMask beschleunigt die Transaktion"
+    />
+  </div>
+</div>
+
+Probiere Sie Folgendes aus:
+
+- Warten Sie, bis das Netzwerk gewillt ist, Transaktionen zu diesem Preis zu verarbeiten.
+- Falls Sie das nicht schon getan haben, klicken Sie auf die Schaltfläche **Beschleunigen**. So können Sie dieselbe Transaktion erneut einreichen, allerdings mit einer höheren Gasgebühr, die eine schnellere Transaktion ermöglichen sollte. Da bei diesem Prozess dieselbe Nonce wie das Original wiederverwendet wird, müssen Sie nicht zweimal für Gas bezahlen.
+
+Denken Sie daran, dass **die Beschleunigung der Transaktion den Betrag erhöht, den Sie für die Transaktion ausgeben**.
+
+## **Transaktionsabbruch — Methode 1: Stornierung in der App**
+
+Falls Sie dies noch nicht getan haben, wählen Sie zum Stornieren der Transaktion einfach**Abbrechen**, wie im obigen Screenshot gezeigt. Beachten Sie bitte, **dass eine Stornierung nur dann _versucht werden kann_, wenn die Transaktion im Netzwerk noch immer ausstehend ist. ** Bereits bestätigte Transaktionen können nicht mehr storniert werden.
+
+## **Transaktionsabbruch — Methode 2: Benutzerdefinierte Nonce**
+
+Dieser Prozess beinhaltet das Senden einer neuen Transaktion mit derselben Nonce (einer Identifikationsnummer für jede Transaktion, die von der Phrase „Nummer nur einmal verwendet“ abgeleitet wird). Die Transaktion muss nicht unbedingt einen Wert haben — Sie können z. B. 0 ETH senden. Worauf es ankommt ist, dass Sie für die Priorisierung genügend Gas an das Netzwerk zahlen.
+
+Wenn Sie diese Methode verwenden, **müssen Sie von der ältesten ausstehenden Transaktion in der Warteschlange rückwärts arbeiten, die Sie abbrechen möchten**. Beispiel: Sie können eine Transaktion mit einer Nonce von 10 erst nach dem Storno von Nonce 9 stornieren.
+
+_Die folgenden Screenshots wurden zu verschiedenen Zeiten aufgenommen, sodass die darin angegebenen Gasgebühren auch von Schritt zu Schritt variieren können. Lassen Sie sich davon nicht abschrecken! Wenn Sie dies selbst tun, aktualisiert sich MetaMask automatisch in Echtzeit, um die Marktpreise anzuzeigen._
+
+<Tabs>
+
+<TabItem value="Erweiterung" label="Erweiterung">
+
+1. Aktivieren Sie in den erweiterten Einstellungen **Transaktionsnonce einstellen** und **Erweiterte Gassteuerungen.** Dadurch können Sie die von Ihnen bezahlte Gasgebühr anpassen und sicherstellen, dass Ihr Storno vor der ursprünglichen Transaktion, die Sie stornieren möchten, bearbeitet wird.
+
+:::info
+
+#### Hinweis:
+
+Die MetaMask-Erweiterung verfügt derzeit über eine experimentelle Funktion namens [Enhanced Gas Fee UI](https://metamask.io/1559/) (nicht zu verwechseln mit [erweiterten Gaskontrollen](/transactions-and-gas/gas-fees/how-to-customize-gas-settings)). Diese Schritte können auch ohne diese Funktion ausgeführt werden, aber sie sehen dann anders aus. Die folgenden Schritte verwenden keine Enhanced Gas UI. Denken Sie daran:
+
+- Wenn Sie die Enhanced Gas UI eingeschaltet haben, müssen Sie immer noch die Option „Customize anpassen“ aktiviert haben.
+- Wenn Sie die Enhanced Gas UI nicht eingeschaltet haben, müssen Sie sowohl die „Erweiterte Gaskontrollen“ als auch die „Transaktionsnonce anpassen“ aktiviert haben.
+
+:::
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/12927064113947.png").default
+      }
+      alt="MetaMask erweiterte Einstellungen"
+    />
+  </div>
+</div>
+
+2. **Eine neue Transaktion senden**. Die neue Transaktion senden Sie an sich **SELBST**, also an Ihre öffentliche MetaMask-Adresse. **Füllen Sie „Benutzerdefinierte Nonce” mit der gleichen Nonce aus, die auch für die noch ausstehende Transaktion gilt:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/Metamask_custom_transaction_nonce_Extension.png")
+             .default
+         }
+         alt="Metamask_custom_transaction_nonce_Extension.png"
+       />
+     </div>
+   </div>
+
+3. Klicken Sie nun neben „Gasgebühr” auf „Bearbeiten” (ist die experimentelle Funktion [Enhanced Gas UI](/transactions-and-gas/gas-fees/how-to-customize-gas-settings) aktiviert, wird dies als „Markt” angezeigt). Danach haben Sie die folgenden Möglichkeiten:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/MetaMask_advanced_gas_controls_extension.png")
+             .default
+         }
+         alt="MetaMask Erweiterung der erweiterten Gassteuerung"
+       />
+     </div>
+   </div>
+
+   Damit Ihre Stornierungsanfrage priorisiert wird und vor dem Original bearbeitet wird, **müssen Sie eine höhere Gasgebühr bezahlen**. Folgen Sie diesen Anweisungen:
+
+   - Stelle Sie Ihr **Gaslimit** _gleich oder etwas höher_ als Ihre ursprüngliche Transaktion ein.
+   - Stellen Sie Ihre **maximale Prioritätsgebühr**um _mindestens 10 % höher_ (in Gwei) als die Gasgebühr der ursprünglichen (ausstehenden) Transaktion ein (wenn diese Transaktion eine Gasgebühr von 30 Gwei hatte, setzen Sie die maximale Prioritätsgebühr in der Ersatz-/Stornierungstransaktion auf 33-35 Gwei).
+   - Vergewissern Sie sich, dass Ihre maximale Gebühr mindestens 30 % höher ist als die maximale Gebühr der Transaktion, die Sie ersetzen. Beispiel: wenn Ihre vorherige Gebühr. 150 Gwei betrug, wählen Sie dieses Mal einen Betrag im Bereich von 200 Gwei.
+
+   Ziehen Sie den Gas-Tracker, wie [Etherscan](https://etherscan.io/gastracker) oder [ETH Gas Station](https://ethgasstation.info/) bezüglich einer Anleitung für empfohlene Höchstgebühren zurate.
+
+</TabItem>
+
+<TabItem value="Mobilgerät" label="Mobilgerät">
+
+1. **Aktivieren Sie unter Einstellungen > Erweitert „Transaktionsnonce anpassen“.**
+
+2. **Eine neue Transaktion senden.** Die neue Transaktion senden Sie an sich SELBST, also an Ihre öffentliche MetaMask-Adresse. **Füllen Sie „Benutzerdefinierte Nonce” mit der gleichen Nonce aus, die auch für die noch ausstehende Transaktion gilt**.
+
+   Um die benutzerdefinierte Nonce Einstellung in der App zu finden, rufen Sie den Transaktionsbestätigungsbildschirm auf, der angezeigt wird, nachdem Sie die Tokenmenge und den Empfänger eingegeben haben. Klicken Sie auf „Bearbeiten“, um es zu ändern:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../../../../img/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/MetaMask_custom_transaction_nonce_Mobile.gif")
+             .default
+         }
+         alt="MetaMask benutzerdefinierte Transaktionsnonce Mobile"
+       />
+     </div>
+   </div>
+
+3. Jetzt müssen Sie sicherstellen, dass Ihre Gaseinstellungen so konfiguriert sind, dass Ihre Ersatztransaktion verarbeitet wird. Tippen Sie auf dem Transaktionsbestätigungsbildschirm auf den hervorgehobenen Gaswert:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../../../../img/transactions-and-gas/gas-fees/how-to-customize-gas-settings/MetaMask_advanced_gas_controls_mobile_1.png")
+             .default
+         }
+         alt="MetaMask erweiterte Gassteuerung mobil"
+       />
+     </div>
+   </div>
+
+   Greifen Sie nun über das angezeigte Menü auf „Erweiterte Optionen“ zu.
+
+4. Von hier aus können Sie Gas genau anpassen, um sicherzustellen, dass Ihre Transaktion abgeholt wird. Sie sehen sich jetzt einen Bildschirm an, der wie folgt aussieht:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-small">
+       <img
+         src={
+           require("../../../../../../img/transactions-and-gas/gas-fees/how-to-customize-gas-settings/MetaMask_advanced_gas_controls_mobile_2.png")
+             .default
+         }
+         alt="MetaMask erweiterte Gassteuerung mobil"
+       />
+     </div>
+   </div>
+
+   Passen Sie von hier aus die Gaseinstellungen an. Befolgen Sie diese Anweisungen, um sicherzustellen, dass Ihre Transaktion abgeholt wird:
+
+   - Stelle Sie Ihr **Gaslimit** _gleich oder etwas höher_ als Ihre ursprüngliche Transaktion ein.
+   - Stellen Sie Ihre **maximale Prioritätsgebühr**um _mindestens 10 % höher_ (in Gwei) als die Gasgebühr der ursprünglichen (ausstehenden) Transaktion ein (wenn diese Transaktion eine Gasgebühr von 30 Gwei hatte, setzen Sie die maximale Prioritätsgebühr in der Ersatz-/Stornierungstransaktion auf 33-35 Gwei).
+   - Vergewissern Sie sich, dass Ihre maximale **Gebühr** _mindestens 30 % höher_ ist als die maximale Gebühr der Transaktion, die Sie ersetzen. Beispiel: wenn Ihre vorherige Gebühr. 150 Gwei betrug, wählen Sie dieses Mal einen Betrag im Bereich von 200 Gwei.
+
+   Ziehen Sie den Gas-Tracker, wie [Etherscan](https://etherscan.io/gastracker) oder [ETH Gas Station](https://ethgasstation.info/) bezüglich einer Anleitung für empfohlene Höchstgebühren zurate.
+
+</TabItem>
+
+</Tabs>

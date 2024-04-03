@@ -1,0 +1,109 @@
+---
+title: What are Interoperability Snaps?
+image: /img/socialCards/what-are-interoperability-snaps.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+MetaMask Snaps opens the door to new blockchain networks, allowing you to use virtually any blockchain network/protocol with MetaMask, as long as there's a Snap for it!
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/metamask-snaps/what-are-interoperability-snaps/MetaMask_Snap_connect_to_starknet.png")
+          .default
+      }
+      alt="MetaMask_Snap_connect_to_starknet.png"
+    />
+  </div>
+</div>
+
+Interoperability Snaps implement support for new blockchain protocols, such as Bitcoin or other networks that were previously not yet accessible with MetaMask.
+
+## Introducing Interoperability Snaps
+
+With the introduction of Interoperability Snaps, you have the power to seamlessly connect with non-EVM blockchain networks using MetaMask Snaps.
+
+1. **Breaking the EVM barrier**MetaMask previously only supported Ethereum and EVM-compatible networks. With MetaMask Snaps, the horizon broadens, allowing you to tap into other protocols and expand MetaMask's functionality.
+2. **Total network inclusion**Interoperability Snaps aren't restricted to just one network. You 're free to install various Snaps, each adding support for one or multiple blockchain networks.
+
+## Getting started with Interoperability Snaps
+
+Embark on an all-protocol-encompassing journey with these straightforward steps:
+
+1. **Keep MetaMask updated**Ensure your MetaMask browser extension is up to date with the latest version; [learn how to update it here](/managing-my-wallet/using-metamask/how-to-update-the-version-of-metamask). Please note that MetaMask Snaps is currently available exclusively for the MetaMask browser extension.
+
+2. **Discover dapps and Snaps**To get started with new networks and protocols, you'll need two essentials: a **dapp** (the website or interface for interacting with the new network(s)) and the **Snap** (installed in your MetaMask instance, facilitating interaction between the dapp and new network).
+
+:::warning
+
+For example, visit [snaps.consensys.io/starknet](http://snaps.consensys.io/starknet?utm_source=metamaskSupport&utm_medium=knowledge-base&utm_campaign=2023_Sep_snaps-launch_content_interoperability), install the recommended Snap, and you're ready to use your MetaMask with a brand new network, seamlessly integrating the dapp and Snap.
+
+:::
+
+3. **You 're ready to roll!** That's it! Head to the dapp where you installed the Snap to begin interacting with your chosen new network. Stay tuned as the MetaMask Snaps ecosystem evolves, bringing forth new Snaps that expand your network horizons while retaining the familiar MetaMask interface you're accustomed to.
+
+## Frequently asked questions (FAQ)
+
+<details>
+<summary>Do I need to install a separate Snap for each new network I want to access?</summary>
+<div>
+
+This is likely, but not a given. Depending on the Snap, it might support one or multiple blockchain networks/protocols.
+
+</div>
+</details>
+
+<details>
+  <summary>How do I find Snaps that support specific networks?</summary>
+  <div>
+    {" "}
+    Discover and install Snaps directly from your favorite dapps, or make use of
+    the [MetaMask Snaps Directory](https://snaps.metamask.io/?utm_source=metamaskSupport&utm_medium=knowledge-base&utm_campaign=2023_Sep_snaps-launch_content_interoperability)
+    to discover new Snaps.{" "}
+  </div>
+</details>{" "}
+
+<details>
+  <summary>Can I use Interoperability Snaps on MetaMask Mobile?</summary>
+  <div>
+    {" "}
+    At this time, MetaMask Snaps is only available for MetaMask Extension.{" "}
+  </div>
+</details>{" "}
+
+<details>
+  <summary>Can I view my balances within MetaMask?</summary>
+  <div>
+    {" "}
+    For the time being, you must visit the dapp where you installed the Snap in order
+    to view balances. However, in the future, you'll be able to view balances of
+    new networks added by Snaps from right within your MetaMask UI. Stay tuned!{" "}
+  </div>
+</details>{" "}
+
+<details>
+<summary>How are accounts created by Interoperability Snaps connected with my MetaMask wallet?</summary>
+<div>
+
+Let's say you install a Snap that introduces support for a new network. The dapp you'll use with the new Snap might tell you that the Snap generated a brand new account for said network, but how is this new account tied to my existing accounts in MetaMask?
+
+Snaps can generate new accounts for new protocols and networks; these accounts are generated based on your Secret Recovery Phrase. This means that even if you were to reset your entire MetaMask instance, recover your MetaMask accounts using your Secret Recovery Phrase, and install the Snap again, you would be able to see the same account(s) for the new network that you have previously generated.
+
+Note that new (Snaps) accounts are generated based on your Secret Recovery Phrase that you use for MetaMask; accounts from hardware wallets that you add to your MetaMask instance are added independently from your existing MetaMask accounts. Additionally, Snaps can **never** see your Secret Recovery Phrase. Keep your Secret Recovery Phrase to yourself, and do not share it with others.
+
+</div>
+</details>
+
+<details>
+  <summary>I have more questions!</summary>
+  <div>
+    {" "}
+    Take a look at the [MetaMask Snaps FAQ page](/metamask-snaps/metamask-snaps-faq).{" "}
+  </div>
+</details>
+
+Interoperability is just one of the Snaps categories currently available; consider getting familiar with [Security Snaps](/metamask-snaps/what-are-security-snaps) or [Communication Snaps](/metamask-snaps/what-are-communication-snaps) as well! New to MetaMask Snaps? [Get started](/metamask-snaps/getting-started-with-metamask-snaps).

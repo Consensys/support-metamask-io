@@ -1,0 +1,28 @@
+---
+title: Why can't I replace a pending transaction?
+image: /img/socialCards/why-cant-i-replace-a-pending-transaction.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+#### Looking for how to resolve pending transactions?
+
+Pending transactions that are displaying as such on the blockchain (make sure to [check a block explorer](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer)) can be replaced by sending another transaction with the same nonce, using the method [here](/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction). This article should be your first destination if you're looking for how to replace a pending transaction.
+
+One of the most common reasons your replacement pending transaction will fail is because you **already have multiple pending transactions**.
+
+In these cases, you need to **replace the oldest transaction first, and proceed through them in reverse order **(from oldest to newest).
+
+Age is determined by the transaction's nonce, a unique number (_number used only once_) that is assigned to every transaction sent from your wallet. Nonces are assigned in ascending order — so the smallest pending transaction nonce you can find is the oldest.
+
+:::note
+
+#### How do I find pending transactions?
+
+If a transaction is pending, it will be marked as such in your MetaMask transaction history. You can also inspect your history on a [block explorer](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer).
+
+:::
+
+If you try to replace a pending transaction before resolving older outstanding pending transactions first, your new transactions will continually fail. This is because you need to resolve the oldest first.

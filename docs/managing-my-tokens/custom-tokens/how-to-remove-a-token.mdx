@@ -1,0 +1,55 @@
+---
+title: How to remove a token
+image: /img/socialCards/how-to-remove-a-token.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+To remove a token, click on the token under the 'Tokens' tab on your homepage. You will then see a three vertical dots icon in the top right. Tap on it, and it will bring up a dropdown with a 'Hide' option:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-remove-a-token/MetaMask_remove_token_extension.gif")
+          .default
+      }
+      alt="MetaMask remove token extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+To remove tokens from your asset list in MetaMask Mobile, simply tap and hold on the asset you want to remove and it will bring up the option to hide or cancel:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-remove-a-token/MetaMask_remove_token_mobile.png")
+          .default
+      }
+      alt="MetaMask remove token mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**Please note that this action does not affect the balance of tokens held. **It is simply removing the listing from displaying in your wallet; so if you did have a balance of DAI, for example, and removed the listing on the MetaMask interface, it would not remove the tokens from your address on the blockchain.
+
+Also, **hiding the token will not affect token allowances** — i.e. permissions you've granted dapps to move tokens to/from your wallet. See [here](/privacy-and-security/how-to-revoke-smart-contract-allowances-token-approvals) for how to do this.

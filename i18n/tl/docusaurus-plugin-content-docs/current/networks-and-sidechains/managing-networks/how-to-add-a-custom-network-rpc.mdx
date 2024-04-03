@@ -1,0 +1,326 @@
+---
+title: "Paano magdagdag ng custom network RPC"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### Mga Nilalaman:
+
+- [Pagdaragdag sa pamamagitan ng Chainlist](#pagdaragdag-sa-pamamagitan-ng-chainlist)
+- [Mabilis na pagdaragdag ng mga sikat na network](#pagdaragdag-ng-mga-sikat-na-network)
+- [Manu-manong pagdaragdag ng mga network](#manu-manong-pagdaragdag-ng-isang-network)
+
+Maaaring ma-access ng MetaMask ang marami pang mga network kaysa sa Ethereum mainnet lamang: puwede kang magdagdag ng anumang EVM-compatible na network. Ang initialism RPC ay kumakatawan sa remote procedure call, isang set ng mga protocol na nagpapahintulot sa isang kliyente (tulad ng MetaMask) na makipag-ugnayan sa isang blockchain. Nang hindi nagpapakilala ng isang makabuluhang teknikal na tangent, ang pagdaragdag ng mga detalye ng network gamit ang proseso sa ibaba ay nagbibigay-daan sa MetaMask na gumamit ng isang RPC na nagbibigay-daan sa iyo na makipag-ugnayan sa network na iyon.
+
+#### Pagdaragdag sa pamamagitan ng Chainlist
+
+Para sa isang madaling paraan ng pagdaragdag ng mga network sa MetaMask, pumunta sa [chainlist.wtf](https://chainlist.wtf/), kung saan maaari mong ikonekta ang MetaMask at magdagdag ng mga network sa ilang pag-click lamang. Tingnan ang aming [gabay](/networks-and-sidechains/managing-networks/add-a-network-using-chainlist) para sa karagdagang impormasyon.
+
+Gayundin, pakitandaan na ang **pagdaragdag ng network sa isang device ay hindi nangangahulugang lalabas ito sa isa pang device** kapag ina-access ang parehong account. Kung idaragdag mo ito sa Extension, hindi ito awtomatikong idaragdag sa iyong MetaMask Mobile app, at kabaliktaran.
+
+Kakailanganin ding muling idagdag ang mga custom na network kung ia-uninstall mo ang extension ng browser o mobile app (pagkatapos nito ay kakailanganin mong [i-restore ang iyong wallet](/managing-my-wallet/resetting-deleting-and-restoring/how-to-restore-your-metamask-wallet-from-secret-recovery-phrase) gamit ang iyong Secret Recovery Phrase).
+
+:::info
+
+#### Bakit ako nakakakita ng isang icon ng tandang pananong sa tabi ng pangalan ng network matapos ko itong idagdag?
+
+Kapag nagdaragdag ka ng isang custom na network sa MetaMask — ibig sabihin, ang anumang network maliban sa Ethereum mainnet — makikita mo ang isang icon ng tandang pananong sa tabi nito sa tagapili ng network. Ganito ang hitsura:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/question_mark.png").default
+      }
+      alt="tandang_pananong.png"
+    />
+  </div>
+</div>
+
+Huwag mabahala! Hindi ito nangangahulugang hindi ito lehitimo o hindi ligtas gamitin. Sinadya itong mangyari at ganito ang magiging hitsura ng anumang network na idinagdag mo sa MetaMask.
+
+:::
+
+## Pagdaragdag ng mga sikat na network
+
+Sa parehong Mobile at Extension, madali kang makapagdaragdag ng ilang mga prominenteng network sa pamamagitan lang ng isang tap. Kabilang sa mga ito:
+
+- [BNB Chain/BSC](/network-profiles/network-profile-bnb-smart-chain-bnb)
+- [Polygon](/network-profiles/network-profile-polygon-matic)
+- [Avalanche](/network-profiles/network-profile-avalanche-avax)
+- [Arbitrum](/network-profiles/network-profile-arbitrum)
+- [Optimism](/network-profiles/network-profile-optimism-op-mainnet)
+- [Palm](/network-profiles/network-profile-palm)
+- [Fantom](/network-profiles/network-profile-fantom-ftm)
+- [Harmony](/network-profiles/network-profile-harmony-one)
+- [Aurora](/network-profiles/network-profile-aurora-)
+- [Celo](https://celo.org/).
+
+Mahahanap mo ang menu na ito gamit ang mga sumusunod na hakbang:
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+Mula sa homepage ng iyong wallet, mag-click sa tagapili ng network sa tuktok ng screen, at pagkatapos ay sa 'Magdagdag ng network':
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={require("../../../../../../img/i18n/legacy/add_network.png").default}
+      alt="magdagdag_ng_network.png"
+    />
+  </div>
+</div>
+
+Mula rito, dapat makakita ka ng isang listahan ng mga sikat na network na handa nang idagdag (maliban kung idinagdag mo na ang network). I-tap ang 'Magdagdag' para simulan ang proseso, at sundin ang mga prompt.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../../img/i18n/legacy/popular_networkis.png")
+          .default
+      }
+      alt="mga_sikat_na_network.png"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. I-tap ang hamburger icon sa kaliwang tuktok ng screen.
+
+2. Pumunta sa 'Mga Setting', at pagkatapos ay sa 'Mga Network'.
+
+3. Makikita mo rito ang isang listahan ng mga network na idinagdag mo na. I-tap ang button na 'Magdagdag ng Network' sa ibaba ng screen.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/settings___network.PNG.png")
+             .default
+         }
+         alt="mga_setting___network.PNG"
+       />
+     </div>
+   </div>
+
+4. Dapat nakikita mo na ngayon ang isang listahan ng mga network na maaari mong idagdag sa ilalim ng tab na'sikat', gaya ng ipinapakita sa ibaba.
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/select_a_network.jpg.png")
+             .default
+         }
+         alt="pumili_ng_network.jpg"
+       />
+     </div>
+   </div>
+
+5. Kapag pinili mong magdagdag ng isa sa mga ito, may lalabas na prompt para kumpirmahin:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network_.PNG.png")
+             .default
+         }
+         alt="magdagdag_ng_network_. PNG"
+       />
+     </div>
+   </div>
+
+   At pagkatapos ay makakakuha ka ng opsyon na lumipat kaagad sa network na iyon. Tapos na ang lahat!
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/switch_to_network.jpg.png")
+             .default
+         }
+         alt="lumipat_sa_network.jpg"
+       />
+     </div>
+   </div>
+
+</TabItem>
+
+</Tabs>
+
+## Manu-manong pagdaragdag ng isang network
+
+Ang mga sumusunod ay mga tagubilin para sa manu-manong pagtatatag ng mga koneksyong ito:
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. Mag-click sa **button na tagapili ng network**. Ipapakita nito ang listahan ng mga network kung saan naka-connect ka na**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/networks_button.png")
+             .default
+         }
+         alt="button_na_mga_network.png"
+       />
+     </div>
+   </div>
+
+2. I-click ang 'Idagdag ang network':
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/add_network.png").default
+         }
+         alt="magdagdag_ng_network.png"
+       />
+     </div>
+   </div>
+
+3. Magbubukas ang isang bagong tab ng browser, na nagpapakita ng iba't ibang mga field upang punan**:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/Screenshot_2022-02-10_at_10.08.31.png")
+             .default
+         }
+         alt="Screenshot_2022-02-10_nang_10.08.31.png"
+       />
+     </div>
+   </div>
+
+   Kumpletuhin ang mga field at i-click ang i-save upang idagdag ang network.
+
+   Ang mga detalye para sa mga field sa itaas ay makikita sa aming [mga profile sa network](/network-profiles/network-profiles-hub) o, bilang kahalili, mga doc (ibig sabihin, dokumentasyon ng developer) o mga gabay sa kung paano gawin para sa bawat network. Halimbawa:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Pagkatapos isagawa ang mga hakbang sa itaas, makikita mo ang custom na network sa susunod na ma-access mo ang tagapili ng network.
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. I-tap ang hamburger icon sa kaliwa sa itaas:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_C8C734D64DE3-1.jpeg.png")
+             .default
+         }
+         alt="IMG_C8C734D64DE3-1.jpeg"
+       />
+     </div>
+   </div>
+
+2. Piliin ang **Mga Setting:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_129413D61F95-1.jpeg.png")
+             .default
+         }
+         alt="IMG_129413D61F95-1.jpeg"
+       />
+     </div>
+   </div>
+
+3. Piliin **ang Mga Network:**
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_62D0A5FE63AE-1.jpeg.png")
+             .default
+         }
+         alt="IMG_62D0A5FE63AE-1.jpeg"
+       />
+     </div>
+   </div>
+
+4. I-tap ang '**Idagdag ang Network**':
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_65A194E3EC35-1.jpeg.png")
+             .default
+         }
+         alt="IMG_65A194E3EC35-1.jpeg"
+       />
+     </div>
+   </div>
+
+5. Punan ang mga detalye ng **Custom RPC Network**:
+
+   {" "}
+
+   <div class="center-container">
+     <div class="img-medium">
+       <img
+         src={
+           require("../../../../../../img/i18n/legacy/IMG_E8F132CD40A6-1.jpeg.png")
+             .default
+         }
+         alt="IMG_E8F132CD40A6-1.jpeg"
+       />
+     </div>
+   </div>
+
+   Ang mga detalye para sa mga field sa itaas ay makikita sa aming [mga profile sa network](/network-profiles/network-profiles-hub) o, bilang kahalili, mga doc (ibig sabihin, dokumentasyon ng developer) o mga gabay sa kung paano gawin para sa bawat network. Halimbawa:
+
+   - [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)
+   - [Polygon](https://docs.polygon.technology/docs/develop/network-details/network/)
+   - [Avalanche](https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche).
+
+   Pagkatapos isagawa ang mga hakbang sa itaas, makikita mo ang custom na network sa tagapili ng mga network.
+
+</TabItem>
+
+</Tabs>

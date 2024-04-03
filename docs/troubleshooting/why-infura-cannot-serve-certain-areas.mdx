@@ -1,0 +1,33 @@
+---
+title: Why Infura cannot serve certain areas
+image: /img/socialCards/why-infura-cannot-serve-certain-areas.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+By default, MetaMask accesses the blockchain via [Infura](/networks-and-sidechains/what-is-infura-and-why-does-metamask-use-it), which is unavailable to persons in certain jurisdictions due to specific comprehensive sanctions programs enacted by the U.S. government.
+
+Attempts to use MetaMask in one of those jurisdictions may therefore generate the following error message:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/troubleshooting/why-infura-cannot-serve-certain-areas/MetaMask_unable_to_connect_to_the_blockchain_host.png")
+          .default
+      }
+      alt="MetaMask unable to connect to the blockchain host"
+    />
+  </div>
+</div>
+
+Assuming you are indeed using Infura (MetaMask uses it by default), in this context 'blockchain host' refers to Infura.
+
+MetaMask is distributed for free and designed to be customized, so a user can decide to use Ethereum nodes other than those operated by Infura, or nodes relating to entirely different blockchains such as Binance Smart Chain and the Polygon network. It is entirely up to the MetaMask user.
+
+See also:
+
+- [MetaMask is unable to connect to the blockchain host](/troubleshooting/metamask-is-unable-to-connect-to-the-blockchain-host)
+- [Can I use MetaMask in my country?](/privacy-and-security/can-i-use-metamask-in-my-country)

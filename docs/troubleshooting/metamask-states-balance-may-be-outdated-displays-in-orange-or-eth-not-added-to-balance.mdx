@@ -1,0 +1,68 @@
+---
+title: >-
+  MetaMask states 'Balance may be outdated', displays in orange, or ETH not
+  added to balance
+image: >-
+  /img/socialCards/metamask-states-balance-may-be-outdated-displays-in-orange-or-eth-not-added-to-balance.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+#### **This article applies to MetaMask Extension.**
+
+If you see your balance in orange, it might be outdated due to a permission or network connectivity issue:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../img/troubleshooting/metamask-states-balance-may-be-outdated-displays-in-orange-or-eth-not-added-to-balance/MetaMask_outdated_balance_message.png")
+          .default
+      }
+      alt="MetaMask outdated balance message"
+    />
+  </div>
+</div>
+
+To fix this issue, try the following:
+
+<Tabs>
+
+<TabItem value="Chromium-based browsers: Chrome, Brave, Edge" label="Chromium-based browsers: Chrome, Brave, Edge">
+
+1. Right-click on the MetaMask Extension icon
+2. Select **'This Can Read and Change Site Data'**
+3. Select **'On All Sites'**
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../img/troubleshooting/metamask-states-balance-may-be-outdated-displays-in-orange-or-eth-not-added-to-balance/MetaMask_read_change_data_on_all_sites.png")
+          .default
+      }
+      alt="MetaMask read change data on all sites"
+    />
+  </div>
+</div>
+
+These instructions will look similar across Chromium-based browsers: i.e. Chrome, Edge, and Brave.
+
+</TabItem>
+
+<TabItem value="Firefox" label="Firefox">
+
+The permission to access data on all sites is enabled by default on Firefox, since it's a permission which MetaMask automatically requests for core functionality.
+
+</TabItem>
+
+</Tabs>
+
+You may also need close and re-open your browser, or try a different internet connection entirely.
+
+If you continue to experience this issue, please [contact MetaMask Support](/getting-started/how-to-contact-metamask-support).

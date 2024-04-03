@@ -1,0 +1,142 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.Managing my tokens": {
+    "message": "Managing my tokens",
+    "description": "The label for category Managing my tokens in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.custom-tokens": {
+    "message": "custom-tokens",
+    "description": "The label for category custom-tokens in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.Moving your tokens": {
+    "message": "Moving your tokens",
+    "description": "The label for category Moving your tokens in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.Managing my wallet": {
+    "message": "Managing my wallet",
+    "description": "The label for category Managing my wallet in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.accounts-and-addresses": {
+    "message": "accounts-and-addresses",
+    "description": "The label for category accounts-and-addresses in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.resetting-deleting-and-restoring": {
+    "message": "resetting-deleting-and-restoring",
+    "description": "The label for category resetting-deleting-and-restoring in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.secret-recovery-phrase-and-private-keys": {
+    "message": "secret-recovery-phrase-and-private-keys",
+    "description": "The label for category secret-recovery-phrase-and-private-keys in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.using-metamask": {
+    "message": "using-metamask",
+    "description": "The label for category using-metamask in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.MetaMask Activity": {
+    "message": "MetaMask Activity",
+    "description": "The label for category MetaMask Activity in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.metamask-portfolio": {
+    "message": "metamask-portfolio",
+    "description": "The label for category metamask-portfolio in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.bridge": {
+    "message": "bridge",
+    "description": "The label for category bridge in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.buy": {
+    "message": "buy",
+    "description": "The label for category buy in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.dashboard": {
+    "message": "dashboard",
+    "description": "The label for category dashboard in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.sell": {
+    "message": "sell",
+    "description": "The label for category sell in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.stake": {
+    "message": "stake",
+    "description": "The label for category stake in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.Pooled staking": {
+    "message": "Pooled staking",
+    "description": "The label for category Pooled staking in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.validator-staking": {
+    "message": "validator-staking",
+    "description": "The label for category validator-staking in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.swap": {
+    "message": "swap",
+    "description": "The label for category swap in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.MetaMask Snaps": {
+    "message": "MetaMask Snaps",
+    "description": "The label for category MetaMask Snaps in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.Account Management Snaps": {
+    "message": "Account Management Snaps",
+    "description": "The label for category Account Management Snaps in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.Network Profiles": {
+    "message": "Network Profiles",
+    "description": "The label for category Network Profiles in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.Networks and sidechains": {
+    "message": "Networks and sidechains",
+    "description": "The label for category Networks and sidechains in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.binance": {
+    "message": "binance",
+    "description": "The label for category binance in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.Managing networks": {
+    "message": "Managing networks",
+    "description": "The label for category Managing networks in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.NFTs, bruh": {
+    "message": "NFTs, bruh",
+    "description": "The label for category NFTs, bruh in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.privacy-and-security": {
+    "message": "privacy-and-security",
+    "description": "The label for category privacy-and-security in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.staying-safe-in-web3": {
+    "message": "staying-safe-in-web3",
+    "description": "The label for category staying-safe-in-web3 in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.third-party-platforms-and-dapps": {
+    "message": "third-party-platforms-and-dapps",
+    "description": "The label for category third-party-platforms-and-dapps in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.token-swaps": {
+    "message": "token-swaps",
+    "description": "The label for category token-swaps in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.transactions-and-gas": {
+    "message": "transactions-and-gas",
+    "description": "The label for category transactions-and-gas in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.gas-fees": {
+    "message": "gas-fees",
+    "description": "The label for category gas-fees in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.transactions": {
+    "message": "transactions",
+    "description": "The label for category transactions in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.troubleshooting": {
+    "message": "troubleshooting",
+    "description": "The label for category troubleshooting in sidebar docSidebar"
+  }
+}

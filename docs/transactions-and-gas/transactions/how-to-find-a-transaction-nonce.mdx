@@ -1,0 +1,125 @@
+---
+title: How to find a transaction nonce
+image: /img/socialCards/how-to-find-a-transaction-nonce.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+A nonce is a unique number assigned to every transaction. You can find a nonce in MetaMask by clicking or tapping on the transaction in question.
+
+## Finding the nonce in MetaMask
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+On your MetaMask homepage, head to the 'Activity' tab and find the transaction whose nonce you need.
+
+Next, click on the transaction you're looking for and locate the nonce in the list of details:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-find-a-transaction-nonce/MetaMask_locate_transaction_nonce_extension.png")
+          .default
+      }
+      alt="MetaMask locate transaction nonce extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+On Mobile, you can either see all of the account's transactions or narrow them down by asset to find the transaction you're looking for.
+
+To view all transactions, tap the clock icon in the tab bar to view all of your activity:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-find-a-transaction-nonce/MetaMask_activity_tab_mobile.png")
+          .default
+      }
+      alt="MetaMask activity tab mobile"
+    />
+  </div>
+</div>
+
+To view transactions for a specific asset, head back to the wallet view's 'Tokens' tab and tap it. Scroll down a little past the token's price chart to see your activity.
+
+In either case, tap on the transaction to see the nonce:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-find-a-transaction-nonce/MetaMask_locate_transaction_nonce_mobile.png")
+          .default
+      }
+      alt="MetaMask locate transaction nonce mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+## Finding the nonce in the block explorer
+
+Block explorers are websites that retrieve information about your accounts and transactions from the blockchain and display it for reference.
+
+Nonces are essential to how Ethereum and Ethereum-like blockchains operate, which is why you can find them on block explorers. Here's how:
+
+1. Find and click on the transaction on the block explorer. See [here](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer) for more information.
+
+2. On the transaction page, scroll down until you see the 'More details' section. (This is how it's labeled on Etherscan; the exact wording may differ between block explorers.)
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-find-a-transaction-nonce/MetaMask_find_transaction_nonce_etherscan1.png")
+          .default
+      }
+      alt="MetaMask find transaction nonce etherscan"
+    />
+  </div>
+</div>
+
+3. Look for the nonce listed under 'Other Attributes':
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-find-a-transaction-nonce/MetaMask_find_transaction_nonce_etherscan2.png")
+          .default
+      }
+      alt="MetaMask find transaction nonce etherscan"
+    />
+  </div>
+</div>
+
+You can also find the nonce more quickly by clicking the eye icon in your account's transaction list:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/transactions-and-gas/transactions/how-to-find-a-transaction-nonce/MetaMask_view_transaction_nonce_etherscan.gif")
+          .default
+      }
+      alt="MetaMask view transaction nonce etherscan"
+    />
+  </div>
+</div>

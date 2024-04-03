@@ -1,0 +1,343 @@
+---
+title: How to display tokens in MetaMask
+image: /img/socialCards/how-to-display-tokens-in-metamask.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+**Quick links:**
+
+- [Automatic token detection](#enhanced-token-detection)
+- [Adding a token using the search bar](#manually-adding-a-token-with-search)
+- [Adding a custom token](#how-to-add-a-custom-token)
+- [Removing/hiding tokens](#how-to-hide-tokens)
+- [Finding the token contract address](#what-if-i-don-t-know-the-token-address)
+- [Adding a token using the block explorer](#how-to-add-a-token-using-a-block-explorer)
+- [Adding a token using a coin listing site](#how-to-add-a-token-using-a-coin-listing-site)
+- [Using MetaMask Portfolio](#using-metamask-portfolio)
+
+Normally, MetaMask displays ERC-20 standard tokens (or [standard tokens](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)) you own on your account page. However, with the proliferation of tokens on Ethereum and other networks, MetaMask doesn't keep an authoritative list — but it does allow you to add any ERC-20-compliant token you hold.
+
+There are two different ways to add unlisted tokens to your MetaMask wallet:
+
+First of all, you can enable an advanced feature that [automatically detects tokens](#enhanced-token-detection) held by your address, and adds them to your wallet. This will use lists of tokens aggregated from various community token lists; **MetaMask doesn't keep a proprietary list of 'accepted' or 'valid' tokens**. If you choose this option, keep in mind that you should always exercise caution surrounding unfamiliar tokens:
+
+1. Don 't interact with or connect your wallet to any website that you're not familiar with, you haven 't researched and have no reason to believe to be trustworthy.
+2. Always second-guess an airdropped or unfamiliar token and do your due diligence before interacting with it. See more on best practices for token safety [here](/managing-my-tokens/token-safety-practices).
+3. If you attempt to transact using the token and your transaction fails, with the block explorer displays an error written by the scammer directing you to a website, this is likely a phishing site, so DO NOT click this link.
+4. Keep informed about ways that scammers are trying to steal your funds. Realise there aren't always adequate safeguards in place for the information you're seeing around the web to be worth trusting.
+
+## Enhanced token detection
+
+:::info[Only available on certain networks!]
+
+Enhanced token detection is available on Ethereum mainnet, Linea, Avalanche, BNB Smart Chain, Polygon, Arbitrum, Optimism, Base, and zkSync.
+
+:::
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+Click on the three vertical dots in the upper right-hand corner, navigate to'settings', and then'security & Privacy', and make sure the toggle is on.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/MetaMask_autodetect_tokens_settings.png")
+          .default
+      }
+      alt="MetaMask autodetect tokens settings"
+    />
+  </div>
+</div>
+
+You can always turn this off later if needed.
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+Hit the hamburger icon in the top left of the home screen, and then find'settings'. From here, go to 'Advanced', and scroll until you find the token detection toggle.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/MetaMask_autodetect_tokens_settings_mobile.png")
+          .default
+      }
+      alt="MetaMask autodetect tokens settings mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**Once you've enabled token detection, go back to your asset list, and refresh if necessary — hopefully, any tokens you weren't seeing before are there now.**
+
+_Note that token detection takes place on Ethereum mainnet regardless of whether this setting is on or off; enhanced token detection just expands this function to cover the additional networks listed above. _
+
+## Manually adding a token with search
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+To see your tokens, click on the **Tokens** tab. Your tokens should be listed under this tab. If they're not, and automatic token detection isn't picking them up, then click on 'Import token' at the bottom.
+
+Clicking here will bring you to a search bar:
+
+1. Type in words contained in the token you would like to search. For example, if I would like to look for Chainlink (Symbol: LINK), I just type in "LI” in the bar, and the search bar will return all the suggestions.
+2. Select token of interest, and click **Next** to proceed. (As soon as you select a token, the button's border will be highlighted in blue)
+3. Click** Add token** to proceed. You will be then redirected to your account page. The token you have just added will be listed.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/MetaMask_import_token_extension.gif")
+          .default
+      }
+      alt="Import a token MetaMask Extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. On your wallet page, find the 'Import tokens' link at the bottom of the screen.
+2. This will bring up the search bar. Type in the name of the token you want to add.
+3. When you find the token, tap on it to select it and then scroll down so you see the 'Import' button.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Import_a_token_MetaMask_Mobile.gif")
+          .default
+      }
+      alt="Import a token MetaMask Mobile"
+    />
+  </div>
+</div>
+
+The token will now be listed under your account's tokens.
+
+</TabItem>
+
+</Tabs>
+
+## How to hide tokens
+
+Once added, you can remove the token from your asset list.
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+On your wallet page, find the 'Tokens' tab and click on the token you want to remove.
+
+From here, click the three dots in the top right corner, and then 'Hide'.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/MetaMask_hide_token_extension.gif")
+          .default
+      }
+      alt="Hide a token extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+For both iOS and Android, long press on the token. This will bring up the option to remove it:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Hide_a_token_mobile.png")
+          .default
+      }
+      alt="Hide a token mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+**If the token you search for is not among the most popular tokens, the search bar may not return the token you queried.** In this case, you could [add a custom token](#how-to-add-a-custom-token) (manually).
+
+## How to add a custom token
+
+<Tabs>
+
+<TabItem value="Extension" label="Extension">
+
+1. Click on 'Import tokens', located at the bottom of the 'Tokens' tab on your wallet homepage.
+
+2. Switch to the 'Custom token' tab at the top, and then enter the token address in the first field. See [below](#what-if-i-don-t-know-the-token-address) if you don't know where to find this.
+
+3. In most cases, the token symbol and token decimal will autofill.\
+   If they don't, head to the network's block explorer and find the token. Its symbol and decimals will most likely be displayed.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details.png")
+          .default
+      }
+      alt="Find custom token details"
+    />
+  </div>
+</div>
+
+If you still can't find the token details, try locating the token's documentation through a web search.
+
+4. Click 'Add Custom Token' to proceed.
+5. You will now see a page asking you to confirm that you want to add the token.\
+   When you click 'Import Tokens', the token type will be added to your wallet.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/MetaMask_import_custom_token_extension.gif")
+          .default
+      }
+      alt="Import a custom token MetaMask Extension"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+<TabItem value="Mobile" label="Mobile">
+
+1. Find the 'Import tokens' link from your wallet homepage. Tap it to bring up the menu for adding tokens.
+2. Switch over to the 'Custom token' tab. Now you'll see three fields asking for the token's contract address, its symbol, and 'Token of Precision' (i.e. how many decimal places it can go down to).
+3. [Find the token address](#what-if-i-don-t-know-the-token-address) and paste it into the first field. The symbol and decimals should autofill. If they don't, head to the network's block explorer and search for the token. On its page, you can easily find its symbol and decimals.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Find_custom_token_details_mobile.png")
+          .default
+      }
+      alt="Find custom token details mobile"
+    />
+  </div>
+</div>
+
+4. Tap 'Import' to add it to your wallet. You'll be redirected back to your wallet homepage and be able to see it under the 'tokens' tab.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Import_a_custom_token_MetaMask_Mobile.gif")
+          .default
+      }
+      alt="Import a custom token MetaMask Mobile"
+    />
+  </div>
+</div>
+
+</TabItem>
+
+</Tabs>
+
+## What if I don 't know the token address?
+
+Take a look at [this article](/managing-my-tokens/custom-tokens/how-to-find-a-token-contract-address) to see a couple of different ways to find it.
+
+You could also ask the person who sends you the tokens for the token's contract address.
+
+**Please be aware that if someone told you they have sent you tokens, but they are unable to provide you the token address, or the transaction hash (a unique transaction ID), it's possible that they haven't in fact done so.**
+
+## How to add a token using a block explorer
+
+> Note: In addition to Etherscan, this will work with most major block explorers, including [BscScan](https://bscscan.com/), [Polygonscan](https://polygonscan.com/), [Snowtrace](https://snowtrace.io/), etc., as they generally share a similar design.
+
+1. Go to the block explorer.
+2. Search for your token. You can also go via the 'Tokens' link in the menu bar.
+3. Click the 'More' button in the top right of the token's profile summary.
+4. Click 'Add token to MetaMask (Web3)'
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_using_block_explorer.png")
+          .default
+      }
+      alt="add token using block explorer"
+    />
+  </div>
+</div>
+
+5. MetaMask will pop up for you to confirm that you want to add the token.
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/add_token_MetaMask_notification.png")
+          .default
+      }
+      alt="add token MetaMask notification"
+    />
+  </div>
+</div>
+
+## How to add a token using a coin listing site
+
+Sites such as Coingecko or CoinMarketCap offer MetaMask integration that allows you to add a token to MetaMask directly from its entry on their site.
+
+To access this, simply head to one of these sites and find the token you want to add by using the search bar. Then find the contract address and click the MetaMask fox. A prompt will appear to confirm that you want to add the token to your wallet.
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../img/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask/Add_token_to_MetaMask_from_coin_listing_site2.gif")
+          .default
+      }
+      alt="Add token to MetaMask from coin listing site"
+    />
+  </div>
+</div>
+
+:::info[Note]
+
+**On MetaMask Mobile, make sure you access the site using the in-app browser**, rather than your device's standard browser. This is the only way to access web links that integrate with MetaMask as you can do on your desktop browser using Extension.
+
+:::
+
+This method also allows you to add the token on different networks, depending on whether a corresponding smart contract has been deployed on that network by the token owners. Click the three dots next to the contract address to select a different network, and then click the fox to add the token on that network.
+
+## Using MetaMask Portfolio
+
+[MetaMask Portfolio](https://portfolio.metamask.io/) is a MetaMask-associated platform that aggregates and displays your token balances. Usefully, in our context, once you connect your wallet it **automatically detects **and displays the majority of tokens.
+
+All you need to do is follow the link and connect your wallet. See [our articles](/metamask-portfolio/) on how to use the dapp if you need more guidance.

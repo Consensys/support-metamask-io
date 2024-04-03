@@ -1,0 +1,66 @@
+---
+title: "토큰 잔액이 잘못되었을 때 취할 수 있는 조치"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::info
+
+#### 토큰이 전혀 표시되지 않습니까?
+
+이 문제를 해결하려면 [여기](/managing-my-tokens/custom-tokens/a-token-is-missing-from-my-wallet)에서 지침을 참조하십시오.
+
+:::
+
+우선, 블록 탐색기에 표시된 토큰 잔액을 확인하고 MetaMask와 비교합니다. 지갑 주소를 복사하고 이더리움 메인넷의 경우 이더스캔, 아비트럼의 경우 아비스캔 등 연결되어 있는 네트워크에 해당하는 블록 탐색기에 붙여넣어 이러한 비교 작업을 수행합니다. 세부적인 지침은 [여기](/managing-my-wallet/how-to-check-my-wallet-activity-on-the-blockchain-explorer)를 참조하십시오.
+
+<Tabs>
+
+<TabItem value="확장 프로그램" label="확장 프로그램">
+
+MetaMask 확장 프로그램이 이더리움 또는 다른 토큰에 대한 부적절하거나 부정확한 잔액을 표시하는 경우, 잔액이 올바르게 표시될 때까지 하나씩 아래 단계를 시도해 보십시오.
+
+**진행하기 전에 [비밀 복구 문구](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys)를 안전한 장소에 백업해야 합니다.**
+
+1. 인터넷 연결이 강력하고 안정적인지 확인합니다. 그렇지 않은 경우 MetaMask는 올바른 잔액을 로드할 수 없습니다.
+2. MetaMask 확장 프로그램이 설치되어 있는 브라우저를 닫고 다시 엽니다.
+3. 설치된 광고 차단 도구를 끄거나 VPN을 사용하고 있는 경우 이를 끈 상태에서 MetaMask를 사용해보십시오.
+4. 다른 네트워크로 전환하여 다시 시도하십시오. 이러한 작업을 수행하려면 앱 상단에서 현재 네트워크를 클릭하십시오. 다른 네트워크를 선택한 다음 원래 네트워크로 다시 전환합니다.
+5. [브라우저 사용 권한 문제](/troubleshooting/metamask-states-balance-may-be-outdated-displays-in-orange-or-eth-not-added-to-balance)를 경험하지 않아야 합니다.
+6. 사용 중인 네트워크에 사용 가능한 URL이 둘 이상 있는 경우 다른 RPC URL을 시도하십시오. 설정 > 네트워크로 이동하고 해당 네트워크를 클릭하여 RPC URL을 편집할 수 있습니다. 보다 자세한 내용은 [네트워크 추가에 관한 기사](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)를 참조하십시오.
+7. 다른 지원 브라우저(Firefox, Chrome, Brave, Edge)를 사용하여 당사의 공식 웹사이트([https://metamask.io](https://metamask.io/))에서 MetaMask를 설치한 다음 현재 사용 중인 브라우저에만 문제가 있는 경우 12단어의 비밀 복구 문구를 사용하여 지갑을 복원해 보십시오.
+
+</TabItem>
+
+<TabItem value="모바일" label="모바일">
+
+이더스캔에서 MetaMask 모바일에 표시되는 토큰 금액이 잘못되었음을 확인한 경우 다음 단계를 따르십시오.
+
+1. 인터넷 연결이 강력하고 안정적인지 확인합니다. 그렇지 않을 경우 토큰 값이 최신 상태로 업데이트되지 않을 수 있습니다.
+2. 다른 네트워크로 변경한 다음 다시 전환합니다.
+3. 가능한 경우 연결되어 있는 네트워크의 RPC URL을 다른 URL로 변경합니다. 보다 자세한 내용은 [네트워크 추가에 관한 기사](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc)를 참조하십시오.
+4. [여기](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)의 지침에 따라 토큰을 숨긴 다음 [여기](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)에 제공된 지침에 따라 토큰을 다시 추가합니다.
+
+해당 **토큰이 이더리움이 아닌 네트워크에 대한 네트워크 네이티브 토큰인 경우**(BNB, AVAX, MATIC, etc), [네트워크를 삭제한](/networks-and-sidechains/managing-networks/how-to-remove-networks) 다음 [다시 추가해보십시오](/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc). **해당 토큰이 이더리움인 경우, [비밀 복구 문구를](/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys) 안전한 장소에 백업하고**
+
+앱을 다시 설치해야 합니다.
+
+</TabItem>
+
+</Tabs>
+
+이러한 단계를 시도한 후에도 여전히 문제가 발생할 경우 [지원 페이지](https://support.metamask.io/hc/en-us)의 '대화 시작하기' 버튼을 통해 당사에 연락을 취하십시오.
+
+:::warning
+
+#### 토큰에 공급 또는 가치에 영향을 미치는 매커니즘이 내장되어 있습니까?
+
+이더리움 및 EVM 호환 체인에는 여러 유틸리티를 지닌 엄청나게 다양한 토큰이 있습니다. 일부 토큰은 다양한 조건에 따라 공급 또는 가치를 동적으로 변경하도록 설계되었습니다.
+
+- 토큰 공급이 조정되는 [리베이스 토큰](/managing-my-tokens/user-guide-tokens)
+- 다른 종류의 트랜잭션에 '세금'이 적용되는 토큰(예: 간단한 전송, 스왑, 판매 등). 이러한 토큰은 때때로 '전송 수수료' 토큰이라고 부릅니다.
+
+잔액이 잘못되었다고 결론을 내리기 전에 토큰에 유사한 조건이 적용되는지 확인하십시오. 이러한 정보는 일반적으로 프로젝트의 백서 또는 문서를 확인하여 찾을 수 있습니다.
+
+:::

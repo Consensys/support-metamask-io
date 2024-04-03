@@ -1,0 +1,347 @@
+---
+title: "การเริ่มต้นใช้งาน MetaMask"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/MetaMask_banner.png")
+          .default
+      }
+      alt=""
+    />
+  </div>
+</div>
+
+# **MetaMask คืออะไร**
+
+**บล็อกเชนสาธารณะอย่าง Ethereum คือวิวัฒนาการขั้นต่อไปของฐานข้อมูลอินเทอร์เน็ต และ MetaMask คือวิวัฒนาการขั้นต่อไปของเบราว์เซอร์**
+
+MetaMask เป็นส่วนขยายของเว็บเบราว์เซอร์และแอปมือถือที่ให้คุณจัดการกุญแจส่วนตัวของ Ethereum ของคุณ การเริ่มต้นใช้งานนี้ จะทำให้คุณมีกระเป๋าเงินสำหรับ Ether และโทเค็นอื่น ๆ และช่วยให้คุณโต้ตอบกับแอปพลิเคชันแบบกระจายอำนาจหรือ _dapps_ ได้ แตกต่างจากกระเป๋าเงินบางประเภท เนื่องจาก MetaMask จะไม่เก็บข้อมูลของคุณ เช่น ไม่เก็บที่อยู่อีเมล รหัสผ่าน และไม่เก็บวลีกู้คืนรหัสหรือกุญแจส่วนตัวอื่น ๆ ของคุณ คุณจะคงไว้ซึ่งอำนาจทั้งหมดผ่านเอกลักษณ์คริปโตของคุณ
+
+:::note
+
+#### ยังใหม่กับคริปโตและ web3 ใช่ไหม
+
+ไปที่ [เรียนรู้ MetaMask](https://learn.metamask.io/) สำหรับประสบการณ์การเรียนรู้ที่เข้าใจง่ายซึ่งออกแบบมาโดยเฉพาะสำหรับผู้ใช้งานใหม่ใน web3ใช้งานได้ฟรี มีหลายภาษา และมีเครื่องมือที่มีประโยชน์ เช่น การจำลองเพื่อช่วยให้คุณคุ้นชินกับการใช้งาน MetaMask
+
+:::
+
+### **สำหรับข้อมูลโดยละเอียดเกี่ยวกับหัวข้อเฉพาะ เช่น เทคโนโลยีบล็อกเชน โทเค็น สวอป เครือข่ายเลเยอร์ 2 และอื่น ๆ ให้เลื่อนลงไปที่ "Next Steps" (ขั้นตอนถัดไป)**
+
+<div class="center-container">
+  <div class="video-container">
+    <iframe
+      class="video-iframe"
+      src="https://www.youtube.com/embed/YVgfHZMFFFQ?si=PTSfJ1LCzvJe3JuK"
+      title="What is MetaMask?"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
+## **วิธีติดตั้ง MetaMask:**
+
+<Tabs>
+
+<TabItem value="ส่วนขยายเบราว์เซอร์บน" label="ส่วนขยายเบราว์เซอร์บน">
+
+<details>
+<summary>Chrome</summary>
+
+<div>
+
+1. โปรดดูที่ [https://metamask.io/](https://metamask.io/)
+
+2. กด "Download" (ดาวน์โหลด) ในแถบเมนู
+
+3. คลิก “Install MetaMask for Chrome” (ติดตั้ง MetaMask สำหรับ Chrome) ระบบจะนำคุณไปยัง Chrome Web Store
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/Install_MetaMask_Chrome_1.png")
+          .default
+      }
+      alt="ติดตั้ง MetaMask Chrome"
+    />
+  </div>
+</div>
+
+4. คลิก “Add to Chrome” (เพิ่มไปยัง Chrome)
+
+5. บนหน้าจอป๊อปอัป ให้คลิก “Add extension” (เพิ่มส่วนขยาย)
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/Install_MetaMask_Chrome_2.png")
+          .default
+      }
+      alt="ติดตั้ง MetaMask Chrome"
+    />
+  </div>
+</div>
+
+หลังจากเพิ่ม MetaMask Extension แล้ว MetaMask จะเปิดโดยอัตโนมัติ คุณยังสามารถตรวจสอบการเข้าถึงได้โดยง่ายได้จากแถบเครื่องมือของคุณ โดยคลิกที่ไอคอนจิ๊กซอว์ที่ด้านบนขวาของหน้าจอ แล้วกดที่ไอคอนหมุด
+
+</div>
+</details>
+
+<details>
+<summary>Firefox</summary>
+
+<div>
+
+1. โปรดดูที่ [https://metamask.io/](https://metamask.io/)
+2. คลิกที่ "Download" (ดาวน์โหลด)
+3. กด "Install MetaMask for Firefox" (ติดตั้ง MetaMask สำหรับ Firefox)
+4. ในหน้าต่างใหม่ที่เปิดขึ้นมา ให้คลิก "Add to Firefox" (เพิ่มไปยัง Firefox)
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/Install_MetaMask_Firefox_1.gif")
+          .default
+      }
+      alt="ติดตั้ง MetaMask Firefox"
+    />
+  </div>
+</div>
+
+5. บนข้อความป๊อปอัป คลิกที่ "Add" (เพิ่ม)
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/Install_MetaMask_Firefox_2.png")
+          .default
+      }
+      alt="ติดตั้ง MetaMask Firefox"
+    />
+  </div>
+</div>
+
+**หมายเหตุ: อย่าตื่นตระหนกกับข้อเท็จจริงที่ว่าปลั๊กอิน Firefox ถูกระบุว่าเผยแพร่โดย "danfinlay, kumavis" นั่นคือหัวใจหลักสองประการที่อยู่เบื้องหลัง MetaMask!**
+
+หลังจากเพิ่ม MetaMask Extension แล้ว คุณจะกลับไปที่หน้าเบราว์เซอร์ของคุณ MetaMask จะปรากฏบนเบราว์เซอร์ของคุณ ให้คลิกที่เบราว์เซอร์ของคุณเพื่อเปิด MetaMask
+
+</div>
+</details>
+
+<details>
+<summary>Edge</summary>
+
+<div>
+
+1. โปรดดูที่ [https://metamask.io/](https://metamask.io/)
+2. คลิกที่ "Download" (ดาวน์โหลด)
+3. กด "Install MetaMask for Edge" (ติดตั้ง MetaMask สำหรับ Edge)
+4. ในหน้าต่างใหม่ที่เปิดขึ้นมา ให้คลิก "Get" (รับ)
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/Install_MetaMask_Edge_1.gif")
+          .default
+      }
+      alt="ติดตั้ง MetaMask Edge"
+    />
+  </div>
+</div>
+
+5. บนป๊อปอัป ให้คลิก "Add Extension" (เพิ่มส่วนขยาย)
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/Install_MetaMask_Edge_2.png")
+          .default
+      }
+      alt="ติดตั้ง MetaMask Edge"
+    />
+  </div>
+</div>
+
+หลังจากเพิ่ม MetaMask Extension แล้ว MetaMask จะเปิดโดยอัตโนมัติ คุณยังสามารถตรวจสอบให้แน่ใจได้ด้วยว่าสามารถเข้าถึงได้ง่ายในแถบเครื่องมือของคุณโดยคลิกไอคอนจิ๊กซอว์ที่ด้านบนขวาของหน้าจอ คลิกที่จุด 3 จุดถัดจากส่วนขยาย MetaMask และเลือก "Show in Toolbar" (แสดงในแถบเครื่องมือ)
+
+</div>
+</details>
+
+<details>
+<summary>Brave</summary>
+
+<div>
+
+1. โปรดดูที่ [https://metamask.io/](https://metamask.io/)
+2. คลิก “Download” (ดาวน์โหลด)
+3. คลิกที่ "Install MetaMask for Chrome" (ติดตั้ง MetaMask สำหรับ Chrome)ไม่ต้องสนใจเสียงกริ่งที่ดังขึ้น: เหตุผลที่แจ้งว่า "Chrome" ก็เพราะ Brave เป็นเบราว์เซอร์ที่ใช้ Chromium และแชร์ Web Store กับ Chrome
+4. ใน Chrome Store ที่เปิด ให้คลิก 'Add to Brave' (เพิ่มไปยัง Brave)
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/Install_MetaMask_Brave_1.png")
+          .default
+      }
+      alt="ติดตั้ง MetaMask Brave"
+    />
+  </div>
+</div>
+
+5. ในป๊อปอัปที่ปรากฏขึ้น ให้คลิก 'Add extension' (เพิ่มส่วนขยาย)
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/Install_MetaMask_Brave_2.png")
+          .default
+      }
+      alt="ติดตั้ง MetaMask Brave"
+    />
+  </div>
+</div>
+
+หลังจากเพิ่ม MetaMask Extension แล้ว คุณจะกลับไปที่หน้าเบราว์เซอร์ของคุณ MetaMask จะปรากฏบนเบราว์เซอร์ของคุณคุณอาจคลิกที่เบราว์เซอร์เพื่อเปิด MetaMask
+
+</div>
+</details>
+
+</TabItem>
+
+<TabItem value="แอปมือถือ" label="แอปมือถือ">
+
+ประการแรก: **อย่าดาวน์โหลด MetaMask จากที่ใดก็ตามนอกเหนือจากร้านค้าแอปอย่างเป็นทางการ**ที่เหมาะสมกับอุปกรณ์/OS ของคุณมี MetaMask เวอร์ชันโคลนซึ่งถูกตั้งโปรแกรมให้บันทึกวลีกู้คืนรหัสของคุณทันทีที่สร้างเพื่อหลีกเลี่ยงการตกเป็นเหยื่อของการหลอกลวงเหล่านี้ ตรวจสอบให้แน่ใจว่าคุณดาวน์โหลดแอปที่เป็นทางการของ MetaMask จากร้านค้าแอปบนอุปกรณ์ของคุณ ไม่ใช่จากแหล่งอื่นใด
+
+<details>
+<summary>iOS</summary>
+
+<div>
+
+1. เปิด App Store และกดปุ่มค้นหาที่ด้านล่างขวา ป้อน MetaMask ลงในแถบค้นหา
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/Install_MetaMask_iOS.png")
+          .default
+      }
+      alt="ติดตั้ง MetaMask iOS"
+    />
+  </div>
+</div>
+
+2. ให้คลิก 'Get' (รับ) หรือแตะบนชื่อของแอปเพื่อดูรายละเอียดเพิ่มเติม ทำตามขั้นตอนการยืนยันการดาวน์โหลด App Store ตามปกติ
+3. เมื่อติดตั้งแล้ว ให้เปิดแอปและทำตามคำแนะนำเพื่อสร้างกระเป๋าเงินของคุณ
+4. สำรองข้อมูลวลีกู้คืนรหัสของคุณไว้ในที่ที่ปลอดภัยและออฟไลน์!
+
+</div>
+</details>
+
+<details>
+<summary>Android</summary>
+
+<div>
+
+1. เปิด Play Store และค้นหา "MetaMask" **แอป MetaMask อย่างเป็นทางการ จะมีหน้าตาเหมือนว่าหน้าจอด้านล่าง ต้องระมัดระวังให้มากที่สุดว่าคุณไม่ได้ติดตั้งแอป MetaMask ปลอม! มองหาแอปที่มียอดดาวน์โหลด 10M+**
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/Install_MetaMask_Android.png")
+          .default
+      }
+      alt="ติดตั้ง MetaMask Android"
+    />
+  </div>
+</div>
+
+2. แตะที่ 'Install' (ติดตั้ง) และรอให้กระบวนการเสร็จสิ้น
+3. เมื่อติดตั้งแล้ว ให้เปิดแอปและทำตามคำแนะนำเพื่อสร้างกระเป๋าเงินของคุณ
+4. สำรองข้อมูลวลีกู้คืนรหัสของคุณไว้ในที่ที่ปลอดภัยและออฟไลน์!
+
+</div>
+</details>
+
+</TabItem>
+
+</Tabs>
+
+นอกจากนี้ คุณยังสามารถเข้าถึง Store ส่วนขยายของเบราว์เซอร์ และค้นหา MetaMask ได้ แบบไหนก็ได้ตามที่คุณชอบ!
+
+## การกำหนดค่าการตั้งค่าความเป็นส่วนตัวของคุณ
+
+เมื่อกำลังติดตั้งส่วนขยาย MetaMask คุณจะสามารถปรับการตั้งค่าความเป็นส่วนตัวทีละรายการได้ เพื่อให้แน่ใจว่าแอปได้รับการตั้งค่าตามการตั้งค่าความเป็นส่วนตัวของคุณ
+
+ในการทำเช่นนี้ เพียงกดปุ่ม 'Advanced configuration' (การกำหนดค่าขั้นสูง) ในกระบวนการตั้งค่ากระเป๋าเงินที่นี่คุณสามารถสลับ/กำหนดการตั้งค่าได้ รวมถึง:
+
+- การตรวจจับการฟิชชิง
+- ธุรกรรมที่กำลังเข้ามา
+- ข้อมูลราคาโทเค็นเพิ่มเติมจากแหล่งที่มาของบุคคลที่สาม
+- [ผู้ให้บริการ RPC เริ่มต้น](https://metamask.zendesk.com/hc/en-us/articles/5378119120667)
+- ตรวจจับโทเค็นอัตโนมัติ
+- คำขอบัญชีแบทช์
+- เกตเวย์ IPFS ที่กำหนดเอง
+
+<div class="center-container">
+  <div class="img-large">
+    <img
+      src={
+        require("../../../../../img/getting-started/getting-started-with-metamask/MetaMask_Advanced_Configuration.gif")
+          .default
+      }
+      alt="MetaMask_Advanced_Configuration.gif"
+    />
+  </div>
+</div>
+
+ไม่ต้องกังวลหากคุณไม่แน่ใจระหว่างการตั้งค่า: เมื่อกระเป๋าเงินของคุณพร้อมและเปิดใช้งานแล้ว คุณสามารถเข้าถึงการตั้งค่าเดียวกันได้ทุกเมื่อใน _Settings (การตั้งค่า) > Security & Privacy (ความปลอดภัยและความเป็นส่วนตัว)_
+
+### **สิทธิ์ส่วนขยาย**
+
+เมื่อกำลังเพิ่ม MetaMask ไปยังเบราว์เซอร์ของคุณ คุณอาจตั้งคำถามว่าทำไมคุณต้องอนุมัติส่วนขยายให้ **“read and change all your data on the websites your visit” (อ่านและเปลี่ยนแปลงข้อมูลทั้งหมดของคุณบนเว็บไซต์ที่คุณเยี่ยมชม)** ด้วยเตรียมตัวให้พร้อม คำตอบนั้นเป็นเรื่องเกี่ยวกับเทคนิค:
+
+หากต้องการเปิดใช้งาน dapps (แอปพลิเคชันแบบกระจายอำนาจ) เพื่อเข้าถึงบล็อกเชน MetaMask จำเป็นต้องฝังออบเจ็กต์ [Web3](https://web3js.readthedocs.io/en/1.0/) JavaScript ลงในแต่ละหน้า การทำเช่นนี้ **จะไม่เปลี่ยนเว็บไซต์** แต่แค่อนุญาตให้เข้าถึงเครือข่ายเท่านั้นสำหรับคำอธิบายเต็มรูปแบบมากกว่านี้ โปรดดู [ที่นี่](https://metamask.zendesk.com/hc/en-us/articles/12412707939611)
+
+หากคุณยังไม่มั่นใจ วิธีที่ดีในการทดสอบและจัดการเบราว์เซอร์ของคุณคือแซนด์บ็อกซ์ [MetaMask](https://support.metamask.io/hc/en-us/articles/360015289672-Sandboxing-MetaMask) ของคุณ: สร้าง [โปรไฟล์เบราว์เซอร์แยกต่างหาก](https://metamask.zendesk.com/hc/en-us/articles/12174759849371)เพื่อให้มีการติดตั้ง MetaMask ไว้ที่นั่นเท่านั้น วิธีนี้จะช่วยให้คุณคุ้นเคยกับ MetaMask และ Web3 ในสภาพแวดล้อมที่แยกจากข้อมูลประจำตัวของเว็บที่คุณมีอยู่
+
+ซึ่งกล่าวได้ว่า MetaMask ปลอดภัยสำหรับการท่องเว็บ ยินดีต้อนรับ -- คุณกำลังเข้าร่วมกับผู้ใช้ MetaMask อื่น ๆ กว่า 30 ล้านคนทั่วโลก!
+
+####
+
+## **ขั้นตอนถัดไป**
+
+### [เรียนรู้พื้นฐานของบล็อกเชนและ Ethereum](https://metamask.zendesk.com/hc/en-us/articles/360015489611)
+
+### **[คู่มือผู้ใช้: วลีกู้คืนรหัส](https://metamask.zendesk.com/hc/en-us/articles/4404722782107)**
+
+### **[คู่มือผู้ใช้: แก๊ส](https://metamask.zendesk.com/hc/en-us/articles/4404600179227)**
+
+### **[คู่มือผู้ใช้: Dapp](https://metamask.zendesk.com/hc/en-us/articles/4405506066331)**
+
+### **[คู่มือผู้ใช้: Swap](https://metamask.zendesk.com/hc/en-us/articles/4405093054363)**
+
+### **[คู่มือผู้ใช้: Token](https://metamask.zendesk.com/hc/en-us/articles/4405497827355)**
+
+### **[คู่มือผู้ใช้: เครือข่ายที่กำหนดเองและ Sidechain](https://metamask.zendesk.com/hc/en-us/articles/4404424659995)**
+
+### **[คู่มือผู้ใช้: การแก้ไขปัญหา](https://metamask.zendesk.com/hc/en-us/articles/4406430256539)**
+
+### **[คู่มือภาคสนามสำหรับบริดจ์](https://metamask.zendesk.com/hc/en-us/articles/4836913606683-Field-Guide-to-Bridges)**
+
+### **[ฮับกระเป๋าเงินฮาร์ดแวร์](https://metamask.zendesk.com/hc/en-us/articles/4408552261275)**

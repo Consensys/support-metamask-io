@@ -1,0 +1,91 @@
+---
+title: How to enable wallet activity notifications in MetaMask Portfolio
+image: >-
+  /img/socialCards/how-to-enable-wallet-activity-notifications-in-metamask-portfolio.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+You can sign into MetaMask Portfolio with your MetaMask wallet and get wallet activity notifications directly within the dapp. For more information on how this feature works and preserves your privacy, [see here](https://metamask.io/your-metamask-account/).
+
+Here's how to turn it on:
+
+1. Head to [MetaMask Portfolio](https://portfolio.metamask.io/). If you haven't yet opted into wallet notifications, you'll see a popup next to the bell icon in the top-right of the dapp, announcing the option. Click 'Enable' to proceed.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/dashboard/how-to-enable-wallet-activity-notifications-in-metamask-portfolio/MetaMask_Portfolio_locate_notification.png")
+          .default
+      }
+      alt="MetaMask Portfolio locate notification"
+    />
+  </div>
+</div>
+
+2. This action prompts a [Sign-In with Ethereum](/privacy-and-security/why-am-i-being-asked-to-sign-in-sign-in-with-ethereum) request in your wallet:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/dashboard/how-to-enable-wallet-activity-notifications-in-metamask-portfolio/MetaMask_Portfolio_notifications_sign_in_request.png")
+          .default
+      }
+      alt="MetaMask Portfolio notifications sign in request"
+    />
+  </div>
+</div>
+
+Sign the request in your wallet to continue. You're now logged into MetaMask Portfolio with all the accounts in your MetaMask wallet.
+
+3. When you return to Portfolio, you'll see a window like this:
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/dashboard/how-to-enable-wallet-activity-notifications-in-metamask-portfolio/MetaMask_Portfolio_notifications_secure_data.png")
+          .default
+      }
+      alt="MetaMask Portfolio notifications secure data"
+    />
+  </div>
+</div>
+
+Click 'Continue'.
+
+4. Now you'll see another message to sign with your wallet:
+
+<div class="center-container">
+  <div class="img-small">
+    <img
+      src={
+        require("../../../img/metamask-portfolio/dashboard/how-to-enable-wallet-activity-notifications-in-metamask-portfolio/MetaMask_Portfolio_notifications_signature_request.png")
+          .default
+      }
+      alt="MetaMask Portfolio notifications signature request"
+    />
+  </div>
+</div>
+
+This time, you're creating a cryptographic key that will be stored on your device. The key is used to encrypt your device's sign-in settings before they are sent to MetaMask servers.
+
+:::info
+
+#### Does this connect one or all accounts in my wallet?
+
+Currently, you sign these transactions with one account — the one currently selected in MetaMask. However, this signs your entire wallet into Portfolio: you sign in with _all_ of your accounts, and see notifications for all of them. If you only want to see notifications for certain accounts, you can adjust this in Settings Notifications.
+
+If you're unsure of the difference between accounts and your wallet, see [here](/managing-my-wallet/using-metamask/whats-the-difference-between-a-wallet-and-an-account-).
+
+:::
+
+Storing your sign-in configurations on our servers means that your settings (whether or not you're signed into MetaMask Portfolio with your wallet) will be retained, regardless of which device you're accessing MetaMask Portfolio from.
+
+Now you're fully signed in to MetaMask Portfolio, and should be able to see real-time notifications for wallet activity.
+
+You can configure your notifications settings at any time by heading to'settings' and then 'Notifications'.

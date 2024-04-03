@@ -1,0 +1,34 @@
+---
+title: MetaMask Snaps Account Management FAQ
+image: /img/socialCards/metamask-snaps-account-management-faq.jpg
+---
+
+import CustomLayout from "@site/src/layouts/collabHeader";
+
+<CustomLayout />
+
+Account Management Snaps allow Snap creators to bring their own account management experiences to MetaMask. Eager to get started? Learn more about [MetaMask Snaps Account Management](/metamask-snaps/account-management/what-are-account-management-snaps).
+
+## MetaMask Snaps Account Management FAQs
+
+1. **What are Account Management Snaps?**<br/> Account Management Snaps allow Snaps to bring custom account management experiences to MetaMask. Accounts created through these Snaps will appear directly within the MetaMask interface, just like regular accounts. Take a look at our introduction article to [MetaMask Snaps Account Management](/metamask-snaps/account-management/what-are-account-management-snaps).
+2. **After the initial launch, what is the general roadmap for Account Management Snaps?**<br/> The initial launch supports [EOA accounts](https://ethereum.org/en/developers/docs/accounts/), similar to those you are already used to when using MetaMask. This already enables some powerful, new experiences, such as distributed key generation (e.g. MPC), and the ability to add additional hardware wallet integrations. <br/><br/>Next up is adding support for [account abstraction](https://metamask.io/news/latest/account-abstraction-past-present-future/), such as through [ERC-4337](https://medium.com/infinitism/erc-4337-account-abstraction-without-ethereum-protocol-changes-d75c9d94dc4a). In a later stage, support for smart contract accounts can also be added via Account Management Snaps.<br/><br/>In the future, Account Management Snaps will be able to provide support for non-EVM accounts, meaning that you will be able to manage accounts for networks other than Ethereum (and Ethereum-like networks) in your MetaMask interface. [Interoperability](/metamask-snaps/what-are-interoperability-snaps) already allows you to use MetaMask with new blockchains and protocols.
+3. **Will the new Account Management Snaps be on MetaMask Mobile?**<br/> Currently, Account Management Snaps are only available in the MetaMask browser extension v11.9 and up.
+4. **How do Account Management Snaps work with MetaMask Portfolio?**<br/> Accounts added by Account Management Snaps to MetaMask Extension act like any other account in MetaMask Extension. This means that you can also add these accounts to your MetaMask Portfolio.
+5. **How do Account Management Snaps work with dapps?**<br/> Similarly to MetaMask Portfolio, you’re free to use accounts added by Account Management Snaps with any dapp of your choosing.
+6. **Do the Account Management Snaps have access to my MetaMask Secret Recovery Phrase?** <br/> No, Account Management Snaps cannot access your Secret Recovery Phrase. These Snaps must either generate an entirely new private key, or derive a private key from the Secret Recovery Phrase in a way that prevents them from accessing other Ethereum accounts.<br/> However, do note that a Snap can request access to the private keys used to sign transactions on other blockchains. It’s up to you to either grant or deny this permission.
+7. **Do I still need to remember my MetaMask Secret Recovery Phrase if I use an Account Management Snap?**<br/> While Account Management Snaps cannot directly access your Secret Recovery Phrase, some Account Management Snaps might derive private keys based on your Secret Recovery Phrase. This means that in some cases, you still need to know your Secret Recovery Phrase in case you ever wish to recover accounts managed by these Snaps.
+
+Account Management Snaps are only one category of Snaps; learn more about [Security Snaps](/metamask-snaps/what-are-security-snaps), [Interoperability Snaps](/metamask-snaps/what-are-interoperability-snaps), and [Communication Snaps](/metamask-snaps/what-are-communication-snaps). New to MetaMask Snaps? Take a look at our [getting started guide](/metamask-snaps/getting-started-with-metamask-snaps), or the [MetaMask Snaps FAQ](/metamask-snaps/metamask-snaps-faq).
+
+## Important information
+
+**Third-Party Service**
+
+You acknowledge that Account Management Snaps are a Third Party Service, as defined in the [Consensys](https://consensys.io/terms-of-use/) [Terms of Use](https://consensys.io/terms-of-use#). Your use of Third Party Services is governed by separate terms and conditions set forth by the Third Party Service provider. Consensys does not recommend the use of any Snap by any particular person for any particular reason. You access, rely upon or use the Third Party Service at your own risk. Consensys disclaims all responsibility and liability for any losses on account of your use of Third Party Services.
+
+**Experimental Beta**
+
+Account Management Snaps are released as part of an experimental Beta release. You agree that you will only use one of these Snaps if you understand how it functions and how to use it, and you have fully read and understand all risk warnings and other disclosures made available by the Third Party Service provider relating to use of their Snap. You agree that Consensys is not responsible for any injury that you incur as a result of your use of this Snap.
+
+You will not be able to use your MetaMask Secret Recovery Phrase to recover accounts added through Account Management Snaps. If your account credentials are lost or compromised, MetaMask will not be able to help you. If the Snap or the associated dapp is hacked or ceases to function, you may not be able to access your account and the funds in your account.

@@ -1,0 +1,137 @@
+---
+title: "사용자 가이드: 스왑"
+---
+
+**MetaMask 스왑**은 하나의 암호화폐 토큰을 다른 것으로 교환할 수 있는 MetaMask 기능입니다. 즉, 하나의 암호화폐 토큰을 다른 것으로 교환할 수 있습니다(ERC-20 토큰에 대한 자세한 내용과 이러한 토큰과 NFT의 차이점에 대해 궁금하시다면 [사용자 가이드](/managing-my-tokens/user-guide-tokens)를 참조하십시오). 이는 매우 편리하고 간단하며, 관심 있는 토큰을 얻기 위해 필요한 단계와 제3자와의 스마트 계약 빈도를 크게 줄입니다.
+
+MetaMask Swap은 현재 다음과 같은 곳에서 사용할 수 있습니다.
+
+- 이더리움 메인넷
+- BNB 스마트 체인
+- 아발란체 C-체인
+- 폴리곤(Polygon)
+- 옵티미즘(Optimism)
+- 아비트럼(Arbitrum).
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/i18n/legacy/MetaMask_user_guide_swaps.png")
+          .default
+      }
+      alt="MetaMask 사용자 가이드 스왑"
+    />
+  </div>
+</div>
+
+### **스왑을 하기 전에 알아야 할 것들:**
+
+- 토큰이 ERC-20 표준을 준수하더라도, **토큰에 대한 조사를 우선적으로 하지 않고 토큰을 구입하거나 획득해서는 안 됩니다**. 암호화폐와 분산형 금융의 참신한 특징 중 하나는 특유의 프로그램적 특성입니다. 토큰이 반드시 고정된 자산인 것은 아닙니다. 예를 들어 [다음](https://www.reddit.com/r/CryptoCurrency/comments/owkokz/scam_alert_vera_tokens/)과 같이, 토큰에는 사용 방법이나 토큰이 지갑에 영향을 미치는 방법 자체에 영향을 주는 기능이 있을 수 있습니다. 물론 덜 악의적인 주의 사항도 있습니다. 예를 들어, 일부 토큰을 획득할 수는 있지만 이러한 토큰에서 의도된 유틸리티를 얻으려면 특정 플랫폼에 토큰을 할당해야 합니다.
+- **슬립페이지**는 선택한 가격과 MetaMask Swaps가 허용하는 최종 거래 가격 사이의 변화량입니다. 분산형 금융 및 암호화폐는 유동성과 변동성이 매우 높은 특성이 있다는 점을 감안하면, 가격은 매초 바뀔 수 있습니다. 따라서 Swaps는 거래가 진행되도록 하기 위해 합의된 가격과 최종 가격 사이에 약간의 차이를 허용하지만, 갑작스러운 급등이나 급락으로부터 고객을 보호하고자 너무 많이는 허용하지 않습니다.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/token-swaps/i-did-a-swap-but-received-fewer-tokens-or-less-fiat-value-than-i-expected-why-/MetaMask_user_guide_swaps_slippage.png")
+          .default
+      }
+      alt="MetaMask 사용자 가이드 슬립페이지"
+    />
+  </div>
+</div>
+
+- **사용자 지정 토큰**은 MetaMask의 표준 목록에 기재될 만큼 일반적이거나 널리 사용되지 않는 토큰을 이릅니다. 표준 목록은 MetaMask에서 이더리움 메인넷([그리고 일부 다른 인기있는 네트워크](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask))을 네트워크로 선택하면 자동으로 탐지됩니다. 일부 토큰을 지갑으로 스왑했지만 표시되지 않는 경우(몇 분 정도 소요될 수 있습니다. 블록체인은 빠르지만 **즉각적으로 반응하지는 않는다**는 사실을 기억하십시오), [수동으로 토큰을 추가해 보십시오](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask).
+- **우리가 지원하는 자료는 MetaMask Swaps 전용 자료입니다**. 즉, MetaMask는 MetaMask 스왑 버튼을 사용하여 발생하는 스왑을 지원합니다. 다른 플랫폼 또는 다른 DEX에서 직접 스왑을 수행하는 경우 MetaMask는 일반적인 방향 또는 지침을 제공할 수 있지만 **확정적으로 간주되어선 안됩니다**. 지원팀에 연락하거나 거래소를 위한 커뮤니티 또는 스왑을 수행한 플랫폼에 지원을 요청하십시오.
+
+:::warning
+
+#### MetaMask는 여러분의 수왑의 중개자일 뿐임을 기억하세요!
+
+MetaMask 스왑을 사용할 때 MetaMask가 집계 또는 매개체의 역할을 한다는 것을 명심하세요. 우리는 견적을 취합하고 여러분에게 가장 유리한 것을 제공합니다. 거기서 부터 제공된 플랫폼/유동성 공급자와 거래를 진행할지 여부를 결정할 수 있습니다. MetaMask는 유동성을 제공하거나 거래를 수행하거나 토큰을 판매하지 않습니다.
+
+:::
+
+### 뛰어들 준비가 되었나요?
+
+MetaMask를 확장 프로그램에서 사용하든 모바일 환경에서 사용하든 상관없이 원하는 토큰을 몇 번 클릭하거나 탭하기만 하면 스왑이 실행됩니다.
+
+MetaMask 어플리케이션의 메인 화면에서'swap'이라고 표시된 직사각형 모양의 화살표가 있는 버튼을 찾으십시오. 버튼을 누르세요!
+
+메인 스왑 화면이 표시됩니다.
+
+<div class="center-container">
+  <div class="img-medium">
+    <img
+      src={
+        require("../../../../../img/i18n/legacy/MetaMask_user_guide_swaps_amount.png")
+          .default
+      }
+      alt="MetaMask 사용자 가이드 스왑 금액"
+    />
+  </div>
+</div>
+
+#### **스왑을 준비하는 중입니다**
+
+- 먼저, 상단의 드롭다운 메뉴에서 '지출'할 토큰을 선택하십시오.
+- 아래쪽에 있는 두 번째 드롭다운 메뉴에서 원하는 토큰을 선택하십시오.
+- 귀하가 지출할 금액과 획득하고자 하는 금액이 비슷해질 때까지 첫 번째 토큰의 금액을 높이거나 낮추십시오.
+- 화면 하단에 '견적 받기' 버튼이 있습니다. 버튼을 누르세요!
+
+앱이 최적의 가격을 찾는 것을 볼 수 있습니다. **이 프로세스는 MetaMask Swaps가 가장 저렴한 최고의 스왑 서비스를 제공하는 데 있어 중요한 요소입니다.**. 겉으로 Swaps의 검색이 진행되는 동안 이면에서는 많은 일들이 일어나고 있습니다.
+
+우선 Swaps는 분산형 토큰 거래소와 토큰 스왑 프로토콜 전반을 검색하여 가장 유리한 환율을 찾고 있습니다.
+
+동시에 테스트 거래를 실행하여 주문을 제출하면 거래가 진행될 가능성이 있는지 확인하고, 진행이 되지 않으면 해당 옵션이 필터링됩니다. **MetaMask는 거래 실패의 고통에서 사용자를 구하고 있습니다**. 이더리움 메인넷 가스비와 토큰 스마트 계약의 복잡성으로 인해, 거래에 실패하면 이해할 수 없는 오류 코드의 손상과 함께 상당한 재정적 피해를 받게 됩니다. 스왑의 실패율은 매우 낮으며, 현재 거의 실패하지 않을 정도로 개선 작업이 진행 중입니다.
+
+일부 매의 눈을 지닌 사용자는 이전 화면의 왼쪽 하단 모서리에 '3% 슬립페이지'라는 문구가 있었던 것을 기억하실 것입니다. 슬립페이지는 Swaps가 유리하게 사용하는 또 다른 매개 변수이며, 이에 대해 위에서 자세히 설명한 바 있습니다.
+
+따라서 DeFi 번호 입력이 끝나면 다음과 같은 견적 화면을 볼 수 있습니다.
+
+###
+
+#### **스왑 실행하기**
+
+많은 일들이 일어나고 있지만, 놀라지 마십시오. 먼저 맨 위에 보면 Swaps가 이전에 언급했던 모든 작업을 지속적으로 수행함으로써 **최신 가격과 유효성**을 확보하고 있다는 것을 알 수 있습니다.
+
+주요한 결과물은 화면 중앙에 있습니다. 즉, **마지막 견적에 따라** **획득할 토큰의 양**(슬립페이지에 유의)입니다. 귀하는 환율과 같은 세부 정보를 볼 수 있으며, 견적을 산출한 방법과 고급 가스 설정을 자세히 살펴볼 수도 있습니다. 이는 그 자체로 전체 금액이지만(여기서 [시작하기](/transactions-and-gas/gas-fees/user-guide-gas)), 네트워크가 청구할 금액에 MetaMask의 수수료를 합한 금액입니다.\
+**준비가 되셨다면 스왑 스위퍼를 화면에 띄우세요!**
+
+:::info
+
+#### 스왑된 토큰이 왜 아직 지갑에 나타나지 않았을까요?
+
+모든 블록체인 거래가 그렇듯이 즉각적으로 이루어지지는 않지만, 곧 지갑에서 토큰을 볼 수 있을 것입니다. 일반적인 토큰이 아니거나 토큰이 지갑에 표시되지 않는 경우, [여기](/managing-my-tokens/custom-tokens/how-to-display-tokens-in-metamask)에 있는 지침에 따라 토큰을 추가하십시오.
+
+:::
+
+#### **SwapVerse를 입력하십시오**
+
+MetaMask이 여러분에게 비교할 수 없는 토큰 스왑 경험을 제공할 수 있는 정말로 놀라운 이유 중 하나는 이것이 **네트워크에 구애받지 않도록 만들어졌다는 것**입니다. 귀하가 연결하는 블록체인 네트워크가 이더리움과 호환된다면 MetaMask를 작동시킬 수 있습니다.\
+이 기능으로 무엇을 할 수 있을까요?
+
+**다른 네트워크에서도 MetaMask swaps를 사용할 수 있습니다**. 귀하가 반드시 이더리움 메인넷에 있어야 할 필요가 없습니다. **예를 들어, 폴리곤에서 스왑을 사용할 수 있습니다**. 다른 사이드 체인 및 사용자 지정 네트워크가 온라인 상태가 되면 사용해 보십시오. 스왑을 사용하면 타사 플랫폼과 직접 연결할 필요 없이 지갑에서 바로 이더리움 호환 네트워크의 토큰을 모두 거래할 수 있습니다. 이를 통해 해킹이나 악의적인 스마트 계약에 노출되는 것을 줄일 수 있습니다.
+
+심지어 스왑을 통해 _메인넷에서_ 비이더리움계 토큰을 획득할 수도 있습니다. 이에 대한 자세한 내용은 [여기](https://support.metamask.io/hc/en-us/articles/4404417979035)에서 이더리움 MATIC 토큰에 대한 자료를 참조하십시오. 하지만 유념하십시오. **항상 [브리지와 포털을 통해](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains) 더 많은 정보를 탐색하십시오.**
+
+### **FAQ**
+
+[MetaMask Swaps에서 일부 토큰이 누락되는 이유는 무엇인가요?](/token-swaps/why-are-some-tokens-missing-from-metamask-swaps)
+
+[MetaMask Swaps를 통해 구입한 토큰의 구입 당시 가격은 어떻게 볼 수 있나요?](/token-swaps/how-do-i-see-the-price-at-time-of-purchase-for-tokens-bought-through-swaps)
+
+[MetaMask 스왑이 실패한 이유는 무엇인가요?](/token-swaps/why-did-my-metamask-swap-fail)
+
+[보류 중인 스왑을 취소하려면 어떻게 해야 하나요?](/token-swaps/how-to-cancel-a-pending-swap)
+
+[MetaMask 스왑 버튼이 사용할 수 없는 상태이거나 회색으로 표시되는 이유는 무엇인가요?](/token-swaps/why-is-the-metamask-swap-button-unavailable---greyed-out)
+
+**[스왑을 했지만 수령한 토큰 또는 법정 통화의 금액이 예상보다 적습니다. 왜 그런가요?](/token-swaps/i-did-a-swap-but-received-fewer-tokens-or-less-fiat-value-than-i-expected-why-)**
+
+[견적 가져오기 중 오류](/token-swaps/error-fetching-quote)
+
+[Uniswap 지원 및 문제 해결 팁](/token-swaps/uniswap-support-and-troubleshooting-tips)
+
+**[사용자 가이드: 사용자 지정 네트워크 및 사이드 체인](/networks-and-sidechains/managing-networks/user-guide-custom-networks-and-sidechains)**
