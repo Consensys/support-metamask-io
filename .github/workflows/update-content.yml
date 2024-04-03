@@ -5,6 +5,7 @@ on:
     paths:
       - 'docs/**'
       - 'i18n/**'
+  workflow_dispatch:
 
 jobs:
   update-public-content:
@@ -20,7 +21,7 @@ jobs:
 
       - name: Update public repository
         env:
-          PUBLIC_REPO_ACCESS_TOKEN: ${{ secrets.}}
+          ADMIN: ${{ secrets.ADMIN}}
         run: |
           git clone --depth 1 --branch main https://${{ secrets.ADMIN}}@github.com/Consensys/docs-mm-helpcenter.git public-repo
           rm -rf public-repo/*
