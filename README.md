@@ -2,11 +2,13 @@
 
 The MetaMask Help Center lives at https://www.support.metamask.io.
 
-This documentation repository is built using [Docusaurus](https://docusaurus.io/). The repository with the site code is private, but this repository exists to allow anyone to contribute, correct, or suggest changes. Changes to this repository will be routinely reviewed and synced with the live site content.
+The code for the site is private, but this repository exists to allow anyone to contribute, correct, or suggest changes to the content, or the functionality of the site as a whole. Changes to this repository will be routinely reviewed and synced with the live site content.
 
 ## How to contribute
 
-See something missing? Error in our documentation? Create an issue [here](https://github.com/Consensys/support-metamask-io/issues).
+See something missing? Is there an error in an article, a broken link? Is something really frustrating about the site? We love this feedback! 
+
+To report something, create an issue [here](https://github.com/Consensys/support-metamask-io/issues).
 
 Alternatively, help us improve our documentation! [Fork our repo](https://github.com/Consensys/support-metamask-io/fork), create a pull request, and tag us for review! (for help on this, see below)
 
