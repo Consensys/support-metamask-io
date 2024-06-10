@@ -1,4 +1,4 @@
-# MetaMask Help Center Content
+
 
 The MetaMask Help Center lives at https://www.support.metamask.io.
 
