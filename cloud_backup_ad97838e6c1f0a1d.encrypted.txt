@@ -1,0 +1,13 @@
+
+
+  This file has an encrypted seed phrase attached as hidden metadata.
+
+  Downloading to your device will *not* transfer the seed phrase.
+  This file should remain in Google Drive to preserve the secret data.
+
+  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+  Please do not move, rename, or delete this file,
+  or else your Cloud Backup may be lost!
+
+  Generated: 06/05/2023 12:40 PM
