@@ -1,12 +1,12 @@
 # MetaMask Help Center Content
 
-The MetaMask Help Center lives at https://www.support.metamask.io.
+The MetaMask Help Center lives at <https://support.metamasck.io/>.
 
 The code for the site is private, but this repository exists to allow anyone to contribute, correct, or suggest changes to the content, or the functionality of the site as a whole. Changes to this repository will be routinely reviewed and synced with the live site content.
 
 ## How to contribute
 
-See something missing? Is there an error in an article, a broken link? Is something really frustrating about the site? We love this feedback! 
+See something missing? Is there an error in an article, a broken link? Is something really frustrating about the site? We love this feedback!
 
 To report something, create an issue [here](https://github.com/Consensys/support-metamask-io/issues).
 
