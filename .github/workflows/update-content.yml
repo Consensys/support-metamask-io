@@ -21,9 +21,9 @@ jobs:
 
       - name: Update public repository
         env:
-          PROD_REPO_TOKEN: ${{ secrets.GH_PAT}}
+          PROD_REPO_TOKEN: ${{ secrets.PROD_REPO_TOKEN}}
         run: |
-          git clone --depth 1 --branch main https://${{ secrets.GH_PAT}}@github.com/Consensys/docs-mm-helpcenter.git public-repo
+          git clone --depth 1 --branch main https://${{ secrets.PROD_REPO_TOKEN}}@github.com/Consensys/docs-mm-helpcenter.git public-repo
           rm -rf public-repo/*
           cp -r docs i18n public-repo/
           cd public-repo
