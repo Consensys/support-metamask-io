@@ -1,6 +1,8 @@
-name: Update Public Content
+name: Update public content
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
     paths:
       - 'docs/**'
